@@ -1,0 +1,53 @@
+.aboutherosection{
+    /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3c/Main_block1.jpg'); */
+    background-position: center;
+    /* background-size: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
+    /* background-attachment: fixed; */
+}
+
+.aboutus-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    align-items: center;
+}
+.aboutus-content{
+    margin: 40px 20px 10px 40px;
+}
+.aboutus-container{
+    margin: 20px 0;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid white; */
+}
+.aboutus-main-img{
+    border-radius: 7%;
+    padding: 0 20px 0 20px;
+    width: 30%;
+}
+.aboutus-container h1{
+    width: 100%;
+    text-align: center;
+    /* border: 2px solid white; */
+}
+.aboutus-content{
+    width: 90%;
+    display: flex;
+}
+.aboutus-side-description{
+    padding: 0 20px;
+    font-size: 125%;
+}
+
+.person{
+    margin: 40px 20px 10px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
