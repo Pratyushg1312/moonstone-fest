@@ -1,7 +1,11 @@
 import React from 'react'
+import Sponsor from './Sponsor'
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <h1>Home Page</h1>
+      <Sponsor/>
+    </div>
   )
 }
