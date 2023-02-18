@@ -3,7 +3,18 @@ import './contactus.css'
 import TechnicalTeam from './TechnicalTeam'
 export default function Contactus() {
   return (
-    <div className='contactus-page'>
+    <div className='contactus-page '>
+      <div  id="stars"></div>
+    	<div id="moon" className='bg-img'>
+		<div class="crater crater1"></div>
+		<div class="crater crater2"></div>
+		<div class="crater crater3"></div>
+		<div class="crater crater4"></div>
+		<div class="crater crater5"></div>
+		<div class="crater crater6"></div>
+	</div>
+      {/* <img className='bg-img' src='https://cdn-icons-png.flaticon.com/512/2024/2024058.png' alt=''/> */}
+        
         <div className="contactus-form">
         <div className="container ">
         <div className="row">
