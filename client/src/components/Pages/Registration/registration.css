@@ -1,0 +1,39 @@
+.registration-form{
+   display: flex; 
+   flex-wrap: wrap;
+   height: 85vh;
+   width:100%;
+   /* margin-top: 10%; */
+   /* margin-bottoM: 10%; */
+   align-items: center;
+   justify-content: center;
+}
+.styled-input1 {
+    float: left;
+    width: 700px;
+    /* margin: 100% 100%; */
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input1 {
+        width:100%;
+    }
+}
+
+.styled-input1 label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input1.wide { 
+    width: 750px;
+    max-width: 100%;
+}
