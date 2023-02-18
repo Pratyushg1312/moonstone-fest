@@ -6,6 +6,7 @@ import Aboutus from "./components/Pages/Aboutus/Aboutus.jsx"
 import Header from "./components/Header/Header.jsx"
 import Footer from "./components/Footer/Footer.jsx"
 import Contactus from './components/Pages/Contactus/Contactus';
+import SingleEvent from './components/Pages/SingleEvent/SingleEvent';
 function App() {
   return (
     <div >
@@ -14,6 +15,7 @@ function App() {
         <Route exact path='/' element={<Home/> }/>
         <Route  path='/aboutus' element={<Aboutus/> }/>
         <Route  path='/contactus' element={<Contactus/> }/>
+        <Route  path='/SingleEvent' element={<SingleEvent/> }/>
       </Routes>
       <Footer/>
     </div>
