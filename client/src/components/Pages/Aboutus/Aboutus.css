@@ -17,14 +17,9 @@
     /* border: 2px solid white; */
     align-items: center;
 }
-.aboutus-content{
-    margin: 40px 20px 10px 40px;
-}
 .aboutus-container{
     margin: 20px 0;
     width: 80%;
-    display: flex;
-    justify-content: center;
     /* border: 2px solid white; */
 }
 .aboutus-main-img{
@@ -40,6 +35,8 @@
 .aboutus-content{
     width: 90%;
     display: flex;
+    flex-wrap: wrap;
+    margin: 40px 20px 10px 40px;
 }
 .aboutus-side-description{
     padding: 0 20px;
