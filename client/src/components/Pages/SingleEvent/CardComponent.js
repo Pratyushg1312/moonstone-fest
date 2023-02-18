@@ -1,12 +1,12 @@
 import React from 'react'
-import './SingleEvent.css'
+import './SingleDay.css'
 export default function CardComponent(props) {
   return (
     <>
       <div className='card'>
         <h1 className='text-center'>Event 1</h1>
         <div className='event'>
-          <img src={props.image} />
+          <img src={props.image} alt="eventimage" />
           <div className='txt d-flex row justify-content-end '>
             <p> loreum ipsum</p>
             <div>
