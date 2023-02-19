@@ -157,7 +157,7 @@ input[type=checkbox]:checked + label {
 
 @keyframes animStar {
     from {
-        transform: translateY(-2000px);
+        transform: translateY(-500px);
     }
 
     to {
