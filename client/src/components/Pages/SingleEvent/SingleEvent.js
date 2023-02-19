@@ -1,13 +1,10 @@
 import React from 'react'
-
+import './SingleEvent.css'
 export default function SingleEvent() {
     return (
         <div>
-            <video src='./videos/temp.mp4' className='myvideo'></video>
-            <div class="video-container">
-                <h1>Welcome to my video</h1>
-                <p>This is a video about my cool product.</p>
-            </div>
+            <div className='overlay'></div>
+            <video src='./videos/SingleEvent.mp4' autoPlay loop muted />
 
         </div>
     )
