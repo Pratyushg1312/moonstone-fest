@@ -22,6 +22,9 @@ function App() {
         {/* <Route  path='/SingleEvent' element={<SingleEvent/> }/> */}
         <Route  path='/registration' element={<Registration/> }/>
         {/* <Route  path='/SingleEvent/SingleDay' element={<SingleDay/> }/> */}
+        {/* <Route  path='/SingleEvent' element={<SingleEvent/> }/> */}
+        <Route  path='/registration' element={<Registration/> }/>
+        {/* <Route  path='/singleevent/singleday' element={<SingleDay/> }/> */}
       </Routes>
       <Footer/>
     </div>

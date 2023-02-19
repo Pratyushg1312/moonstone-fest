@@ -4,7 +4,6 @@ import TechnicalTeam from './TechnicalTeam'
 export default function Contactus() {
   return (
     <div className='contactus-page '>
-      <div  id="stars"></div>
     	<div id="moon" className='bg-img'>
 		<div class="crater crater1"></div>
 		<div class="crater crater2"></div>
@@ -28,26 +27,26 @@ export default function Contactus() {
            <h3 className='heading-text'>Message / Suggestions / Feedback</h3>
           <div className="col-xs-12">
             <div className="styled-input wide">
-              <input type="text" required />
-              <label>Name</label> 
+              <input className='input' type="text" required />
+              <label className='label'>Name</label> 
             </div>
           </div>
           <div className="col-md-6 col-sm-12">
             <div className="styled-input">
-              <input type="text" required />
-              <label>Email</label> 
+              <input className='input' type="text" required />
+              <label className='label'>Email</label> 
             </div>
           </div>
           <div className="col-md-6 col-sm-12">
             <div className="styled-input" style={{float: 'right'}}>
-              <input type="text" required />
-              <label>Phone Number</label> 
+              <input className='input' type="text" required />
+              <label className='label'>Phone Number</label> 
             </div>
           </div>
           <div className="col-xs-12">
             <div className="styled-input wide">
-              <textarea required defaultValue={""} />
-              <label>Message</label>
+              <textarea className='textarea' required defaultValue={""} />
+              <label className='label'>Message</label>
             </div>
           </div>
           <div className="col-xs-12">

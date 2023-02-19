@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './SingleDay.css'
 export default function CardComponent(props) {
   return (
@@ -17,7 +18,7 @@ export default function CardComponent(props) {
             <i className="fa fa-calendar m-2 " aria-hidden="true"></i>
             <span>12 January,2023</span></div>
             <div>
-              <button className='btn btn-primary btn-md m-2'>Details</button>
+             <NavLink to='./SingleEvent'> <button className='btn btn-primary btn-md m-2'>Details</button></NavLink>
             </div>
           </div>
         </div>

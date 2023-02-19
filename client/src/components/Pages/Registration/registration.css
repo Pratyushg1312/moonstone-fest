@@ -1,39 +1,51 @@
 .registration-form{
-   display: flex; 
-   flex-wrap: wrap;
-   height: 85vh;
-   width:100%;
-   /* margin-top: 10%; */
-   /* margin-bottoM: 10%; */
-   align-items: center;
-   justify-content: center;
+  color: aqua;
+  margin: 50px;
 }
-.styled-input1 {
-    float: left;
-    width: 700px;
-    /* margin: 100% 100%; */
-    position: relative;
-    border-radius: 4px;
+.nxt-btn{
+    padding:3px 10px 3px 10px;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: aquamarine;
 }
-
-@media only screen and (max-width: 768px){
-    .styled-input1 {
-        width:100%;
-    }
+.btn-left{
+    display: flex;
+    justify-content: end;
 }
-
-.styled-input1 label {
-    color: #999;
-    padding: 1.3rem 30px 1rem 30px;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    pointer-events: none;
+.registration-form input[type="text"] {
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.styled-input1.wide { 
-    width: 750px;
-    max-width: 100%;
-}
+
+.typewriter h1 {
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
