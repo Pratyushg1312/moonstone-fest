@@ -1,0 +1,117 @@
+.body {
+  /* overflow: hidden;
+width: 100vw;
+height: 100vh; */
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.content-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 24, 24, 0.5);
+  z-index: 1;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card {
+  margin: 30px auto;
+  width: 350px;
+  height: 500px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(10, 225, 107, 0.25), -5px -5px 30px 7px rgba(10, 225, 107, 0.25);
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: #0D4451;
+}
+
+.card:hover {
+  background-color: #23ffc4;
+  box-shadow: 5px 5px 30px 7px #1c1d1c, -5px -5px 30px 7px#23FF56;
+  color: black;
+
+
+}
+
+.event {
+  position: relative;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+}
+
+.event img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 5%;
+}
+
+.txt {
+
+  transition: all 1.4s ease-in-out;
+  font-size:23px;
+  text-align: center;
+  color: #000000;
+  font-weight: 100%;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  text-shadow: #23FF56;
+  width: 100%;
+
+}
+
+.card:hover .txt {
+
+  transition: all 1.4s ease-in-out;
+  opacity: 1;
+  border-radius:6%;
+  padding: 1%;;
+  max-height: 100%;
+  background-color:whitesmoke;
+  opacity: .8;
+  bottom: 10%;
+}
+
+
+.effect {
+  /* padding: 64px; */
+  justify-content: center;
+  background: linear-gradient(to right, hsl(0, 30%, 95%) 0, hsl(0, 95%, 45%) 10%, hsl(0, 8%, 95%) 20%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s infinite linear;
+}
+@keyframes shine {
+  0% {
+      background-position: 0;
+  }
+
+  60% {
+      background-position: 600px;
+  }
+
+  100% {
+      background-position: 600px;
+  }
+}
