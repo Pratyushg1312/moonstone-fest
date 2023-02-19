@@ -36,7 +36,7 @@ width:100%;
     transition: all .5s ease-in-out;
 }
 .glipses{
-    
+
 }
 
 @keyframes lights {
@@ -90,6 +90,7 @@ width:100%;
 
   
   .content h1 {
+    text-align: center;
     margin: auto;
     font-size: 5.5rem;
     font-weight: 300;
