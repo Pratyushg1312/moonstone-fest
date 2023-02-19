@@ -6,6 +6,7 @@ export default function Header() {
   const [display, setDisplay] = useState(window.innerWidth > 1024? true : false);
   return (
     <div style={{paddingBottom:"70px"}}>
+      <div  id="stars"></div>
     <div className="nav-header">
       <div className="header-bar">
         <div className="header-img-container">
