@@ -2,7 +2,7 @@
     position: relative;
     display:flex;
     height:100vh;
-    border: 5px solid red;
+  
     justify-content: center;
     align-items: center;
 }
@@ -10,9 +10,16 @@
     position: absolute;
    
 }
-.logo1 .h1{
+.logo1 p{
   
-    text-shadow: black;
-    color: #56FFAE;
-    size: 1rem;
+    color: #07d170;
+    font-size: 4em;
+    text-shadow: 2px 5px 0px #0f5132;
+}
+
+
+.typ{
+    position: absolute;
+    left: 65%;
+    top:60%
 }

@@ -4,6 +4,7 @@ import {OrbitControls} from '@react-three/drei'
 import { Model } from './ModelDraco'
 import  { Suspense} from 'react';
 import "./hero.css"
+import { Aboutmoon } from './Aboutmoon';
 export const Hero = () => {
   return (
     <div className="Container">
@@ -18,8 +19,12 @@ export const Hero = () => {
           </Suspense>
         </Canvas>
         <div className="logo1">
-            <h1>MOONSTONE</h1>
+            <p>MOONSTONE</p>
         </div>
+    <div className="typ">
+
+        <Aboutmoon/>
+    </div>
     </div>
     </div>
   )

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     color: #00FFD1;
+    z-index:1000;
 }
 .header-bar{
     width: 80%;
