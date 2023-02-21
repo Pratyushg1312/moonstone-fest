@@ -1,0 +1,26 @@
+.image-event-section img{
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    flex: 0.5;
+}
+.styles-content{
+    height: 1000px;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.styles-container{
+    width: 600px;
+    min-height: fit-content;
+    background-color: white;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+}

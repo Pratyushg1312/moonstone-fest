@@ -1,49 +1,100 @@
-.body {
-  /* overflow: hidden;
-width: 100vw;
-height: 100vh; */
+video {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+  
+}
+.main{
+height: 100vh;
+width:100%;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    /* background-color: pink; */
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+}
+.About{
+    color: wheat;
+    transition: all .5s ease-in-out;
 }
 
-#video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.Schedule{
+    color: wheat;
+    transition: all .5s ease-in-out;
 }
-
-.content-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(210, 24, 24, 0.5);
-  z-index: 1;
-}
-
-.parent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.glipses{
 
 }
 
-.card {
-  margin: 30px auto;
-  width: 350px;
-  height: 500px;
-  border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(10, 225, 107, 0.25), -5px -5px 30px 7px rgba(10, 225, 107, 0.25);
-  cursor: pointer;
-  transition: 0.4s;
-  background-color: #0D4451;
-}
-.card:hover{
-  background-color: #23ffc4;
-  box-shadow: 5px 5px 30px 7px #1c1d1c, -5px -5px 30px 7px#23FF56;
-  color: black;
+@keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(117, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(146, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(111, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+  
 
-
-}
+  
+  .content h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 5.5rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: lights 5s 750ms linear infinite;
+  }
