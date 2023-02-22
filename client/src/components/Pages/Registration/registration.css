@@ -1,6 +1,12 @@
 .registration-form{
   color: aqua;
-  margin: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 60%; */
+
 }
 .nxt-btn{
     padding:3px 10px 3px 10px;
