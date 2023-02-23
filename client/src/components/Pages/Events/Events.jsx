@@ -79,15 +79,11 @@ function Events() {
             <h1 data-text="Day 1">Day 1</h1>
           </div>
         </div>
-      </div>
-      <div className="day-events">
         <div className="styles-container">
           <div className="style-text">
             <h1>Day 2</h1>
           </div>
         </div>
-      </div>
-      <div className="day-events">
         <div className="styles-container">
           <div className="style-text">
             <h1>Day 3</h1>
