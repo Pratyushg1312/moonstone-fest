@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div style={{paddingBottom:"70px"}} >
     <div className="nav-header" style={{backgroundColor:"#061F25"}}>
-      <div id="stars"></div>
+      {/* <div id="stars"></div> */}
       <div className="header-bar">
         <div className="header-img-container">
           <NavLink to="/">

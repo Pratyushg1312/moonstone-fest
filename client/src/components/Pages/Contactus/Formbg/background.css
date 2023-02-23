@@ -1,0 +1,117 @@
+.contain-page {
+    /* height: 100vh;
+    width: 100%;
+    background: black; */
+  }
+  
+  #contain-all-moon {
+    /* position: fixed; */
+    display: inline-block;
+    overflow: hidden;
+    background: #242424;
+    border-radius: 50%;
+    width: 90%;
+    left: 50%;
+    margin-left: 5%;
+    top: 50%;
+    margin-top: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: inset 0 -10px black;
+  }
+  #contain-all-moon svg {
+    transform-origin: 50% 50%;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes hover {
+    50% {
+      transform: translatey(-1%);
+    }
+  }
+  @keyframes hover {
+    50% {
+      transform: translatey(-1%);
+    }
+  }
+  #contain-all-moon #moon-group #moon {
+    fill: url(#_rgradient_0);
+    -webkit-animation: hover 2000ms 500ms ease-in-out infinite;
+            animation: hover 2000ms 500ms ease-in-out infinite;
+  }
+  @-webkit-keyframes pulse {
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  @keyframes pulse {
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  #contain-all-moon #moon-group #aura-group #aura-1 {
+    transform-origin: 50% 50%;
+    -webkit-animation: pulse 3000ms 750ms ease-in-out infinite;
+            animation: pulse 3000ms 750ms ease-in-out infinite;
+  }
+  #contain-all-moon #moon-group #aura-group #aura-2 {
+    transform-origin: 50% 50%;
+    -webkit-animation: pulse 3000ms 1500ms ease-in-out infinite;
+            animation: pulse 3000ms 1500ms ease-in-out infinite;
+  }
+  #contain-all-moon #moon-group #aura-group #aura-3 {
+    transform-origin: 50% 50%;
+    -webkit-animation: pulse 3000ms 2250ms ease-in-out infinite;
+            animation: pulse 3000ms 2250ms ease-in-out infinite;
+  }
+  #contain-all-moon #moon-group #crater-group #crater-1 {
+    transform-origin: 50% 50%;
+    -webkit-animation: hover 2000ms 500ms ease-in-out infinite;
+            animation: hover 2000ms 500ms ease-in-out infinite;
+  }
+  #contain-all-moon #moon-group #crater-group #crater-2 {
+    transform-origin: 50% 50%;
+    -webkit-animation: hover 2000ms 500ms ease-in-out infinite;
+            animation: hover 2000ms 500ms ease-in-out infinite;
+  }
+  #contain-all-moon #moon-group #crater-group #crater-3 {
+    transform-origin: 50% 50%;
+    -webkit-animation: hover 2000ms 500ms ease-in-out infinite;
+            animation: hover 2000ms 500ms ease-in-out infinite;
+  }
+  #contain-all-moon #moon-group #crater-group #crater-4 {
+    transform-origin: 50% 50%;
+    -webkit-animation: hover 2000ms 500ms ease-in-out infinite;
+            animation: hover 2000ms 500ms ease-in-out infinite;
+  }
+  @-webkit-keyframes jam {
+    30% {
+      transform: translatex(2%) translatey(2%);
+    }
+    60% {
+      transform: translatex(-2%) translatey(2%);
+    }
+  }
+  @keyframes jam {
+    30% {
+      transform: translatex(2%) translatey(2%);
+    }
+    60% {
+      transform: translatex(-2%) translatey(2%);
+    }
+  }
+  #contain-all-moon #mountain-group #mountain-1 {
+    -webkit-animation: jam 2500ms 625ms ease-in-out alternate infinite;
+            animation: jam 2500ms 625ms ease-in-out alternate infinite;
+  }
+  #contain-all-moon #mountain-group #mountain-2 {
+    -webkit-animation: jam 2500ms 1250ms ease-in-out alternate infinite;
+            animation: jam 2500ms 1250ms ease-in-out alternate infinite;
+  }
+  #contain-all-moon #mountain-group #mountain-3 {
+    -webkit-animation: jam 2500ms 1875ms ease-in-out alternate infinite;
+            animation: jam 2500ms 1875ms ease-in-out alternate infinite;
+  }
+  #contain-all-moon #mountain-group #mountain-4 {
+    -webkit-animation: jam 2500ms 2500ms ease-in-out alternate infinite;
+            animation: jam 2500ms 2500ms ease-in-out alternate infinite;
+  }
