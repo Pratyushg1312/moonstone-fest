@@ -29,8 +29,8 @@ export default function Aboutus() {
       <div className="person">
       <Persons/>
       </div>
-      <h1>Team</h1>
       <div className="team">
+      <h1>Team</h1>
         <TeamPage/>
       </div>
     </div>

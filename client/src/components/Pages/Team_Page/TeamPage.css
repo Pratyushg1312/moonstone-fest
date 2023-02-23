@@ -50,15 +50,15 @@
 
 .main-card{
     /* border: 5px solid lightpink; */
-    margin: 5px;
-    padding: 5px;
+    margin: 42px;
+    /* padding: 5px; */
     display: flex;
     align-items: center;
     /* flex-direction: column; */
     /* border: 2px solid white; */
     /* position: relative; */
     width: 100%;
-    height: 446px;
+    height: 406px;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     /* background: purple; */
@@ -128,7 +128,7 @@
 }
 
 .back p {
-    margin: 10px;
+    margin: 20px;
     font-family: poppins;
     font-size: 18px;
 }
