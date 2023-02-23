@@ -1,0 +1,61 @@
+
+.contaner {
+    display: flex;
+    flex-direction: row;
+    height: 500px; /* Set the height of the container */
+   
+  }
+  
+  .static-column {
+    width: 40%; /* Set the width of the static column */
+  }
+  
+  .scrollable-column {
+    
+    display: flex;
+    justify-content:space-evenly;
+    flex: row;
+    flex-wrap: wrap;
+    width: 60%; /* Set the width of the scrollable column */
+    overflow: auto; /* Enable scrolling for the column */
+  }
+  .scrollable-column::-webkit-scrollbar{
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+    }
+  
+    .static-column {
+      width: 100%;
+      order: 1;
+    }
+  
+    .scrollable-column {
+      width: 100%;
+      order: 2;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+      height: 400px;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+      height: 450px;
+    }
+  }
+  
+  @media screen and (min-width: 1281px) {
+    .container {
+      height: 500px;
+    }
+  }
+  
