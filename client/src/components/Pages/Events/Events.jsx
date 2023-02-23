@@ -8,17 +8,17 @@ function Events() {
   //   gsap
   //     .timeline({ repeat: -1, defaults: { duration: 6} })
   //     .add("one")
-  //     .to(divs[0], { x: -200, y: 0, opacity: 1 }, "one")
-  //     .to(divs[1], { x: -450, y: 0, opacity: 0}, "one")
-  //     .to(divs[2], { x: 50, y: 0, opacity: 0}, "one")
+  //     .to(divs[0], { y: -200, x: 0, opacity: 1 }, "one")
+  //     .to(divs[1], { y: -450, x: 0, opacity: 0}, "one")
+  //     .to(divs[2], { y: 50, x: 0, opacity: 0}, "one")
   //     .add("two")
-  //     .to(divs[0], { x: 50, y: 0, opacity: 0}, "two")
-  //     .to(divs[1], { x: -200, y: 0, opacity: 1 }, "two")
-  //     .to(divs[2], { x: -450, y: 0, opacity: 0}, "two")
+  //     .to(divs[0], { y: 50, x: 0, opacity: 0}, "two")
+  //     .to(divs[1], { y: -200, x: 0, opacity: 1 }, "two")
+  //     .to(divs[2], { y: -450, x: 0, opacity: 0}, "two")
   //     .add("three")
-  //     .to(divs[0], { x: -450, y: 0, opacity: 0}, "three")
-  //     .to(divs[1], { x: 50, y: 0, opacity: 0 }, "three")
-  //     .to(divs[2], { x: -200, y: 0, opacity: 1 }, "three");
+  //     .to(divs[0], { y: -450, x: 0, opacity: 0}, "three")
+  //     .to(divs[1], { y: 50, x: 0, opacity: 0 }, "three")
+  //     .to(divs[2], { y: -200, scaleX: 0, opacity: 1 }, "three");
   // }, []);
   return (
     // <div className="eventSection">

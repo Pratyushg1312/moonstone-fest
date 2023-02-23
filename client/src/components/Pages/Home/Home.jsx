@@ -8,6 +8,7 @@ export default function Home() {
     <div>
         <Hero/>
       {/* <Sponsor/> */}
+      <Events/>
       <NewSponsor/>
     </div>
   )
