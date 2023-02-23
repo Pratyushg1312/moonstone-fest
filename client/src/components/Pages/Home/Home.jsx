@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div>
         <Hero/>
-      <Sponsor/>
-      {/* <NewSponsor/> */}
+      {/* <Sponsor/> */}
+      <NewSponsor/>
     </div>
   )
 }

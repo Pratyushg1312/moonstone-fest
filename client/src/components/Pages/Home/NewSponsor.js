@@ -3,7 +3,7 @@ import './NewSponsor.css';
 export default function NewSponsor() {
     return (
         <div style={{ color: "white" }}>
-            <div class="container">
+            <div class="contaner">
                 <div class=" d-flex static-column align-items-center justify-content-center ">
                     <h1 >Our Sponsors</h1>
 
