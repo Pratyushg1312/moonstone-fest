@@ -1,25 +1,15 @@
 import React from 'react'
+import Day1 from './Days/Day1'
 import './newevents.css'
 import SingleEventBox from './SingleEventBox'
 export default function NewEvents() {
   
   return (
-
-<div className='eventpage'>
-  
-  <section className="hero-section">
-    <div className="card-grid">
-   <SingleEventBox/>
-   <SingleEventBox/>
-   <SingleEventBox/>
-   <SingleEventBox/>
-   <SingleEventBox/>
-   <SingleEventBox/>
-   <SingleEventBox/>
-   <SingleEventBox/>
+  <div className='eventpage'>
+        <h1>#Day 1</h1>
+    <Day1/>
+    <h1>#Day 2</h1>
+    <Day1/>
     </div>
-  </section>
-
-</div>
   )
 }
