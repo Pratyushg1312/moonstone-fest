@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function SingleContentForm(props) {
   var s=props.to_find;
-
   const handleChange = e => {
     const { name, value } = e.target
     props.setcontent({
@@ -13,6 +12,8 @@ export default function SingleContentForm(props) {
 
   return (
 <div>
+       
+        <>
         <div class="typewriter">
             <h1>What is Your {s} ?</h1>
           </div>
@@ -22,6 +23,8 @@ export default function SingleContentForm(props) {
           {props.idx!==3?<button className='nxt-btn' onClick={()=>{props.setidx(props.idx+1)}}> Next <i class="fa-solid fa-arrow-right"></i> </button>:<></>}
           {props.idx===3?<button className='nxt-btn' onClick={()=>{alert("Submited")}}> Submit<i class="fa-solid fa-arrow-right"></i> </button>:<></>}
         </div>
+        </>
+
     </div>
     )
 }
