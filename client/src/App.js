@@ -12,6 +12,7 @@ import Events from "./components/Pages/Events/Events";
 import SingleDay from './components/Pages/SingleEvent/SingleDay';
 import NewEvents from "./components/Pages/NewEvents/NewEvents";
 import Error from "./components/Pages/Error/Error";
+import Glimpses from "./components/Pages/Glimpses/Glimpses"
 function App() {
   return (
     <div >
@@ -25,6 +26,7 @@ function App() {
         <Route  path='/SingleDay' element={<SingleDay/> }/>
         <Route  path='/SingleDay/SingleEvent' element={<SingleEvent/> }/>
         <Route  path='*' element={<Error/> }/>
+        <Route  path='/glimpses' element={<Glimpses/> }/>
       </Routes>
       <Footer/>
     </div>
