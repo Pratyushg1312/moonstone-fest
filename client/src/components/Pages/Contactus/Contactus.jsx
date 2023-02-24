@@ -1,28 +1,17 @@
 import React from 'react'
 import './contactus.css'
-import Background from './Formbg/Background'
 import TechnicalTeam from './TechnicalTeam'
 export default function Contactus() {
   return (
     <div className='contactus-page '>
-    	{/* <div id="moon" className='bg-img'>
-		<div class="crater crater1"></div>
-		<div class="crater crater2"></div>
-		<div class="crater crater3"></div>
-		<div class="crater crater4"></div>
-		<div class="crater crater5"></div>
-		<div class="crater crater6"></div>
-	</div> */}
-      {/* <img className='bg-img' src='https://cdn-icons-png.flaticon.com/512/2024/2024058.png' alt=''/> */}
-        
+    	
         <div className="contactus-form">
 
-        <div className="container ">
-          
-        <div className="row">
+        <div >    
+        <div >
           <h1 style={{textAlign:"center",fontSize:"350%" }}>Contact us</h1>
         </div>
-        <div className="row">
+        <div >
           <h4 style={{textAlign: 'center'}}>We'd love to hear from you!</h4>
         </div>
         <TechnicalTeam/>
