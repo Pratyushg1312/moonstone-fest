@@ -20,7 +20,8 @@ function App() {
         <Route exact path='/' element={<Home/> }/>
         <Route  path='/aboutus' element={<Aboutus/> }/>
         <Route  path='/contactus' element={<Contactus/> }/>
-        <Route  path='/events' element={<NewEvents/> }/>
+        <Route exact path='/events' element={<NewEvents/> }/>
+        <Route  path='/events/:id' element={<NewEvents/> }/>
         <Route  path='/registration' element={<Registration/> }/>
         <Route  path='/SingleDay' element={<SingleDay/> }/>
         <Route  path='/SingleDay/SingleEvent' element={<SingleEvent/> }/>

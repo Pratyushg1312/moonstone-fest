@@ -48,3 +48,23 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+
+
+@keyframes example {
+    from {color: #FFB84D;}
+    to {color: cyan;}
+  }
+  
+  /* The element to apply the animation to */
+  .team h1 {
+    font-family: poppins;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    color: #FFB84D;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+

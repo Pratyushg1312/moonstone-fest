@@ -6,9 +6,9 @@ import NewSponsor from './NewSponsor'
 export default function Home() {
   return (
     <div>
-      {/* <Hero/> */}
-      <Events/>
+        {/* <Hero/> */}
       {/* <Sponsor/> */}
+      <Events/>
       <NewSponsor/>
     </div>
   )
