@@ -18,10 +18,10 @@
     display: flex;
     justify-content: end;
 }
-.registration-form input[type="text"] {
+.registration-form input[type="text"] , select {
   font-family: 'Roboto', sans-serif;
   outline: none;
-  width: 100%;
+  width: 95%;
   border: 0;
   margin: 0 0 15px;
   padding: 15px;
@@ -31,13 +31,13 @@
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-
 .typewriter h1 {
     font-family: monospace;
-    font-size: 1.5rem;
+    font-size: 2rem;
     overflow: hidden; 
     border-right: .15em solid orange; 
     white-space: nowrap;
+    /* word-wrap: break-word; */
     margin: 0 auto; 
     letter-spacing: .15em;
     animation: 
@@ -60,4 +60,10 @@
 .google-signin button{
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px){
+  .typewriter h1 {
+    font-size: 1.2rem;  
+  }
 }

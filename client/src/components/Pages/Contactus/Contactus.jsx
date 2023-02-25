@@ -1,55 +1,20 @@
 import React from 'react'
 import './contactus.css'
 import TechnicalTeam from './TechnicalTeam'
+
 export default function Contactus() {
   return (
     <div className='contactus-page '>
-    <img src="https://assets.codepen.io/1538474/meteor.svg" style={{marginTop:"80px"}} className="meteor" />
-    <img src="https://assets.codepen.io/1538474/astronaut.svg" className="astronaut" style={{marginTop:"80px"}} />
-    	
-        <div className="contactus-form">
-        <div >    
-        <div >
-          <h1 style={{textAlign:"center",fontSize:"350%" }}>Contact us</h1>
-        </div>
-        <div >
-          <h4 style={{textAlign: 'center'}}>We'd love to hear from you!</h4>
-        </div>
-        {/* <TechnicalTeam/> */}
-        
-        <div className="row contactus-form-box input-container">
-           <h3 className='heading-text'>Message / Suggestions / Feedback</h3>
-          <div className="col-xs-12">
-            <div className="styled-input wide">
-              <input className='input' type="text" required />
-              <label className='label'>Name</label> 
-            </div>
-          </div>
-          <div className="col-md-6 col-sm-12">
-            <div className="styled-input">
-              <input className='input' type="text" required />
-              <label className='label'>Email</label> 
-            </div>
-          </div>
-          <div className="col-md-6 col-sm-12">
-            <div className="styled-input" style={{float: 'right'}}>
-              <input className='input' type="text" required />
-              <label className='label'>Phone Number</label> 
-            </div>
-          </div>
-          <div className="col-xs-12">
-            <div className="styled-input wide">
-              <textarea className='textarea' required defaultValue={""} />
-              <label className='label'>Message</label>
-            </div>
-          </div>
-          <div className="col-xs-12">
-            <div className="btn-lrg submit-btn">Send Message</div>
-          </div>
-        </div>
+      <h1 className='contactus-heading'>Contact Us</h1>
+      <div className="contactus-form">
+        <h1 className='contactus-heading'>Feedback / Message</h1>
+      <input className='contactus-input' type="text" name="Name" placeholder="Name"/>
+      <input className='contactus-input' type="text" name="Subject" placeholder="Subject"/>
+      <input className='contactus-input' type="text" name="Phoneno" placeholder="Phone Number"/>
+      <textarea id="message" name="message" placeholder="Enter your message here..."></textarea>
+      <button className='btn btn-primary'>Submit</button>
       </div>
-        </div>
-
     </div>
   )
 }
+
