@@ -7,12 +7,12 @@ import './newevents.css'
 import Night1 from './Nights/Night1';
 import Night2 from './Nights/Night2';
 import Night3 from './Nights/NIght3';
-
 export default function NewEvents() {
   let { id } = useParams();  
   
   return (
   <div>
+    
     <div>
       {id==="day-1"||!id?<Day1/> :<></>}
       {id==="day-2"?<Day2/> :<></>}

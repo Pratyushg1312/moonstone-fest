@@ -1,7 +1,4 @@
 .contactus-page{
-    /* background-image: url("https://img.freepik.com/premium-vector/city-skylines-night-urban-scene_51486-76.jpg?w=826"); */
-     background-repeat: no-repeat;
-     background-size: cover;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -55,7 +52,7 @@
     pointer-events: none;
 }
 
-.styled-input.wide { 
+.styled-input .wide { 
     width: 750px;
     max-width: 100%;
 }
@@ -110,7 +107,7 @@
 .submit-btn:hover {
     transform: translateY(1px);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-              0 1px 1px 0 rgba(0,0,0,0.09);
+    0 1px 1px 0 rgba(0,0,0,0.09);
 }
 
 @media (max-width: 768px) {
@@ -119,6 +116,7 @@
         float: none;
         text-align:center;
     }
+    
 }
 
 .input[type=checkbox] + label {
@@ -130,3 +128,5 @@
   color: #f00;
   font-style: normal;
 }
+
+

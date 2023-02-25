@@ -4,9 +4,10 @@ import TechnicalTeam from './TechnicalTeam'
 export default function Contactus() {
   return (
     <div className='contactus-page '>
+    <img src="https://assets.codepen.io/1538474/meteor.svg" style={{marginTop:"80px"}} className="meteor" />
+    <img src="https://assets.codepen.io/1538474/astronaut.svg" className="astronaut" style={{marginTop:"80px"}} />
     	
         <div className="contactus-form">
-
         <div >    
         <div >
           <h1 style={{textAlign:"center",fontSize:"350%" }}>Contact us</h1>
@@ -14,10 +15,10 @@ export default function Contactus() {
         <div >
           <h4 style={{textAlign: 'center'}}>We'd love to hear from you!</h4>
         </div>
-        <TechnicalTeam/>
+        {/* <TechnicalTeam/> */}
+        
         <div className="row contactus-form-box input-container">
            <h3 className='heading-text'>Message / Suggestions / Feedback</h3>
-           {/* <Background/> */}
           <div className="col-xs-12">
             <div className="styled-input wide">
               <input className='input' type="text" required />
