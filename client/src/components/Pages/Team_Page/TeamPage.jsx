@@ -32,19 +32,19 @@ export default function TeamPage() {
             </div>
           </div>
         </div> */}
-        <div className="row row-1">
-          <div className="col"><PersonDetail/></div>
-          <div className="col"><PersonDetail/></div>
-          <div className="col"><PersonDetail/></div>
+        <div className="d-flex col flex-wrap justify-content-evenly">
+          <div ><PersonDetail /></div>
+          <div ><PersonDetail /></div>
+          <div ><PersonDetail /></div>
+
+
+
+          {/* <div className="col"><PersonDetail/></div> */}
+          <div ><PersonDetail /></div>
+          <div ><PersonDetail /></div>
         </div>
 
-        <div className="row row-2">
-          {/* <div className="col"><PersonDetail/></div> */}
-          <div className="col"><PersonDetail/></div>
-          <div className="col"><PersonDetail/></div>
-        </div>
-        
-        
+
       </div>
     </div>
   )

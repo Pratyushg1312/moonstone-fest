@@ -3,7 +3,7 @@ import './NewSponsor.css';
 export default function NewSponsor() {
     return (
         <div style={{ color: "white" }}>
-            <div class="container">
+            <div class="containr">
                 <div class="  d-flex row static-column align-items-center justify-content-center ">
                     <h1  className='text-center section-heading'>Our Sponsors</h1>
                     <p className='start-0'>Our sponsors include architects, engineers, contractors, material suppliers, building owners, policymakers, nonprofits, and government organizations, providing a 360-degree view of the challenges we face in the built environment. Their insights and resources are invaluable in accelerating action, in our highly collaborative environment.</p>

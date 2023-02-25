@@ -5,7 +5,7 @@ import Sponsor from './Sponsor'
 import NewSponsor from './NewSponsor'
 export default function Home() {
   return (
-    <div>
+    <div className='container'>
         <Hero/>
       {/* <Sponsor/> */}
       <Events/>

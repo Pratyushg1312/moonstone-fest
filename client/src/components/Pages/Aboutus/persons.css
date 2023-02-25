@@ -1,8 +1,14 @@
 .box{
-  margin: 10px;
-  background-color: aliceblue;
-  /* padding: 3px; */
-  color:#999;
-  border-radius: 5px;
-}
+  
+ text-align: center;
 
+  background-color: aliceblue;
+  padding: 13px;
+  color:#999;
+  
+}
+.abc h1{
+  color:#bfe80b;
+  font-size: 50px;
+  font-family: math;
+}
