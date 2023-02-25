@@ -34,7 +34,10 @@ export default function Aboutus() {
       <h1 className='text-center'>Team</h1>
       <div className="team">
         <TeamPage />
+      <div className="team">
+        <TeamPage/>
       </div>
+    </div>
     </div>
   )
 }

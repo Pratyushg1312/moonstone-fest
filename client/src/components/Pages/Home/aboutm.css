@@ -2,10 +2,6 @@
     margin: 20;
     padding: 20;
     font: 1rem "Source Code Pro", monospace;
-   
-   
-
-  
 }
 .aboutmoon p{
     width: max-content;
@@ -17,9 +13,8 @@
     content: '';
     position: absolute;
     inset: 0;
-  }
-
-  .aboutmoon p::before{
+}
+.aboutmoon p::before{
     background: #061F25;
     animation: typing 5000ms steps(25) 2s forwards;
   }

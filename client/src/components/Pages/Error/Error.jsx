@@ -10,9 +10,9 @@ export default function Error() {
     <p className="subtitle">
       You’re either misspelling the URL <br /> or requesting a page that's no longer here.
     </p>
-    <div align="center">
+    {/* <div align="center">
       <a className="btn-back" href="#">Back to previous page</a>
-    </div>
+    </div> */}
     <img src="https://assets.codepen.io/1538474/astronaut.svg" className="astronaut" />
     <img src="https://assets.codepen.io/1538474/spaceship.svg" className="spaceship" />
   </div>
