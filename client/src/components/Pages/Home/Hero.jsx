@@ -33,12 +33,15 @@ export const Hero = () => {
 
         </Canvas>
       </div>
+        <div className="logotyp-con">
+
         <div className="logo1" onMouseOver={()=>{ changecolor('red')}}  onMouseOut={()=>{changecolor('cyan')}}>
           <img src={logoOnDemand}  class="img-fluid rounded mx-auto d-block p-2"  alt="" />
         </div>
         <div className="typ" onMouseOver={()=>{ changecolor('red')}}  onMouseOut={()=>{changecolor('cyan')}}>
-
           <Aboutmoon/>
+
+        </div>
         </div>
     </div>
   )

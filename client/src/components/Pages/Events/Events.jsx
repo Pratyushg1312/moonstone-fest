@@ -1,62 +1,39 @@
-import React, { useEffect } from 'react'
-import gsap from "gsap";
-import "./Events.css"
+import React, { useEffect, useRef } from "react";
+import "./Events.css";
+import Aos from "aos"
+import 'aos/dist/aos.css'
 function Events() {
-    useEffect(()=>{
-        const divs = document.querySelectorAll(".day-events");
-        gsap.set(divs[1], {x:0, opacity:1});
-        gsap.timeline({repeat: -1, defaults:{duration:2}})
-        .add("one")
-        .to(divs[0], {y:200, x:100, opacity: 1}, "one")
-        .to(divs[1], {y:-350, x:0, opacity: 0.05}, "one")
-        .to(divs[2], {y:-50, x:0, opacity: 0.05}, "one")
-        .add("two")
-        .to(divs[0], {y:600, x:0, opacity: 0.05}, "two")
-        .to(divs[1], {y:0, x:100, opacity: 1}, "two")
-        .to(divs[2], {y:-600, x:0, opacity: 0.05}, "two")
-        .add("three")
-        .to(divs[0], {y:-100, x:0, opacity: 0.05}, "three")
-        .to(divs[1], {y: 300, x:0, opacity: 0.05}, "three")
-        .to(divs[2], {y:-300, x:100, opacity: 1}, "three")
-        
-    },[])
+  useEffect(()=>{
+    Aos.init();
+  },[])
   return (
     <div className="styles-content">
-        <div className="day-events">
-            <div className="styles-container">
-                <div className="image-event-section">
-                    <img src="https://pbs.twimg.com/media/CfKltknUMAMogm6.jpg" alt="" srcset="" />
-                </div>
-                <div className="style-text">
-                    <h1>Day 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate vitae nostrum ut esse modi sequi qui consequuntur autem. Iure maiores placeat, sapiente libero nihil deserunt adipisci ut tenetur quaerat laudantium assumenda, doloribus provident!</p>
-                </div>
-            </div>
+      <h1 className="Events-section">EVENTS</h1>
+      <div className="day-events">
+        <div data-aos="flip-left" data-aos-delay="100" className="styles-container" >
+          <div className="style-text" >
+          <span></span>
+            <img src="https://i.ytimg.com/vi/8s3qx8RP0ak/maxresdefault.jpg" alt="" srcset="" />
+            <h1 data-text="Day 1">Day 1</h1>
+          </div>
         </div>
-        <div className="day-events">
-            <div className="styles-container">
-                <div className="image-event-section">
-                    <img src="https://pbs.twimg.com/media/CfKltknUMAMogm6.jpg" alt="" srcset="" />
-                </div>
-                <div className="style-text">
-                    <h1>Day 2</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate vitae nostrum ut esse modi sequi qui consequuntur autem. Iure maiores placeat, sapiente libero nihil deserunt adipisci ut tenetur quaerat laudantium assumenda, doloribus provident!</p>
-                </div>
-            </div>
+        <div data-aos="flip-left" data-aos-delay="200" className="styles-container" >
+          <div className="style-text">
+          <span></span>
+          <img src="https://i.ytimg.com/vi/8s3qx8RP0ak/maxresdefault.jpg" alt="" srcset="" />
+            <h1>Day 2</h1>
+          </div>
         </div>
-        <div className="day-events">
-            <div className="styles-container">
-                <div className="image-event-section">
-                    <img src="https://pbs.twimg.com/media/CfKltknUMAMogm6.jpg" alt="" srcset="" />
-                </div>
-                <div className="style-text">
-                    <h1>Day 3</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate vitae nostrum ut esse modi sequi qui consequuntur autem. Iure maiores placeat, sapiente libero nihil deserunt adipisci ut tenetur quaerat laudantium assumenda, doloribus provident!</p>
-                </div>
-            </div>
+        <div data-aos="flip-left" data-aos-delay="300"  className="styles-container">
+          <div className="style-text" >
+            <span></span>
+          <img src="https://i.ytimg.com/vi/8s3qx8RP0ak/maxresdefault.jpg" alt="" srcset="" />
+            <h1>Day 3</h1>
+          </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Events
+export default Events;

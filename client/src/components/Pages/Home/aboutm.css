@@ -4,11 +4,9 @@
   max-width: 30%;
     padding:0;
     font: 1rem "Source Code Pro", monospace;
+    left: 50%;
    
-    position:absolute;
-    left: 65%;
-    top:45%;
-    /* border: 5px solid red; */
+   
 
   
 }
@@ -17,7 +15,6 @@
     position: relative;
     color: #07d170;
 }
-
 
 
  
