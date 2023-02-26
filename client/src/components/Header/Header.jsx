@@ -2,40 +2,72 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./header.css";
 export default function Header() {
-  
-  const [display, setDisplay] = useState(window.innerWidth > 1024? true : false);
+  const [display, setDisplay] = useState(
+    window.innerWidth > 1024 ? true : false
+  );
+  const [view, setView] = useState(true);
   return (
-    <div style={{paddingBottom:"70px"}} >
-    <div className="nav-header" style={{backgroundColor:"#061F25"}}>
-      {/* <div id="stars"></div> */}
-      <div className="header-bar">
-        <div className="header-img-container">
-          <NavLink to="/">
-            <img src="./images/medicaps.png" alt="" width={"80px"} />
-          </NavLink>
-          {display ? (
-            <p className="cross" onClick={() => setDisplay(!display)}>
-              X
-            </p>
-          ) : (
-            <div className="burger" onClick={() => setDisplay(!display)}>
-              <div className="line"></div>
-              <div className="line"></div>
-            </div>
-          )}
+    <div className="nav-header" style={{ backgroundColor: "#061F25" }}>
+      {display ? (
+        <div className="header-bar">
+          <div className="header-container">
+            <li>
+              <NavLink to="/aboutus">About Us</NavLink>
+            </li>
+            <li>
+              <NavLink to="/events">Events</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">
+                <img
+                  className="logo-img"
+                  src="./images/logomoon.jpeg"
+                  alt=""
+                  width={"80px"}
+                />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/ourteam">Glimpses</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contactus">Contact</NavLink>
+            </li>
+          </div>
         </div>
-        {display ? <div className="nav-items">
-          <div className="item1">
-            <NavLink to="/aboutus">About Us</NavLink>
-            <NavLink to="/events">Events</NavLink>
-            <NavLink to="/ourteam">Our Team</NavLink>
+      ) : (
+        <div className="R-header-bar">
+          <div className="Responsive-header">
+            <NavLink to="/">
+              <img
+                className="logo-img"
+                src="./images/logomoon.jpeg"
+                alt=""
+                width={"80px"}
+              />
+            </NavLink>
+            {view ?(<p className="cross" onClick={()=>setView(!view)}> X </p>) : 
+            (<div className="burger" onClick={()=>setView(!view)}>
+              <div className="line"></div>
+              <div className="line"></div>
+            </div>)}
           </div>
-          <div className="item2">
-            <NavLink to="/contactus">Contact</NavLink>
-          </div>
-        </div>:<></>}
-      </div>
-      </div>
+          {view?(<div className="R-header-container">
+            <li>
+              <NavLink to="/aboutus">About Us</NavLink>
+            </li>
+            <li>
+              <NavLink to="/events">Events</NavLink>
+            </li>
+            <li>
+              <NavLink to="/ourteam">Glimpses</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contactus">Contact</NavLink>
+            </li>
+          </div>):(<></>)}
+        </div>
+      )}
     </div>
   );
 }
