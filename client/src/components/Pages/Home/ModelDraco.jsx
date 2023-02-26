@@ -7,25 +7,49 @@ Source: https://sketchfab.com/3d-models/lune-ecf0a02b8151418689e78abec4f94b96
 Title: LUNE
 */
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useGLTF} from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
+import { Blending, BoxGeometry, MeshStandardMaterial } from 'three';
+import { degToRad } from 'three/src/math/MathUtils';
+import {OrbitControls, PerspectiveCamera} from '@react-three/drei'
 export function Model(props) {
   const { nodes, materials } = useGLTF('/modelDraco.gltf')
   const group=useRef();
-  useFrame(() => (group.current.rotation.x += 0.001));
+  useFrame(() => (group.current.rotation.x+= 0.001));
+  const obr=useRef();
+  useFrame((state)=>{
+      const {x,y}=state.mouse;
+      obr.current.setAzimuthalAngle(-x * degToRad(90));
+      obr.current.setPolarAngle((y+0.5)* degToRad(90-30));
+      obr.current.update();
+      
+   
+  })
+  
   
   
   return (
     
-
-    <group ref={group} {...props} dispose={null} scale={3} >
+<>
+<PerspectiveCamera makeDefault position={[0,1,7]}/>
+<OrbitControls ref={obr} minPolarAngle={degToRad(60)} maxPolarAngle={degToRad(80) } enableZoom={false} />
+    <group ref={group} {...props} dispose={null} scale={1} position={[0,1.3,0]} >
+<ambientLight intensity={3}  color={props.colorr} />
       
       
       <mesh geometry={nodes.lune_luna_0.geometry} material={materials.luna} />
       <mesh geometry={nodes.lune_luna_0_1.geometry} material={materials.luna} />
       <mesh geometry={nodes.lune_luna_0_2.geometry} material={materials.luna} />
     </group>
+<pointLight  position={[0,1,0]} intensity={1} color={props.colorr} decay={0} distance={1} />
+
+    <mesh rotation={[-(degToRad(90)),0,0]} >
+      <boxGeometry args={[3,3,0.3]} />
+     <meshPhysicalMaterial color="#021F25"  metalness={0.5} clearcoat={.5} roughness={1}/>
+    </mesh>
+    
+</>
   
     
   )
