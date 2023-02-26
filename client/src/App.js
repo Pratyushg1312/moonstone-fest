@@ -13,6 +13,7 @@ import SingleDay from './components/Pages/SingleEvent/SingleDay';
 import NewEvents from "./components/Pages/NewEvents/NewEvents";
 import Error from "./components/Pages/Error/Error";
 import Parallax from "./components/Pages/Parallax/Parallax";
+import Glimpes from "./components/Pages/Home/Glimpes";
 function App() {
   return (
     <div >
@@ -27,6 +28,7 @@ function App() {
         <Route  path='/SingleDay' element={<SingleDay/> }/>
         <Route  path='/SingleDay/SingleEvent' element={<SingleEvent/> }/>
         <Route  path='/parallax' element={<Parallax/> }/>
+        <Route  path='/Glimpes' element={<Glimpes/> }/>
         <Route  path='*' element={<Error/> }/>
       </Routes>
       <Footer/>
