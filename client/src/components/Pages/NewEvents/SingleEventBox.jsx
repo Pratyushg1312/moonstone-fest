@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
 export default function SingleEventBox() {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   return (
     <div className='single-event'>
         <h3>Event name</h3>  
