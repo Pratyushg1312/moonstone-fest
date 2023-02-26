@@ -26,8 +26,8 @@ export default function Abouthero() {
             <article id="neptune-trajectory"></article>
           </section>
           <div className="moonstone-content">
-      <h1 style={{ textAlign: "center"  }}>About Moonstone </h1>
-            <h5 style={{color:"rgb(242, 210, 168)"}}>
+      <h1 style={{ textAlign: "center" ,color:'#07D685' }}>About Moonstone </h1>
+            <h5 style={{color:"#56ffc7"}}>
               Medicaps University is a distinguished educational institution
               that has been providing quality education for 22 years. The
               university is known for promoting research, encouraging innovative

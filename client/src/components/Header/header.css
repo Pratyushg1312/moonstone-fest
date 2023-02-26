@@ -3,8 +3,11 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    border-bottom: #00FFD1 2px solid;
 }
+
 .header-bar{
+   
     width: 80%;
     padding: 10px 20px;
     display: flex;
@@ -41,11 +44,15 @@
 }
 .header-container li a, .R-header-container li a{
     color: #00FFD1;
+    
     text-decoration: dashed;
     /* font-family: "poppins"; */
     font-size: 20px;
     font-weight: 600;
 }
+/* .header-container li a:active{
+    color: aliceblue;
+} */
 .logo-img{
     width: 100px;
 }

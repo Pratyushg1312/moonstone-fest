@@ -14,10 +14,12 @@
     align-items: center;
     position: relative;
 }
+
 .Events-section{
-    color: #bfe80b;
+    color: #07D685;
     font-size: 50px;
     font-weight: bold;
+    
     /* font-family: "poppins"; */
     position: relative;
     /* padding: 40px 0; */
@@ -26,12 +28,12 @@
 }
 .Events-section::after{
     content: "";
-    width: 15% ;
+    width: 125% ;
     height: 2px;
-    background-color: #bfe80b;
+    background-color: #07D685;
     position: absolute;
     bottom: -10px;
-    left: 10px;
+    
 }
 .styles-container{
     width: 33.33%;
@@ -67,9 +69,9 @@
     right: -4px;
     bottom: -4px;
     transform: skewX(2deg) skewY(4deg);
-    background: linear-gradient(315deg, #00ccff, #0e1538, #d400d4);
+    background: linear-gradient(315deg, #00ccff, #0e1538, rgb(0, 255, 208));
 }
-.style-text::after{
+.style-text:hover::after{
     content: "";
     position: absolute;
     top: -4px;
@@ -77,8 +79,14 @@
     right: -4px;
     bottom: -4px;
     transform: skewX(2deg) skewY(4deg);
-    background: linear-gradient(315deg, #00ccff, #0e1538, #d400d4);
+    background: linear-gradient(315deg,rgb(0, 255, 208) , #0e1538, #00ccff);
     filter: blur(50px);
+}
+.style-text:hover::after{
+    background: linear-gradient(315deg, rgb(0, 255, 208), #0e1538,#00ccff );
+}
+.style-text:hover::before{
+    background: linear-gradient(315deg, rgb(0, 255, 208), #0e1538,#00ccff );
 }
 .style-text img{
     position: absolute;
