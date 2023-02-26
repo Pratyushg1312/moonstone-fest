@@ -6,7 +6,6 @@ import SingleContentForm from './SingleContentForm';
 export default function Registration() {
   const [content, setcontent] = useState({"name":"","phoneno":"","email":"","event":""});
   const [idx,setidx]=useState(0);
-
   const [login,setlogin]=useState(false);
   return (
     <div className='registration-form'>
