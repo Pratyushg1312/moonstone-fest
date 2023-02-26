@@ -1,91 +1,33 @@
-import React, { useEffect } from "react";
-import gsap from "gsap";
+import React, { useEffect, useRef } from "react";
 import "./Events.css";
+import Aos from "aos"
+import 'aos/dist/aos.css'
 function Events() {
-  // useEffect(() => {
-  //   const divs = document.querySelectorAll(".day-events");
-  //   gsap.set(divs[1], {x: 0, opacity: 1 });
-  //   gsap
-  //     .timeline({ repeat: -1, defaults: { duration: 6} })
-  //     .add("one")
-  //     .to(divs[0], { y: -200, x: 0, opacity: 1 }, "one")
-  //     .to(divs[1], { y: -450, x: 0, opacity: 0}, "one")
-  //     .to(divs[2], { y: 50, x: 0, opacity: 0}, "one")
-  //     .add("two")
-  //     .to(divs[0], { y: 50, x: 0, opacity: 0}, "two")
-  //     .to(divs[1], { y: -200, x: 0, opacity: 1 }, "two")
-  //     .to(divs[2], { y: -450, x: 0, opacity: 0}, "two")
-  //     .add("three")
-  //     .to(divs[0], { y: -450, x: 0, opacity: 0}, "three")
-  //     .to(divs[1], { y: 50, x: 0, opacity: 0 }, "three")
-  //     .to(divs[2], { y: -200, scaleX: 0, opacity: 1 }, "three");
-  // }, []);
+  useEffect(()=>{
+    Aos.init();
+  },[])
   return (
-    // <div className="eventSection">
-    //   <div className="wrapper">
-    //     <div className="outer">
-    //       <div className="card" style={{"--delay": -1}}>
-    //         <div className="content">
-    //           <div className="img">
-    //             <img
-    //               src="https://pbs.twimg.com/media/CfKltknUMAMogm6.jpg"
-    //               alt=""
-    //             />
-    //           </div>
-    //           <div className="details">
-    //             <span className="name">Sumit Kapoor</span>
-    //             <p>Frontend Developer</p>
-    //           </div>
-    //         </div>
-    //         <a href="#">Follow</a>
-    //       </div>
-    //       <div className="card" style={{"--delay": 0}}>
-    //         <div className="content">
-    //           <div className="img">
-    //             <img
-    //               src="https://pbs.twimg.com/media/CfKltknUMAMogm6.jpg"
-    //               alt=""
-    //             />
-    //           </div>
-    //           <div className="details">
-    //             <span className="name">Sumit Kapoor</span>
-    //             <p>Frontend Developer</p>
-    //           </div>
-    //         </div>
-    //         <a href="#">Follow</a>
-    //       </div>
-    //       <div className="card" style={{"--delay": 1}}>
-    //         <div className="content">
-    //           <div className="img">
-    //             <img
-    //               src="https://pbs.twimg.com/media/CfKltknUMAMogm6.jpg"
-    //               alt=""
-    //             />
-    //           </div>
-    //           <div className="details">
-    //             <span className="name">Sumit Kapoor</span>
-    //             <p>Frontend Developer</p>
-    //           </div>
-    //         </div>
-    //         <a href="#">Follow</a>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
     <div className="styles-content">
+      <h1 className="Events-section">EVENTS</h1>
       <div className="day-events">
-        <div className="styles-container">
-          <div className="style-text">
+        <div data-aos="flip-left" data-aos-delay="100" className="styles-container" >
+          <div className="style-text" >
+          <span></span>
+            <img src="https://i.ytimg.com/vi/8s3qx8RP0ak/maxresdefault.jpg" alt="" srcset="" />
             <h1 data-text="Day 1">Day 1</h1>
           </div>
         </div>
-        <div className="styles-container">
+        <div data-aos="flip-left" data-aos-delay="200" className="styles-container" >
           <div className="style-text">
+          <span></span>
+          <img src="https://i.ytimg.com/vi/8s3qx8RP0ak/maxresdefault.jpg" alt="" srcset="" />
             <h1>Day 2</h1>
           </div>
         </div>
-        <div className="styles-container">
-          <div className="style-text">
+        <div data-aos="flip-left" data-aos-delay="300"  className="styles-container">
+          <div className="style-text" >
+            <span></span>
+          <img src="https://i.ytimg.com/vi/8s3qx8RP0ak/maxresdefault.jpg" alt="" srcset="" />
             <h1>Day 3</h1>
           </div>
         </div>
