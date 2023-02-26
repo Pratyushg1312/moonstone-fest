@@ -3,27 +3,278 @@ import "./Parallax.css"
 function Parallax() {
     return (
         <>
-            <section class="section-background parallax">
-                <h2>Desert</h2>
+            <section className="section-background parallax">
+                <h2>Day 1(Day)</h2>
+                <div className="card-bunch">
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="text-bloc">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</p>
+            <section className="section-background parallax3">
+                <h2>Day 1(Night)</h2>
+                <div className="card-bunch">
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="section-background parallax1">
-                <h2>Mountain</h2>
+            <section className="section-background parallax">
+                <h2>Day 2(Day)</h2>
+                <div className="card-bunch">
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="text-bloc">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</p>
+            <section className="section-background parallax3">
+                <h2>Day 2(Day)</h2>
+                <div className="card-bunch">
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="section-background parallax2">
-                <h2>Sea</h2>
+            <section className="section-background parallax">
+                <h2>Day 3(Day)</h2>
+                <div className="card-bunch">
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="section-background parallax3">
-                <h2>Galaxy</h2>
+            <section className="section-background parallax3">
+                <h2>Day 3(Night)</h2>
+                <div className="card-bunch">
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-event">
+                        <div className="img-box-events">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg" alt="" srcset="" />
+                        </div>
+                        <div className="details-events">
+                            <div className="content-events">
+                                <h3 style={{ color: "black" }}>Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            </>
-            )
+        </>
+    )
 }
 
 export default Parallax
