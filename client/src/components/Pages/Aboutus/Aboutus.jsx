@@ -28,15 +28,13 @@ export default function Aboutus() {
       <div className="text-center my-4">
         <h1>Officials</h1>
       </div>
-      <div className='container my-4'>
+      <div className='container '>
         <Persons />
       </div>
-      <h1 className='text-center'>Team</h1>
+      <h1 className='text-center my-4'>Team</h1>
       <div className="team">
         <TeamPage />
-      <div className="team">
-        <TeamPage/>
-      </div>
+      
     </div>
     </div>
   )
