@@ -1,6 +1,9 @@
 .aboutherosection{
     /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3c/Main_block1.jpg'); */
     background-position: center;
+    left:0px;
+    
+    position:relative;
     /* background-size: 100%; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,6 +49,7 @@
 .person{
     margin: 40px 20px 10px 40px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
