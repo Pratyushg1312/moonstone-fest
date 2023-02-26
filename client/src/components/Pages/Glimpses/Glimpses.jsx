@@ -3,19 +3,32 @@ import "./Glimpses.css"
 
 export default function Glimpses() {
   return (
-    <div className='G-container'>
+    <div className='G-maincontainer'>
+      <div className="g-container">
       <div className="g-heading">
         <h1>Glimpses</h1>
       </div>
-      <div className="g-images">
-        <div className="img img-1"><img src="" alt="" /> img</div>
-        <div className="img img-2"><img src="" alt="" /> img</div>
-        <div className="img img-3"><img src="" alt="" /> img</div>
-        <div className="img img-4"><img src="" alt="" /> img</div>
-        <div className="img img-5"><img src="" alt="" /> img</div>
-        <div className="img img-6"><img src="" alt="" /> img</div>
+      <div className="grid-wrapper">
+       
+        <div className="item"><img src="./images/danceEvent.jpeg" alt="" /> </div>
+        <div className="item"><img src="./images/eventimage.jpeg" alt="" /> </div>
+        <div className="tall"><img src="./images/danceEvent.jpeg" alt="" /> </div>
+        <div className="wide"><img src="./images/bandEvent.jpg" alt="" /></div>
+        
+        <div className="item"><img src="./images/bikeEvent.jpg" alt="" /></div>
+        <div className="tall"><img src="./images/danceEvent.jpeg" alt="" /></div>
+        <div className="big"><img src="./images/eventimage.jpeg" alt="" /></div>
+        <div className="item"><img src="./images/danceEvent.jpeg" alt="" /></div>
+        <div className="item"><img src="./images/danceEvent.jpeg" alt="" /></div>
+        <div className="wide"><img src="./images/bikeEvent.jpg" alt="" /></div>
+        
+        
+        <div className="big"><img src="./images/danceEvent.jpeg" alt="" /></div>
+        <div className="tall"><img src="./images/bikeEvent.jpg" alt="" /></div>
+        <div className="item"><img src="./images/danceEvent.jpeg" alt="" /></div>
+        <div className="item"><img src="./images/danceEvent.jpeg" alt="" /></div>
       </div>
-      
+      </div>
     </div>
   )
 }
