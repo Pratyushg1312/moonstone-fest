@@ -12,6 +12,8 @@ import Events from "./components/Pages/Events/Events";
 import SingleDay from './components/Pages/SingleEvent/SingleDay';
 import NewEvents from "./components/Pages/NewEvents/NewEvents";
 import Error from "./components/Pages/Error/Error";
+import Glimpses from "./components/Pages/Glimpses/Glimpses"
+import Parallax from "./components/Pages/Parallax/Parallax";
 function App() {
   return (
     <div >
@@ -25,7 +27,9 @@ function App() {
         <Route  path='/registration' element={<Registration/> }/>
         <Route  path='/SingleDay' element={<SingleDay/> }/>
         <Route  path='/SingleDay/SingleEvent' element={<SingleEvent/> }/>
+        <Route  path='/parallax' element={<Parallax/> }/>
         <Route  path='*' element={<Error/> }/>
+        <Route  path='/glimpses' element={<Glimpses/> }/>
       </Routes>
       <Footer/>
     </div>
