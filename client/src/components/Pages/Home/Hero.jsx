@@ -17,12 +17,8 @@ export const Hero = () => {
 
   return (
     <div className="hero-con">
-
       <div className='hero'>
         <Canvas  >
-
-
-
           {/* <pointLight position={[0,0,0]} intensity={1} color="cyan" castShadow/> */}
 
           {/* <ambientLight intensity={1} /> */}
@@ -30,19 +26,16 @@ export const Hero = () => {
             <Model ref={Model }  colorr={colorr}/>
             {/* <Model/> */}
           </Suspense>
-
         </Canvas>
       </div>
-        <div className="logotyp-con">
-
-        <div className="logo1" onMouseOver={()=>{ changecolor('red')}}  onMouseOut={()=>{changecolor('cyan')}}>
+      <div className="logotyp-con">
+        <div className="logo1" onMouseOver={()=>{ changecolor('#00ccff')}}  onMouseOut={()=>{changecolor('cyan')}}>
           <img src={logoOnDemand}  class="img-fluid rounded mx-auto d-block p-2"  alt="" />
         </div>
-        <div className="typ" onMouseOver={()=>{ changecolor('red')}}  onMouseOut={()=>{changecolor('cyan')}}>
+        <div className="typ" onMouseOver={()=>{ changecolor('#00ccff')}}  onMouseOut={()=>{changecolor('cyan')}}>
           <Aboutmoon/>
-
         </div>
-        </div>
+      </div>
     </div>
   )
 }
