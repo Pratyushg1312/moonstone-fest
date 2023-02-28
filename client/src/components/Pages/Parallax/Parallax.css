@@ -21,11 +21,6 @@
   height: 100vh;
   width: 100%;
   color: #FFFFFF;
-  /* border: 2px solid white; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
 }
 .card-bunch{
   /* border: 2px solid white; */
@@ -61,7 +56,6 @@
 .parallax2 {
   background-image: url("https://images.unsplash.com/photo-1562095241-8c6714fd4178?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA5OTg&ixlib=rb-1.2.1&q=80");
 }
-
 .parallax3 {
   background-image: url("https://images.unsplash.com/photo-1543722530-d2c3201371e7?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTExOTg&ixlib=rb-1.2.1&q=80");
 }
