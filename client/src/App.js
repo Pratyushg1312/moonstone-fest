@@ -15,9 +15,11 @@ import Error from "./components/Pages/Error/Error";
 import Glimpses from "./components/Pages/Glimpses/Glimpses"
 import Parallax from "./components/Pages/Parallax/Parallax";
 import Glimpes from "./components/Pages/Home/Glimpes";
+import { Cursor } from "./Cursor";
 function App() {
   return (
     <div >
+      <Cursor/>
       <Header/>
       <Routes>
         <Route exact path='/' element={<Home/> }/>

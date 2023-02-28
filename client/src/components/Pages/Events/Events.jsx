@@ -8,7 +8,10 @@ function Events() {
   }, []);
   return (
     <div className="styles-content">
+      <div className="eventcen">
+
       <h1 className="Events-section">EVENTS</h1>
+      </div>
       <div className="day-events">
         <div
           data-aos="flip-left"

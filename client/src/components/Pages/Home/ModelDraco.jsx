@@ -32,9 +32,9 @@ export function Model(props) {
   return (
     
 <>
-<PerspectiveCamera makeDefault position={[0,1,7]}/>
+<PerspectiveCamera makeDefault position={[0,1,5.5 ]}/>
 <OrbitControls ref={obr} minPolarAngle={degToRad(60)} maxPolarAngle={degToRad(80) } enableZoom={false} />
-    <group ref={group} {...props} dispose={null} scale={1} position={[0,1.3,0]} >
+    <group ref={group} {...props} dispose={null} scale={1} position={[0,0.8,0]} >
 <ambientLight intensity={3}  color={props.colorr} />
       
       
@@ -42,9 +42,9 @@ export function Model(props) {
       <mesh geometry={nodes.lune_luna_0_1.geometry} material={materials.luna} />
       <mesh geometry={nodes.lune_luna_0_2.geometry} material={materials.luna} />
     </group>
-<pointLight  position={[0,1,0]} intensity={1} color={props.colorr} decay={0} distance={1} />
+<pointLight  position={[0,0,0]} intensity={1} color={props.colorr} decay={0} distance={1} />
 
-    <mesh rotation={[-(degToRad(90)),0,0]} >
+    <mesh rotation={[-(degToRad(90)),0,0] } position={[0,-0.5,0]} >
       <boxGeometry args={[3,3,0.3]} />
      <meshPhysicalMaterial color="#021F25"  metalness={0.5} clearcoat={.5} roughness={1}/>
     </mesh>

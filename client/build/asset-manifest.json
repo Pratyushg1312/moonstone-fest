@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.1434808f.css",
-    "main.js": "/static/js/main.c876eec1.js",
+    "main.css": "/static/css/main.eb0dbf50.css",
+    "main.js": "/static/js/main.5dde2066.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/logoOnDemand.png": "/static/media/logoOnDemand.ac4e6eac67f3b5c57524.png",
     "index.html": "/index.html",
-    "main.1434808f.css.map": "/static/css/main.1434808f.css.map",
-    "main.c876eec1.js.map": "/static/js/main.c876eec1.js.map",
+    "main.eb0dbf50.css.map": "/static/css/main.eb0dbf50.css.map",
+    "main.5dde2066.js.map": "/static/js/main.5dde2066.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1434808f.css",
-    "static/js/main.c876eec1.js"
+    "static/css/main.eb0dbf50.css",
+    "static/js/main.5dde2066.js"
   ]
 }
