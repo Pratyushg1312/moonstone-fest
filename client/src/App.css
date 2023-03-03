@@ -1,0 +1,33 @@
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #aff6ff;
+  
+}
+
+.cursor-dot-outline {
+  width: 20px;
+  height: 20px;
+  background-color: #aff6ffa2;
+  /* background-image: url(./images/mooncurse.png); */
+
+}
+*{
+    cursor: none;
+  }
+body{
+    background-image: url(https://vinhack.vinnovateit.com/texture.svg);
+}

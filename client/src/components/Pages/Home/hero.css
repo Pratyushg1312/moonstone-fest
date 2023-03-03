@@ -1,25 +1,62 @@
-.hero{
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=IBM+Plex+Sans+Condensed&family=Raleway:wght@600&display=swap');
+
+.hero-con {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    /* border: 5px solid whitesmoke; */
+    /* align-items: center; */
     position: relative;
-    display:flex;
-    height:100vh;
-       /* border: 5px solid red; */
-    justify-content: center;
+}
+.hero {
+    display: flex;
+    /* border: 5px solid red; */
+    height: 100vh;
+    width: 60%;
     align-items: center;
+    justify-content: center;
+    /* width: 60vw; */
+    /* position: absolute; */
 }
-.logo1{
-    position: absolute;
-   
+.logotyp-con{
+    /* border: 5px solid yellowgreen; */
+    width: 40%;
 }
-.logo1 p{
-  
-    color: #07d170;
-    font-size: 4em;
-    text-shadow: 2px 5px 0px #0f5132;
+/* .logo1 {
+    border: 5px solid purple;
+} */
+.logo1 img {
+    width: 500px;
 }
-
-
-.typ{
-    position: absolute;
+/* .typ {
+    border: 5px solid blue;
+    /* position: absolute;
     left: 65%;
-    top:60%
+    top: 60%;
+    /* border: 5px solid red; *
+    display: contents; *
+} */
+
+@media screen and (max-width: 600px) {
+    .hero-con{
+        display: flex;
+        /* flex-direction: row; */
+    }
+    .hero {
+        display: flex;
+        /* border: 5px solid red; */
+        height: 70vh;
+        width: 100%;
+    }
+    .logo1 {
+        display: none;
+    }
+    /* .typ{
+        display: none; 
+    } */
+    .logotyp-con{
+        border: 5px solid yellowgreen;
+        width: 100%;
+    }
 }

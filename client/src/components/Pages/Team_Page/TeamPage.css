@@ -9,8 +9,9 @@
 }
 
 .card-center{
-    /* border: 4px solid lightgreen; */
+    border: 4px solid lightgreen;
     width: 80%;
+    flex-wrap: wrap;
     /* padding: 5px; */
     /* display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -58,7 +59,7 @@
     /* border: 2px solid white; */
     /* position: relative; */
     width: 100%;
-    height: 406px;
+    height: 78%;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     /* background: purple; */
@@ -87,11 +88,11 @@
 
 .team-card-img-top  {
     /* vertical-align: middle; */
-    width: 80%;
+    /* width: 80%; */
     border-radius: 115px;
     margin-top: 30px;
     /* overflow-clip-margin: content-box;
-    overflow: clip; */    
+    overflow: clip;     */
 }
 
 .card-text {
@@ -113,31 +114,33 @@
 .back {
     /* position: absolute; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     backface-visibility: hidden;
     background: #D9F3F4;
     color: black;
     transform: rotateY(180deg);
     border-radius: 15px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
-
+    /* align-items: center; */
+    flex-wrap: wrap;
+    border: 4px solid red;
     
 }
 
 .back p {
+    border: 2px solid black;
     margin: 20px;
     font-family: poppins;
-    font-size: 18px;
+    font-size: 100%;
 }
 
 .follow-us{
 	margin-top:25px;
     padding: 0;
     width: fit-content;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     /* display: flex; */
     /* justify-content: center; */
 }
@@ -156,4 +159,11 @@
 .follow-us li .fa:hover{ 
     color:#025a8e;
  }
+
+ @media screen and (max-width: 800px) {
+    .person-card {
+      flex: 100%;
+    }
+ }
+
 

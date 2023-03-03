@@ -7,8 +7,8 @@ import Temp from './Temp'
 export default function Home() {
   return (
     <div>
-      <Temp/>
-        {/* <Hero/> */}
+      {/* <Temp/> */}
+        <Hero/>
       {/* <Sponsor/> */}
       <Events/>
       <NewSponsor/>

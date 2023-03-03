@@ -1,38 +1,23 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
 .aboutmoon{
-    margin: 20;
-    padding: 20;
-    font: 1rem "Source Code Pro", monospace;
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 30%; */
+  font: 1rem "Source Code Pro", monospace;
+  /* left: 50%; */
+  padding:2rem;
 }
 .aboutmoon p{
-    width: max-content;
-    position: relative;
-    color: #07d170;
-}
-
-.aboutmoon p::before, .aboutmoon p::after{
-    content: '';
-    position: absolute;
-    inset: 0;
-}
-.aboutmoon p::before{
-    background: #061F25;
-    animation: typing 5000ms steps(25) 2s forwards;
-  }
-
-  .aboutmoon p::after{
-    width: .2rem;
+  /* width: max-content; */
+  /* position: relative; */
+  color: #56ffc7;
+  font-family: raleway;
+  font-size: 17px;
+  text-align: right;
     
-    animation: typing 5000ms steps(25) 2s forwards, blink 800ms infinite;
-  }
+}
 
-  @keyframes typing{
-    to{
-      left: 100%;
-    }
-  }
-  
-  @keyframes blink{
-    to{
-      background: transparent;
-    }
-  }
+
+ 

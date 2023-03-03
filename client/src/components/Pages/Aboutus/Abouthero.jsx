@@ -2,8 +2,7 @@ import React from "react";
 import "./abouthero.css";
 export default function Abouthero() {
   return (
-    <div className="herobody">
-      <h1 style={{ textAlign: "center" }}>About US</h1>
+    <div className="herobody my-5">
       <div className="about-hero-section">
         <div className="about-container">
           <section id="solar-system">
@@ -27,7 +26,8 @@ export default function Abouthero() {
             <article id="neptune-trajectory"></article>
           </section>
           <div className="moonstone-content">
-            <p>
+      <h1 style={{ textAlign: "center" ,color:'#07D685' }}>About Moonstone </h1>
+            <h5 style={{color:"#56ffc7"}}>
               Medicaps University is a distinguished educational institution
               that has been providing quality education for 22 years. The
               university is known for promoting research, encouraging innovative
@@ -45,7 +45,7 @@ export default function Abouthero() {
               in this exhilarating weekend filled with entertainment, learning,
               and discovery. Let us celebrate the power of community and the
               spirit of creativity that the university epitomises. 
-            </p>
+            </h5>
           </div>
         </div>
       </div>

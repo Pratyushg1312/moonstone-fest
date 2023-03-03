@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "new-folder",
   "version": "1.0.0",
   "description": "",
@@ -21,4 +22,22 @@
     "react-bootstrap": "^2.7.0",
     "react-router-dom": "^6.8.1"
   }
+=======
+    "name": "new-folder",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "author": "Vishal Sharma",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "nodemon": "^2.0.20",
+        "path": "^0.12.7"
+    }
+>>>>>>> f48e4cc29902faeef1b81aee1ca297e1a9e96a2d
 }
