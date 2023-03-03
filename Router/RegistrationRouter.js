@@ -24,8 +24,8 @@ router.post("/registeruser", async (req, res) => {
         //increase Registration count
         const oldcnt= await Count.find();
         let cntstatus=await Count.findOneAndUpdate({_id:oldcnt[0]._id},{user:oldcnt[0].user,registration:oldcnt[0].registration+1});
-        let eventstatus = await User.findOne({event});
-
+        
+        let eventstatus = await Event.findOne({event});
         const newRegistration = new Registration({reg_id:oldcnt[0].registration+1,name, phoneno, email,date_of_birth, gender, event,college,date_added:new Date(),utr,payment_status:"Pending",fees:eventstatus.fees});
         newRegistration .save()
             .then(() => res.json("Registration Added!"))

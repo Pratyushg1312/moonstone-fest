@@ -14,6 +14,18 @@ router.get("/allregistration", async (req, res) => {
       }
 });
 
+router.get("/permitregistration/:id", async (req, res) => {
+  const Id= req.params.id;
+  try {
+      Registration.findOne({event:Id})
+      .then((user) => res.json(user))
+      .catch((err) => res.status(400).json("Error: " + err));
+  } catch (err) {
+      console.error(err);
+      res.status(200).send("Error: "+err);
+    }
+});
+
 router.get("/paymentcompleted/:id", async (req, res) => {
     const Id= req.params.id;
     try {
@@ -36,11 +48,11 @@ router.get("/paymentfailed/:id", async (req, res) => {
       }
 });
 
-router.post("/addevent/", async (req, res) => {
+router.post("/addevent", async (req, res) => {
     try {
         const {event,fees,status}=req.body;
         const newEvent = new Event({event,fees,status});
-        newEvent .save()
+        newEvent.save()
             .then(() => res.json("Event Added!"))
             .catch((err) => res.status(400).json("Error: " + err));  
       } catch (err) {
