@@ -10,16 +10,16 @@ router.post("/registeruser", async (req, res) => {
         if(!name||!phoneno||!email||!gender||!event||!college||!utr){
             res.status(400).json("Error: Invalid Input");
         }
-        else if(utr==="NA"||utr==="N/A"||utr==="Na"||utr==="na"){
-            //nothing to check
-        }
-        else{
-           utrstatus = await User.findOne({utr});            
-        }
+        // else if(utr==="NA"||utr==="N/A"||utr==="Na"||utr==="na"){
+        //     //nothing to check
+        // }
+        // else{
+        //    utrstatus = await Registration.findOne({utr});            
+        // }
 
-        if(utrstatus.length!==0){
-            res.status(200).send("Already Present");
-        }        
+        // if(utrstatus.length!==0){
+        //     res.status(200).send("Already Present");
+        // }        
         else{
         //increase Registration count
         const oldcnt= await Count.find();

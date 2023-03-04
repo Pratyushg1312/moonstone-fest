@@ -1,6 +1,9 @@
 import React from 'react'
+import {useNavigate} from "react-router-dom"
+import axios from "axios";
 
 export default function Qrcode(props) {
+  const navigate=useNavigate()
   var s=props.to_find;
   const handleChange = e => {
     const { name, value } = e.target
@@ -9,13 +12,19 @@ export default function Qrcode(props) {
         [name]: value
     })
   }
+  
+  const aftersubmit=()=>{
+    alert("Form Recived");
+    navigate("/");    
+  }
   const submitit=()=>{
-    if (props.content[s].length==0) {      
+    if (props.content[s].length===0) {      
       alert("Please Fill the data");
     }
     else{
       alert("Thanks For Submiting Form");
-    // props.FormSubmit();
+      axios.post("/api/registeruser",props.content)
+      .then((res)=>{aftersubmit(res)})
     }
   }
   const movenxt=()=>{
