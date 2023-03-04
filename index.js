@@ -16,14 +16,15 @@ app.use(cors({
 );
 
 // connect to mongoDB
-  mongoose.set('strictQuery', false)
-  mongoose.connect(process.env.MDB_CONNECT) 
-  .then(()=>{console.log('Mongodb connected')});
+mongoose.set('strictQuery', false)
+mongoose.connect(process.env.MDB_CONNECT) 
+.then(()=>{console.log('Mongodb connected')});
 
-  // set up routes
+// set up routes
 app.use("/api", require("./Router/RegistrationRouter"));
 app.use("/cnt", require("./Router/CountRouter"));
 app.use("/admin", require("./Router/AdminRouter"));
+app.use("/auth", require("./Router/AuthRouter"));
 
 app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
 const path=require("path");

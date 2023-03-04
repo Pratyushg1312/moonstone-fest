@@ -1,28 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "new-folder",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
-  },
-  "author": "Vishal Sharma",
-  "license": "ISC",
-  "dependencies": {
-    "aos": "^2.3.4",
-    "bootstrap": "^5.2.3",
-    "express": "^4.18.2",
-    "gsap": "^3.11.4",
-    "ios": "^0.0.1",
-    "nodemon": "^2.0.20",
-    "path": "^0.12.7",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.7.0",
-    "react-router-dom": "^6.8.1"
-  }
-=======
     "name": "new-folder",
     "version": "1.0.0",
     "description": "",
@@ -38,10 +14,12 @@
         "cors": "^2.8.5",
         "dotenv": "^16.0.3",
         "express": "^4.18.2",
+        "express-session": "^1.17.3",
         "mongoose": "^7.0.0",
         "nodemailer": "^6.9.1",
         "nodemon": "^2.0.20",
+        "passport": "^0.6.0",
+        "passport-google-oauth20": "^2.0.0",
         "path": "^0.12.7"
     }
->>>>>>> f48e4cc29902faeef1b81aee1ca297e1a9e96a2d
 }
