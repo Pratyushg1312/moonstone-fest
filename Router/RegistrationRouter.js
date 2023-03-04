@@ -26,16 +26,32 @@ router.post("/registeruser", async (req, res) => {
         let cntstatus=await Count.findOneAndUpdate({_id:oldcnt[0]._id},{user:oldcnt[0].user,registration:oldcnt[0].registration+1});
         
         let eventstatus = await Event.findOne({event});
-        const newRegistration = new Registration({reg_id:oldcnt[0].registration+1,name, phoneno, email,date_of_birth, gender, event,college,date_added:new Date(),utr,payment_status:"Pending",fees:eventstatus.fees});
-        newRegistration .save()
-            .then(() => res.json("Registration Added!"))
-            .catch((err) => res.status(400).json("Error: " + err));        
-
+        if(eventstatus.status==="open"){
+            const newRegistration = new Registration({reg_id:oldcnt[0].registration+1,name, phoneno, email,date_of_birth, gender, event,college,date_added:new Date(),utr,payment_status:"Pending",fees:eventstatus.fees});
+            newRegistration .save()
+                .then(() => res.json("Registration Added!"))
+                .catch((err) => res.status(400).json("Error: " + err));            
+        }
+        else{
+            res.status(200).send("Event Was closed");
+        }
         }
     } catch (err) {
         console.error(err);
         res.status(200).send("Error: "+err);
       }
 });
+
+router.get("/allevent", async (req, res) => {
+    try {
+        Event.find()
+        .then((event) => res.send(event))
+        .catch((err) => res.status(400).json("Error: " + err));
+    } catch (err) {
+        console.error(err);
+        res.status(200).send("Error: "+err);
+      }
+});
+
 
 module.exports = router;
