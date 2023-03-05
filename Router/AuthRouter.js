@@ -49,6 +49,7 @@ passport.use(
       res.redirect("/registration");
     }
   );
+  
 // for production "http://localhost:3000"+ on redirect
 
   router.get("/isauthenticated",async (req,res)=>{
