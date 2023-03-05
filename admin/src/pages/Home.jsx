@@ -1,5 +1,6 @@
 import React from 'react'
 import { Header } from '../component/Header'
+import { Regdetail } from '../component/Regdetail'
 import { Registerstats } from '../component/Registerstats'
 
 export const Home = () => {
@@ -7,6 +8,7 @@ export const Home = () => {
     <div className="home">
         <Header/>
         <Registerstats/>
+        <Regdetail/>
     </div>
   )
 }
