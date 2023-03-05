@@ -13,9 +13,12 @@ export default function Qrcode(props) {
     })
   }
   
-  const aftersubmit=()=>{
+  const aftersubmit=(res)=>{
+    props.setRegid(res.data);
+    // console.log(res.data);
     alert("Form Recived");
-    navigate("/");    
+    props.setidx(1008);
+    // navigate("/");    
   }
   const submitit=()=>{
     if (props.content[s].length===0) {      

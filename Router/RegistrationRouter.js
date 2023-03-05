@@ -16,7 +16,6 @@ router.post("/registeruser", async (req, res) => {
         // else{
         //    utrstatus = await Registration.findOne({utr});            
         // }
-
         // if(utrstatus.length!==0){
         //     res.status(200).send("Already Present");
         // }        
@@ -29,7 +28,7 @@ router.post("/registeruser", async (req, res) => {
         if(eventstatus.status==="open"){
             const newRegistration = new Registration({reg_id:oldcnt[0].registration+1,name, phoneno, email,date_of_birth, gender, event,college,date_added:new Date(),utr,payment_status:"Pending",fees:eventstatus.fees});
             newRegistration .save()
-                .then(() => res.json("Registration Added!"))
+                .then(() => res.json(oldcnt[0].registration+1))
                 .catch((err) => res.status(400).json("Error: " + err));            
         }
         else{

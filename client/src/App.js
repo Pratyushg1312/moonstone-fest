@@ -25,7 +25,7 @@ function App() {
         <Route exact path='/' element={<Home/> }/>
         <Route  path='/aboutus' element={<Aboutus/> }/>
         <Route  path='/contactus' element={<Contactus/> }/>
-        <Route  exact path='/events' element={<NewEvents/> }/>
+        <Route  exact path='/events' element={<Parallax/> }/>
         <Route  path='/events/:id' element={<NewEvents/> }/>
         <Route  path='/registration' element={<Registration/> }/>
         <Route  path='/SingleDay' element={<SingleDay/> }/>

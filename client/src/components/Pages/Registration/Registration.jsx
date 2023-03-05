@@ -7,11 +7,13 @@ import axios from 'axios'
 import Qrcode from './Qrcode';
 import DateofBirth from './DateofBirth';
 import GenderField from './GenderField';
+import Success from './Success';
 
 export default function Registration(){
   const [content, setcontent] = useState({"auth_name":"","auth_email":"","name":"","phoneno":"","email":"","event":"","college":"","date_of_birth":"","gender":"","utr":""});
   const [idx,setidx]=useState(0);
   const [Login,setLogin]=useState(false);
+  const [reg_id,setRegid]=useState(0);
 
   const savegmaildata=(res)=>{
     // console.log(res)
@@ -26,7 +28,6 @@ const [Fees, setFees] = useState(0);
   useEffect(() => {
     axios.get("/auth/isauthenticated")
     .then((res)=>{savegmaildata(res)});
-
   }, [])
   const lst=7;
   return (
@@ -42,7 +43,8 @@ const [Fees, setFees] = useState(0);
           {idx===4?<SingleContentForm que={"Which College you are From?"} placeholder={"Enter Your College Name*"} content={content} setcontent={setcontent} to_find={"college"} idx={idx} setidx={setidx} lst={lst} />:<></>}
           {idx===5?<DateofBirth content={content} setcontent={setcontent} to_find={"date_of_birth"} idx={idx} setidx={setidx} lst={lst} />:<></>}
           {idx===6?<GenderField content={content} setcontent={setcontent} to_find={"gender"} idx={idx} setidx={setidx} lst={lst} />:<></>}
-          {idx===7?<Qrcode  content={content} setcontent={setcontent} placeholder={"Enter Your UTR No.*"} to_find={"utr"} idx={idx} setidx={setidx} lst={lst} Fees={Fees}/>:<></>}
+          {idx===7?<Qrcode  content={content} setcontent={setcontent} placeholder={"Enter Your UTR No.*"} to_find={"utr"} idx={idx} setidx={setidx} lst={lst} Fees={Fees} setRegid={setRegid}/>:<></>}
+          {idx===1008?<Success content={content} reg_id={reg_id}/>:<></>}
         </>
          :<Loginbtn/>} 
     </div>        
