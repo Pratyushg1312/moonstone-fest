@@ -23,7 +23,7 @@ passport.use(
       {
         clientID: process.env.clientID,
         clientSecret: process.env.clientSecret,
-        callbackURL: "/auth/google/callback",
+        callbackURL: "https://moonstone.onrender.com/auth/google/callback",
       },
       function (accessToken, refreshToken, profile, cb) {
         // Use the profile information to authenticate the user
