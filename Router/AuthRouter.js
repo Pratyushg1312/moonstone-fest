@@ -23,7 +23,7 @@ passport.use(
       {
         clientID: process.env.clientID,
         clientSecret: process.env.clientSecret,
-        callbackURL: "http://localhost:5000/auth/google/callback",
+        callbackURL: "/auth/google/callback",
       },
       function (accessToken, refreshToken, profile, cb) {
         // Use the profile information to authenticate the user
