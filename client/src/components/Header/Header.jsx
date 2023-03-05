@@ -6,7 +6,7 @@ export default function Header() {
   const [display, setDisplay] = useState(
     window.innerWidth > 1024 ? true : false
   );
-  const [view, setView] = useState(true);
+  const [view, setView] = useState(false);
   function activeate(){
 
   }
