@@ -23,7 +23,7 @@ passport.use(
       {
         clientID: process.env.clientID,
         clientSecret: process.env.clientSecret,
-        callbackURL: "https://moonstone.onrender.com/auth/google/callback",
+        callbackURL: "http://localhost:5000/auth/google/callback",
       },
       function (accessToken, refreshToken, profile, cb) {
         // Use the profile information to authenticate the user
@@ -46,7 +46,7 @@ passport.use(
   
   router.get("/google/callback",    passport.authenticate("google", { failureRedirect: "/login" }),
     function (req, res) {
-      res.redirect("/registration");
+      res.redirect("http://localhost:3000"+"/registration");
     }
   );
   
