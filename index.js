@@ -4,12 +4,9 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const PORT = process.env.PORT || 5000;
 const cors = require("cors");
-const cookieParser = require("cookie-parser");
-const adminauth=require("./Middleware/adminauth");
 
 dotenv.config();
 app.use(express.json());
-app.use(cookieParser());
 app.use(cors({
     origin: [
       "http://localhost:3000",
@@ -27,8 +24,6 @@ mongoose.connect(process.env.MDB_CONNECT)
 app.use("/api", require("./Router/RegistrationRouter"));
 app.use("/cnt", require("./Router/CountRouter"));
 app.use("/auth", require("./Router/AuthRouter"));
-app.use("/onlyforadmin" ,adminauth, require("./Router/AdminRouter"));
-app.use("/adminlogin", require("./Router/Adminauth"));
 
 app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
 const path=require("path");
