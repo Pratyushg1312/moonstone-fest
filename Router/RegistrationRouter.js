@@ -44,7 +44,7 @@ router.post("/registeruser", async (req, res) => {
     try {
         const {name, phoneno, email,date_of_birth, gender,utr,event,college} = req.body;
         let utrstatus=[]
-        if(!name||!phoneno||!email||!gender||!event||!college||!utr){
+        if(!name||!phoneno||!email||!event||!college||!utr){
             res.status(400).json("Error: Invalid Input");
         }
         // else if(utr==="NA"||utr==="N/A"||utr==="Na"||utr==="na"){
