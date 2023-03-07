@@ -42,7 +42,7 @@ Software cell
 
 router.post("/registeruser", async (req, res) => {
     try {
-        const {name, phoneno, email,date_of_birth, gender,utr,event,college} = req.body;
+        const {name,auth_name,auth_email, phoneno, email,date_of_birth, gender,utr,event,college} = req.body;
         let utrstatus=[]
         if(!name||!phoneno||!email||!event||!college||!utr){
             res.status(400).json("Error: Invalid Input");
@@ -64,8 +64,10 @@ router.post("/registeruser", async (req, res) => {
         let eventstatus = await Event.findOne({event});
         if(eventstatus.status==="open"){
             const reg_id=oldcnt[0].registration+1;
-            const newRegistration = new Registration({reg_id,name, phoneno, email,date_of_birth, gender, event,college,date_added:new Date(),utr,payment_status:"Pending",fees:eventstatus.fees});
+            const newRegistration = new Registration({reg_id,name,auth_name,auth_email, phoneno, email,date_of_birth, gender, event,college,date_added:new Date(),utr,payment_status:"Pending",fees:eventstatus.fees});
+            // console.log("MAIL Send");
             mailtouser({reg_id,name,email,event});
+            // console.log("User Saved");
             newRegistration .save()
                 .then(() => res.json(reg_id))
                 .catch((err) => res.status(400).json("Error: " + err));            
