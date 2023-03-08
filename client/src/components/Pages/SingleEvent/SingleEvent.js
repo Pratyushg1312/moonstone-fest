@@ -34,7 +34,7 @@ export default function SingleEvent() {
                         </div>
                         <div className='m-2 text-center navi' >
                             
-                        <a href="https://www.mappls.com/8pou7x"target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a>
+                        <a href="https://goo.gl/maps/zQmHkt6ha2dh6G7f6"target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a>
                             <p>Directions</p>
 
                         </div>
