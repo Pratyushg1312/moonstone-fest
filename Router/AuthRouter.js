@@ -10,7 +10,7 @@ router.use(
       saveUninitialized: true,
       cookie: { secure: false },
     })
-  );
+);
 
 //change cookie true
 
@@ -23,7 +23,7 @@ passport.use(
       {
         clientID: process.env.clientID,
         clientSecret: process.env.clientSecret,
-        callbackURL: "http://localhost:5000/auth/google/callback",
+        callbackURL: `${process.env.BaseUrl}/auth/google/callback`,
       },
       function (accessToken, refreshToken, profile, cb) {
         // Use the profile information to authenticate the user
@@ -46,10 +46,11 @@ passport.use(
   
   router.get("/google/callback",    passport.authenticate("google", { failureRedirect: "/login" }),
     function (req, res) {
-      res.redirect("http://localhost:3000"+"/registration");
+      res.redirect(process.env.BaseUrl+"/registration");
     }
   );
-
+  
+// for production "http://localhost:3000"+ on redirect
 
   router.get("/isauthenticated",async (req,res)=>{
     if (req.isAuthenticated()) {
