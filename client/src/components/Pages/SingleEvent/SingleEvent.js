@@ -33,8 +33,8 @@ export default function SingleEvent() {
                             <p>Major Auditorium</p>
                         </div>
                         <div className='m-2 text-center navi' >
-                            
-                        <a href="https://goo.gl/maps/zQmHkt6ha2dh6G7f6"target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a>
+
+                            <a href="https://goo.gl/maps/zQmHkt6ha2dh6G7f6" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a>
                             <p>Directions</p>
 
                         </div>
@@ -44,7 +44,7 @@ export default function SingleEvent() {
             </div>
 
             {/* Coordinators Card Section */}
-                <h1 className='text-center text-white'>Coordinators</h1>
+            <h1 className='text-center text-white'>Coordinators</h1>
             <div className='container d-flex flex-wrap justify-content-center'>
 
                 <div class=" profile-card my-2">
