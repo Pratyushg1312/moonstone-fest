@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {useNavigate} from "react-router-dom"
 import axios from "axios";
 
@@ -12,10 +12,11 @@ export default function Qrcode(props) {
         [name]: value
     })
   }
-  
+   const [loading, setloading] = useState(false);
   const aftersubmit=(res)=>{
     props.setRegid(res.data);
     // console.log(res.data);
+
     alert("Form Recived");
     props.setidx(1008);
     // navigate("/");    
@@ -26,6 +27,7 @@ export default function Qrcode(props) {
     }
     else{
       alert("Thanks For Submiting Form");
+      setloading(true);
       axios.post("/api/registeruser",props.content)
       .then((res)=>{aftersubmit(res)})
     }
@@ -54,8 +56,14 @@ export default function Qrcode(props) {
           <div className='btn-left'>
           {props.idx!==0?<button className='nxt-btn' onClick={()=>{props.setidx(props.idx-1)}}><i class="fa-solid fa-arrow-left"></i>  Prev </button>:<></>}
           {props.idx!==props.lst?<button className='nxt-btn' onClick={()=>{movenxt()}}> Next <i class="fa-solid fa-arrow-right"></i> </button>:<></>}
-          {props.idx===props.lst?<button className='nxt-btn' onClick={()=>{submitit()}}> Submit<i class="fa-solid fa-arrow-right"></i> </button>:<></>}
+          {props.idx===props.lst&&!loading?<button className='nxt-btn' onClick={()=>{submitit()}}> Submit<i class="fa-solid fa-arrow-right"></i> </button>:<></>}
+          {loading?<button class="nxt-btn" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button> :<></>}
         </div>
+
+        
     </div>
     )
 }

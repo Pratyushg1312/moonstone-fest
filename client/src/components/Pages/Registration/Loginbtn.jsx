@@ -3,6 +3,7 @@ import './loginbtn.css'
 export default function Loginbtn() {
   return (
 <div class="center">
+{/* http://localhost:5000 */}
       <a href="/auth/google" class="google-btn">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"

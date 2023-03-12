@@ -4,9 +4,9 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const PORT = process.env.PORT || 5000;
 const cors = require("cors");
+
 dotenv.config();
 app.use(express.json());
-
 app.use(cors({
     origin: [
       "http://localhost:3000",
@@ -23,7 +23,6 @@ mongoose.connect(process.env.MDB_CONNECT)
 // set up routes
 app.use("/api", require("./Router/RegistrationRouter"));
 app.use("/cnt", require("./Router/CountRouter"));
-app.use("/admin", require("./Router/AdminRouter"));
 app.use("/auth", require("./Router/AuthRouter"));
 
 app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
