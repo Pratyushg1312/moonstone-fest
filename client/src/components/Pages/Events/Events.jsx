@@ -8,6 +8,7 @@ function Events() {
   }, []);
   return (
     <div className="styles-content">
+      
       <div className="eventcen">
 
       <h1 className="Events-section">EVENTS</h1>

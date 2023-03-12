@@ -27,8 +27,8 @@ export default function Aboutus() {
         <div className='d-flex flex-wrap align-items-center justify-content-center '>
           <div className='md-col col-3 m-3 text-center'><img src="/images/ranked1st.png" style={{ width: "auto",height:"50%" }} /></div>
           <div className='md-col col-3 m-3 text-center'><img src="/images/mhrd-nirf.png" style={{ width: "auto",height:"50%"}} /></div>
-          <div className='md-col col-3 m-3 text-center'><img src="/images/25year.png" style={{height:"50%", }} /></div>
           <div className='md-col col-3 m-3 text-center'><img src="/images/placements.png" style={{ width: "auto",height:"50%",  }} /></div>
+          {/* <div className='md-col col-3 m-3 text-center'><img src="/images/25year.png" style={{height:"50%", }} /></div> */}
         </div>
       </div>
       <div className="text-center my-4">

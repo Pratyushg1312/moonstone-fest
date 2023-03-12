@@ -20,13 +20,13 @@ export default function SingleEvent() {
             <div className='Schedule container mt-4'>
                 <h1 className='text-center  mb-3' style={{ color: "white" }}>Schedule </h1>
                 <div className='row'>
-                    <div className='col-md-8 col-10 justify-content-center d-flex flex-wrap'>
+                    <div className='col-md-8 col-12 justify-content-center d-flex flex-wrap'>
                         <div className=' slot m-2'>
                             <h1 className='text-center m-1' style={{ fontSize: "25px" }}>Event part 1</h1>
 
                         </div>
                     </div>
-                    <div className='col-md-4 col-10 d-flex align-items-center justify-content-evenly'>
+                    <div className='col-md-4 col-12 d-flex align-items-center justify-content-evenly'>
                         <div className='m-2 text-center dir' >
 
                             <img src="/images/location.png" style={{ width: "40px", height: "40px", margin: "10px" }} />
