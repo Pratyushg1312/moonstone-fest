@@ -1,14 +1,15 @@
 .nav-header{
-    position: sticky;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    top: -23px;
+    /* width: 100%;
+    display: flex; */
+    /* justify-content: center; */
     border-bottom: #00FFD1 2px solid;
 }
 
 .header-bar{
    
-    width: 80%;
+    width: 100%;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -57,48 +58,79 @@
     width: 100px;
 }
 @media only screen and (max-width: 1024px) {
-    .R-header-container li{
-        margin: 10px 0;
-    }
-    .R-header-bar{
+
+    .nav-header{
+        top: 0px;
+        position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    z-index: 1;
+    /* /////////////////// */
         
-        flex-direction: column;
-        padding: 10px 20px;
-        position: absolute;
-        background-color: #061f25;
-        /* display: block; */
-        /* height: 100vh; */
+    display: none;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: bold;
+    padding: 2em;
+    height: 99%;
+    overflow-x: hidden;
+    
     }
-    .R-header-container{
-        flex-direction: column;
-        width: 90%;
-        height: 90vh;
-    }
-    /* .header-bar{
+    
+    input:checked~.nav-header {
         display: none;
-    } */
-    .burger{
+        transition: width 1s ease-in;
+      }
+      .line {
+        margin-bottom: 6px;
+        /* background-color: aqua; */
+        background-image: linear-gradient(90deg,#00c1b7, #0deecc);
+      }
+      input:checked~.nav-header {
+        display: block;
+        transition: ease-in 1s;
+      }
+      input:checked + .nav-tog-lab > .line{
+        background-color:white;
+        background-image: none;
+      }
+    
+      input:checked + .nav-tog-lab{
+        position: fixed;
+      }
+      .nav-tog-lab {
+        position: absolute;
+        display: block;
+        z-index: 4;
+        padding: 16px;
+      }
+    
+      .nav-tog-lab span {
+        margin-top: 3%;
+        display: block;
+        position: relative;
+        height: 0.4em;
+        width: 2.5em;
+        border-radius: 3px;
+      }
+      .header-container{
+   
+        width: 100%;
+        padding: 10px 20px;
+        
         display: flex;
+        flex-direction:column;
+        
+    }
+    .header-container li{
+        margin: 2em;
+        display: flex;
+        /* color: #00FFD1; */
+        list-style: none;
+        align-items: center;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .line{
-        width: 25px;
-        height: 2px;
-        line-height: 1;
-        background-color: #666;
-        margin: 3px 0;
-    }
-    .Responsive-header{
-        display: flex;
-        justify-content: space-between;
-    }
-    .cross{
-        color: #666;
-        margin: 0;
-        display: flex;
-        align-items: center;
     }
 }
 

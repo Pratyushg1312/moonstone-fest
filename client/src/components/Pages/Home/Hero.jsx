@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import logoOnDemand from './texture/logoOnDemand.png'
+import logoOnDemand from './texture/logooo.svg'
 // import{Spheree} from './Spheree'
 import { Model } from './ModelDraco'
 // import {Model} from './3dmoond'
@@ -30,7 +30,7 @@ export const Hero = () => {
       </div>
       <div className="logotyp-con">
         <div className="logo1" onMouseOver={()=>{ changecolor('#00ccff')}}  onMouseOut={()=>{changecolor('cyan')}}>
-          <img src={logoOnDemand}  class="img-fluid rounded mx-auto d-block p-2"  alt="" />
+          <img src='./images/logomono.png'  class="img-fluid rounded mx-auto d-block p-2"  alt="" />
         </div>
         <div className="typ" onMouseOver={()=>{ changecolor('#00ccff')}}  onMouseOut={()=>{changecolor('cyan')}}>
           <Aboutmoon/>

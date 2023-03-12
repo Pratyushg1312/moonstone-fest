@@ -35,7 +35,7 @@ export default function DropdownRegistration(props) {
           </div>
           <select  type="text" name={s} value={props.content[s]} onChange={handleChange} required>
           <option value="">--Please choose an option--</option>
-          {Events.map((item)=>{
+          {Events.filter(item=> item.status === "open").map((item)=>{
             return <option value={item.event} onClick={()=>{console.log(item.fees)}}>{item.event}</option>
           })}
         </select>
