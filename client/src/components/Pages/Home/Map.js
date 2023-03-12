@@ -1,14 +1,14 @@
 import React from 'react'
-
+import './NewSponsor.css';
 export default function Map() {
     return (
         <div style={{ color: "white" }}>
-            <div className='text-center'>
-                <h1>Map Page </h1>
+            <div className='text-center my-4' style={{color: "#00FFD1"}}>
+                <h1>University Map </h1>
             </div>
             <div className='row justify-content-center'>
                 <div className='col-8'>
-                    <table class=" table  ">
+                    <table class=" table maptable ">
                         <thead>
                             <tr style={{color:"#ffbd00",fontSize:"2rem"}}>
 
@@ -17,7 +17,7 @@ export default function Map() {
 
                             </tr>
                         </thead>
-                        <tbody style={{ color: "white",fontSize:"1.5rem" }}>
+                        <tbody style={{ color: "white",fontSize:"1.5rem"}}>
 
                             <tr><td>  Main Playground</td><td><a href="https://goo.gl/maps/gCSz6jSp5fqUFdfm9" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
                             <tr><td>Basket Ball Court</td><td><a href="https://goo.gl/maps/o1yzAotxkttCYb5JA" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
@@ -27,7 +27,7 @@ export default function Map() {
                             <tr><td>Punjab National Bank</td><td><a href="https://goo.gl/maps/Uh1dcpSUdrMYZrtR6" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
                             <tr><td>Datre Food Court </td><td><a href="https://goo.gl/maps/cdVLuKvBV9HWXTUv5" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
                             <tr><td>Major Auditorium</td><td><a href="https://goo.gl/maps/zQmHkt6ha2dh6G7f6" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
-                            <tr><td> Event Ground [ opp to NSS Block ]</td><td><a href="https://goo.gl/maps/n7S3xob59cJf1mxB8" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
+                            <tr className='maptable'><td> Event Ground [ opp to NSS Block ]</td><td><a href="https://goo.gl/maps/n7S3xob59cJf1mxB8" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
                             <tr><td> Qblock</td><td><a href="https://goo.gl/maps/GqTYvjmS2rbeL6WD9" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
                             <tr><td> Sblock</td><td><a href="https://goo.gl/maps/Q5BdD6zyVHFva7AG9" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
                             <tr><td> Vblock</td><td><a href="https://goo.gl/maps/rDkfrwQZoPfriK6H6" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>

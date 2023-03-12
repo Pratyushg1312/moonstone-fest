@@ -15,6 +15,7 @@ import Error from "./components/Pages/Error/Error";
 import Glimpses from "./components/Pages/Glimpses/Glimpses"
 import Parallax from "./components/Pages/Parallax/Parallax";
 import Glimpes from "./components/Pages/Home/Glimpes";
+import Map from "./components/Pages/Home/Map";
 import { Cursor } from "./Cursor";
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
         <Route  path='/Glimpes' element={<Glimpes/> }/>
         <Route  path='*' element={<Error/> }/>
         <Route  path='/glimpses' element={<Glimpses/> }/>
+        <Route  path='/Map' element={<Map/> }/>
+
       </Routes>
       <Footer/>
     </div>
