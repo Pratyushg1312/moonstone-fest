@@ -4,7 +4,7 @@ function Parallax() {
     return (
         <>
             <section className="section-background parallax">
-                <h2>Day 1(Day)</h2>
+                <h2>Day 1<i class="fa-solid fa-sun" style={{color:"#fab005"}}></i>(Day)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
@@ -51,7 +51,7 @@ function Parallax() {
                 </div>
             </section>
             <section className="section-background parallax3">
-                <h2>Day 1(Night)</h2>
+                <h2>Day 1<i class="fa-solid fa-moon" style={{color:"#fab005"}}></i>(Night)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
@@ -98,7 +98,7 @@ function Parallax() {
                 </div>
             </section>
             <section className="section-background parallax">
-                <h2>Day 2(Day)</h2>
+                <h2>Day 2<i class="fa-solid fa-sun" style={{color:"#fab005"}}></i>(Day)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
@@ -145,7 +145,7 @@ function Parallax() {
                 </div>
             </section>
             <section className="section-background parallax3">
-                <h2>Day 2(Day)</h2>
+                <h2>Day 2<i class="fa-solid fa-moon" style={{color:"#fab005"}}></i>(Night)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
@@ -192,7 +192,7 @@ function Parallax() {
                 </div>
             </section>
             <section className="section-background parallax">
-                <h2>Day 3(Day)</h2>
+                <h2>Day 3<i class="fa-solid fa-sun" style={{color:"#fab005"}}></i>(Day)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
@@ -239,7 +239,7 @@ function Parallax() {
                 </div>
             </section>
             <section className="section-background parallax3">
-                <h2>Day 3(Night)</h2>
+                <h2>Day 3<i class="fa-solid fa-moon" style={{color:"#fab005"}}></i>(Night)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
