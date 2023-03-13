@@ -6,9 +6,7 @@ export default function Header() {
   const [appstate, chngeState] = useState("./images/logomono.png");
   const chkbox= useRef();
   const [checked, setChecked] = useState();
- 
   
-
   return (
     <>
     <input ref={chkbox} type="checkbox" checked={checked} id="nav-tog" style={{display:"none"}}/>
