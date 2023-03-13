@@ -131,3 +131,7 @@
 .section-heading:hover::after {
   transform: scaleX(1);
 }
+.maptable tr{
+vertical-align: middle;
+/* color: green; */
+}
