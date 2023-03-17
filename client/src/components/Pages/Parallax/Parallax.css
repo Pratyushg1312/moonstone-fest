@@ -127,3 +127,12 @@
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
+.button-section{
+   margin: 0 5px;
+   border: 0;
+   border-radius: 10px;
+   background-color: orangered;
+   padding: 5px;
+   color: #f4f4f4;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
