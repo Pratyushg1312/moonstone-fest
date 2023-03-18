@@ -11,6 +11,7 @@
 #contact {
   /* background-color: #6a9ac4; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
