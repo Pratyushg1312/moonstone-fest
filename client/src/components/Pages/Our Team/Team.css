@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+/* *,
+*::after,
+*::before {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
+
+/* body {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: #600b28;
+} */
+
+.profile-cards {
+    font-family: poppins;
+    border: 1.5px solid white;
+	width: 300px;
+	/* position: absolute; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+    background-color: #0D4451;
+	/* background-color: yelllow; */
+	border-radius: 1rem;
+	box-shadow: 0px 0px 15px rgb(0,255,208)
+}
+
+.profile-image {
+	position: relative;
+	border: 2px solid yellow;
+	top: -100px;
+	border-radius: 6rem;
+	background-image: url(https://yt3.ggpht.com/ytc/AKedOLSB-oR-xmvVSZXJ3gbK12uvv0AJUvajwxMie_R_uw=s900-c-k-c0x00ffffff-no-rj);
+	width: 11rem;
+	height: 11rem;
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+}
+
+.profile-info {
+	text-align: center;
+	margin-top: -5rem;
+	margin-bottom: 1rem;
+}
+
+.profile-info > .profile-name {
+	color: #F5AD36;
+    font-family: poppins;
+    letter-spacing: 1.5px;
+}
+
+.profile-info > .profile-desc {
+	color: black;
+	font-size: 1rem;
+    font-weight: 500;
+    font-family: poppins;
+}
+
+/* .inside-status{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid yellow;
+    margin: 15px;
+}
+
+.status {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	line-height: 1rem;
+	margin-bottom: 1.3rem;
+}
+
+.status-value {
+	color: #F5AD36;
+	font-weight: 700;
+}
+
+.status-text {
+	font-size: 0.8rem;
+	color: black;
+} */
+
+.icons{
+	margin-top:8px;
+    padding: 0;
+    width: fit-content;
+    /* border: 2px solid red; */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.icons li{ 
+    display:inline-block;
+    /* border: 2px solid black;  */
+	width:auto; 
+	margin:0 12px;
+}
+
+.icons li .fa{ 
+    font-size:27px; 
+    color:black;
+ }
+
+
+
+
