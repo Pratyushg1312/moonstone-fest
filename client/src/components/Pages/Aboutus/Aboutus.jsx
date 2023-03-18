@@ -37,11 +37,11 @@ export default function Aboutus() {
       <div className='container '>
         <Persons />
       </div>
-      <h1 className='text-center my-4'>Team</h1>
+      {/* <h1 className='text-center my-4'>Team</h1>
       <div className="team">
         <TeamPage />
 
-      </div>
+      </div> */}
     </div>
   )
 }
