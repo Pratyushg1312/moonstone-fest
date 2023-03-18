@@ -19,9 +19,9 @@
 
 .profile-cards {
     font-family: poppins;
-    /* border: 1.5px solid white; */
+    border: 1.5px solid white;
 	width: 300px;
-	position: absolute;
+	/* position: absolute; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -34,6 +34,7 @@
 
 .profile-image {
 	position: relative;
+	border: 2px solid yellow;
 	top: -100px;
 	border-radius: 6rem;
 	background-image: url(https://yt3.ggpht.com/ytc/AKedOLSB-oR-xmvVSZXJ3gbK12uvv0AJUvajwxMie_R_uw=s900-c-k-c0x00ffffff-no-rj);

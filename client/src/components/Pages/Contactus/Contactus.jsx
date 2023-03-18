@@ -5,6 +5,8 @@ import { Team } from '../Our Team/Team'
 
 export default function Contactus() {
   return (
+    <div>
+    <div>
 <section id="contact">
   {/* <div className="our-team">
     <h2 className="team-name">Developers</h2>
@@ -48,14 +50,16 @@ export default function Contactus() {
   </div>
 
 
-   <div className="our-team">
-    <h2 className="team-name">Developers</h2>
-    <Team/>
-  </div> 
+   
 
 </section>
-
-
+</div>
+<div className="our-team">
+    <h2 className="team-name" style={{color: "red"}}>Developers</h2>
+    <Team/>
+    <Team/>
+  </div> 
+</div>
   )
 }
 
