@@ -48,7 +48,7 @@ const[ chng4,chngstyl4]=useState();
                   chngstyl("rotate(110deg)")
                   chngstyl1("scale(10)")
                   chngstyl2("scale(0)")
-                  chngstyl4("scale(1)")
+                  chngstyl4("scale(0.5)")
                   chngstyl3(current => !current)
           }}>
             <div className="triangle" style={{
