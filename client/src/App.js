@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer.jsx"
 import Contactus from './components/Pages/Contactus/Contactus';
 import SingleEvent from './components/Pages/SingleEvent/SingleEvent';
 import Registration from './components/Pages/Registration/Registration';
-import Events from "./components/Pages/Events/Events";
+
 import SingleDay from './components/Pages/SingleEvent/SingleDay';
 import NewEvents from "./components/Pages/NewEvents/NewEvents";
 import Error from "./components/Pages/Error/Error";
