@@ -3,21 +3,21 @@ import './NewSponsor.css';
 export default function Map() {
     return (
         <div style={{ color: "white" }}>
-            <div className='text-center my-4' style={{color: "#00FFD1"}}>
+            <div className='text-center my-4' style={{ color: "#00FFD1" }}>
                 <h1>University Map </h1>
             </div>
             <div className='row justify-content-center'>
                 <div className='col-8'>
                     <table class=" table maptable ">
                         <thead>
-                            <tr style={{color:"#ffbd00",fontSize:"2rem"}}>
+                            <tr style={{ color: "#ffbd00", fontSize: "2rem" }}>
 
                                 <th scope="col">Venue Name</th>
                                 <th scope="col">Directions</th>
 
                             </tr>
                         </thead>
-                        <tbody style={{ color: "white",fontSize:"1.5rem"}}>
+                        <tbody style={{ color: "white", fontSize: "1.5rem" }}>
 
                             <tr><td>  Main Playground</td><td><a href="https://goo.gl/maps/gCSz6jSp5fqUFdfm9" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
                             <tr><td>Basket Ball Court</td><td><a href="https://goo.gl/maps/o1yzAotxkttCYb5JA" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>

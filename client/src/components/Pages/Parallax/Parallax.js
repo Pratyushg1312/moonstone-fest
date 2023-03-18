@@ -4,8 +4,10 @@ import "./Parallax.css"
 function Parallax() {
     return (
         <>
+
+
             <section className="section-background parallax">
-                <h2>Day 1<i class="fa-solid fa-sun" style={{color:"#fab005"}}></i>(Day)</h2>
+                <h2>Day 1<i class="fa-solid fa-sun" style={{ color: "#fab005" }}></i>(Day)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
@@ -16,8 +18,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -30,8 +32,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -44,8 +46,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -58,17 +60,22 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div></div>
+                   <div className='d-flex justify-content-end me-2'>
+                    <NavLink to="/map" className="floatingButton">
+                        <img src="videos/telescope.gif" style={{ borderRadius: "50%" }} />
+                    </NavLink></div>
+                   
+                
             </section>
             <section className="section-background parallax3">
-                <h2>Day 1<i class="fa-solid fa-moon" style={{color:"#fab005"}}></i>(Night)</h2>
+                <h2>Day 1<i class="fa-solid fa-moon" style={{ color: "#fab005" }}></i>(Night)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
@@ -79,8 +86,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -93,8 +100,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -107,8 +114,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -121,17 +128,22 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>  
                 </div>
+                   <div className='d-flex justify-content-end me-2'>
+                    <NavLink to="/map" className="floatingButton">
+                        <img src="videos/telescope.gif" style={{ borderRadius: "50%" }} />
+                    </NavLink></div>
+                 
             </section>
             <section className="section-background parallax">
-                <h2>Day 2<i class="fa-solid fa-sun" style={{color:"#fab005"}}></i>(Day)</h2>
+                <h2>Day 2<i class="fa-solid fa-sun" style={{ color: "#fab005" }}></i>(Day)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
@@ -142,8 +154,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -156,8 +168,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -170,8 +182,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -184,17 +196,22 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> </div>
+                   <div className='d-flex justify-content-end me-2'>
+                    <NavLink to="/map" className="floatingButton">
+                        <img src="videos/telescope.gif" style={{ borderRadius: "50%" }} />
+                    </NavLink></div>
+                   
+               
             </section>
             <section className="section-background parallax3">
-                <h2>Day 2<i class="fa-solid fa-moon" style={{color:"#fab005"}}></i>(Night)</h2>
+                <h2>Day 2<i class="fa-solid fa-moon" style={{ color: "#fab005" }}></i>(Night)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
@@ -205,8 +222,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -219,8 +236,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -233,8 +250,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -247,17 +264,22 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div></div>
+                   <div className='d-flex justify-content-end me-2'>
+                    <NavLink to="/map" className="floatingButton">
+                        <img src="videos/telescope.gif" style={{ borderRadius: "50%" }} />
+                    </NavLink></div>
+                   
+                
             </section>
             <section className="section-background parallax">
-                <h2>Day 3<i class="fa-solid fa-sun" style={{color:"#fab005"}}></i>(Day)</h2>
+                <h2>Day 3<i class="fa-solid fa-sun" style={{ color: "#fab005" }}></i>(Day)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
@@ -268,8 +290,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -282,8 +304,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -296,8 +318,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -310,17 +332,23 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                   
                 </div>
+               <div className='d-flex justify-content-end me-2'>
+                    <NavLink to="/map" className="floatingButton">
+                        <img src="videos/telescope.gif" style={{ borderRadius: "50%" }} />
+                    </NavLink></div>
+
             </section>
             <section className="section-background parallax3">
-                <h2>Day 3<i class="fa-solid fa-moon" style={{color:"#fab005"}}></i>(Night)</h2>
+                <h2>Day 3<i class="fa-solid fa-moon" style={{ color: "#fab005" }}></i>(Night)</h2>
                 <div className="card-bunch">
                     <div className="card-bunch-child">
                         <div className="card-event">
@@ -331,8 +359,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -345,8 +373,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -359,8 +387,8 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -373,14 +401,18 @@ function Parallax() {
                                 <div className="content-events">
                                     <h3 style={{ color: "black" }}>Apps</h3>
                                     <div className="buttons-section">
-                                        <NavLink to = "/"><button className="button-section btn-view">View</button></NavLink>
-                                        <NavLink to = "/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
+                                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div className='d-flex justify-content-end me-2'>
+                    <NavLink to="/map" className="floatingButton">
+                        <img src="videos/telescope.gif" style={{ borderRadius: "50%" }} />
+                    </NavLink></div>
             </section>
         </>
     )

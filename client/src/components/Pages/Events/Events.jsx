@@ -7,6 +7,10 @@ function Events() {
     Aos.init();
   }, []);
   return (
+    <>
+
+      {/* <h1 style={{backgroundColor:"blue",zIndex:"1"}}>Hello kalash</h1> */}
+          
     <div className="styles-content">
       
       <div className="eventcen">
@@ -61,6 +65,7 @@ function Events() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
