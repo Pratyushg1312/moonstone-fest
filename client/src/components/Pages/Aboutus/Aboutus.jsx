@@ -1,5 +1,5 @@
 import React from 'react'
-import TeamPage from '../Team_Page/TeamPage.jsx'
+
 import Abouthero from './Abouthero.jsx'
 import './Aboutus.css'
 import Persons from './Persons.jsx'
@@ -37,11 +37,7 @@ export default function Aboutus() {
       <div className='container '>
         <Persons />
       </div>
-      {/* <h1 className='text-center my-4'>Team</h1>
-      <div className="team">
-        <TeamPage />
-
-      </div> */}
+      
     </div>
   )
 }

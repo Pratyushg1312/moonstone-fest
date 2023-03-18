@@ -32,25 +32,7 @@ g.container {
   white-space:nowrap; 
   padding-bottom:25px;
 }
-/* .g-heading h1:before {
-    background-color: cyan;
-    content: '';
-    display: block;
-    height: 3px;
-    width: 75px;
-    margin-bottom: 5px;
-} */
-/* .g-heading h1:after {
-    background-color: cyan;
-    content: '';
-    display: block;
-    position:absolute;
-   right:0; 
-   bottom:0;
-    height: 3px;
-    width: 100%;
-    margin-top: 0.25em;
-} */
+
 
 img {
 	max-width: 100%;
@@ -69,7 +51,8 @@ img {
 	height: 100%;
 	object-fit: cover;
 	border-radius: 5px;
-  border: 1px solid white;
+  /* box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.4); */
+  /* border: 2px solid #F5AD36; */
   /* margin-top: 72px; */
   
 }

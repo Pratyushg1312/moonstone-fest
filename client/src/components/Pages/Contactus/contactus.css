@@ -11,6 +11,7 @@
 #contact {
   /* background-color: #6a9ac4; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -198,4 +199,16 @@
     width: 38px;
     height: 38px;
   }
+}
+
+.team-name{
+  color: #07D685;
+    font-size: 50px;
+    font-weight: bold;
+    /* border: 2px solid yellow; */
+    margin-bottom: 65px;
+    
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
 }
