@@ -1,10 +1,15 @@
 import React from 'react'
 import './contactus.css'
 import TechnicalTeam from './TechnicalTeam'
+import { Team } from '../Our Team/Team'
 
 export default function Contactus() {
   return (
 <section id="contact">
+  {/* <div className="our-team">
+    <h2 className="team-name">Developers</h2>
+    <Team/>
+  </div> */}
   <div class="contact-box">
     <div class="contact-links">
       <h2>CONTACT</h2>
@@ -41,7 +46,16 @@ export default function Contactus() {
       </form>
     </div>
   </div>
+
+
+   <div className="our-team">
+    <h2 className="team-name">Developers</h2>
+    <Team/>
+  </div> 
+
 </section>
+
+
   )
 }
 
