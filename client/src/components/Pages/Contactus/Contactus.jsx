@@ -1,7 +1,8 @@
 import React from 'react'
 import './contactus.css'
 import TechnicalTeam from './TechnicalTeam'
-import { Team } from '../Our Team/Team'
+
+import { Teams } from '../Our Team/Team'
 
 export default function Contactus() {
   return (
@@ -55,9 +56,9 @@ export default function Contactus() {
 </section>
 </div>
 <div className="our-team">
-    <h2 className="team-name" style={{color: "red"}}>Developers</h2>
-    <Team/>
-    <Team/>
+    <h2 className="team-name">Our Developers</h2>
+    <Teams/>
+   
   </div> 
 </div>
   )
