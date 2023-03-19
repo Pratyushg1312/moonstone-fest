@@ -18,9 +18,9 @@ export const Team=(props) => {
         <div className="profile-card-body">
             
             <ul class="icons clearfix">
-            <li><a href={props.link1}><i class={props.icon1} aria-hidden="true"></i></a></li>
-            <li><a href={props.link2}><i class={props.icon2}></i></a></li>
-            <li><a href={props.link3}><i class={props.icon3}></i></a></li>
+            <li><a href="#"><i class="fa fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-brands fa-linkedin-in"></i></a></li>
           </ul>
             
 
