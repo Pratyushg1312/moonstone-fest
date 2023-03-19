@@ -7,6 +7,7 @@ export const Teams = () => {
     <div className='team-container'>
         <div className="team-body">
         <Team image={"./images/dishi.jpg"} name={"Dishika Jain"}/>
+        {/* <Team image={"./images/vishal.jpg"} name={"Vishal Sharma"}/> */}
         <Team image={"./images/vishal.jpg"} name={"Vishal Sharma"}/>
         <Team image={"./images/1.png"} name={"Kalash Jain"}/>
         <Team image={"./images/1.png"} name={"Pratyush Gupta"}/>
