@@ -15,7 +15,7 @@ export default function DateofBirth(props) {
        
         <>
         <div class="typewriter">
-            <h1 className='typing-heading'>What is Your DoB?</h1>
+            <h1 className='typing-heading'>What is Your DOB?</h1>
           </div>
           <input type="date" name={s} value={props.content[s]} onChange={handleChange} required/>
           <div className='btn-left'>
