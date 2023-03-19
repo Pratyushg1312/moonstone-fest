@@ -1,14 +1,17 @@
-import React from "react";
-import "./Team.css";
+import React from 'react'
+import { Team } from '../Our Team/SinglePage'
+import "./Team.css"
 
-export const Team = () => {
+export const Teams = () => {
   return (
-    <div className="profile-cards">
-      <div className="profile-card-header">
-        <div className="profile-image"></div>
-        <div className="profile-info">
-          <h3 className="profile-name">Mukta Gupta</h3>
-          <p className="profile-desc">Developer / Coder</p>
+    <>
+    <div className='team-container'>
+        <div className="team-body">
+          <Team image={"./images/dishi.jpg"} name={"Dishika Jain"}/>
+          <Team image={"./images/vishal.jpg"} name={"Vishal Sharma"}/>
+          <Team image={"./images/1.png"} name={"Kalash Jain"}/>
+          <Team image={"./images/1.png"} name={"Pratyush Gupta"}/>
+          <Team image={"./images/mukta.jpg"} name={"Mukta Gupta"}/>
         </div>
       </div>
       <div className="profile-card-body">
@@ -30,6 +33,6 @@ export const Team = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </>
   );
 };

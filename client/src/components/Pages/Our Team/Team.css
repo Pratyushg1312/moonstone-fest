@@ -1,46 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
-/* *,
-*::after,
-*::before {
-	font-family: "Poppins", sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-} */
 
-/* body {
-	display: flex;
-	height: 100vh;
-	justify-content: center;
-	align-items: center;
-	background-color: #600b28;
-} */
 
 .profile-cards {
     font-family: poppins;
-    /* border: 1px solid #ffffff; */
-	width: 300px;
+    /* border: 1.5px solid white; */
+	width: 23.33%;
 	/* position: absolute; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 2rem;
+	padding: 1rem;
+	margin: 55px;
     background-color: #0D4451;
 	/* background-color: yelllow; */
 	border-radius: 1rem;
 	box-shadow: 0px 0px 15px rgb(0,255,208)
 }
-.profile-image {
+
+.profile-image >img {
+
 	position: relative;
-	border: 2px solid #F5AD36;
+	/* border: 2px solid #F5AD36; */
 	top: -100px;
 	border-radius: 6rem;
-	background-image: url(https://yt3.ggpht.com/ytc/AKedOLSB-oR-xmvVSZXJ3gbK12uvv0AJUvajwxMie_R_uw=s900-c-k-c0x00ffffff-no-rj);
+	/* background-image: url(https://yt3.ggpht.com/ytc/AKedOLSB-oR-xmvVSZXJ3gbK12uvv0AJUvajwxMie_R_uw=s900-c-k-c0x00ffffff-no-rj); */
+	/* background-image: "./images/25year.png"; */
 	width: 11rem;
 	height: 11rem;
-	background-position: center;
-	background-size: cover;
+	/* object-fit: contain; */
+	/* background-position: center; */
+	/* background-size: cover; */
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
 }
 
@@ -63,31 +53,6 @@
     font-family: poppins;
 }
 
-/* .inside-status{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid yellow;
-    margin: 15px;
-}
-
-.status {
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	text-align: center;
-	line-height: 1rem;
-	margin-bottom: 1.3rem;
-}
-
-.status-value {
-	color: #F5AD36;
-	font-weight: 700;
-}
-
-.status-text {
-	font-size: 0.8rem;
-	color: black;
-} */
 
 .icons{
 	margin-top:8px;
@@ -110,6 +75,24 @@
     color:black;
  }
 
+ .team-container {
+	/* border: 2px solid white; */
+	display: flex;
+	justify-content: center;
+	/* display: flex; */
+	/* flex-direction: column; */
+	width: 100%;
+ }
 
+ .team-body{
+	/* border: 12px solid red; */
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 80%;
+
+ } 
 
 
