@@ -49,16 +49,11 @@ export default function Contactus() {
       </form>
     </div>
   </div>
-
-
-   
-
 </section>
 </div>
 <div className="our-team">
     <h2 className="team-name">Our Developers</h2>
     <Teams/>
-   
   </div> 
 </div>
   )

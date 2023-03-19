@@ -56,7 +56,7 @@
   opacity: 0.5;
 } */
 .parallax {
-  background-image: url("https://wallpaper.dog/large/20450093.jpg");
+  background-image: url("https://i.pinimg.com/originals/ee/de/3a/eede3a1e17bca9bdc131e0e628069dd8.jpg");
 }
 
 .parallax1 {
@@ -68,7 +68,7 @@
 }
 
 .parallax3 {
-  background-image: url("https://images.unsplash.com/photo-1543722530-d2c3201371e7?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTExOTg&ixlib=rb-1.2.1&q=80");
+  background-image: url("https://images.alphacoders.com/101/1019517.jpg");
 }
 
 .text-bloc p {
@@ -83,13 +83,13 @@
 }
 .card-event{
   position:relative;
-  width:25%;
+  width: 250px;
   height:300px;
   border-radius:0px 10px 10px 0px;
   background:#f4f4f4;
   transform-style: preserve-3d;
   transform: perspective(1000px);
-  margin: 20px 5%;
+  margin: 20px 8%;
   box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
   transition: 1s;
 }
