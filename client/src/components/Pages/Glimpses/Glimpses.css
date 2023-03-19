@@ -46,6 +46,7 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  
 }
 .grid-wrapper > div > img {
 	width: 100%;
