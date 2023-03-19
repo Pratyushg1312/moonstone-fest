@@ -1,13 +1,26 @@
 import e from "cors";
 import React, { useState ,useRef,useEffect} from "react";
 import { createHashRouter, NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./header.css";
 export default function Header() {
   const [appstate, chngeState] = useState("./images/logomono.png");
   const chkbox= useRef();
   const [checked, setChecked] = useState();
   
-  return (
+  const scrollToTop = () => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  };
+  const { pathname } = useLocation();
+    useEffect(() => {
+      scrollToTop();
+    }, [pathname])
+  
+    useEffect(() => {
+      scrollToTop();
+    }, [])
+  
+    return (
     <>
     <input ref={chkbox} type="checkbox" checked={checked} id="nav-tog" style={{display:"none"}}/>
             <label for="nav-tog" class="nav-tog-lab" onClick={

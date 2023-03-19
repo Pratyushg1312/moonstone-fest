@@ -183,3 +183,170 @@
     object-fit: contain;
   } */
 }
+
+.btn-events {
+  text-decoration: none;
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: .125em;
+  --curve-size: .5em;
+  --blur: 30px;
+  --bg: #080312;
+  --color: #afffff;
+  color: var(--color);
+    /* use position: relative; so that BG is only for .btn-events */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: .5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  clip-path: polygon(
+            /* Top-left */
+            0% var(--curve-size),
+
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
+  transition: color 250ms;
+}
+
+.btn-events::after,
+.btn-events::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.btn-events::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%
+  }
+
+  50% {
+    background-position: 70% 100%
+  }
+
+  100% {
+    background-position: 31% 0%
+  }
+}
+
+.btn-events::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+            /* Top-left */
+            var(--border-width) 
+            calc(var(--curve-size) + var(--border-width) * .5),
+
+            calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+
+            /* top-right */
+            calc(100% - var(--border-width)) 
+            var(--border-width),
+
+            calc(100% - var(--border-width)) 
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            var(--border-width) calc(100% - var(--border-width)));
+  transition: clip-path 500ms;
+}
+
+.btn-events:where(:hover, :focus)::after {
+  clip-path: polygon(
+                /* Top-left */
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    
+                calc(100% - var(--border-width))
+
+                var(--border-width),
+    
+                /* top-right */
+                calc(100% - var(--border-width))
+
+                 var(--border-width),
+    
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+    
+                /* bottom-right 1 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                calc(100% - var(--border-width)),
+
+                /* bottom-right 2 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                calc(100% - var(--border-width)));
+  transition: 200ms;
+}
+
+.btn-events:where(:hover, :focus) {
+  color: #fff;
+}
+
+
+
+
+/* === removing default button style ===*/
+.button-eventname {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button-eventname styling */
+.button-eventname {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button-eventname */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.card-event:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}

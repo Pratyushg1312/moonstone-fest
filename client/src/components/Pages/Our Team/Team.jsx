@@ -14,7 +14,7 @@ export const Teams = () => {
           <Team image={"./images/mukta.jpg"} name={"Mukta Gupta"}/>
         </div>
       </div>
-      <div className="profile-card-body">
+      {/* <div className="profile-card-body">
         <ul class="icons clearfix">
           <li>
             <a href="#">
@@ -32,7 +32,7 @@ export const Teams = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </>
   );
 };

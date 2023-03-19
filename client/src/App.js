@@ -15,7 +15,11 @@ import Parallax from "./components/Pages/Parallax/Parallax";
 import Glimpes from "./components/Pages/Home/Glimpes";
 import Map from "./components/Pages/Home/Map";
 import { Cursor } from "./Cursor";
+import { useEffect } from "react";
 function App() {
+
+  
+
   return (
     <div >
       <Cursor/>
