@@ -11,7 +11,7 @@ const SoloEventCard = (props) => {
             <div className="details-events">
                 <div className="content-events">
                 <button data-text="Awesome" class="button-eventname">
-                    <span class="actual-text">&nbsp;uiverse&nbsp;</span>
+                    <span class="actual-text">&nbsp;{props.name}&nbsp;</span>
                     <span class="hover-text" aria-hidden="true">&nbsp;{props.name}&nbsp;</span>
                 </button>
                     {/* <h3 style={{ color: "black" }}>{props.name}</h3> */}
