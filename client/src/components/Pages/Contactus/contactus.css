@@ -27,8 +27,9 @@
   width: 50%;
   padding: 8% 5% 10% 5%;
 }
-
-
+.our-team{
+  display: flex;
+}
 .contact-links {
   background-color: #1f2e43;
   background:
