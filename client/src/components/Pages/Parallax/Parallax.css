@@ -161,7 +161,7 @@
       flex-wrap: wrap;
     }
     .card-event{
-      margin: 20px 8%;
+      margin: 15px 8%;
     }
 }
 @media only screen and (max-width: 550px) {
@@ -174,7 +174,7 @@
   .card-event{
     /* margin: 20px 8%; */
     width: 50%;
-    height: 100px;
+    height: 150px;
   }
   .section-background h2{
     padding: 10px 0;
