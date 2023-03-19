@@ -12,7 +12,7 @@ path:"./images/vishal.jpg"
 },
 {
   name:"Kalash Jain",
-path:"./images/1.png"
+path:"./images/kalash.jpeg"
 },
 {
   name:"Mukta Gupta",
