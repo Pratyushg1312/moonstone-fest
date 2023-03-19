@@ -3,6 +3,7 @@ import "./Team.css"
 
 export const Team=(props) => {
   return (
+    
     <div className='profile-cards'>
         <div className="profile-card-header">
             <div className="profile-image">

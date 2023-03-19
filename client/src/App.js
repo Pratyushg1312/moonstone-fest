@@ -17,6 +17,7 @@ import Parallax from "./components/Pages/Parallax/Parallax";
 import Glimpes from "./components/Pages/Home/Glimpes";
 import Map from "./components/Pages/Home/Map";
 import { Cursor } from "./Cursor";
+import { Teams } from "./components/Pages/Our Team/Team";
 function App() {
   return (
     <div >
@@ -36,6 +37,7 @@ function App() {
         <Route  path='*' element={<Error/> }/>
         <Route  path='/glimpses' element={<Glimpses/> }/>
         <Route  path='/Map' element={<Map/> }/>
+        <Route  path='/team' element={<Teams/> }/>
 
       </Routes>
       <Footer/>
