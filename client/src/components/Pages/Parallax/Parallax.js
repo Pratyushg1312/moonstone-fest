@@ -7,7 +7,7 @@ function Parallax() {
 
             <div className='d-flex justify-content-end me-2' style={{ position: "fixed", bottom: "10px", right: "4px",zIndex:"10000000" }}>
                 <NavLink to="/map" className="floatingButton">
-                    <img src="videos/telescope.gif" style={{ borderRadius: "50%" }} />
+                    <img src="./videos/telescope.gif" style={{ borderRadius: "50%" }} />
                 </NavLink></div>
             <section className="section-background parallax">
                 <h2>Day 1<i class="fa-solid fa-sun" style={{ color: "#fab005" }}></i>(Day)</h2>
