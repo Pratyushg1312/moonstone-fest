@@ -39,7 +39,7 @@ const [Fees, setFees] = useState(0);
           {idx===0?<SingleContentForm que={"What is Your Name?"} placeholder={"Enter Your Name*"} content={content} setcontent={setcontent} to_find={"name"} idx={idx} setidx={setidx} lst={lst} />:<></>}
           {idx===1?<SingleContentForm que={"What is Your Phone No.?"} placeholder={"Enter Your Phone No.*"} content={content} setcontent={setcontent} to_find={"phoneno"} idx={idx} setidx={setidx} lst={lst} />:<></>}
           {idx===2?<SingleContentForm que={"What is Your Email?"} placeholder={"Enter Your email*"} content={content} setcontent={setcontent} to_find={"email"} idx={idx} setidx={setidx} lst={lst} />:<></>}
-          {/* {idx===3?<DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} idx={idx} setidx={setidx} lst={lst} setFees={setFees}/>:<></>} */}
+          {idx===3?<DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} idx={idx} setidx={setidx} lst={lst} setFees={setFees}/>:<></>}
           {idx===4?<SingleContentForm que={"Which College you are From?"} placeholder={"Enter Your College Name*"} content={content} setcontent={setcontent} to_find={"college"} idx={idx} setidx={setidx} lst={lst} />:<></>}
           {idx===5?<DateofBirth content={content} setcontent={setcontent} to_find={"date_of_birth"} idx={idx} setidx={setidx} lst={lst} />:<></>}
           {idx===6?<GenderField content={content} setcontent={setcontent} to_find={"gender"} idx={idx} setidx={setidx} lst={lst} />:<></>}
