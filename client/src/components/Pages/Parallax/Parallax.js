@@ -8,7 +8,7 @@ function Parallax() {
         <>
             <div className='d-flex justify-content-end me-2' style={{ position: "fixed", bottom: "58px", right: "5px" }}>
                 <NavLink to="/map" className="floatingButton">
-                    <img src="videos/telescope.gif" style={{ borderRadius: "50%" }} />
+                    <img src="Videos/telescope.gif" style={{ borderRadius: "50%" }} />
                 </NavLink>
             </div>
             <DayEvent DayNum={1} id="DayOne"/>

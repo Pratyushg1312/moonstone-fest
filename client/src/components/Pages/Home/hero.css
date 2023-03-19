@@ -18,7 +18,7 @@
     height: 15em;
     width: 15em;
     border-radius: 50%;
-    background-color:#32ff8b ;
+    background-color:#121413 ;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +56,7 @@
     height: 100vh;
     width: 100%;
     position: relative;
-    background-color: #56ffc468;
+    background-color: #00000068;
     overflow: hidden;
 }
 #hero {
@@ -121,11 +121,11 @@
     .aboutmoon p {
         /* width: max-content; */
         /* position: relative; */
-        color: #56ffc7;
+        color: #e9ecef;
         font-family: raleway;
         font-size: 17px;
         text-align: right;
-        /* margin-top: 7em; */
+        margin-top: 0;
     }
 }
 
