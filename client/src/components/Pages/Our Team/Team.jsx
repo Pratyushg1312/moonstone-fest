@@ -25,6 +25,7 @@ path:"./images/pratyushh.jpg"
 ]
 export const Teams = () => {
   return (
+    <>
     <div className='team-container'>
         <div className="team-body">
           {arr.map(
@@ -34,15 +35,12 @@ export const Teams = () => {
             
           )
           )}
-        {/* <Team image={"./images/dishi.jpg"} name={"Dishika Jain"}/>
-        <Team image={"./images/vishal.jpg"} name={"Vishal Sharma"}/>
-        <Team image={"./images/1.png"} name={"Kalash Jain"}/>
-        <Team image={"./images/pratyushh.jpg"} name={"Pratyush Gupta"}/>
-        
-        <Team image={"./images/mukta.jpg"} name={"Mukta Gupta"}/> */}
+       
         
         
         </div>
-    </div>
-  )
-}
+      </div>
+   
+    </>
+  );
+};

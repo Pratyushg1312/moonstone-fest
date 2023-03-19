@@ -35,6 +35,7 @@ g.container {
 
 
 img {
+    /* width: 100%; */
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;
@@ -45,6 +46,7 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  
 }
 .grid-wrapper > div > img {
 	width: 100%;

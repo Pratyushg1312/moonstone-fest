@@ -77,10 +77,10 @@ export const Hero = () => {
         </div>
 
         <div className="logotyp-con">
-          <div className="logo1" >
+          <div className="logo1 " >
             <img src='./images/logomono.png' class="img-fluid rounded mx-auto d-block p-2" alt="" />
           </div>
-          <div className="typ" >
+          <div className="typ"  style={{marginTop:"0px"}}>
             <Aboutmoon />
           </div>
         </div>

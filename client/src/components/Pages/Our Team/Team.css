@@ -8,6 +8,7 @@
 	width: 23.33%;
 	/* position: absolute; */
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	padding: 1rem;
@@ -21,6 +22,12 @@
 .profile-image{
 	text-align: center;
 }
+@media only screen and (max-width: 400px) {
+	.profile-cards {
+	  width: 100%;
+	}
+  }
+
 .profile-image >img {
 
 	position: relative;
@@ -98,4 +105,23 @@
 
  } 
 
+ @media screen and (max-width: 918px) {  
+	.icons li{
+		 
+		display:flex;
+		flex-direction: column; 
+		margin:0; 
+		padding:5% 0; 
+		
+	}
+	  
+  }
 
+/* @media screen and (max-width:500px)
+{
+	.profile-cards{
+		width: 100%;
+	}
+} */
+ 
+ 
