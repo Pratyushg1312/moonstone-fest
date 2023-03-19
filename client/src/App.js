@@ -8,16 +8,18 @@ import Footer from "./components/Footer/Footer.jsx"
 import Contactus from './components/Pages/Contactus/Contactus';
 import SingleEvent from './components/Pages/SingleEvent/SingleEvent';
 import Registration from './components/Pages/Registration/Registration';
-
 import SingleDay from './components/Pages/SingleEvent/SingleDay';
-import NewEvents from "./components/Pages/NewEvents/NewEvents";
 import Error from "./components/Pages/Error/Error";
 import Glimpses from "./components/Pages/Glimpses/Glimpses"
 import Parallax from "./components/Pages/Parallax/Parallax";
 import Glimpes from "./components/Pages/Home/Glimpes";
 import Map from "./components/Pages/Home/Map";
 import { Cursor } from "./Cursor";
+import { useEffect } from "react";
 function App() {
+
+  
+
   return (
     <div >
       <Cursor/>
@@ -27,8 +29,7 @@ function App() {
         <Route  path='/aboutus' element={<Aboutus/> }/>
         <Route  path='/contactus' element={<Contactus/> }/>
         <Route  exact path='/events' element={<Parallax/> }/>
-        <Route  path='/events/:id' element={<NewEvents/> }/>
-        {/* <Route  path='/registration' element={<Registration/> }/> */}
+        <Route  path='/registration' element={<Registration/> }/>
         <Route  path='/SingleDay' element={<SingleDay/> }/>
         <Route  path='/SingleEvent' element={<SingleEvent/> }/>
         <Route  path='/parallax' element={<Parallax/> }/>

@@ -45,7 +45,6 @@
 }
 .header-container li a, .R-header-container li a{
     color: #00FFD1;
-    
     text-decoration: dashed;
     /* font-family: "poppins"; */
     font-size: 20px;
@@ -67,8 +66,6 @@
     justify-content: center;
     width: 80%;
     z-index: 1;
-    /* /////////////////// */
-        
     display: none;
     flex-direction: column;
     font-style: normal;
