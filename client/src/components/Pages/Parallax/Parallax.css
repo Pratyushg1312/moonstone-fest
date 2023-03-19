@@ -350,3 +350,18 @@
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color))
 }
+.floatingButton {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 50px;
+  right: 0px;
+  opacity: 1;
+
+  transition: all 0.4s;
+}
+
+.floatingButton .fa {
+  font-size: 15px !important;
+}

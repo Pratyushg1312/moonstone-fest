@@ -2,7 +2,7 @@ import React from 'react'
 import "./aboutm.css"
 export const Aboutmoon = () => {
   return (
-    <div className="aboutmoon">
+    <div className="aboutmoon" >
         <p>
         Moonstone is part of the mineral family of feldspars.
         It's an opalescent stone that can be found in colorless 

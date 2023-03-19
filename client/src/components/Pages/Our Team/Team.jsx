@@ -9,8 +9,8 @@ export const Teams = () => {
         <div className="team-body">
           <Team image={"./images/dishi.jpg"} name={"Dishika Jain"} icon1={"fa-brands fa-linkedin fa-2x"} icon2={"fa-brands fa-github fa-2x"} icon3={"fa-brands fa-instagram fa-2x"} link1={""} link2={""} link3={""} desc={"Frontend Developer"}/>
           <Team image={"./images/vishal.jpg"} name={"Vishal Sharma"} icon1={"fa-brands fa-linkedin fa-2x"} icon2={"fa-brands fa-github fa-2x"} icon3={"fa-solid fa-envelope fa-2x"} link1={"https://www.linkedin.com/in/sharma39vishal/"} link2={"https://github.com/sharma39vishal"} link3={"mailto:sharma39vishal@gmail.com"} desc={"Full Stack"}/>
-          <Team image={"https://media.licdn.com/dms/image/D4D35AQGQ8TLBvTkHyQ/profile-framedphoto-shrink_800_800/0/1665211305854?e=1679839200&v=beta&t=q_AoIxuISDm2gbHkPZEcffORqYsyvgBeWUQyRv5ZRmc"} name={"Kalash Jain"} icon1={"fa-brands fa-linkedin fa-2x"} icon2={"fa-brands fa-github fa-2x"} icon3={"fa-solid fa-envelope fa-2x"} link1={""} link2={""} link3={""} desc={"Frontend Developer"}/>
-          <Team image={"./images/1.png"} name={"Pratyush Gupta"} icon1={"fa-brands fa-linkedin fa-2x"} icon2={"fa-brands fa-github fa-2x"} icon3={"fa-brands fa-instagram fa-2x"} link1={""} link2={""} link3={""} desc={"Frontend Developer"}/>
+          <Team image={"./images/kalash.jpeg"} name={"Kalash Jain"} icon1={"fa-brands fa-linkedin fa-2x"} icon2={"fa-brands fa-github fa-2x"} icon3={"fa-solid fa-envelope fa-2x"} link1={"https://www.linkedin.com/in/kalash-jain-b50027203/"} link2={"https://github.com/KalashJain591"} link3={"mailto:kalashjain446@gmail.com"} desc={"Frontend Developer"}/>
+          <Team image={"./images/pratyush.jpeg"} name={"Pratyush Gupta"} icon1={"fa-brands fa-linkedin fa-2x"} icon2={"fa-brands fa-github fa-2x"} icon3={"fa-brands fa-instagram fa-2x"} link1={""} link2={""} link3={""} desc={"Frontend Developer"}/>
           <Team image={"./images/mukta.jpg"} name={"Mukta Gupta"} icon1={"fa-brands fa-linkedin fa-2x"} icon2={"fa-brands fa-github fa-2x"} icon3={"fa-brands fa-instagram fa-2x"} link1={""} link2={""} link3={""} desc={"Frontend Developer"}/>
         </div>
       </div>
