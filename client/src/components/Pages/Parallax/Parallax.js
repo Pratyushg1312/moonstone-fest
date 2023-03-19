@@ -11,7 +11,7 @@ function Parallax() {
                     <img src="videos/telescope.gif" style={{ borderRadius: "50%" }} />
                 </NavLink>
             </div> */}
-            <DayEvent DayNum={1} />
+            <DayEvent DayNum={1} id="DayOne"/>
             <NightEvent DayNum={1} />
             <DayEvent DayNum={2} />
             <NightEvent DayNum={2} />

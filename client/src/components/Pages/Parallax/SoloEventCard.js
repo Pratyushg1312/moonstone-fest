@@ -10,7 +10,7 @@ const SoloEventCard = (props) => {
             </div>
             <div className="details-events">
                 <div className="content-events">
-                    <h3 style={{ color: "black" }}>Apps</h3>
+                    <h3 style={{ color: "black" }}>{props.name}</h3>
                     <div className="buttons-section">
                         <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
                         <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
