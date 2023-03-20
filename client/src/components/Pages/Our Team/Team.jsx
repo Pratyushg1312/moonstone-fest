@@ -31,9 +31,9 @@ path:"./images/kalash.jpeg",
 icon1:"fa-brands fa-linkedin fa-2x",
 icon2:"fa-brands fa-github fa-2x",
 icon3:"fa-solid fa-envelope fa-2x",
-link1:"",
-link2:"",
-link3:"",
+link1:"https://www.linkedin.com/in/kalash-jain-b50027203/",
+link2:"https://github.com/KalashJain591",
+link3:"mailto:kalashjain446@gmail.com",
 
 },
 {

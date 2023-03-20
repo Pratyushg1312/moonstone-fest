@@ -83,8 +83,8 @@
     width: 100%;
    
     position: relative;
-    /* background-color: #100f0fd6; */
-    background-color: rgba(0, 0, 0, 0.949);
+    background-color: #100f0fd6;
+    /* background-color: rgba(0, 0, 0, 0.949); */
     overflow: hidden;
 }
 #hero {
