@@ -6,6 +6,7 @@
     font-family: poppins;
     /* border: 1.5px solid white; */
 	width: 23.33%;
+	min-width: 300px;
 	/* position: absolute; */
 	display: flex;
 	justify-content: center;
@@ -29,7 +30,6 @@
   }
 
 .profile-image >img {
-
 	position: relative;
 	/* border: 2px solid #F5AD36; */
 	top: -100px;
@@ -75,6 +75,7 @@
 
 .icons li{ 
     display:inline-block;
+	/* flex-wrap: nowrap; */
     /* border: 2px solid black;  */
 	width:auto; 
 	margin:0 12px;
@@ -107,12 +108,10 @@
 
  @media screen and (max-width: 918px) {  
 	.icons li{
-		 
 		display:flex;
 		flex-direction: column; 
 		margin:0; 
 		padding:5% 0; 
-		
 	}
 	  
   }
@@ -124,4 +123,4 @@
 	}
 } */
  
- 
+
