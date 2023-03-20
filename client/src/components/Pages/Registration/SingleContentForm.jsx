@@ -9,12 +9,12 @@ export default function SingleContentForm(props) {
         [name]: value
     })
   }
-
+ 
   const movenxt=()=>{
     if (props.content[s].length===0) {      
       alert("Please Fill the data");
     }
-    else if(s==="phoneno"&&props.content[s].length!==10){
+    else if(s==="phoneno"&&!(/^(0|91)?[6-9][0-9]{9}$/.test(props.content[s]))){
       alert("Please Input Valid Phone No.");
     }
     else if(s==="email"&&!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(props.content[s]))){

@@ -4,41 +4,41 @@ const Count = require("../Model/CountModel");
 const Event = require("../Model/EventModel");
 var nodemailer = require('nodemailer');
 
-const mailtouser=(props)=>{
-    var transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: 'info.xtrimcoder@gmail.com',
-            pass: 'xftqqyoquxloqkkl'
-        }
-    });
+// const mailtouser=(props)=>{
+//     var transporter = nodemailer.createTransport({
+//         service: 'gmail',
+//         auth: {
+//             user: 'info.xtrimcoder@gmail.com',
+//             pass: 'xftqqyoquxloqkkl'
+//         }
+//     });
 
 
-    var mailOptions = {
-        from: 'info.xtrimcoder@gmail.com',
-        to:  props.email,
-        subject: `Registration For ${props.event} Event | Software Cell Medicaps`,
-        text:
-`Dear ${props.name},
-Your Registration will be confirm after checking Transaction
-Your Registration id : ${props.reg_id}
-After confirmation Pass was sended on this Email.
+//     var mailOptions = {
+//         from: 'info.xtrimcoder@gmail.com',
+//         to:  props.email,
+//         subject: `Registration For ${props.event} Event | Software Cell Medicaps`,
+//         text:
+// `Dear ${props.name},
+// Your Registration will be confirm after checking Transaction
+// Your Registration id : ${props.reg_id}
+// After confirmation Pass was sended on this Email.
 
-Thanks & Regards
-Software cell
-`,
-    };
+// Thanks & Regards
+// Software cell
+// `,
+//     };
 
-    transporter.sendMail(mailOptions, function (error, info) {
-        if (error) {
-            console.log(error);
-            // console.log(error);
-        } else {
-            console.log('Email sent: ' + info.response);
-            // return res.json('Email sent: ' + info.response);
-        }
-    });
-}
+//     transporter.sendMail(mailOptions, function (error, info) {
+//         if (error) {
+//             console.log(error);
+//             // console.log(error);
+//         } else {
+//             console.log('Email sent: ' + info.response);
+//             // return res.json('Email sent: ' + info.response);
+//         }
+//     });
+// }
 
 router.post("/registeruser", async (req, res) => {
     try {
@@ -66,7 +66,7 @@ router.post("/registeruser", async (req, res) => {
             const reg_id=oldcnt[0].registration+1;
             const newRegistration = new Registration({reg_id,name,auth_name,auth_email, phoneno, email,date_of_birth, gender, event,college,date_added:new Date(),utr,payment_status:"Pending",fees:eventstatus.fees});
             // console.log("MAIL Send");
-            mailtouser({reg_id,name,email,event});
+            // mailtouser({reg_id,name,email,event});
             // console.log("User Saved");
             newRegistration .save()
                 .then(() => res.json(reg_id))
