@@ -31,3 +31,14 @@
 body{
     background-image: url(https://vinhack.vinnovateit.com/texture.svg);
 }
+@media screen and (max-width: 700px) {
+  .cursor-dot-outline {
+    display: none;
+    /* background-image: url(./images/mooncurse.png); */
+  
+  }
+  .cursor-dot {
+    display:none;
+    
+  }
+}

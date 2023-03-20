@@ -3,7 +3,7 @@
 .hero-con {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     /* border: 5px solid whitesmoke; */
     /* align-items: center; */
@@ -12,13 +12,40 @@
 }
 .pause{
     position: absolute;
+        right: 0px;
     transform: scale(0);
 }
+.hcircle{
+    position: absolute;
+    height: 15em;
+    width: 15em;
+    border-radius: 50%;
+   border: 1px solid #32ff8b;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: transform 0.7s  ease-in-out;
+}
+.hcircle:hover{
+    transition: transform 1s  ease-in-out;
+    transform: scale(10);
+}
+.circle:hover{
+    transition: transform 1s ease-in-out;
+    transform: scale(0.5);
+
+}
+/* .circle:hover+.hcircle{
+    transform: scale(10);
+} */
+
+
 .circle{
     height: 15em;
     width: 15em;
     border-radius: 50%;
-    background-color:#121413 ;
+    background-color:#01170b ;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -33,14 +60,14 @@
     position: relative;
     left: 10px;
     border-width: 0 60px 100px 60px;
-    border-color: transparent transparent aquamarine transparent;
+    border-color: transparent transparent #32ff8b transparent;
     transition: transform 0.2s ease;
 
     transform: rotate(90deg);
 }
 .hero{display: flex;
     /* border: 5px solid red; */
-    height: 100vh;
+    height: 100%;
    width: 60%;
    
     align-items: center;
@@ -53,16 +80,17 @@
 .screener{
     display:flex;
     flex-wrap: wrap;
-    height: 100vh;
     width: 100%;
+   
     position: relative;
-    background-color: #100f0fd6;
+    /* background-color: #100f0fd6; */
+    background-color: rgba(0, 0, 0, 0.949);
     overflow: hidden;
 }
 #hero {
     display: flex;
     /* border: 5px solid red; */
-    height: 100vh;
+    width: 100%;
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -103,6 +131,7 @@
         height: 70vh;
         width: 100%;
     }
+   
     .logo1 {
         display: none;
     }
@@ -118,15 +147,50 @@
         padding: 0;
         margin: 0;
     }
-    .aboutmoon p {
-        /* width: max-content; */
-        /* position: relative; */
-        color: #e9ecef;
-        font-family: raleway;
-        font-size: 17px;
-        text-align: right;
-        margin-top: 0;
+    
+
+    .pause{
+        position: absolute;
+            right: 0px;
+        transform: scale(0);
     }
+    .hcircle{
+        position: absolute;
+        height: 10em;
+        width: 10em;
+        border-radius: 50%;
+       border: 1px solid #32ff8b;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        transition: transform 0.7s  ease-in-out;
+    }
+    .circle{
+        height: 10em;
+        width: 10em;
+        border-radius: 50%;
+        background-color:#01170b ;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        transition: transform 0.2s ease;
+       
+    }
+    .triangle{
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        position: relative;
+        left: 10px;
+        border-width: 0 50px 80px 50px;
+        border-color: transparent transparent #32ff8b  transparent;
+        transition: transform 0.2s ease;
+    
+        transform: rotate(90deg);
+    }
+
 }
 
 

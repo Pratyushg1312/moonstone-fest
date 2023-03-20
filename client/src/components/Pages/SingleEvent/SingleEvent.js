@@ -42,7 +42,11 @@ export default function SingleEvent() {
                     </div>
                 </div>
             </div>
-
+            <h1 className='text-center text-white'>Event Registration</h1>
+            <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
+            <button className="btn-events">Registeration</button>
+            </div>
+           
             {/* Coordinators Card Section */}
             <h1 className='text-center text-white'>Coordinators</h1>
             <div className='container d-flex flex-wrap justify-content-center'>
