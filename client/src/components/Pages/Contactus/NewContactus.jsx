@@ -32,8 +32,50 @@ export default function NewContactus() {
   
 }
   return (
-    <div>
-        <section id="contact">
+    <div className='new-contact'>
+      <div className="contact container">
+  <form>
+    <div className="form">
+      <div className="form-txt">
+        <h1>Contact Us</h1>
+        <span>
+        Medi-Caps University
+A.B. Road, Pigdamber, Rau Indore - 453331
+        </span>
+        {/* <h3>USA</h3>
+        <p>
+          195 E Parker Square Dr, Parker, CO 801
+          <br />
+          +43 982-314-0958
+        </p> */}
+        <h3>Details</h3>
+        <p>
+           0731-4259500, 2856294
+          <br />
+          e-mail: info@medicaps.ac.in
+        </p>
+      </div>
+      <div className="form-details">
+      <input type="text" placeholder='Name'  required=""   value={FormData.name} onChange={handleChange} name="name"  />
+      <input className='my-2' type="text" placeholder='Email' name="email" required="" value={FormData.email} onChange={handleChange} />
+          
+        {/* <textarea
+          name="message"
+          id="message"
+          cols={52}
+          rows={7}
+          placeholder="Message"
+          required=""
+          defaultValue={""}
+        /> */}
+        <textarea name="message"   placeholder="Message" required="" defaultValue={""}  cols={56} rows={7} value={FormData.message} onChange={handleChange} />
+        <button  onClick={()=>{handleSubmit()}}>SEND MESSAGE</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+        {/* <section id="contact">
   <div className="contact-box">
     <div className="contact-links">
       <h2>CONTACT</h2>
@@ -86,7 +128,7 @@ export default function NewContactus() {
         <button className="submit-btn"  onClick={()=>{handleSubmit()}}>Send</button>
     </div>
   </div>
-</section>
+</section> */}
 
     </div>
   )
