@@ -23,7 +23,7 @@ function Events() {
               <img
                 src="/images/bandupper.jpg"
                 alt=""
-                srcset=""
+                srcSet=""
               />
               <h1 data-text="Day 1">Day 1</h1>
             </div>
