@@ -12,10 +12,13 @@ export const Hero = () => {
   const [chng4, chngstyl4] = useState();
   // const handleToggleMute = () => chngstyl3(current => !current);
   return (
+    //google drive
     // https://drive.google.com/file/d/1wq5JUU0JBacU6W3eyXVb-X7uB9lJjIz1/view?usp=sharing
+    //cloudflare
+    //  https://res.cloudinary.com/djpgrx4y8/video/upload/v1679254148/moonstone/moonstonevid_ndcpyn.mp4
     <div className="hero-con">
       <video autoPlay muted={chng3} loop id="hero" >
-        <source src="https://drive.google.com/uc?id=1wq5JUU0JBacU6W3eyXVb-X7uB9lJjIz1&export=download" type="video/mp4" />
+        <source src="https://res.cloudinary.com/djpgrx4y8/video/upload/v1679254148/moonstone/moonstonevid_ndcpyn.mp4" type="video/mp4" />
       </video>
       <div className="pause" style={{
         transition: "transform 1s ease",
