@@ -10,10 +10,14 @@ const SoloEventCard = (props) => {
             </div>
             <div className="details-events">
                 <div className="content-events">
-                    <h3 style={{ color: "black" }}>{props.name}</h3>
+                <button data-text="Awesome" class="button-eventname">
+                    <span class="actual-text">&nbsp;{props.name}&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;{props.name}&nbsp;</span>
+                </button>
+                    {/* <h3 style={{ color: "black" }}>{props.name}</h3> */}
                     <div className="buttons-section">
-                        <NavLink to="/"><button className="button-section btn-view">View</button></NavLink>
-                        <NavLink to="/Registration"><button className="button-section registration-btn">Register</button></NavLink>
+                        <NavLink to="/SingleEvent"><button className="btn-events">View Details</button></NavLink>
+                        <NavLink to="/Registration"><button className="btn-events">Register</button></NavLink>
                     </div>
                 </div>
             </div>
