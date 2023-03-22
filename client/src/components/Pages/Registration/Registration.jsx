@@ -53,7 +53,7 @@ export default function Registration() {
   }
   const add = () => {
     console.log("hell");
-    <TeamMembers />
+    
   }
 
   return (
@@ -81,8 +81,8 @@ export default function Registration() {
           {reg_id!==0?<Success content={content} reg_id={reg_id}/> :<></>}
           </>
         </>
-      </>
-      {/*:<Loginbtn/>*/}
+      
+      :<Loginbtn/>}
 
     </div>
   )
