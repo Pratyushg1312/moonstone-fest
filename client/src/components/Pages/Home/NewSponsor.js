@@ -17,6 +17,12 @@ export default function NewSponsor() {
                         <div className='sponsor-logos'><img src="./images/25year.png" /></div>
                         <div className='sponsor-logos'><img src="./images/25year.png" /></div>
                         <div className='sponsor-logos'><img src="./images/25year.png" /></div>
+                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
+                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
+                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
+                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
+                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
+
                     </div>
                 </div>
             </div>

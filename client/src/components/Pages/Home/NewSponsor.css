@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 .sponsor-container{
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: center;
   flex-direction: column;;
@@ -35,9 +35,9 @@
 .scrollable-column {
   display: flex;
   justify-content: space-evenly;
-  flex: row;
+  flex: column;
   flex-wrap: wrap;
-  width: 50%; /* Set the width of the scrollable column */
+  width: 100%; /* Set the width of the scrollable column */
   overflow: auto; /* Enable scrolling for the column */
 }
 .scrollable-column::-webkit-scrollbar {
@@ -45,7 +45,7 @@
 }
 
 .sponsor-logos img{
-  width: 100%;
+  width:100%;
 }
 @media screen and (min-width: 1200) {
   .static-column p {
@@ -92,8 +92,8 @@
 }
 
 .sponsor-logos{
-  width: 30%;
-  margin:7%;
+  width: 20%;
+  margin:3%;
   transition: transform .5s ease;
   
 }
