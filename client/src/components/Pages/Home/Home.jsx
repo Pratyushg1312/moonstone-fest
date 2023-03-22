@@ -3,6 +3,7 @@ import Events from '../Events/Events'
 import { Hero } from './Hero'
 // import Sponsor from './Sponsor'
 import NewSponsor from './NewSponsor'
+
 import Temp from './Temp'
 import Map from './Map'
 export default function Home() {
@@ -13,6 +14,8 @@ export default function Home() {
       {/* <Sponsor/> */}
       <Events/>
       <NewSponsor/>
+
+
       {/* <Map/> */}
     </div>
   )
