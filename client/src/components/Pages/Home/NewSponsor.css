@@ -6,11 +6,13 @@
   flex-direction: column;
 }
 .sponsor-container{
-  width: 80%;
+  width: 100%;
+  margin-left: 10%;
   display: flex;
   justify-content: center;
   flex-direction: column;;
 }
+
 .containr {
   width: 100%;
   display: flex;
@@ -21,7 +23,7 @@
 }
 
 .static-column {
-  width: 50%; /* Set the width of the static column */
+  width: 30%; /* Set the width of the static column */
   font-size: 25px;
   overflow: auto;
 }
@@ -35,9 +37,9 @@
 .scrollable-column {
   display: flex;
   justify-content: space-evenly;
-  flex: row;
+  flex: column;
   flex-wrap: wrap;
-  width: 50%; /* Set the width of the scrollable column */
+  width: 90%; /* Set the width of the scrollable column */
   overflow: auto; /* Enable scrolling for the column */
 }
 .scrollable-column::-webkit-scrollbar {
@@ -45,7 +47,8 @@
 }
 
 .sponsor-logos img{
-  width: 100%;
+  width:60%;
+  
 }
 @media screen and (min-width: 1200) {
   .static-column p {
@@ -67,6 +70,9 @@
   .scrollable-column {
     width: 100%;
     order: 2;
+  }
+  .sponsor-container{
+    margin-left: 0;
   }
 }
 
@@ -92,16 +98,31 @@
 }
 
 .sponsor-logos{
-  width: 30%;
-  margin:7%;
+  width: 40%;
+  margin:3%;
   transition: transform .5s ease;
+  text-align: center;
   
 }
 .sponsor-logos:hover {
   opacity: 0.7;
   transform: scale(1.25);
 }
+.sponsor-logos1{
+  width: 20%;
+  margin:3%;
+  transition: transform .5s ease;
+  
+}
+.sponsor-logos1:hover {
+  opacity: 0.7;
+  transform: scale(1.25);
+}
 
+.scrollable-column p{
+  margin: 0;
+  padding: 0;;
+}
 .section-heading {
 
   font-size: 50px;

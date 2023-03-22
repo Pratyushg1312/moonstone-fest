@@ -12,6 +12,10 @@ export const Hero = () => {
   const [chng4, chngstyl4] = useState();
   // const handleToggleMute = () => chngstyl3(current => !current);
   return (
+    //google drive
+    // https://drive.google.com/file/d/1wq5JUU0JBacU6W3eyXVb-X7uB9lJjIz1/view?usp=sharing
+    //cloudflare
+    //  https://res.cloudinary.com/djpgrx4y8/video/upload/v1679254148/moonstone/moonstonevid_ndcpyn.mp4
     <div className="hero-con">
       <video autoPlay muted={chng3} loop id="hero" >
         <source src="https://res.cloudinary.com/djpgrx4y8/video/upload/v1679254148/moonstone/moonstonevid_ndcpyn.mp4" type="video/mp4" />
@@ -79,6 +83,9 @@ export const Hero = () => {
         <div className="logotyp-con">
           <div className="logo1 " >
             <img src='./images/logomono.png' class="img-fluid rounded mx-auto d-block p-2" alt="" />
+          </div>
+          <div className='text-end m-2'> 
+            <p style={{color:"white"}}>Sponsored by : <img src="/images/navigation.jpg" style={{width:"30px",height:"30px"}}/></p>
           </div>
           <div className="typ"  style={{marginTop:"0px"}}>
             <Aboutmoon />

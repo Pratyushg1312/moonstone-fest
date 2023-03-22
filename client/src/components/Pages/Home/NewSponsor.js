@@ -10,13 +10,21 @@ export default function NewSponsor() {
                         <p className='start-0'>Our sponsors include architects, engineers, contractors, material suppliers, building owners, policymakers, nonprofits, and government organizations, providing a 360-degree view of the challenges we face in the built environment. Their insights and resources are invaluable in accelerating action, in our highly collaborative environment.</p>
                     </div>
                     <div className="scrollable-column">
-                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
-                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
-                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
-                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
-                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
-                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
-                        <div className='sponsor-logos'><img src="./images/25year.png" /></div>
+                        <div className='col-md-7  col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+                        <div className='col-md-7 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+                        <div className='col-md-6 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+                        <div className='col-md-6 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+                        <div className='col-md-6 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+                        <div className='col-md-6 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+                        <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+                        <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+                        <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+                        <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+                        <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+                        <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
+     
+                        
+
                     </div>
                 </div>
             </div>
