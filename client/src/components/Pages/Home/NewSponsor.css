@@ -23,7 +23,7 @@
 }
 
 .static-column {
-  width: 50%; /* Set the width of the static column */
+  width: 30%; /* Set the width of the static column */
   font-size: 25px;
   overflow: auto;
 }
@@ -39,7 +39,7 @@
   justify-content: space-evenly;
   flex: column;
   flex-wrap: wrap;
-  width: 100%; /* Set the width of the scrollable column */
+  width: 90%; /* Set the width of the scrollable column */
   overflow: auto; /* Enable scrolling for the column */
 }
 .scrollable-column::-webkit-scrollbar {
