@@ -8,6 +8,7 @@ const eventSchema = new mongoose.Schema({
   min_team_size: { type: Number, required: false },
   fees: { type: Number, required: false },
   status: { type: String, required: false },
+  date_of_event: { type: String, required: false },
 });
 
 const Event = mongoose.model("event", eventSchema);

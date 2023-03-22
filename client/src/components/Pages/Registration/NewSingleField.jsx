@@ -9,14 +9,11 @@ export default function NewSingleField(props) {
           [name]: value
       })
     }
-   
-  
-  
 
     return (
      <div class="form__group field">
-    <input  class="form__field" type="input"  placeholder={props.placeholder} name={s} value={props.content[s]} onChange={handleChange} required/>
-    <label class="form__label" >{props.placeholder}</label>
-</div>
+        <input  class="form__field" type="input"  placeholder={props.placeholder} name={s} value={props.content[s]} onChange={handleChange} required/>
+        <label class="form__label" >{props.placeholder}</label>
+    </div>
   )
 }

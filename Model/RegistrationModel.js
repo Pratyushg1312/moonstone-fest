@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 
 const registrationSchema = new mongoose.Schema({
   reg_id: {  type: Number,required: true},
-  challan_id: { type: String, required: true },
   receipt_id: { type: String, required: true },
   name: { type: String, required: true },
   auth_name: { type: String, required: false },

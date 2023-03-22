@@ -6,6 +6,7 @@ import axios from 'axios'
 import Success from './Success';
 import NewSingleField from './NewSingleField';
 import Checkbox from './Checkbox';
+import SingleTeammember from './Teammembers.jsx/SingleTeammember';
 
 export default function Registration(){
   const [content, setcontent] = useState({"auth_name":"","auth_email":"","name":"","phoneno":"","email":"","event":"","college":"","enrollment_no":""});
@@ -65,14 +66,23 @@ const [Fees, setFees] = useState(0);
           <NewSingleField que={"What is Your Email?"} placeholder={"Email*"} content={content} setcontent={setcontent} to_find={"email"}/>
           {/* <Checkbox/> */}
           <NewSingleField que={"Which College you are From?"} placeholder={"College Name*"} content={content} setcontent={setcontent} to_find={"college"} />
-          {1||content.college=="Medi-Caps University"?<NewSingleField que={"Which College you are From?"} placeholder={"ENROLLMENT NO.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />:<></>}
+          {content.college=="Medi-Caps University"?<NewSingleField que={"Which College you are From?"} placeholder={"ENROLLMENT NO.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />:<></>}
           <DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} setFees={setFees}/>
-           <button onClick={()=>{proceedtopay()}} class="fancy" >
+          <SingleTeammember/>
+          {loading?
+          <button class="fancy"type="button" disabled>
+          <span class="top-key"></span>
+          <span class="text"> <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+          </button> 
+           :<button onClick={()=>{proceedtopay()}} class="fancy" >
             <span class="top-key"></span>
             <span class="text">Submit</span>
             <span class="bottom-key-1"></span>
             <span class="bottom-key-2"></span>
           </button >
+            }
           </>: <></>}
           {reg_id!==0?<Success content={content} reg_id={reg_id}/> :<></>}
           </>

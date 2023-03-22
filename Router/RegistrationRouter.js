@@ -63,9 +63,8 @@ router.post("/registeruser", async (req, res) => {
         //check size of team
         if(eventstatus.status==="open"){
             const reg_id=oldcnt[0].registration+1;
-            const challan_id="ChalanID";
             const receipt_id="ReceiptID";
-            const newRegistration = new Registration({reg_id,challan_id,receipt_id,name,auth_name,phoneno,email,auth_email,gender,event_category:eventstatus.event_category,team_name,enrollment_no,event,college,participant_status:"Not Participated",date_of_registration:new Date(),payment_status:"Pending",fees:eventstatus.fees});
+            const newRegistration = new Registration({reg_id,receipt_id,name,auth_name,phoneno,email,auth_email,gender,event_category:eventstatus.event_category,team_name,enrollment_no,event,college,participant_status:"Not Participated",date_of_registration:new Date(),payment_status:"Pending",fees:eventstatus.fees});
 
             //send mail
             mailtouser({reg_id,name,email,event});
