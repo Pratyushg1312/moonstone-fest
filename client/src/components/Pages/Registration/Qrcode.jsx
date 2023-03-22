@@ -12,13 +12,12 @@ export default function Qrcode(props) {
         [name]: value
     })
   }
-   const [loading, setloading] = useState(false);
+
+  const [loading, setloading] = useState(false);
   const aftersubmit=(res)=>{
     props.setRegid(res.data);
-    // console.log(res.data);
-
+    console.log(res.data);
     alert("Form Recived");
-    props.setidx(1008);
     // navigate("/");    
   }
   const submitit=()=>{
@@ -32,37 +31,43 @@ export default function Qrcode(props) {
       .then((res)=>{aftersubmit(res)})
     }
   }
-  const movenxt=()=>{
-    if (props.content[s].length===0) {      
-      alert("Please Fill the data");
-    }
-    else{
-      props.setidx(props.idx+1)
-    }
-  }
+  
 
   return (
-<div>
+<div >
   <div  style={{display:"flex",justifyContent:"center"}}>
   <h2>FEES: {props.Fees} ₹</h2>
   </div>
   <div  style={{display:"flex",justifyContent:"center"}}>
-  <img src='https://firebasestorage.googleapis.com/v0/b/vishal-6ccf0.appspot.com/o/qrcode.jpeg?alt=media&token=8458efce-7133-4dc1-be8c-08ea3fa7017f' alt='qrcode' width={"40%"}/>
+  <img src='https://firebasestorage.googleapis.com/v0/b/vishal-6ccf0.appspot.com/o/qrcode.jpeg?alt=media&token=8458efce-7133-4dc1-be8c-08ea3fa7017f' alt='qrcode' width={"50%"}/>
   </div>
-        <div class="typewriter">
-            <h1 className='typing-heading'>Enter UTR/Transaction No.?</h1>
-          </div>
-          <input type="text"  placeholder={props.placeholder} name={s} value={props.content[s]} onChange={handleChange} required/>
-          <div className='btn-left'>
-          {props.idx!==0?<button className='nxt-btn' onClick={()=>{props.setidx(props.idx-1)}}><i class="fa-solid fa-arrow-left"></i>  Prev </button>:<></>}
-          {props.idx!==props.lst?<button className='nxt-btn' onClick={()=>{movenxt()}}> Next <i class="fa-solid fa-arrow-right"></i> </button>:<></>}
-          {props.idx===props.lst&&!loading?<button className='nxt-btn' onClick={()=>{submitit()}}> Submit<i class="fa-solid fa-arrow-right"></i> </button>:<></>}
-          {loading?<button class="nxt-btn" type="button" disabled>
-  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-  Loading...
-</button> :<></>}
-        </div>
 
+<div style={{display:"flex",justifyContent:"center"}}>
+  <div class="form__group field" >
+    <input  class="form__field" type="input"  placeholder={props.placeholder} name={s} value={props.content[s]} onChange={handleChange} required/>
+    <label class="form__label" >{props.placeholder}</label>
+</div>
+</div>
+<div>
+
+          {loading?
+          <div style={{display:"flex",justifyContent:"center"}}>
+          <button class="fancy"type="button" disabled>
+          <span class="top-key"></span>
+          <span class="text"> <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+          </button> 
+          </div>:
+  <div style={{display:"flex",justifyContent:"center"}}>
+  <button onClick={()=>{submitit()}} class="fancy">
+              <span class="top-key"></span>
+              <span class="text">Register</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+            </button >
+            </div>}
+</div>
         
     </div>
     )

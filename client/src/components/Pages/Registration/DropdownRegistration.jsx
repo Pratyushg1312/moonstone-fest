@@ -18,32 +18,17 @@ export default function DropdownRegistration(props) {
     .then((res)=>{setEvents(res.data)});
   }, [])
 
-  const movenxt=()=>{
-    if (props.content[s].length===0) {      
-      alert("Please Fill the data");
-    }
-    else{
-      props.setidx(props.idx+1)
-    }
-  }
+ 
 
   return (
-<div>
-  {/* {props.setFees(500)} */}
-        <div class="typewriter">
-            <h1 className='typing-heading'>Register Your Event?</h1>
-          </div>
-          <select  type="text" name={s} value={props.content[s]} onChange={handleChange} required>
-          <option value="">--Please choose an option--</option>
+<div class="form__group field" style={{display:"flex",justifyContent:"center"}}>
+    <select  class="form__field" placeholder={props.placeholder} name={s} value={props.content[s]} onChange={handleChange} required>
+    {/* <label class="form__label" >{props.placeholder}</label> */}
+    <option class="form__label" value="">Event*</option>
           {Events.filter(item=> item.status === "open").map((item)=>{
-            return <option value={item.event} onClick={()=>{console.log(item.fees)}}>{item.event}</option>
+            return <option class="form__label" value={item.event} onClick={()=>{console.log(item.fees)}}>{item.event}</option>
           })}
-        </select>
-          <div className='btn-left'>
-          {props.idx!==0?<button className='nxt-btn' onClick={()=>{props.setidx(props.idx-1)}}><i class="fa-solid fa-arrow-left"></i>  Prev </button>:<></>}
-          {props.idx!==props.lst?<button className='nxt-btn' onClick={()=>{movenxt()}}> Next <i class="fa-solid fa-arrow-right"></i> </button>:<></>} 
-        </div>
-
+    </select>
     </div>
     )
 }

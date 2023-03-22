@@ -16,12 +16,12 @@ router.get("/userinc", async (req, res) => {
     try {
         const oldcnt= await Count.find();
         
-        // const newCount = new Count({user:0,registration:0});
+        // const newCount = new Count({visitor:0,registration :0,cultural_registration :0,sports_registration :0,Techno_registration :0,nights_registration :0,single_event:[],});
         // newCount.save()
         //     .then(() => res.json("Registration Added!"))
         //     .catch((err) => res.status(400).json("Error: " + err));      
-
         // console.log(oldcnt[0])
+        
         let cntstatus=await Count.findOneAndUpdate({_id:oldcnt[0]._id},{user:oldcnt[0].user+1,registration:oldcnt[0].registration});
         res.status(200).send(cntstatus);
 
