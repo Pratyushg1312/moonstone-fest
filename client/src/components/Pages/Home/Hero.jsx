@@ -84,6 +84,9 @@ export const Hero = () => {
           <div className="logo1 " >
             <img src='./images/logomono.png' class="img-fluid rounded mx-auto d-block p-2" alt="" />
           </div>
+          <div className='text-end m-2'> 
+            <p style={{color:"white"}}>Sponsored by : <img src="/images/navigation.jpg" style={{width:"30px",height:"30px"}}/></p>
+          </div>
           <div className="typ"  style={{marginTop:"0px"}}>
             <Aboutmoon />
           </div>
