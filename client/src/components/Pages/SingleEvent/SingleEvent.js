@@ -2,6 +2,7 @@ import React from 'react'
 import './SingleEvent.css'
 // import temp from '/public/Videos/temp.mp4'
 import Coordinator from './Coordinator'
+import { NavLink } from 'react-router-dom'
 export default function SingleEvent() {
     return (
         <div>
