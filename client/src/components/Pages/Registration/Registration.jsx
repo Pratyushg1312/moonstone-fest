@@ -58,9 +58,12 @@ export default function Registration() {
     else if(content.college!=="Medi-Caps University"&&content.enrollment_no.length!==12){
       alert("Please Input Valid Aadhar No.");
     }
-    // else if(content.team.length>=){
-    //   alert("Please Input Valid Aadhar No.");
-    // }
+    else if(maxsz>1&&content.team_name.length===0){
+      alert("Please Fill Team Name");
+    }
+    else if(content.team.length<minsz){
+      alert("Please Fill Team Member Details");
+    }
     else {
       alert("Thanks For Submiting Form");
       setloading(true);
