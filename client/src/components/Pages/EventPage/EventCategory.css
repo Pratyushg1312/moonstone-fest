@@ -1,0 +1,71 @@
+.Event-Page{
+  /* border: 2px solid red; */
+  width: 500px;
+  position: relative;
+  background-color: aqua;
+  border-radius: 5%;
+  margin:25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 335px;
+  background: rgba(0, 0, 0, 0.699);
+  box-shadow: 0 0 10px #03bcf4, 0 0 10px #03bcf4, 0 0 10px #03bcf4, 0 0 10px #03bcf4, 0 0 10px #03bcf4;
+}
+.majorEventImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.majorEventImg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e1538;
+    z-index: 20;
+    border-radius: 5%;
+    opacity: .8;
+}
+.majorEventImg .content-event{
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-event h2{
+  text-align: center;
+  font-family: "poppins";
+  color: white;
+  text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+}
+.content-event p{
+  text-align: center;
+  font-family: "poppins";
+  color: white;
+  display: none;
+}
+.view-event-button{
+  width: 100px;
+  border: 2px solid cyan;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  display: none;
+}
+.Event-Page:hover .content-event p,.Event-Page:hover .view-event-button{
+  display: block;
+}
+.view-event-button:hover{
+  color: white;
+  background-color: #03bcf4;
+}
+
+
+
+

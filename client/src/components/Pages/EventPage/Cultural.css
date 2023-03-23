@@ -1,0 +1,16 @@
+.Cultural-events h1{
+    color: #07D685;
+    font-family:poppins;
+  font-size:40px; 
+  font-weight:700;  
+  letter-spacing:1.5px; 
+  text-transform:uppercase; 
+  text-align:center; 
+  margin:auto; 
+  white-space:nowrap; 
+  padding-bottom:25px;
+}
+
+.scroll-button{
+    border: 2px solid yellow;
+}

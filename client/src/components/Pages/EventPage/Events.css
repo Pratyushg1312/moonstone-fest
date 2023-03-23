@@ -1,0 +1,12 @@
+.Major-Events{
+    /* display: flex; */
+    margin: 20px 0;
+    /* width: 100%; */
+    /* justify-content: center; */
+}
+.major-events-container{
+    display: flex;
+    /* border: 5px solid black; */
+    flex-wrap: wrap;
+    justify-content: center;
+}

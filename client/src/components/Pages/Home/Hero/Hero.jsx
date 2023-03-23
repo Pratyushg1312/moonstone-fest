@@ -1,10 +1,8 @@
 import React, { useRef, useState } from 'react'
-
 import "./hero.css"
 import { Aboutmoon } from './Aboutmoon';
 import { trusted } from 'mongoose';
 export const Hero = () => {
-
   const [chng, chngstyl] = useState();
   const [chng1, chngstyl1] = useState();
   const [chng2, chngstyl2] = useState();
@@ -12,7 +10,7 @@ export const Hero = () => {
   const [chng4, chngstyl4] = useState();
   // const handleToggleMute = () => chngstyl3(current => !current);
   return (
-    <div className="hero-con">
+    <div className="hero-con" style={{"marginTop" : "-23px"}}>
       <video autoPlay muted={chng3} loop id="hero" >
         <source src="https://res.cloudinary.com/djpgrx4y8/video/upload/v1679254148/moonstone/moonstonevid_ndcpyn.mp4" type="video/mp4" />
       </video>
@@ -40,7 +38,6 @@ export const Hero = () => {
       }}
       >
         <div className="hero">
-         
           <div className="circle" style={{
             transitionDelay: "0.3s",
             transitionProperty: "transform",
