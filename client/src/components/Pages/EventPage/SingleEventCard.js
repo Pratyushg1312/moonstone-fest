@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import "./SingleCardEvent.css"
 function SingleEventCard(props) {
   return (
@@ -13,8 +14,10 @@ function SingleEventCard(props) {
         </div>
       </div>
       <div className="Event-Card-lower">
-        <button className="card-buttons"><span>View</span></button>
-        <button className="card-buttons"><span>Register</span></button>
+        <NavLink to="/SingleEvent">
+        <button className="card-buttons"><span>View</span></button></NavLink>
+        <NavLink to= "/Registration">
+        <button className="card-buttons"><span>Register</span></button></NavLink>
       </div>
       </div>
     // </div>

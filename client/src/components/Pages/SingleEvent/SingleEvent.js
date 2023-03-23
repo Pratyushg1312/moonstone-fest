@@ -1,5 +1,6 @@
 import React from 'react'
 import './SingleEvent.css'
+import { NavLink } from 'react-router-dom'
 // import temp from '/public/Videos/temp.mp4'
 import Coordinator from './Coordinator'
 import { NavLink } from 'react-router-dom'
@@ -11,7 +12,7 @@ export default function SingleEvent() {
                 <video autoPlay loop muted >
                     <source src="/Videos/temp.mp4" type="video/mp4" /></video>
                 <div className='content'>
-                    <h1 >Event Name</h1>
+                    <h1 >SYMPHONY</h1>
                 </div>
             </div>
             <div className='About container mt-4'>
@@ -46,7 +47,7 @@ export default function SingleEvent() {
             </div>
             <h1 className='text-center text-white'>Event Registration</h1>
             <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
-            <button className="btn-events">Registeration</button>
+            <NavLink to="/Registration"><button className="btn-events">Registeration</button></NavLink>
             </div>
            
             {/* Coordinators Card Section */}
