@@ -78,7 +78,7 @@ function EventParentCategory() {
 
         <div className="head-desc" id="day-2">
           <div className='d-flex justify-content-end me-2' style={{ position: "absolute", bottom: "200px", right: "5px" }}>
-            <button className="floatingButton">
+            <button className="button-arrow">
               <p style={{ borderRadius: "50%", fontSize: "25px" }}>
                 <a href="#day-3">
                   <i class="fa-solid fa-arrow-down">  </i> </a>

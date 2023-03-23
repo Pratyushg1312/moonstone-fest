@@ -1,5 +1,6 @@
 import React from 'react'
 import './SingleEvent.css'
+import { NavLink } from 'react-router-dom'
 // import temp from '/public/Videos/temp.mp4'
 import Coordinator from './Coordinator'
 export default function SingleEvent() {
@@ -45,7 +46,7 @@ export default function SingleEvent() {
             </div>
             <h1 className='text-center text-white'>Event Registration</h1>
             <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
-            <button className="btn-events">Registeration</button>
+            <NavLink to="/Registration"><button className="btn-events">Registeration</button></NavLink>
             </div>
            
             {/* Coordinators Card Section */}
