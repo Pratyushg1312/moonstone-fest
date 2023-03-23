@@ -41,7 +41,7 @@ export default function Registration() {
   const [loading, setloading] = useState(false);
   const aftersubmit = (res) => {
     setRegid(res.data);
-    console.log(res.data);
+    // console.log(res.data);
     alert("Form Recived");
     // navigate("/");    
   }
@@ -58,7 +58,7 @@ export default function Registration() {
     else if(content.college!=="Medi-Caps University"&&content.enrollment_no.length!==12){
       alert("Please Input Valid Aadhar No.");
     }
-    else if(maxsz>1&&content.team_name.length===0){
+    else if(minsz>1&&content.team_name.length===0){
       alert("Please Fill Team Name");
     }
     else if(content.team.length<minsz){
@@ -72,8 +72,6 @@ export default function Registration() {
     }
   }
  
-  
-
   return (
     <div className='registration-form'>
        <img src="https://assets.codepen.io/1538474/astronaut.svg" className="astronaut" style={{marginTop:"80px"}} />
@@ -97,7 +95,6 @@ export default function Registration() {
           <Allteamdata content={content}/>
           {maxsz-1>0?<SingleTeammember content={content} setcontent={setcontent} minsz={minsz} maxsz={maxsz} setminsz={setminsz} setmaxsz={setmaxsz}/>:<></>}
            
-
           {loading?
           <button class="fancy"type="button" disabled>
           <span class="top-key"></span>
