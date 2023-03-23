@@ -1,0 +1,28 @@
+.comitee {
+    display: "flex";
+    flex-direction: "column";
+    height: 60vh;
+    justify-content: "center";
+}
+
+@media screen and (max-width:768px) {
+    .comitee {
+        height: 80vh;
+    }
+}
+
+.heading1 {
+    color: rgb(86, 255, 199);
+
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid#630550;
+    line-height: 48px;
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+.heading1:hover {
+    border-bottom: 4px solid #e613bb;
+    transition: ease-in-out 1s;
+}
