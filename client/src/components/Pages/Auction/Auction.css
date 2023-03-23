@@ -1,0 +1,22 @@
+.pqr th {
+    font-size: 30px;  
+}
+
+.auction1 {
+
+}
+
+@media screen and (max-width:768px) {
+    .pqr th {
+        font-size: 16px;
+    }
+
+    .pqr td,
+    p {
+        font-size: 16px;
+    }
+
+    .auction1 {
+        margin-top: 40px;
+    }
+}
