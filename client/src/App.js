@@ -38,7 +38,7 @@ function App() {
         <Route  path='/glimpses' element={<Glimpses/> }/>
         <Route  path='/Map' element={<Map/> }/>
         <Route  path='/team' element={<Teams/> }/>
-
+          
       </Routes>
       <Footer/>
     </div>
