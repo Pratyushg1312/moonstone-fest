@@ -59,7 +59,7 @@ export default function Registration() {
         .then((res) => { aftersubmit(res) })
     }
   }
-
+ 
   return (
     <div className='registration-form'>
        <img src="https://assets.codepen.io/1538474/astronaut.svg" className="astronaut" style={{marginTop:"80px"}} />
@@ -77,17 +77,29 @@ export default function Registration() {
           <DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} setFees={setFees} setminsz={setminsz} setmaxsz={setmaxsz} />
           <Allteamdata content={content}/>
           {maxsz-1>0?<SingleTeammember content={content} setcontent={setcontent} minsz={minsz} maxsz={maxsz} setminsz={setminsz} setmaxsz={setmaxsz}/>:<></>}
-           <button onClick={()=>{proceedtopay()}} class="fancy" >
-            <span class="top-key"></span>
-            <span class="text">Submit</span>
-            <span class="bottom-key-1"></span>
-            <span class="bottom-key-2"></span>
+           
+
+          {loading?
+          <button class="fancy"type="button" disabled>
+          <span class="top-key"></span>
+          <span class="text"> <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+          </button> 
+          :
+          <button onClick={()=>{proceedtopay()}} class="fancy" >
+          <span class="top-key"></span>
+          <span class="text">Submit</span>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
           </button >
+           }
           </>: <></>}
           {reg_id!==0?<Success content={content} reg_id={reg_id}/> :<></>}
           </>
         </>
       :<Loginbtn/>}
+
     </div>
   )
 }
