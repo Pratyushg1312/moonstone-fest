@@ -16,7 +16,7 @@ export default function SingleTeammember(props) {
         alert("Please Input Valid Email id");
       }
       else {
-        alert("Thanks For Submiting Form");
+        alert("Person Added");
         //push
           props.content.team.push(member);
         setmember({"name":"","phoneno":"","email":"","college":"","enrollment_no":""});
