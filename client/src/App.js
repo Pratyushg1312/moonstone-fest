@@ -17,6 +17,7 @@ import Map from "./components/Pages/Home/Map";
 import { Cursor } from "./Cursor";
 import { Teams } from "./components/Pages/Our Team/Team";
 import Sponsors from "./components/Pages/Sponsors/Sponsors";
+import Auction from "./components/Pages/Auction/Auction";
 function App() {
   
 
@@ -40,6 +41,8 @@ function App() {
         <Route  path='/Map' element={<Map/> }/>
         <Route  path='/team' element={<Teams/> }/>
         <Route  path='/Sponsors' element={<Sponsors/> }/>
+        <Route  path='/Auction' element={<Auction/> }/>
+        
       </Routes>
       <Footer/>
     </div>

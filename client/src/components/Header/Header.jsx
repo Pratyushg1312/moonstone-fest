@@ -37,6 +37,14 @@ export default function Header() {
 
         <div className="header-bar">
           <div className="header-container">
+          <li onClick={(e) => {
+              setChecked(!checked)
+            }}>
+              <NavLink to="/Auction" style={({ isActive }) => ({
+
+                textShadow: isActive ? '0px 0px 20px #00FFD1' : 'none',
+              })} >Auction 2.0</NavLink>
+            </li>
             <li onClick={(e) => {
               setChecked(!checked)
             }}>
@@ -97,6 +105,7 @@ export default function Header() {
                 <a href="#">Link 3</a>
               </div>
             </li>
+           
           </div>
         </div>
 
