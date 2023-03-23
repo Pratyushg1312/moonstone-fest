@@ -9,13 +9,16 @@ import Checkbox from './Checkbox';
 import SingleTeammember from './Teammembers.jsx/SingleTeammember';
 import Allteamdata from './Teammembers.jsx/Allteamdata';
 
+
 export default function Registration() {
-  const [content, setcontent] = useState({ "auth_name": "", "auth_email": "", "name": "", "phoneno": "", "email": "", "event": "", "college": "", "enrollment_no": "","team":[] });
+  const [content, setcontent] = useState({ "auth_name": "", "auth_email": "", "name": "", "phoneno": "", "email": "", "event": "", "college": "", "enrollment_no": "","team":[],"team_name":""});
   // const [idx,setidx]=useState(0);
   const [Login, setLogin] = useState(false);
   const [reg_id, setRegid] = useState(0);
   const [minsz, setminsz] = useState(0)
   const [maxsz, setmaxsz] = useState(0)
+  const [mediclg, setmediclg] = useState(false);
+  
 
   useEffect(() => {
     content.team=[];
@@ -52,6 +55,12 @@ export default function Registration() {
     else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(content.email))) {
       alert("Please Input Valid Email id");
     }
+    else if(content.college!=="Medi-Caps University"&&content.enrollment_no.length!==12){
+      alert("Please Input Valid Aadhar No.");
+    }
+    // else if(content.team.length>=){
+    //   alert("Please Input Valid Aadhar No.");
+    // }
     else {
       alert("Thanks For Submiting Form");
       setloading(true);
@@ -60,6 +69,8 @@ export default function Registration() {
     }
   }
  
+  
+
   return (
     <div className='registration-form'>
        <img src="https://assets.codepen.io/1538474/astronaut.svg" className="astronaut" style={{marginTop:"80px"}} />
@@ -71,10 +82,15 @@ export default function Registration() {
           <NewSingleField que={"What is Your Name?"} placeholder={"Full Name*"} content={content} setcontent={setcontent} to_find={"name"}/>
           <NewSingleField que={"What is Your Phone No.?"} placeholder={"Phone No.*"} content={content} setcontent={setcontent} to_find={"phoneno"}/>
           <NewSingleField que={"What is Your Email?"} placeholder={"Email*"} content={content} setcontent={setcontent} to_find={"email"}/>
-          {/* <Checkbox/> */}
-          <NewSingleField que={"Which College you are From?"} placeholder={"College Name*"} content={content} setcontent={setcontent} to_find={"college"} />
-          {1||content.college=="Medi-Caps University"?<NewSingleField que={"Which College you are From?"} placeholder={"ENROLLMENT NO.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />:<></>}
-          <DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} setFees={setFees} setminsz={setminsz} setmaxsz={setmaxsz} />
+          <Checkbox setmediclg={setmediclg} content={content} setcontent={setcontent}/>
+          {mediclg?
+          <NewSingleField que={"Which College you are From?"} placeholder={"ENROLLMENT NO.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />
+          :
+          <> <NewSingleField que={"Which College you are From?"} placeholder={"College Name*"} content={content} setcontent={setcontent} to_find={"college"} />
+           <NewSingleField que={"Which College you are From?"} placeholder={"Aadhar No.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />
+          </>}
+          {content.team.length===0?<DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} Fees={Fees} setFees={setFees} setminsz={setminsz} setmaxsz={setmaxsz} />:<></>}
+          {maxsz-1>0?<NewSingleField  placeholder={"Team Name*"} content={content} setcontent={setcontent} to_find={"team_name"} />:<></>}
           <Allteamdata content={content}/>
           {maxsz-1>0?<SingleTeammember content={content} setcontent={setcontent} minsz={minsz} maxsz={maxsz} setminsz={setminsz} setmaxsz={setmaxsz}/>:<></>}
            

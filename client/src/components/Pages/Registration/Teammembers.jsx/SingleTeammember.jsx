@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
+import Checkbox from '../Checkbox';
 import NewSingleField from '../NewSingleField'
 
 export default function SingleTeammember(props) {
     const [member, setmember] = useState({"name":"","phoneno":"","email":"","college":"","enrollment_no":""})
-
-
+    const [mediclg, setmediclg] = useState(false);
     const addmember = () => {
       if (member.name.length === 0 || member.email.length === 0 || member.phoneno.length === 0 || member.college.length === 0 ) {
         alert("Please Fill the data");
@@ -33,8 +33,13 @@ export default function SingleTeammember(props) {
           <NewSingleField  placeholder={"Full Name*"} content={member} setcontent={setmember} to_find={"name"}/>
           <NewSingleField  placeholder={"Phone No.*"} content={member} setcontent={setmember} to_find={"phoneno"}/>
           <NewSingleField  placeholder={"Email*"} content={member} setcontent={setmember} to_find={"email"}/>
-          <NewSingleField  placeholder={"College Name*"} content={member} setcontent={setmember} to_find={"college"} />
-          {member.college=="Medi-Caps University"?<NewSingleField  placeholder={"ENROLLMENT NO.*"} content={member} setcontent={setmember} to_find={"enrollment_no"} />:<></>}
+          <Checkbox setmediclg={setmediclg} content={member} setcontent={setmember}/>
+          {mediclg?
+          <NewSingleField que={"Which College you are From?"} placeholder={"ENROLLMENT NO.*"} content={member} setcontent={setmember} to_find={"enrollment_no"} />
+          :
+          <> <NewSingleField que={"Which College you are From?"} placeholder={"College Name*"} content={member} setcontent={setmember} to_find={"college"} />
+           <NewSingleField que={"Which College you are From?"} placeholder={"Aadhar No.*"} content={member} setcontent={setmember} to_find={"enrollment_no"} />
+          </>}
               <div style={{display:"flex",justifyContent:"end"}}>
               <button onClick={()=>{addmember()}} className='teamaddbtn'>
                 + Add
