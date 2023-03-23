@@ -15,9 +15,16 @@ import Parallax from "./components/Pages/Parallax/Parallax";
 import Map from "./components/Pages/Home/Map";
 import { Cursor } from "./Cursor";
 import { Teams } from "./components/Pages/Our Team/Team";
+<<<<<<< HEAD
 import Events from "./components/Pages/EventPage/Events";
 import Cultural from "./components/Pages/EventPage/Cultural";
 function App() {
+=======
+import Sponsors from "./components/Pages/Sponsors/Sponsors";
+function App() {
+  
+
+>>>>>>> f17a4fe850fb11089a912b5cc37f3ba66d0407cb
   return (
     <div>
       <Cursor/>
@@ -26,15 +33,25 @@ function App() {
         <Route exact path='/' element={<Home/> }/>
         <Route  path='/aboutus' element={<Aboutus/> }/>
         <Route  path='/contactus' element={<Contactus/> }/>
+<<<<<<< HEAD
         <Route  exact path='/events' element={<Events/> }/>
         <Route path = '/cultural' element={<Cultural/>}/>
         <Route  path='/registration' element={<Registration/> }/>
+=======
+        <Route  exact path='/events' element={<Parallax/> }/>
+        <Route  path='/Registration/:id' element={<Registration/> }/>
+        <Route  path='/Registration' element={<Registration/> }/>
+>>>>>>> f17a4fe850fb11089a912b5cc37f3ba66d0407cb
         <Route  path='/SingleDay' element={<SingleDay/> }/>
         <Route  path='/SingleEvent' element={<SingleEvent/> }/>
         <Route  path='/glimpses' element={<Glimpses/> }/>
         <Route  path='/Map' element={<Map/> }/>
         <Route  path='/team' element={<Teams/> }/>
+<<<<<<< HEAD
         <Route  path='*' element={<Error/> }/>
+=======
+        <Route  path='/Sponsors' element={<Sponsors/> }/>
+>>>>>>> f17a4fe850fb11089a912b5cc37f3ba66d0407cb
       </Routes>
       <Footer/>
     </div>

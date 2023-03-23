@@ -2,51 +2,120 @@ import React, { useEffect, useState } from 'react'
 import DropdownRegistration from './DropdownRegistration';
 import Loginbtn from './Loginbtn';
 import './registration.css'
-import SingleContentForm from './SingleContentForm';
 import axios from 'axios'
-import Qrcode from './Qrcode';
-import DateofBirth from './DateofBirth';
-import GenderField from './GenderField';
 import Success from './Success';
+import NewSingleField from './NewSingleField';
+import Checkbox from './Checkbox';
+import SingleTeammember from './Teammembers.jsx/SingleTeammember';
+import Allteamdata from './Teammembers.jsx/Allteamdata';
 
-export default function Registration(){
-  const [content, setcontent] = useState({"auth_name":"","auth_email":"","name":"","phoneno":"","email":"","event":"","college":"","date_of_birth":"","gender":"","utr":""});
-  const [idx,setidx]=useState(0);
-  const [Login,setLogin]=useState(false);
-  const [reg_id,setRegid]=useState(0);
 
-  const savegmaildata=(res)=>{
-    // console.log(res)
+export default function Registration() {
+  const [content, setcontent] = useState({ "auth_name": "", "auth_email": "", "name": "", "phoneno": "", "email": "", "event": "", "college": "", "enrollment_no": "","team":[],"team_name":""});
+  // const [idx,setidx]=useState(0);
+  const [Login, setLogin] = useState(false);
+  const [reg_id, setRegid] = useState(0);
+  const [minsz, setminsz] = useState(0)
+  const [maxsz, setmaxsz] = useState(0)
+  const [mediclg, setmediclg] = useState(false);
+  
+
+  useEffect(() => {
+    content.team=[];
+  }, [minsz])
+  
+  const savegmaildata = (res) => {
     setLogin(res.data.status);
     setcontent({
       ...content,
-        ["auth_name"]: res.data.auth_name,
-        ["auth_email"]: res.data.auth_email
+      ["auth_name"]: res.data.auth_name,
+      ["auth_email"]: res.data.auth_email
     })
-  } 
-const [Fees, setFees] = useState(0);
+  }
+  const [Fees, setFees] = useState(0);
   useEffect(() => {
     axios.get("/auth/isauthenticated")
-    .then((res)=>{savegmaildata(res)});
+      .then((res) => { savegmaildata(res) });
   }, [])
-  const lst=7;
+  
+  const [loading, setloading] = useState(false);
+  const aftersubmit = (res) => {
+    setRegid(res.data);
+    console.log(res.data);
+    alert("Form Recived");
+    // navigate("/");    
+  }
+  const proceedtopay = () => {
+    if (content.name.length === 0 || content.email.length === 0 || content.phoneno.length === 0 || content.college.length === 0 || content.event.length === 0) {
+      alert("Please Fill the data");
+    }
+    else if (!(/^(0|91)?[6-9][0-9]{9}$/.test(content.phoneno))) {
+      alert("Please Input Valid Phone No.");
+    }
+    else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(content.email))) {
+      alert("Please Input Valid Email id");
+    }
+    else if(content.college!=="Medi-Caps University"&&content.enrollment_no.length!==12){
+      alert("Please Input Valid Aadhar No.");
+    }
+    // else if(content.team.length>=){
+    //   alert("Please Input Valid Aadhar No.");
+    // }
+    else {
+      alert("Thanks For Submiting Form");
+      setloading(true);
+      axios.post("/api/registeruser", content)
+        .then((res) => { aftersubmit(res) })
+    }
+  }
+ 
+  
+
   return (
     <div className='registration-form'>
        <img src="https://assets.codepen.io/1538474/astronaut.svg" className="astronaut" style={{marginTop:"80px"}} />
        {Login?
        <>
-          <h1  style={{fontSize:"50px",textAlign:"center",color:"#999", paddingBottom:"20px"}}>Registration Form</h1>
-          {idx===0?<SingleContentForm que={"What is Your Name?"} placeholder={"Enter Your Name*"} content={content} setcontent={setcontent} to_find={"name"} idx={idx} setidx={setidx} lst={lst} />:<></>}
-          {idx===1?<SingleContentForm que={"What is Your Phone No.?"} placeholder={"Enter Your Phone No.*"} content={content} setcontent={setcontent} to_find={"phoneno"} idx={idx} setidx={setidx} lst={lst} />:<></>}
-          {idx===2?<SingleContentForm que={"What is Your Email?"} placeholder={"Enter Your email*"} content={content} setcontent={setcontent} to_find={"email"} idx={idx} setidx={setidx} lst={lst} />:<></>}
-          {idx===3?<DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} idx={idx} setidx={setidx} lst={lst} setFees={setFees}/>:<></>}
-          {idx===4?<SingleContentForm que={"Which College you are From?"} placeholder={"Enter Your College Name*"} content={content} setcontent={setcontent} to_find={"college"} idx={idx} setidx={setidx} lst={lst} />:<></>}
-          {idx===5?<DateofBirth content={content} setcontent={setcontent} to_find={"date_of_birth"} idx={idx} setidx={setidx} lst={lst} />:<></>}
-          {idx===6?<GenderField content={content} setcontent={setcontent} to_find={"gender"} idx={idx} setidx={setidx} lst={lst} />:<></>}
-          {idx===7?<Qrcode  content={content} setcontent={setcontent} placeholder={"Enter Your UTR No.*"} to_find={"utr"} idx={idx} setidx={setidx} lst={lst} Fees={Fees} setRegid={setRegid}/>:<></>}
-          {idx===1008?<Success content={content} reg_id={reg_id}/>:<></>}
+          <h1 style={{fontSize:"50px",textAlign:"center",color:"#999", paddingBottom:"20px"}}>Registration Form</h1>
+          <>
+          {reg_id===0?<>
+          <NewSingleField que={"What is Your Name?"} placeholder={"Full Name*"} content={content} setcontent={setcontent} to_find={"name"}/>
+          <NewSingleField que={"What is Your Phone No.?"} placeholder={"Phone No.*"} content={content} setcontent={setcontent} to_find={"phoneno"}/>
+          <NewSingleField que={"What is Your Email?"} placeholder={"Email*"} content={content} setcontent={setcontent} to_find={"email"}/>
+          <Checkbox setmediclg={setmediclg} content={content} setcontent={setcontent}/>
+          {mediclg?
+          <NewSingleField que={"Which College you are From?"} placeholder={"ENROLLMENT NO.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />
+          :
+          <> <NewSingleField que={"Which College you are From?"} placeholder={"College Name*"} content={content} setcontent={setcontent} to_find={"college"} />
+           <NewSingleField que={"Which College you are From?"} placeholder={"Aadhar No.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />
+          </>}
+          {content.team.length===0?<DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} Fees={Fees} setFees={setFees} setminsz={setminsz} setmaxsz={setmaxsz} />:<></>}
+          {maxsz-1>0?<NewSingleField  placeholder={"Team Name*"} content={content} setcontent={setcontent} to_find={"team_name"} />:<></>}
+          <Allteamdata content={content}/>
+          {maxsz-1>0?<SingleTeammember content={content} setcontent={setcontent} minsz={minsz} maxsz={maxsz} setminsz={setminsz} setmaxsz={setmaxsz}/>:<></>}
+           
+
+          {loading?
+          <button class="fancy"type="button" disabled>
+          <span class="top-key"></span>
+          <span class="text"> <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+          </button> 
+          :
+          <button onClick={()=>{proceedtopay()}} class="fancy" >
+          <span class="top-key"></span>
+          <span class="text">Submit</span>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+          </button >
+           }
+          </>: <></>}
+          {reg_id!==0?<Success content={content} reg_id={reg_id}/> :<></>}
+          </>
         </>
-         :<Loginbtn/>} 
-    </div>        
+      :<Loginbtn/>}
+
+    </div>
   )
 }
