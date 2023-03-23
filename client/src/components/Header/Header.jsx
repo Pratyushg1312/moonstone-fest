@@ -7,56 +7,47 @@ export default function Header() {
   const [appstate, chngeState] = useState("./images/logomono.png");
   const chkbox = useRef();
   const [checked, setChecked] = useState();
-<<<<<<< HEAD
-<<<<<<< HEAD
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-=======
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })};
+
   const[arrow1, setArrow1] = useState(false)
   const[arrow2, setArrow2] = useState(false)
   const[arrow3, setArrow3] = useState(false)
-=======
-  const [arrow1, setArrow1] = useState(false)
-  const [arrow2, setArrow2] = useState(false)
-  const [arrow3, setArrow3] = useState(false)
->>>>>>> f681a0675f237d2ec1c46da4a0629fc8cdc8f99a
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
->>>>>>> f17a4fe850fb11089a912b5cc37f3ba66d0407cb
-  };
+
+
   const { pathname } = useLocation();
   useEffect(() => {
     scrollToTop();
-<<<<<<< HEAD
+
   }, [pathname]);
 
   useEffect(() => {
     scrollToTop();
   }, []);
 
-  return (
-    <>
-      <input
-        ref={chkbox}
-        type="checkbox"
-        checked={checked}
-        id="nav-tog"
-        style={{ display: "none" }}
-      />
-      <label
-        for="nav-tog"
-        class="nav-tog-lab"
-        onClick={(e) => {
-          setChecked(!checked);
-        }}
-      >
-=======
-  }, [pathname])
+  // return (
+  //   <>
+  //     <input
+  //       ref={chkbox}
+  //       type="checkbox"
+  //       checked={checked}
+  //       id="nav-tog"
+  //       style={{ display: "none" }}
+  //     />
+  //     <label
+  //       for="nav-tog"
+  //       class="nav-tog-lab"
+  //       onClick={(e) => {
+  //         setChecked(!checked);
+  //       }}
+  //     />
 
-  useEffect(() => {
-    scrollToTop();
-  }, [])
+  // }, [pathname])
+
+  // useEffect(() => {
+  //   scrollToTop();
+  // }, [])
 
   return (
     <>
@@ -66,7 +57,7 @@ export default function Header() {
           setChecked(!checked)
         }
       }>
->>>>>>> f17a4fe850fb11089a912b5cc37f3ba66d0407cb
+
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
@@ -74,9 +65,8 @@ export default function Header() {
       <div className="nav-header" style={{ backgroundColor: "#061F25" }}>
         <div className="header-bar">
           <div className="header-container">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <li
+
+            {/* <li
               onClick={(e) => {
                 setChecked(!checked);
               }}
@@ -143,7 +133,7 @@ export default function Header() {
               onClick={(e) => {
                 setChecked(!checked);
               }}
-            >
+            > 
               <NavLink
                 to="/contactus"
                 style={({ isActive }) => ({
@@ -152,9 +142,10 @@ export default function Header() {
               >
                 Contact
               </NavLink>
-=======
-            <li onClick={(e) => { setChecked(!checked) }} className="drop-down-parent" onMouseEnter={()=>setArrow1(!arrow1)}onMouseLeave={()=>setArrow1(!arrow1)}>
-=======
+              </li> */}
+
+           
+
             <li onClick={(e) => {
               setChecked(!checked)
             }}>
@@ -163,7 +154,7 @@ export default function Header() {
                 textShadow: isActive ? '0px 0px 20px #00FFD1' : 'none',
               })} >Auction 2.0</NavLink></li>
             <li onClick={(e) => { setChecked(!checked) }} className="drop-down-parent" onMouseEnter={() => setArrow1(!arrow1)} onMouseLeave={() => setArrow1(!arrow1)}>
->>>>>>> f681a0675f237d2ec1c46da4a0629fc8cdc8f99a
+
               <NavLink to="/aboutus" style={({ isActive }) => ({ textShadow: isActive ? '0px 0px 20px #00FFD1' : 'none', })}>
                 About Us {arrow1 ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-sharp fa-solid fa-chevron-down"></i>}
                 <ul className="drop-down">
@@ -217,12 +208,13 @@ export default function Header() {
                 <li>Sponsorship</li>
                 <li>Sponsorship Opportunities</li>
               </ul>
->>>>>>> f17a4fe850fb11089a912b5cc37f3ba66d0407cb
+
             </li>
 
           </div>
         </div>
       </div>
-    </>
+  </>
   );
-}
+
+            }

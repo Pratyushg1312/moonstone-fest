@@ -39,7 +39,6 @@ export default function Glimpses() {
         <div className="tall"><img src="./images/2.jpg" alt="" /></div>
         <div className="item"><img src="./images/20.jpg" alt="" /></div>
         <div className="wide"><img src="./images/22.jpg" alt="" /></div>
-
         <div className="item"><img src="./images/26.jpg" alt="" /></div>
         <div className="big"><img src="./images/27.jpg" alt="" /></div>
         <div className="big"><img src="./images/25.jpg" alt="" /></div>
