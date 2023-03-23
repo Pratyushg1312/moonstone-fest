@@ -18,7 +18,6 @@ import { Cursor } from "./Cursor";
 import { Teams } from "./components/Pages/Our Team/Team";
 import Sponsors from "./components/Pages/Sponsors/Sponsors";
 function App() {
-
   
 
   return (
@@ -30,7 +29,8 @@ function App() {
         <Route  path='/aboutus' element={<Aboutus/> }/>
         <Route  path='/contactus' element={<Contactus/> }/>
         <Route  exact path='/events' element={<Parallax/> }/>
-        <Route  path='/registration' element={<Registration/> }/>
+        <Route  path='/Registration/:id' element={<Registration/> }/>
+        <Route  path='/Registration' element={<Registration/> }/>
         <Route  path='/SingleDay' element={<SingleDay/> }/>
         <Route  path='/SingleEvent' element={<SingleEvent/> }/>
         <Route  path='/parallax' element={<Parallax/> }/>
@@ -40,8 +40,6 @@ function App() {
         <Route  path='/Map' element={<Map/> }/>
         <Route  path='/team' element={<Teams/> }/>
         <Route  path='/Sponsors' element={<Sponsors/> }/>
-
-
       </Routes>
       <Footer/>
     </div>

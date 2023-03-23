@@ -6,8 +6,7 @@
     font-family: poppins;
     /* border: 1.5px solid white; */
 	width: 23.33%;
-	min-width: 300px;
-	/* position: absolute; */
+	min-width: 250px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -15,7 +14,6 @@
 	padding: 1rem;
 	margin: 55px;
     background-color: #0D4451;
-	/* background-color: yelllow; */
 	border-radius: 1rem;
 	box-shadow: 0px 0px 15px rgb(0,255,208)
 }
@@ -34,13 +32,8 @@
 	/* border: 2px solid #F5AD36; */
 	top: -100px;
 	border-radius: 6rem;
-	/* background-image: url(https://yt3.ggpht.com/ytc/AKedOLSB-oR-xmvVSZXJ3gbK12uvv0AJUvajwxMie_R_uw=s900-c-k-c0x00ffffff-no-rj); */
-	/* background-image: "./images/25year.png"; */
 	width: 11rem;
 	height: 11rem;
-	/* object-fit: contain; */
-	/* background-position: center; */
-	/* background-size: cover; */
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
 }
 
@@ -69,13 +62,10 @@
     padding: 0;
     width: fit-content;
     /* border: 2px solid red; */
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 .icons li{ 
     display:inline-block;
-	/* flex-wrap: nowrap; */
     /* border: 2px solid black;  */
 	width:auto; 
 	margin:0 12px;
@@ -90,15 +80,12 @@
 	/* border: 2px solid white; */
 	display: flex;
 	justify-content: center;
-	/* display: flex; */
-	/* flex-direction: column; */
 	width: 100%;
  }
 
  .team-body{
 	/* border: 12px solid red; */
 	display: flex;
-	/* flex-direction: column; */
 	justify-content: center;
 	align-content: center;
 	flex-wrap: wrap;
@@ -106,21 +93,7 @@
 
  } 
 
- @media screen and (max-width: 918px) {  
-	.icons li{
-		display:flex;
-		flex-direction: column; 
-		margin:0; 
-		padding:5% 0; 
-	}
-	  
-  }
 
-/* @media screen and (max-width:500px)
-{
-	.profile-cards{
-		width: 100%;
-	}
-} */
+
  
 

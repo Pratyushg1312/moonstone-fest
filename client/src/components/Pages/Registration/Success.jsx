@@ -32,7 +32,6 @@ export default function Success(props) {
    <div>Email 2: {props.content.auth_email}</div>
    <div>Phone No. : {props.content.phoneno}</div>
    <div>College : {props.content.college}</div>
-   <div>Transaction No. : {props.content.utr}</div>
    <div style={{border:"2px solid rgb(0, 255, 208)" , textAlign:"center", borderRadius:"10px", margin:"20px"}}>
    <div style={{color:"red"}}>Note : </div>
    <div style={{color:"yellow"}}>After Payment Verification </div>
