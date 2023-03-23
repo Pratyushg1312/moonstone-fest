@@ -58,43 +58,43 @@ const createandsendpass=(props)=>{
     //     .text("20%", 305, 150);
     pdfDoc.end();
 
-//     var transporter = nodemailer.createTransport({
-//       service: 'gmail',
-//       auth: {
-//           user: 'info.xtrimcoder@gmail.com',
-//           pass: 'xftqqyoquxloqkkl'
-//       }
-//     });
+    var transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+          user: 'info.xtrimcoder@gmail.com',
+          pass: 'xftqqyoquxloqkkl'
+      }
+    });
     
     
-//     var mailOptions = {
-//       from: 'info.xtrimcoder@gmail.com',
-//       to:  props.email,
-//       subject: `Invoice For MOONSTONE | Software Cell Medicaps`,
-//       text:
-//     `Dear ${props.name},
-// Your Registration was be confirm 
-// Your Registration Invoice in Attachment.
-// Please Complete the Payement in Registration desk
-// Thanks & Regards
-// Software cell
-//     `,
-//     attachments: [
-//       {   
-//         path: 'Passfolder/Invoice.pdf',
-//       },
-//     ]
-//     };
+    var mailOptions = {
+      from: 'info.xtrimcoder@gmail.com',
+      to:  props.email,
+      subject: `Invoice For MOONSTONE | Software Cell Medicaps`,
+      text:
+    `Dear ${props.name},
+Your Registration was be confirm 
+Your Registration Invoice in Attachment.
+Please Complete the Payement in Registration desk
+Thanks & Regards
+Software cell
+    `,
+    attachments: [
+      {   
+        path: 'Passfolder/Invoice.pdf',
+      },
+    ]
+    };
     
-//     transporter.sendMail(mailOptions, function (error, info) {
-//       if (error) {
-//           console.log(error);
-//           // console.log(error);
-//       } else {
-//           console.log('Email sent: ' + info.response);
-//           // return res.json('Email sent: ' + info.response);
-//       }
-//     });
+    transporter.sendMail(mailOptions, function (error, info) {
+      if (error) {
+          console.log(error);
+          // console.log(error);
+      } else {
+          console.log('Email sent: ' + info.response);
+          // return res.json('Email sent: ' + info.response);
+      }
+    });
     
     }
 
