@@ -101,12 +101,24 @@ Software cell
     // createandsendpass({reg_id:"243789",name:"Vishal Sharma",email:"sharma39vishal@gmail.com",event:"Event Name"});
 
 const increaseregistration=async (props)=>{
-    let cntstatus=await Count.findOneAndUpdate({_id:props.oldcnt[0]._id},{user:props.oldcnt[0].user,registration:props.oldcnt[0].registration+1,});
+    // console.log(props.eventstatus)
+    if(props.eventstatus.event_category==="cultural"){
+        let cntstatus=await Count.findOneAndUpdate({_id:props.oldcnt[0]._id},{registration:props.oldcnt[0].registration+1,cultural_registration:props.oldcnt[0].cultural_registration+1});
+    }
+    else if(props.eventstatus.event_category==="sports"){
+        let cntstatus=await Count.findOneAndUpdate({_id:props.oldcnt[0]._id},{registration:props.oldcnt[0].registration+1,sports_registration:props.oldcnt[0].sports_registration+1});    
+    }
+    else if(props.eventstatus.event_category==="techno"){
+        let cntstatus=await Count.findOneAndUpdate({_id:props.oldcnt[0]._id},{registration:props.oldcnt[0].registration+1,techno_registration:props.oldcnt[0].techno_registration+1});    
+    }
+    else if(props.eventstatus.event_category==="night"){
+        let cntstatus=await Count.findOneAndUpdate({_id:props.oldcnt[0]._id},{registration:props.oldcnt[0].registration+1,nights_registration:props.oldcnt[0].nights_registration+1});    
+    }
 }
 
 router.post("/registeruser", async (req, res) => {
     try {
-        const {name, auth_name,phoneno,email,auth_email,gender,enrollment_no,event, college,team,team_name,} =req.body;
+        const {name, auth_name,phoneno,email,auth_email,gender,enrollment_no,event, college,team,team_name} =req.body;
 
         // console.log("REGISTRATION : ", req.body)
 
@@ -118,7 +130,6 @@ router.post("/registeruser", async (req, res) => {
         const oldcnt= await Count.find();
         //increase Registration count
         increaseregistration({oldcnt,eventstatus,event});        
-        // let cntstatus=await Count.findOneAndUpdate({_id:oldcnt[0]._id},{user:oldcnt[0].user,registration:oldcnt[0].registration+1,});
 
         //check size of team
         // console.log(team.length,eventstatus.min_team_size,eventstatus.max_team_size)
