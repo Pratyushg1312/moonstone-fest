@@ -1,6 +1,5 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import TeamMembers from './TeamMembers';
 
 export default function DropdownRegistration(props) {
   var s = props.to_find;
@@ -8,8 +7,8 @@ export default function DropdownRegistration(props) {
     const { name, value } = e.target
     Events.filter(Events => Events.event === value).map((item) => {
       props.setFees(item.fees)
-      setmaxsz(item.max_team_size);
-      setminsz(item.min_team_size);
+      props.setmaxsz(item.max_team_size);
+      props.setminsz(item.min_team_size);
     })
     props.setcontent({
       ...props.content,
@@ -26,9 +25,6 @@ export default function DropdownRegistration(props) {
   }, [])
 
 
-  // useEffect(() => {
-  //   arr=[];
-  // }, [minsz]);
 
   return (
     <div class="form__group field" style={{ display: "flex", justifyContent: "center" }}>
@@ -36,7 +32,8 @@ export default function DropdownRegistration(props) {
         {/* <label class="form__label" >{props.placeholder}</label> */}
         <option class="form__label" value="">Event*</option>
         {Events.filter(item => item.status === "open").map((item) => {
-          return <option class="form__label" value={item.event} onClick={() => { console.log(item.fees) }}>{item.event}</option>
+          // {console.log(item)}
+          return <option class="form__label" value={item.event}>{item.event}</option>
         })}
 
       </select>

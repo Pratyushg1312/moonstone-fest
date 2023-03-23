@@ -6,13 +6,21 @@ import axios from 'axios'
 import Success from './Success';
 import NewSingleField from './NewSingleField';
 import Checkbox from './Checkbox';
+import SingleTeammember from './Teammembers.jsx/SingleTeammember';
+import Allteamdata from './Teammembers.jsx/Allteamdata';
 
 export default function Registration() {
-  const [content, setcontent] = useState({ "auth_name": "", "auth_email": "", "name": "", "phoneno": "", "email": "", "event": "", "college": "", "enrollment_no": "" });
+  const [content, setcontent] = useState({ "auth_name": "", "auth_email": "", "name": "", "phoneno": "", "email": "", "event": "", "college": "", "enrollment_no": "","team":[] });
   // const [idx,setidx]=useState(0);
   const [Login, setLogin] = useState(false);
   const [reg_id, setRegid] = useState(0);
+  const [minsz, setminsz] = useState(0)
+  const [maxsz, setmaxsz] = useState(0)
 
+  useEffect(() => {
+    content.team=[];
+  }, [minsz])
+  
   const savegmaildata = (res) => {
     setLogin(res.data.status);
     setcontent({
@@ -26,7 +34,7 @@ export default function Registration() {
     axios.get("/auth/isauthenticated")
       .then((res) => { savegmaildata(res) });
   }, [])
-
+  
   const [loading, setloading] = useState(false);
   const aftersubmit = (res) => {
     setRegid(res.data);
@@ -51,10 +59,6 @@ export default function Registration() {
         .then((res) => { aftersubmit(res) })
     }
   }
-  const add = () => {
-    console.log("hell");
-    <TeamMembers />
-  }
 
   return (
     <div className='registration-form'>
@@ -70,7 +74,9 @@ export default function Registration() {
           {/* <Checkbox/> */}
           <NewSingleField que={"Which College you are From?"} placeholder={"College Name*"} content={content} setcontent={setcontent} to_find={"college"} />
           {1||content.college=="Medi-Caps University"?<NewSingleField que={"Which College you are From?"} placeholder={"ENROLLMENT NO.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />:<></>}
-          <DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} setFees={setFees}/>
+          <DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} setFees={setFees} setminsz={setminsz} setmaxsz={setmaxsz} />
+          <Allteamdata content={content}/>
+          {maxsz-1>0?<SingleTeammember content={content} setcontent={setcontent} minsz={minsz} maxsz={maxsz} setminsz={setminsz} setmaxsz={setmaxsz}/>:<></>}
            <button onClick={()=>{proceedtopay()}} class="fancy" >
             <span class="top-key"></span>
             <span class="text">Submit</span>
@@ -81,9 +87,7 @@ export default function Registration() {
           {reg_id!==0?<Success content={content} reg_id={reg_id}/> :<></>}
           </>
         </>
-      </>
-      {/*:<Loginbtn/>*/}
-
+      :<Loginbtn/>}
     </div>
   )
 }
