@@ -61,9 +61,9 @@ export default function Registration() {
     else if(minsz>1&&content.team_name.length===0){
       alert("Please Fill Team Name");
     }
-    else if(content.team.length<minsz){
-      alert("Please Fill Team Member Details");
-    }
+    // else if(content.team.length<minsz){
+    //   alert("Please Fill Team Member Details");
+    // }
     else {
       alert("Thanks For Submiting Form");
       setloading(true);

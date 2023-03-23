@@ -22,6 +22,9 @@ export default function Auction() {
                             <tr><td>Management</td><td><div className='d-flex flex-wrap justify-content-center'><p>Prof. Sneha Raghuvanshi </p><p>Prof. Sneha Raghuvanshi </p></div></td> <td><div className='d-flex flex-wrap justify-content-center'><p>Prof. Sneha Raghuvanshi </p><p>Prof. Sneha Raghuvanshi </p></div></td> </tr>
 
                             <tr><td>Information Technology</td><td><div className='d-flex flex-wrap justify-content-center'><p>Prof. Sneha Raghuvanshi </p><p>Prof. Sneha Raghuvanshi </p></div></td> <td><div className='d-flex flex-wrap justify-content-center'><p>Prof. Sneha Raghuvanshi </p><p>Prof. Sneha Raghuvanshi </p></div></td> </tr>
+                            <tr><td>Management</td><td><div className='d-flex flex-wrap justify-content-center'><p>Prof. Sneha Raghuvanshi </p><p>Prof. Sneha Raghuvanshi </p></div></td> <td><div className='d-flex flex-wrap justify-content-center'><p>Prof. Sneha Raghuvanshi </p><p>Prof. Sneha Raghuvanshi </p></div></td> </tr>
+                            <tr><td>Management</td><td><div className='d-flex flex-wrap justify-content-center'><p>Prof. Sneha Raghuvanshi </p><p>Prof. Sneha Raghuvanshi </p></div></td> <td><div className='d-flex flex-wrap justify-content-center'><p>Prof. Sneha Raghuvanshi </p><p>Prof. Sneha Raghuvanshi </p></div></td> </tr>
+                            <tr><td>Management</td><td><div className='d-flex flex-wrap justify-content-center'><p>Prof. Sneha Raghuvanshi </p><p>Prof. Sneha Raghuvanshi </p></div></td> <td><div className='d-flex flex-wrap justify-content-center'><p>Prof. Sneha Raghuvanshi </p><p>Prof. Sneha Raghuvanshi </p></div></td> </tr>
 
 
 

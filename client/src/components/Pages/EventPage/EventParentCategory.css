@@ -25,6 +25,10 @@
     margin: 0 0 10px 0;
 }
 
+.arrow{
+    border: 2px solid yellow;
+}
+
 .head-desc{
     /* border: 2px solid red; */
     height: 100vh;
