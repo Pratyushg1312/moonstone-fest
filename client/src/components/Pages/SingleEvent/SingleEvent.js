@@ -10,7 +10,7 @@ export default function SingleEvent() {
                 <video autoPlay loop muted >
                     <source src="/Videos/temp.mp4" type="video/mp4" /></video>
                 <div className='content'>
-                    <h1 >Event Name</h1>
+                    <h1 >SYMPHONY</h1>
                 </div>
             </div>
             <div className='About container mt-4'>
