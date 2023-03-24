@@ -13,10 +13,12 @@ export default function DropdownRegistration(props) {
       props.setFees(0)
       props.setmaxsz(1);
       props.setminsz(1);
+      props.setmaxbk(1);
     }
     Events.filter(Events => Events.event === value).map((item) => {
       props.setFees(item.fees)
       props.setmaxsz(item.max_team_size);
+      props.setmaxbk(item.max_team_size);
       props.setminsz(item.min_team_size);
     })
     props.setcontent({

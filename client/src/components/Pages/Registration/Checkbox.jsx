@@ -23,7 +23,7 @@ export default function Checkbox(props) {
     <div class="form__group field" style={{ display: "flex", justifyContent: "center" }}>
     <select class="form__field"  name={""} value={props.mediclg} onChange={handleChange} required>
        <option class="form__label" value="">Select College</option>
-      <option class="form__label" value="true">Medicaps University</option>
+      <option class="form__label" value="true">Medi-Caps University</option>
       <option class="form__label" value="false">Other</option>
 
     </select>
