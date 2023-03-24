@@ -17,7 +17,7 @@ export default function NewContactus() {
       [name]: value
     })
   }
-
+ 
   const handleSubmit = (e) => {
     // console.log(FormData);
     axios.post(`/contactus/`, FormData)
