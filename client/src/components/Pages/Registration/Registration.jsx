@@ -42,9 +42,12 @@ export default function Registration() {
   const aftersubmit = (res) => {
     setRegid(res.data);
     // console.log(res.data);
-    alert("Form Recived");
+    alert(`Form Recived \nCheck Invoice on  ${content.email}` );
     // navigate("/");    
   }
+
+  
+
   const proceedtopay = () => {
     // console.log(content.team.length)
     // console.log(minsz)
