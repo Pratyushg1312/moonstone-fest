@@ -1,10 +1,8 @@
 import React, { useRef, useState } from 'react'
-
 import "./hero.css"
 import { Aboutmoon } from './Aboutmoon';
 import { trusted } from 'mongoose';
 export const Hero = () => {
-
   const [chng, chngstyl] = useState();
   const [chng1, chngstyl1] = useState();
   const [chng2, chngstyl2] = useState();
@@ -44,7 +42,6 @@ export const Hero = () => {
       }}
       >
         <div className="hero">
-         
           <div className="circle" style={{
             transitionDelay: "0.3s",
             transitionProperty: "transform",

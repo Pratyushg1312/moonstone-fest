@@ -1,6 +1,6 @@
 import React from 'react'
 import Events from '../Events/Events'
-import { Hero } from './Hero'
+import { Hero } from '../Home/Hero.jsx'
 // import Sponsor from './Sponsor'
 import NewSponsor from './NewSponsor'
 
@@ -9,9 +9,7 @@ import Map from './Map'
 export default function Home() {
   return (
     <div>
-      {/* <Temp/> */}
-        <Hero/>
-      {/* <Sponsor/> */}
+      <Hero/>
       <Events/>
       <NewSponsor/>
 

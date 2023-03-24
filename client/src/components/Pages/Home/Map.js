@@ -1,5 +1,5 @@
 import React from 'react'
-import './NewSponsor.css';
+import './Sponsor/NewSponsor.css';
 export default function Map() {
     return (
         <div style={{ color: "white" }}>

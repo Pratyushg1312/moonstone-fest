@@ -12,16 +12,16 @@ import SingleDay from './components/Pages/SingleEvent/SingleDay';
 import Error from "./components/Pages/Error/Error";
 import Glimpses from "./components/Pages/Glimpses/Glimpses"
 import Parallax from "./components/Pages/Parallax/Parallax";
-import Glimpes from "./components/Pages/Home/Glimpes";
 import Map from "./components/Pages/Home/Map";
 import { Cursor } from "./Cursor";
 import { Teams } from "./components/Pages/Our Team/Team";
+import Sponsors from "./components/Pages/Sponsors/Sponsors";
+import Auction from "./components/Pages/Auction/Auction";
 function App() {
-
   
 
   return (
-    <div >
+    <div>
       <Cursor/>
       <Header/>
       <Routes>
@@ -29,16 +29,16 @@ function App() {
         <Route  path='/aboutus' element={<Aboutus/> }/>
         <Route  path='/contactus' element={<Contactus/> }/>
         <Route  exact path='/events' element={<Parallax/> }/>
-        <Route  path='/registration' element={<Registration/> }/>
+        <Route  path='/Registration/:id' element={<Registration/> }/>
+        <Route  path='/Registration' element={<Registration/> }/>
         <Route  path='/SingleDay' element={<SingleDay/> }/>
         <Route  path='/SingleEvent' element={<SingleEvent/> }/>
-        <Route  path='/parallax' element={<Parallax/> }/>
-        <Route  path='/Glimpes' element={<Glimpes/> }/>
-        <Route  path='*' element={<Error/> }/>
         <Route  path='/glimpses' element={<Glimpses/> }/>
         <Route  path='/Map' element={<Map/> }/>
         <Route  path='/team' element={<Teams/> }/>
-          
+        <Route  path='*' element={<Error/> }/>
+        <Route  path='/Sponsors' element={<Sponsors/> }/>
+        <Route  path='/Auction' element={<Auction/> }/>
       </Routes>
       <Footer/>
     </div>

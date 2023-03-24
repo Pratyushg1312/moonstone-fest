@@ -61,11 +61,14 @@ router.post("/registeruser", async (req, res) => {
         // let cntstatus=await Count.findOneAndUpdate({_id:oldcnt[0]._id},{user:oldcnt[0].user,registration:oldcnt[0].registration+1,});
 
         //check size of team
-        if(eventstatus.status==="open"){
+        // console.log(team.length,eventstatus.min_team_size,eventstatus.max_team_size)
+        if(team.length<eventstatus.min_team_size-1||team.length>eventstatus.max_team_size-1){
+            res.status(400).send("Error : Filled Member is more than team size");
+        }
+        else if(eventstatus.status==="open"){
             const reg_id=oldcnt[0].registration+1;
-            const challan_id="ChalanID";
             const receipt_id="ReceiptID";
-            const newRegistration = new Registration({reg_id,challan_id,receipt_id,name,auth_name,phoneno,email,auth_email,gender,event_category:eventstatus.event_category,team_name,enrollment_no,event,college,participant_status:"Not Participated",date_of_registration:new Date(),payment_status:"Pending",fees:eventstatus.fees});
+            const newRegistration = new Registration({reg_id,receipt_id,name,auth_name,phoneno,email,auth_email,gender,event_category:eventstatus.event_category,team_name,enrollment_no,event,college,participant_status:"Not Participated",date_of_registration:new Date(),payment_status:"Pending",fees:eventstatus.fees,team});
 
             //send mail
             mailtouser({reg_id,name,email,event});
