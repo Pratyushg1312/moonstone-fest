@@ -20,6 +20,8 @@ export default function DropdownRegistration(props) {
       props.setmaxsz(item.max_team_size);
       props.setmaxbk(item.max_team_size);
       props.setminsz(item.min_team_size);
+      console.log(item);
+      props.setqrlink(item.qrlink);
     })
     props.setcontent({
       ...props.content,

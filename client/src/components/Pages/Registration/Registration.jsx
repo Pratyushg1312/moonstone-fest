@@ -11,13 +11,14 @@ import Allteamdata from './Teammembers.jsx/Allteamdata';
 
 
 export default function Registration() {
-  const [content, setcontent] = useState({ "auth_name": "", "auth_email": "", "name": "", "phoneno": "", "email": "", "event": "", "college": "", "enrollment_no": "","team":[],"team_name":""});
+  const [content, setcontent] = useState({ "auth_name": "", "auth_email": "", "name": "", "phoneno": "", "email": "", "event": "", "college": "", "enrollment_no": "","team":[],"team_name":"","utr":""});
   // const [idx,setidx]=useState(0);
   const [Login, setLogin] = useState(false);
   const [reg_id, setRegid] = useState(0);
   const [minsz, setminsz] = useState(0)
   const [maxsz, setmaxsz] = useState(0)
   const [maxbk, setmaxbk] = useState(0)
+  const [qrlink, setqrlink] = useState(undefined)
   const [mediclg, setmediclg] = useState(false);
   
 
@@ -63,6 +64,9 @@ export default function Registration() {
     else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(content.email))) {
       alert("Please Input Valid Email id");
     }
+    else if(qrlink!==undefined&&content.utr.length===0){
+      alert("Please Input Valid Transaction/UTR No.");
+    }
     else if(content.college==="Medi-Caps University"&&!(content.enrollment_no.length===12||content.enrollment_no.length===13)){
       alert("Please Input Valid Enrollment No.");
     }
@@ -99,11 +103,17 @@ export default function Registration() {
           <> <NewSingleField que={"Which College you are From?"} placeholder={"College Name*"} content={content} setcontent={setcontent} to_find={"college"} />
            <NewSingleField que={"Which College you are From?"} placeholder={"Aadhar No.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />
           </>}
-          {content.team.length===0?<DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} Fees={Fees} setFees={setFees} setminsz={setminsz} setmaxsz={setmaxsz} setmaxbk={setmaxbk} />:<></>}
+          {content.team.length===0?<DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} Fees={Fees} setFees={setFees} setminsz={setminsz} setmaxsz={setmaxsz} setmaxbk={setmaxbk} qrlink={qrlink} setqrlink={setqrlink} />:<></>}
           {maxbk!==0?<NewSingleField  placeholder={"Team Name*"} content={content} setcontent={setcontent} to_find={"team_name"} />:<></>}
           <Allteamdata content={content}/>
           {maxsz-1>0?<SingleTeammember content={content} setcontent={setcontent} minsz={minsz} maxsz={maxsz} setminsz={setminsz} setmaxsz={setmaxsz}/>:<></>}
-           
+          {qrlink!==undefined?
+          <div style={{margin:"5px"}}>
+            <h3 style={{textAlign:"center"}}>QR Code</h3>
+              <img src="./Qrcode/Basketball.jpg" alt="QR Code" width={"300px"} />
+              <NewSingleField placeholder={"Transaction/UTR No.*"} content={content} setcontent={setcontent} to_find={"utr"} />
+            </div>
+          :<></>}
           {loading?
           <button class="fancy"type="button" disabled>
           <span class="top-key"></span>
