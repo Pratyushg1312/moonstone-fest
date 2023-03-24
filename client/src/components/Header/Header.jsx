@@ -51,7 +51,6 @@ export default function Header() {
 
   return (
     <>
-      <input ref={chkbox} type="checkbox" checked={checked} id="nav-tog" style={{ display: "none" }} />
       <label for="nav-tog" class="nav-tog-lab" onClick={
         (e) => {
           setChecked(!checked)
@@ -107,7 +106,7 @@ export default function Header() {
                   );
                 }}
               >
-                <img
+              <img
                   className="logo-img"
                   src={appstate}
                   alt=""
@@ -135,8 +134,8 @@ export default function Header() {
               }}
             > 
               <NavLink
-                to="/contactus"
-                style={({ isActive }) => ({
+              to="/contactus"
+              style={({ isActive }) => ({
                   textShadow: isActive ? "0px 0px 20px #00FFD1" : "none",
                 })}
               >
@@ -214,6 +213,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+      <input ref={chkbox} type="checkbox" checked={checked} id="nav-tog" style={{ display: "none",position:"relative" }} />
   </>
   );
 
