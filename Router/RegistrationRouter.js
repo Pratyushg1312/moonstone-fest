@@ -10,52 +10,50 @@ const fs = require('fs');
 const createandsendpass=(props)=>{
     let pdfDoc = new PDFDocument;
     pdfDoc.pipe(fs.createWriteStream('Passfolder/Invoice.pdf'));
-    pdfDoc.fontSize(30)
-    .text('INVOICE', 220, 57)
+    pdfDoc.fontSize(22).font('Times-Bold')
+    .text('MEDI-CAPS UNIVERSITY', 170, 57)
+    let moved=50;
+    pdfDoc.fontSize(20)
+    .text('MOONSTONE-2k23', 200, 87)
+    pdfDoc.fontSize(17)
+    .text('REGISTRATION-INVOICE', 185, 115,{underline:true})
 
-    pdfDoc.image('Passfolder/medicaps.png', 210, 125, { width: 150 })
+    pdfDoc.image('Passfolder/medicaps.png', 57, 45, { width: 100 })
+    pdfDoc.fontSize(14)
+    .text(`Invoice No.: ${props.reg_id}`, 50, 100+moved)
+    pdfDoc.fontSize(14)
+    .text(`Date of Reg: ${props.date_of_registration}`, 370, 100+moved)
 
     pdfDoc.fontSize(14)
-    .text(`Sr No.: ${props.reg_id}`, 50, 100)
+    .text(`Event Name: ${props.event}`, 50, 130+moved)
     pdfDoc.fontSize(14)
-    .text(`Date of Reg: ${props.date_of_registration}`, 400, 100)
+    .text(`Date of Event: ${props.date_of_event}`, 370, 130+moved)
 
     pdfDoc.fontSize(14)
-    .text(`Event Name: ${props.event}`, 50, 130)
-    pdfDoc.fontSize(14)
-    .text(`Date of Event: ${props.date_of_event}`, 400, 130)
-
-    pdfDoc.fontSize(14)
-    .text(`Name: ${props.name}`, 50, 160)
+    .text(`Name: ${props.name}`, 50, 160+moved)
     // pdfDoc.fontSize(14)
     // .text('Date of Reg', 400, 160)
 // reg_id,name,email,event,phoneno,college,date_of_event:eventstatus.date_of_event,fees:eventstatus.fees
     pdfDoc.fontSize(14)
-    .text(`Mobile No.: ${props.phoneno}`, 50, 190)
+    .text(`Mobile No.: ${props.phoneno}`, 50, 190+moved)
     pdfDoc.fontSize(14)
-    .text(`Amount: ${props.fees}`, 400, 190)
+    .text(`Amount: Rs ${props.fees}/-`, 370, 190+moved)
 
     pdfDoc.fontSize(14)
-    .text(`College Name: ${props.college}`, 50, 220)
+    .text(`University/College Name: ${props.college}`, 50, 220+moved)
     pdfDoc.fontSize(14)
-    .text('(Pending)', 400, 210)
+    .text('(Pending)', 390, 210+moved)
 
-    // pdfDoc.image('Passfolder/medicaps.png', 50, 45, { width: 50 })
-    //         .fillColor('#444444')
-    //         .fontSize(20)
-    //         .text('Medi-Caps', 110, 57)
-    //         .fontSize(10)
-    //         .text('A.B. Road, Pigdamber,', 200, 65, { align: 'right' })
-    //         .text(' Rau Indore - 453331', 200, 80, { align: 'right' })
-    //         .moveDown();
-    // pdfDoc.image('Passfolder/logomoon.png', 30, 00, { width: 500 })
-    //         .moveDown();
-    // pdfDoc.fontSize(20)
-    //     .text("This is a pass for Moonstone", 450, 150);
-    // pdfDoc
-    //     .fillColor('red')
-    //     .fontSize(17)
-    //     .text("20%", 305, 150);
+    pdfDoc.fontSize(18)
+    .text('Note :-', 50, 320)
+
+    pdfDoc.fontSize(14)
+    .text('* This are lines which are included in Note', 50, 350)
+
+    pdfDoc.fontSize(14)
+    .text('* This are lines which are included in Note', 50, 375)
+
+
     pdfDoc.end();
 
     var transporter = nodemailer.createTransport({
@@ -73,9 +71,10 @@ const createandsendpass=(props)=>{
       subject: `Invoice For MOONSTONE | Software Cell Medicaps`,
       text:
     `Dear ${props.name},
-Your Registration was be confirm 
-Your Registration Invoice in Attachment.
-Please Complete the Payement in Registration desk
+Your Registration is under process
+Your invoice for registration is attached.
+Please Make Payment at the Registration Desk to confirm it.
+
 Thanks & Regards
 Software cell
     `,
@@ -96,9 +95,11 @@ Software cell
       }
     });
     
-    }
+}
 
-    // createandsendpass({reg_id:"243789",name:"Vishal Sharma",email:"sharma39vishal@gmail.com",event:"Event Name"});
+// createandsendpass({reg_id:"24",name:"Vishal Sharma",email:"sharma39vishal@gmail.com",event:"Symphony",phoneno:"7546132456",college:"Medi-Caps University",date_of_event:"2023-03-24",fees:"200",date_of_registration:"2023-03-23"});
+         
+
 
 const increaseregistration=async (props)=>{
     // console.log(props.eventstatus)
