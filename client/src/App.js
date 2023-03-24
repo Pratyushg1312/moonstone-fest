@@ -19,7 +19,19 @@ import Sponsors from "./components/Pages/Sponsors/Sponsors";
 import Auction from "./components/Pages/Auction/Auction";
 import Events from "./components/Pages/EventPage/Events";
 import Cultural from "./components/Pages/EventPage/Cultural";
+import { useEffect } from "react";
+import axios from "axios";
+
 function App() {
+ 
+  useEffect(() => {
+    var x=localStorage.getItem("visitor");
+    if(x===null){
+      localStorage.setItem("visitor","Visited");
+      axios.get("/cnt/userinc").
+      then((res)=>{localStorage.setItem("visitor","Visited")});
+    }
+  }, [])
   
 
   return (

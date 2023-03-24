@@ -101,14 +101,26 @@ Software cell
     // createandsendpass({reg_id:"243789",name:"Vishal Sharma",email:"sharma39vishal@gmail.com",event:"Event Name"});
 
 const increaseregistration=async (props)=>{
-    let cntstatus=await Count.findOneAndUpdate({_id:props.oldcnt[0]._id},{user:props.oldcnt[0].user,registration:props.oldcnt[0].registration+1,});
+    // console.log(props.eventstatus)
+    if(props.eventstatus.event_category==="cultural"){
+        let cntstatus=await Count.findOneAndUpdate({_id:props.oldcnt[0]._id},{registration:props.oldcnt[0].registration+1,cultural_registration:props.oldcnt[0].cultural_registration+1});
+    }
+    else if(props.eventstatus.event_category==="sports"){
+        let cntstatus=await Count.findOneAndUpdate({_id:props.oldcnt[0]._id},{registration:props.oldcnt[0].registration+1,sports_registration:props.oldcnt[0].sports_registration+1});    
+    }
+    else if(props.eventstatus.event_category==="techno"){
+        let cntstatus=await Count.findOneAndUpdate({_id:props.oldcnt[0]._id},{registration:props.oldcnt[0].registration+1,techno_registration:props.oldcnt[0].techno_registration+1});    
+    }
+    else if(props.eventstatus.event_category==="night"){
+        let cntstatus=await Count.findOneAndUpdate({_id:props.oldcnt[0]._id},{registration:props.oldcnt[0].registration+1,nights_registration:props.oldcnt[0].nights_registration+1});    
+    }
 }
 
 router.post("/registeruser", async (req, res) => {
     try {
-        const {name, auth_name,phoneno,email,auth_email,gender,enrollment_no,event, college,team,team_name,} =req.body;
+        const {name, auth_name,phoneno,email,auth_email,gender,enrollment_no,event, college,team,team_name} =req.body;
 
-        console.log("REGISTRATION : ", req.body)
+        // console.log("REGISTRATION : ", req.body)
 
         if(!name||!auth_name||!auth_email||!phoneno||!email||!event||!college){
             res.status(400).json("Error: Invalid Input");
@@ -118,20 +130,21 @@ router.post("/registeruser", async (req, res) => {
         const oldcnt= await Count.find();
         //increase Registration count
         increaseregistration({oldcnt,eventstatus,event});        
-        // let cntstatus=await Count.findOneAndUpdate({_id:oldcnt[0]._id},{user:oldcnt[0].user,registration:oldcnt[0].registration+1,});
 
         //check size of team
         // console.log(team.length,eventstatus.min_team_size,eventstatus.max_team_size)
-        // if(team.length<eventstatus.min_team_size-1||team.length>eventstatus.max_team_size-1){
-        //     res.status(400).send("Error : Filled Member is more than team size");
-        // }
-         if(eventstatus.status==="open"){
+        if(team.length+1 < eventstatus.min_team_size||team.length+1 > eventstatus.max_team_size){
+            res.status(400).send("Error : Filled Member is more than team size");
+        }
+        else if(eventstatus.status==="open"){
             const reg_id=oldcnt[0].registration+1;
             const receipt_id="ReceiptID";
             const newRegistration = new Registration({reg_id,receipt_id,name,auth_name,phoneno,email,auth_email,gender,event_category:eventstatus.event_category,team_name,enrollment_no,event,college,participant_status:"Not Participated",date_of_registration:new Date(),payment_status:"Pending",fees:eventstatus.fees,team});
-
+            const todaysdate=new Date();
+            const date_of_registration=todaysdate.getDate()+"/"+todaysdate.getMonth()+"/"+todaysdate.getUTCFullYear();
             //send mail
-            createandsendpass({reg_id,name,email,event,phoneno,college,date_of_event:eventstatus.date_of_event,fees:eventstatus.fees,date_of_registration:new Date()});
+            
+            createandsendpass({reg_id,name,email,event,phoneno,college,date_of_event:eventstatus.date_of_event,fees:eventstatus.fees,date_of_registration});
             
             //save registration
             newRegistration.save()

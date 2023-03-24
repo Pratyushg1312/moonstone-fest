@@ -10,7 +10,7 @@ export default function Success(props) {
     // }
     useEffect(() => {
         //   setInterval(()=>{reducetime()},1000);
-        setTimeout(()=>{navigate("/")},10000)
+        setTimeout(()=>{navigate("/")},100000)
     },[])
     
   return (
@@ -34,7 +34,8 @@ export default function Success(props) {
    <div>College : {props.content.college}</div>
    <div style={{border:"2px solid rgb(0, 255, 208)" , textAlign:"center", borderRadius:"10px", margin:"20px"}}>
    <div style={{color:"red"}}>Note : </div>
-   <div style={{color:"yellow"}}>After Payment Verification </div>
+   <div style={{color:"yellow"}}>Invoice Was Sended on Mail </div>
+   <div style={{color:"yellow"}}>After Payment </div>
    <div style={{color:"yellow"}}>Registraton will be Confirm</div>
    </div>
 </div>

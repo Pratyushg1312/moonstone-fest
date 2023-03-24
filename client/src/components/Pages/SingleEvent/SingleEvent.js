@@ -3,6 +3,8 @@ import './SingleEvent.css'
 import { NavLink } from 'react-router-dom'
 // import temp from '/public/Videos/temp.mp4'
 import Coordinator from './Coordinator'
+import Entryallowed from './Entryallowed'
+
 export default function SingleEvent() {
     return (
         <div>
@@ -44,10 +46,15 @@ export default function SingleEvent() {
                     </div>
                 </div>
             </div>
+            <h1 className='text-center text-white mt-4'>Entry Allowed</h1>
+            <Entryallowed single={true} duo={true} team={true}/>
             <h1 className='text-center text-white'>Event Registration</h1>
-            <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
-            <NavLink to="/Registration"><button className="btn-events">Registeration</button></NavLink>
-            </div>
+            <div style={{display:"flex",alignItems:"center",justifyContent:"center"}} > <NavLink to="/Registration"  ><button class="fancy" style={{margin:"20px"}} >
+          <span class="top-key"></span>
+          <span class="text">Register</span>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+          </button ></NavLink></div>
            
             {/* Coordinators Card Section */}
             <h1 className='text-center text-white'>Coordinators</h1>
