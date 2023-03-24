@@ -9,11 +9,12 @@ export default function Header() {
   const [checked, setChecked] = useState();
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })};
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+  };
 
-  const[arrow1, setArrow1] = useState(false)
-  const[arrow2, setArrow2] = useState(false)
-  const[arrow3, setArrow3] = useState(false)
+  const [arrow1, setArrow1] = useState(false)
+  const [arrow2, setArrow2] = useState(false)
+  const [arrow3, setArrow3] = useState(false)
 
 
   const { pathname } = useLocation();
@@ -51,7 +52,7 @@ export default function Header() {
 
   return (
     <>
-        <input ref={chkbox} type="checkbox" checked={checked} id="nav-tog" style={{ display: "none" }} />
+      <input ref={chkbox} type="checkbox" checked={checked} id="nav-tog" style={{ display: "none" }} />
       <label for="nav-tog" class="nav-tog-lab" onClick={
         (e) => {
           setChecked(!checked)
@@ -144,7 +145,7 @@ export default function Header() {
               </NavLink>
             </li> */}
 
-           
+
 
             <li onClick={(e) => {
               setChecked(!checked)
@@ -156,7 +157,7 @@ export default function Header() {
             <li onClick={(e) => { setChecked(!checked) }} className="drop-down-parent" onMouseEnter={() => setArrow1(!arrow1)} onMouseLeave={() => setArrow1(!arrow1)}>
 
               <NavLink to="/aboutus" style={({ isActive }) => ({ textShadow: isActive ? '0px 0px 20px #00FFD1' : 'none', })}>
-                About Us {arrow1 ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-sharp fa-solid fa-chevron-down"></i>}
+                About Us {arrow1 ? <i class="fa-solid fa-chevron-up atr"></i> : <i class="fa-sharp fa-solid fa-chevron-down atr"></i>}
                 <ul className="drop-down">
                   <li>About MoonStone</li>
                   <li className="drop-down-nested-parent">Commitee 2k23
@@ -171,7 +172,7 @@ export default function Header() {
             </li>
             <li onClick={(e) => { setChecked(!checked) }} className="drop-down-parent" onMouseEnter={() => setArrow2(!arrow2)} onMouseLeave={() => setArrow2(!arrow2)}>
               <NavLink to="/events" style={({ isActive }) => ({ textShadow: isActive ? '0px 0px 20px #00FFD1' : 'none' })}>
-                Events {arrow2 ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-sharp fa-solid fa-chevron-down"></i>}
+                Events {arrow2 ? <i class="fa-solid fa-chevron-up atr"></i> : <i class="fa-sharp fa-solid fa-chevron-down atr"></i>}
               </NavLink>
               <ul className="drop-down">
                 <li>Cultural</li>
@@ -202,7 +203,7 @@ export default function Header() {
             </li>
             <li onClick={(e) => { setChecked(!checked) }} className="drop-down-parent" onMouseEnter={() => setArrow3(!arrow3)} onMouseLeave={() => setArrow3(!arrow3)}>
               <NavLink to="/Sponsors" style={({ isActive }) => ({ textShadow: isActive ? '0px 0px 20px #00FFD1' : 'none', })} >
-                Sponsors {arrow3 ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-sharp fa-solid fa-chevron-down"></i>}
+                Sponsors {arrow3 ? <i class="fa-solid fa-chevron-up atr"></i> : <i class="fa-sharp fa-solid fa-chevron-down atr"></i>}
               </NavLink>
               <ul className="drop-down sponsor">
                 <li>Sponsorship</li>
@@ -214,7 +215,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-  </>
+    </>
   );
 
-            }
+}
