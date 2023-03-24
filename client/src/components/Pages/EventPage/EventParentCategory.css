@@ -25,14 +25,45 @@
     margin: 0 0 10px 0;
 }
 
-.arrow{
-    border: 2px solid yellow;
+.floatingButton{
+    border: 2px solid cyan;
+    background: none;
+    color: cyan;
+    border-radius: 15px;
 }
 
+.d {
+    color: cyan;
+}
+
+
+
+ /* .D-heading {
+    
+        font-family: 'Ubuntu Condensed', sans-serif; 
+        font-size: 6em;
+        text-align: center;
+        margin-top: 90px;
+        opacity: 0; 
+        -webkit-animation: fade 2s ease-in, up 1s ease-in; 
+        -webkit-animation-fill-mode: forwards;   
+        animation-name: fade;
+  animation-duration: 1s;
+      
+} 
+
+@keyframes fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  } */
+
+  
+  
 .head-desc{
     /* border: 2px solid red; */
     height: 100vh;
     position: relative;
+    /* font-size: 60px; */
 
 }
 
