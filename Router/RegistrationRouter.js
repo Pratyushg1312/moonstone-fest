@@ -145,7 +145,7 @@ router.post("/registeruser", async (req, res) => {
             //send mail
             
             createandsendpass({reg_id,name,email,event,phoneno,college,date_of_event:eventstatus.date_of_event,fees:eventstatus.fees,date_of_registration});
-            
+            console.log("Mail sended successfuly")
             //save registration
             newRegistration.save()
                 .then(() => res.json(reg_id))
