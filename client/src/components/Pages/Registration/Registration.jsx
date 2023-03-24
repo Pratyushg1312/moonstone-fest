@@ -46,6 +46,8 @@ export default function Registration() {
     // navigate("/");    
   }
   const proceedtopay = () => {
+    // console.log(content.team.length)
+    // console.log(minsz)
     if (content.name.length === 0 || content.email.length === 0 || content.phoneno.length === 0 || content.college.length === 0 || content.event.length === 0) {
       alert("Please Fill the data");
     }
@@ -61,14 +63,15 @@ export default function Registration() {
     else if(minsz>1&&content.team_name.length===0){
       alert("Please Fill Team Name");
     }
-    // else if(content.team.length<minsz){
-    //   alert("Please Fill Team Member Details");
-    // }
+    else if(content.team.length+1<minsz){
+      alert("Please Fill Team Member Details");
+    }
     else {
       alert("Thanks For Submiting Form");
       setloading(true);
       axios.post("/api/registeruser", content)
         .then((res) => { aftersubmit(res) })
+        .catch((err)=>{alert(err)})
     }
   }
  

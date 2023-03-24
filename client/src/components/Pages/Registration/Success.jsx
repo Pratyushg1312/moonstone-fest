@@ -10,7 +10,7 @@ export default function Success(props) {
     // }
     useEffect(() => {
         //   setInterval(()=>{reducetime()},1000);
-        // setTimeout(()=>{navigate("/")},10000)
+        setTimeout(()=>{navigate("/")},100000)
     },[])
     
   return (

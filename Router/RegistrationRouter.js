@@ -133,11 +133,10 @@ router.post("/registeruser", async (req, res) => {
 
         //check size of team
         // console.log(team.length,eventstatus.min_team_size,eventstatus.max_team_size)
-        // if(team.length < eventstatus.min_team_size-1||team.length > eventstatus.max_team_size-1){
-        //     res.status(400).send("Error : Filled Member is more than team size");
-        // }
-        // else
-         if(eventstatus.status==="open"){
+        if(team.length+1 < eventstatus.min_team_size||team.length+1 > eventstatus.max_team_size){
+            res.status(400).send("Error : Filled Member is more than team size");
+        }
+        else if(eventstatus.status==="open"){
             const reg_id=oldcnt[0].registration+1;
             const receipt_id="ReceiptID";
             const newRegistration = new Registration({reg_id,receipt_id,name,auth_name,phoneno,email,auth_email,gender,event_category:eventstatus.event_category,team_name,enrollment_no,event,college,participant_status:"Not Participated",date_of_registration:new Date(),payment_status:"Pending",fees:eventstatus.fees,team});
