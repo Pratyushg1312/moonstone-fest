@@ -17,7 +17,21 @@ import { Cursor } from "./Cursor";
 import { Teams } from "./components/Pages/Our Team/Team";
 import Sponsors from "./components/Pages/Sponsors/Sponsors";
 import Auction from "./components/Pages/Auction/Auction";
+import Events from "./components/Pages/EventPage/Events";
+import Cultural from "./components/Pages/EventPage/Cultural";
+import { useEffect } from "react";
+import axios from "axios";
+
 function App() {
+ 
+  useEffect(() => {
+    var x=localStorage.getItem("visitor");
+    if(x===null){
+      localStorage.setItem("visitor","Visited");
+      axios.get("/cnt/userinc").
+      then((res)=>{localStorage.setItem("visitor","Visited")});
+    }
+  }, [])
   
 
   return (
@@ -28,12 +42,13 @@ function App() {
         <Route exact path='/' element={<Home/> }/>
         <Route  path='/aboutus' element={<Aboutus/> }/>
         <Route  path='/contactus' element={<Contactus/> }/>
-        <Route  exact path='/events' element={<Parallax/> }/>
+        <Route  exact path='/events' element={<Events/> }/>
         <Route  path='/Registration/:id' element={<Registration/> }/>
         <Route  path='/Registration' element={<Registration/> }/>
         <Route  path='/SingleDay' element={<SingleDay/> }/>
         <Route  path='/SingleEvent' element={<SingleEvent/> }/>
         <Route  path='/glimpses' element={<Glimpses/> }/>
+        <Route  path='/cultural' element={<Cultural/> }/>
         <Route  path='/Map' element={<Map/> }/>
         <Route  path='/team' element={<Teams/> }/>
         <Route  path='*' element={<Error/> }/>
