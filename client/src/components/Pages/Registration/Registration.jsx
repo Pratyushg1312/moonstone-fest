@@ -54,14 +54,17 @@ export default function Registration() {
     if (content.name.length === 0 || content.email.length === 0 || content.phoneno.length === 0 || content.college.length === 0 || content.event.length === 0) {
       alert("Please Fill the data");
     }
+    else if (content.college!=="Medi-Caps University"&&!content.enrollment_no.length===12) {
+      alert("Please Input Valid Aadhar No.");
+    }
     else if (!(/^(0|91)?[6-9][0-9]{9}$/.test(content.phoneno))) {
       alert("Please Input Valid Phone No.");
     }
     else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(content.email))) {
       alert("Please Input Valid Email id");
     }
-    else if(content.college!=="Medi-Caps University"&&content.enrollment_no.length!==12){
-      alert("Please Input Valid Aadhar No.");
+    else if(content.college==="Medi-Caps University"&&!(content.enrollment_no.length===12||content.enrollment_no.length===13)){
+      alert("Please Input Valid Enrollment No.");
     }
     else if(minsz>1&&content.team_name.length===0){
       alert("Please Fill Team Name");

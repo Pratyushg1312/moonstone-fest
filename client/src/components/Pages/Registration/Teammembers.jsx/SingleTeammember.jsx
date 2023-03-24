@@ -12,6 +12,12 @@ export default function SingleTeammember(props) {
       else if (!(/^(0|91)?[6-9][0-9]{9}$/.test(member.phoneno))) {
         alert("Please Input Valid Phone No.");
       }
+      else if(member.college==="Medi-Caps University"&&!(member.enrollment_no.length===12||member.enrollment_no.length===13)){
+        alert("Please Input Valid Enrollment No.");
+      }
+      else if (member.college!=="Medi-Caps University"&&member.enrollment_no.length===12) {
+        alert("Please Input Valid Aadhar No.");
+      }    
       else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(member.email))) {
         alert("Please Input Valid Email id");
       }
