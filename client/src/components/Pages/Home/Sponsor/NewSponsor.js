@@ -12,17 +12,13 @@ export default function NewSponsor() {
                     </div>
                     <div className="scrollable-column">
                         <div className='col-md-12  col-12 text-center pq' ><img src="./images/25year.png"  /><p>Company Name</p><p>Title parterner</p></div>                  
-                        <div className='col-md-12 col-12 text-center pq' ><img src="./images/25year.png"  /><p>Company Name</p><p>Title parterner</p></div>                  
-                      
+                        <div className='col-md-12 col-12 text-center pq' ><img src="./images/25year.png"  /><p>Company Name</p><p>Title parterner</p></div>                                      
                         <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
                         <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
                         <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
                         <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
                         <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
-                        <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                  
-     
-                        
-
+                        <div className='col-md-4 col-12 text-center'><img src="./images/25year.png"   style={{width:"50%"}}/><p>Company Name</p><p>Title parterner</p></div>                
                     </div>
                 </div>
             </div>

@@ -1,10 +1,11 @@
 import React from 'react'
 import Sponsorsicon from './Sponsorsicon'
 import './Sponsors.css'
+import EventSchedule from '../Locationinfo/EventSchedule'
 export default function Sponsors() {
   return (
     <div style={{ color: "white" }}>
-      <div className='first'>
+      <div className='first' id="1">
         <h1 className='text-center m-4' style={{ color: "#00FFD1" }}>Our Sponsors</h1>
         <div className='d-flex row justify-content-evenly container-fluid' id="1">
           <Sponsorsicon />
@@ -40,6 +41,7 @@ export default function Sponsors() {
         
         </div>
       </div>
+      {/* <EventSchedule/> */}
     </div>
   )
 }
