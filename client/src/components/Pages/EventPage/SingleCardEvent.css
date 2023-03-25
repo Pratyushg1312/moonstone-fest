@@ -36,7 +36,7 @@
   }
 
 .event-desc {
-    font-size:18px;
+    font-size:15px;
     letter-spacing: 1.2px;
 }
 .Event-Card-lower{
@@ -91,6 +91,6 @@
 
 .event-name {
     font-family: poppins;
-    font-size: 25px;
+    font-size: 19px;
     color: #F5AD36;
 }

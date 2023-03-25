@@ -68,6 +68,7 @@
 }
 
 .day1, .day2, .day3{
+    /* border: 2px solid yellow; */
     display: flex;
     justify-content: center;
     border-radius: 8px;
@@ -75,11 +76,17 @@
     width: 1000px;
     height: 200px;
     background-color: #11151b ;
+    box-shadow: 0px 0px 12px 2px #00ffae;
     margin: 35px;   
-    /* height: 100vh; */
-    /* border: 2px solid yellow; */
+    
 }
 
+@media only screen and (max-width: 400px) {
+	.day1 {
+        display: flex;
+	  flex-wrap: wrap;
+	}
+  }
 
 .day3 {
     justify-content: center;

@@ -5,10 +5,10 @@ function Events() {
   return (
     <div className='Major-Events'>
       <div className="major-events-container">
-        <EventCategory event_name = {"Cultural"} />
-        <EventCategory event_name = {"Sports"} />
-        <EventCategory event_name = {"Techno Management"} />
-        <EventCategory event_name = {"Night Events"} />
+        <EventCategory event_name = {"Cultural"} event_desc ={"Welcome to the extravaganza cultural fest of Medicaps. Immerse yourself in a world of electrifying beats and stunning performances that celebrate our rich cultural heritage. from traditional dances to contemporary music and much more. Join us in this journey of cultural exploration that promises to be a feast for your senses. Let's celebrate and make this college festival an unforgettable experience!"} event_link = {"/Cultural"}/>
+        <EventCategory event_name = {"Sports"} event_desc ={"Sports is the most enthusiastic way to show one’s  talent,spirit & sportsmanship. Moonstone 2023 presents before you THE CHAMPIONSHIP LEAGUE. Participate in the biggest sport tournament with adventurous games like cricket, soccer, chess, carrom, football along with athletics, gym events and many more. Also, get a chance to win exciting cash prices, fame and much more."} event_link = {"/Sports"}/>
+        <EventCategory event_name = {"Techno Management"} event_desc ={"“Hack Your Way to the Top” Calling all hackers. Programmers, and tech enthusiasts! Get ready to unleash your inner tech enthusiast because we are proud to present our highly anticipated technical events!. Our festival is the ultimate playground for all tech things. So plug in, power up, and let's dive into a world of innovation, creativity and cutting edge technology. Let's make some tech magic!"} event_link = {"/TechnoManagement"}/>
+        <EventCategory event_name = {"Night Events"} event_desc ={"Without a doubt, the most anticipated time of the event is the night for each and every partygoer out there. Moonstone is here to quench this thirst. Exhilarating performances, star nights, and DJ mixes will leave you with unforgettable memories. Get ready with your tribe to rock the floor with your show-stopping moves. Win prizes and party hard like this is the last night you get to live up to."} event_link = {"/NightEvents"}/>
       </div>
     </div>
   )

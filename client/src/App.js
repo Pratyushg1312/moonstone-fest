@@ -19,8 +19,11 @@ import Sponsors from "./components/Pages/Sponsors/Sponsors";
 import Auction from "./components/Pages/Auction/Auction";
 import Events from "./components/Pages/EventPage/Events";
 import Cultural from "./components/Pages/EventPage/Cultural";
+import { Sports } from "./components/Pages/EventPage/Sports";
 import { useEffect } from "react";
 import axios from "axios";
+import { Technomanagement } from "./components/Pages/EventPage/Technomanagement";
+import { NightEvents } from "./components/Pages/EventPage/NightEvents";
 
 function App() {
  
@@ -49,6 +52,9 @@ function App() {
         <Route  path='/SingleEvent' element={<SingleEvent/> }/>
         <Route  path='/glimpses' element={<Glimpses/> }/>
         <Route  path='/cultural' element={<Cultural/> }/>
+        <Route  path='/Sports' element={<Sports/> }/>
+        <Route  path='/Technomanagement' element={<Technomanagement/> }/>
+        <Route  path='/NightEvents' element={<NightEvents/> }/>
         <Route  path='/Map' element={<Map/> }/>
         <Route  path='/team' element={<Teams/> }/>
         <Route  path='*' element={<Error/> }/>

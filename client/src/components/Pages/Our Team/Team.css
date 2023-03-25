@@ -67,6 +67,7 @@
 }
 
 .icons li{ 
+	
     display:inline-block;
     /* border: 2px solid black;  */
 	width:auto; 
@@ -94,6 +95,10 @@
 	width: 80%;
 
  } 
+
+ .d {
+    color: #00ffae;
+}
 
 
 
