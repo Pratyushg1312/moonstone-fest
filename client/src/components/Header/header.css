@@ -5,9 +5,7 @@
     display: flex; */
     /* justify-content: center; */
     border-bottom: #00FFD1 2px solid;
-    /* position: relative;
-    z-index: -1; */
-    background-image: url(https://vinhack.vinnovateit.com/texture.svg);
+    background-image:#061F25 ;
 }
 .header-bar{
     width: 100%;
@@ -100,10 +98,7 @@
 .sponsor{
   left: -96%;
 }
-.arrows{
-  margin-left : 5px;
-}
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 900px) {
     .nav-header{
         top: 0px;
         position: fixed;
@@ -177,6 +172,9 @@
         justify-content: center;
     }
     .drop-down-parent:hover .drop-down, .drop-down-nested-parent:hover .drop-down-nested{
+      display: none;
+    }
+    .atr{
       display: none;
     }
 }

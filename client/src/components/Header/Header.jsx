@@ -91,9 +91,9 @@ export default function Header() {
                     <li className="drop-down-nested-parent">
                       Commitee 2k23
                       <ul className="drop-down-nested">
-                        <Link to="aboutus/#Sports"><li>Sports Commitee</li></Link>
-                        <Link to="aboutus/#Cultural"><li>Cultural Commitee</li></Link>
-                        <Link to="aboutus/#Techno-Management"><li>Techno Management Commitee</li></Link>
+                        <Link to="aboutus/#21"><li>Cultural Commitee</li></Link>
+                        <Link to="aboutus/#22"><li>Sports Commitee</li></Link>
+                        <Link to="aboutus/#23"><li>Techno Management Commitee</li></Link>
                       </ul>
                     </li>
                   </Link>
@@ -146,15 +146,15 @@ export default function Header() {
                 className={({ isActive }) => {
                   chngeState(
                     isActive ? "./images/logomono.png" : "./images/loogodim.png"
-                  );
-                }}
+                    );
+                  }}
               >
-                <img
-                  className="logo-img"
+              <img
+              className="logo-img"
                   src={appstate}
                   alt=""
                   width={"100px"}
-                />
+                  />
               </NavLink>
             </li>
             <li
@@ -162,17 +162,17 @@ export default function Header() {
                 setChecked(!checked);
               }}
             >
-              <NavLink
-                to="/glimpses"
-                style={({ isActive }) => ({
+            <NavLink
+            to="/glimpses"
+            style={({ isActive }) => ({
                   textShadow: isActive ? "0px 0px 20px #00FFD1" : "none",
                 })}
-              >
+                >
                 Glimpses
-              </NavLink>
+                </NavLink>
             </li>
             <li
-              onClick={(e) => {
+            onClick={(e) => {
                 setChecked(!checked);
               }}
             >
@@ -182,7 +182,7 @@ export default function Header() {
                   textShadow: isActive ? "0px 0px 20px #00FFD1" : "none",
                 })}
               >
-                Contact
+              Contact
               </NavLink>
             </li>
             <li
@@ -207,8 +207,8 @@ export default function Header() {
                 )}
               </NavLink>
               <ul className="drop-down sponsor">
-                <Link to="aboutus/#Sponsorship"><li>Sponsorship</li></Link>
-                <Link to="aboutus/#Sponsorship-Opportunities"><li>Sponsorship Opportunities</li></Link>
+                <Link to="Sponsors/#Sponsorship"><li>Sponsorship</li></Link>
+                <Link to="Sponsors/#Sponsorship-Opportunities"><li>Sponsorship Opportunities</li></Link>
               </ul>
             </li>
           </div>

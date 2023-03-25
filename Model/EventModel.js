@@ -9,6 +9,7 @@ const eventSchema = new mongoose.Schema({
   fees: { type: Number, required: false },
   status: { type: String, required: false },
   date_of_event: { type: String, required: false },
+  qrlink:{ type: String, required: false },
 });
 
 const Event = mongoose.model("event", eventSchema);

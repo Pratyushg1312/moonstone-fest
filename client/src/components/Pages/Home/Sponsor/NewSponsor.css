@@ -10,7 +10,7 @@
   /* margin-left: 10%; */
   display: flex;
   justify-content: center;
-  flex-direction: column;;
+  flex-direction: column;
 }
 
 .containr {
@@ -46,6 +46,9 @@
 .scrollable-column::-webkit-scrollbar {
   display: none;
 }
+.scrollable-column .pq img {
+ width: 30%;
+}
 
 .sponsor-logos img{
   width:60%;
@@ -54,7 +57,9 @@
 @media screen and (min-width: 1200) {
   .static-column p {
     font-size: 15px;
+    
   }
+ 
 }
 @media screen and (max-width: 768px) {
   .containr {
@@ -66,6 +71,7 @@
   .static-column {
     width: 100%;
     order: 1;
+    margin-left: 0%;
   }
 
   .scrollable-column {
@@ -74,6 +80,10 @@
   }
   .sponsor-container{
     margin-left: 0;
+  }
+  .scrollable-column .pq img{
+    width: 50%;
+
   }
 }
 
