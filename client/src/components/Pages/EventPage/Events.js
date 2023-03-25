@@ -10,6 +10,17 @@ function Events() {
         <EventCategory event_name = {"Techno Management"} event_desc ={"“Hack Your Way to the Top” Calling all hackers. Programmers, and tech enthusiasts! Get ready to unleash your inner tech enthusiast because we are proud to present our highly anticipated technical events!. Our festival is the ultimate playground for all tech things. So plug in, power up, and let's dive into a world of innovation, creativity and cutting edge technology. Let's make some tech magic!"} event_link = {"/TechnoManagement"}/>
         <EventCategory event_name = {"Night Events"} event_desc ={"Without a doubt, the most anticipated time of the event is the night for each and every partygoer out there. Moonstone is here to quench this thirst. Exhilarating performances, star nights, and DJ mixes will leave you with unforgettable memories. Get ready with your tribe to rock the floor with your show-stopping moves. Win prizes and party hard like this is the last night you get to live up to."} event_link = {"/NightEvents"}/>
       </div>
+      <div className='timetable'>
+          <h1>TimeLines</h1>
+        <div className='placelist'>
+
+          <h3>Place 1</h3>
+          <h3>Place 1</h3>
+          <h3>Place 1</h3>
+          <h3>Place 1</h3>
+        </div>
+      </div>
+
     </div>
   )
 }

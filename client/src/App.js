@@ -19,11 +19,12 @@ import Sponsors from "./components/Pages/Sponsors/Sponsors";
 import Auction from "./components/Pages/Auction/Auction";
 import Events from "./components/Pages/EventPage/Events";
 import Cultural from "./components/Pages/EventPage/Cultural";
+import { Technomanagement } from "./components/Pages/EventPage/Technomanagement";
+import { NightEvents } from "./components/Pages/EventPage/NightEvents";
 import { Sports } from "./components/Pages/EventPage/Sports";
 import { useEffect } from "react";
 import axios from "axios";
-import { Technomanagement } from "./components/Pages/EventPage/Technomanagement";
-import { NightEvents } from "./components/Pages/EventPage/NightEvents";
+import { Titlesponser } from "./components/Header/Titlesponser";
 
 function App() {
  
@@ -38,9 +39,12 @@ function App() {
   
 
   return (
-    <div>
+    <div style={{
+      top:"-23px"
+    }}>
       <Cursor/>
       <Header/>
+      <Titlesponser />
       <Routes>
         <Route exact path='/' element={<Home/> }/>
         <Route  path='/aboutus' element={<Aboutus/> }/>
