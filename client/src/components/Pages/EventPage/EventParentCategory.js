@@ -49,22 +49,19 @@ var arr1 = [
 function EventParentCategory() {
   return (
     <div className='parent-Event' >
-
-      <div className="cutural-container" >
-
+      <div className="cutural-container">
         <div className="head-desc" id = "day-1">
-          <div className='d-flex justify-content-end me-2' style={{ position: "absolute", bottom: "200px", right: "5px" }}>
+          <div className='d-flex justify-content-end me-2' style={{ position: "absolute", bottom: "168px", right: "5px" }}>
             <button className="floatingButton">
               <p style={{ borderRadius: "50%", fontSize: "25px" }}> 
                 <a href="#day-2">
-                  <i className="fa-solid fa-arrow-down d">  </i> </a>
+                  <i class="fa-solid fa-arrow-down"></i>
+                </a>
               </p>
             </button>
           </div>
           <h1 className='D-heading'>Day 1</h1>
-
           <div className="day1">
-
             {
               arr1[0].day1.map(e => (
                 <SingleEventCard name={e.event_name}
@@ -74,14 +71,12 @@ function EventParentCategory() {
             }
           </div>
         </div>
-
-
         <div className="head-desc" id="day-2">
           <div className='d-flex justify-content-end me-2' style={{ position: "absolute", bottom: "200px", right: "5px" }}>
             <button className="floatingButton">
               <p style={{ borderRadius: "50%", fontSize: "25px" }}>
                 <a href="#day-3">
-                  <i class="fa-solid fa-arrow-down d">  </i> </a>
+                  <i class="fa-solid fa-arrow-down"></i></a>
               </p>
             </button>
           </div>
@@ -116,10 +111,7 @@ function EventParentCategory() {
             }
           </div>
         </div>
-
-
       </div>
-
     </div>
   )
 }

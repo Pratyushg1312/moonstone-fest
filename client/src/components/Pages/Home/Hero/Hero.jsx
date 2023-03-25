@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { useNavigate } from "react-router-dom";
 import "./hero.css"
 import { Aboutmoon } from './Aboutmoon';
 import { trusted } from 'mongoose';
@@ -8,6 +9,8 @@ export const Hero = () => {
   const [chng2, chngstyl2] = useState();
   const [chng3, chngstyl3] = useState(true);
   const [chng4, chngstyl4] = useState();
+  const [chng5, chngstyl5] = useState("flex");
+  const navigate = useNavigate();
   // const handleToggleMute = () => chngstyl3(current => !current);
   return (
     //google drive
@@ -18,6 +21,20 @@ export const Hero = () => {
       <video autoPlay muted={chng3} loop id="hero" >
         <source src="Videos/moonvid.mp4"  type="video/mp4" />
       </video>
+     {console.log(chng5)}
+      <div className="logframe"style={{
+        display:chng5
+      }}>
+      <div class="trapezoid"></div> 
+      <div className="frame">
+
+      <img  src="images/medicaps.png" alt="" />
+      </div>
+      <div className="frame">
+
+      <img  src="images/25year.png" alt="" />
+      </div>
+      </div>
       <div className="pause" style={{
         transition: "transform 1s ease",
         transitionDelay: "0.5s",
@@ -30,6 +47,7 @@ export const Hero = () => {
           chngstyl2("scale(1)")
           chngstyl3(current => !current)
           chngstyl4("scale(0)")
+          chngstyl5("flex")
         }}
       >
         <img src="./images/pause.png" alt="" />
@@ -52,6 +70,7 @@ export const Hero = () => {
             chngstyl2("scale(0)")
             chngstyl4("scale(0.5)")
             chngstyl3(current => !current)
+            chngstyl5("none")
           }}>
             <div className="triangle" style={{
               transitionDelay: "0s",
@@ -64,7 +83,7 @@ export const Hero = () => {
           </div>
           <div className="hcircle"
           style={{
-            transitionDelay: "0.3s",
+            transitionDelay: "0s",
             transitionProperty: "transform",
             transform: chng1
           }} onClick={() => {
@@ -73,17 +92,23 @@ export const Hero = () => {
             chngstyl2("scale(0)")
             chngstyl4("scale(0.5)")
             chngstyl3(current => !current)
+            chngstyl5("none")
+            
           }}
           ></div>
+         
+         <div className="container" >
+         <div class="btn"><a href="#" onClick={()=>{
+              navigate("/registration")
+         }} >Register</a></div>
+         </div>
         </div>
 
         <div className="logotyp-con">
           <div className="logo1 " >
             <img src='./images/logomono.png' class="img-fluid rounded mx-auto d-block p-2" alt="" />
           </div>
-          <div className='text-end m-2'> 
-            <p style={{color:"white"}}>Sponsored by : <img src="/images/navigation.jpg" style={{width:"30px",height:"30px"}}/></p>
-          </div>
+          
           <div className="typ"  style={{marginTop:"0px"}}>
             <Aboutmoon />
           </div>

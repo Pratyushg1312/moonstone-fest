@@ -26,6 +26,7 @@ const registrationSchema = new mongoose.Schema({
   fees: {type:Number,required: true},
   participant_status:{type:String,required: false},
   payment_status: { type: String, default: "Pending" },
+  utr: { type: String,required: false},
   date_of_registration: {  type: Date,default: Date.now},
 });
 

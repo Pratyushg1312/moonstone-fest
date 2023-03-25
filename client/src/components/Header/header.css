@@ -1,6 +1,6 @@
 .nav-header{
     position: relative;
-    top: -23px;
+    /* top: -23px; */
     /* width: 100%;
     display: flex; */
     /* justify-content: center; */
@@ -10,8 +10,6 @@
 .header-bar{
     width: 100%;
     padding: 10px 20px;
-   
-   
     display: flex;
     justify-content: space-between;
 }
@@ -62,7 +60,7 @@
 }
 .drop-down ,.drop-down-nested{
   position: absolute;
-  z-index: 10;
+  z-index: 70;
   background-color: #061F25;
   left: 0;
   padding: 10px 0;
@@ -100,6 +98,7 @@
 .sponsor{
   left: -96%;
 }
+.nav-tog-lab{display: none;}
 @media only screen and (max-width: 900px) {
     .nav-header{
         top: 0px;
@@ -138,7 +137,7 @@
       }
     
       input:checked + .nav-tog-lab{
-        position: fixed;
+        position: relative;
       }
       .nav-tog-lab {
         /* position: absolute; */

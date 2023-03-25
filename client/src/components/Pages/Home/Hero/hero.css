@@ -3,14 +3,16 @@
 .hero-con {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     height: 100%;
     width: 100%;
-    top: -23px;
+    /* top: -23px; */
     /* border: 5px solid whitesmoke; */
     /* align-items: center; */
     position: relative;
     
 }
+
 .pause{
     position: absolute;
         right: 0px;
@@ -75,14 +77,11 @@
     justify-content: center;
     /* width: 60vw; */
     /* position: absolute; */
-    
-
 }
 .screener{
     display:flex;
     flex-wrap: wrap;
     width: 100%;
-   
     position: relative;
     background-color: #100f0fd6;
     /* background-color: rgba(0, 0, 0, 0.949); */
@@ -102,8 +101,6 @@
 .logotyp-con{
     /* border: 5px solid yellowgreen; */
     width: 40%;
- 
-    
     padding-top: 9em;
 }
 /* .logo1 {
@@ -120,8 +117,45 @@
     /* border: 5px solid red; *
     display: contents; *
 } */
+.logframe{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 0;
+    transition-delay: 1s;
+    transition-property: transform;
+    transition: transform 1s ease ;
+    transform: scaley(1);
+    
+}
+.frame{
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+ 
+}
+.frame img{
+    object-fit: cover;
+}
 
-@media screen and (max-width: 700px) {
+.trapezoid {
+
+    border-bottom: 60px solid transparent;
+    border-Top: 60px solid transparent;
+    border-left: 120px solid #00FFD1;
+    height: 400px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: -140px;
+    z-index: -1;
+   
+   
+  
+  }
+
+@media screen and (max-width: 900px) {
     .hero-con{
         display: flex;
         /* flex-direction: row; */
@@ -191,11 +225,142 @@
     
         transform: rotate(90deg);
     }
-
+    .frame{
+        display: none;
+    }
+    .trapezoid{
+        display: none;
+    }
+.container{
+    top: 60%;
+    justify-content: center;
+    z-index: 0;
+}
 }
 
 
 
 /* video btn  */
+
+.container {
+
+	display: flex;
+	flex-wrap: wrap;
+	
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+}
+.container .btn {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 50px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+.container .btn:hover a {
+	letter-spacing: 3px;
+}
+.container .btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+.container .btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+.container .btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.container .btn:hover::before /*lightup button*/ {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.container .btn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.container .btn:hover::after /*lightup button*/ {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+.container .btn:nth-child(1)::before, /*chnage 1*/
+.container .btn:nth-child(1)::after {
+	background: #1eff96;
+	box-shadow: 0 0 5px #1eff92, 0 0 15px #1eff83, 0 0 30px #1effb0,
+		0 0 60px #1effbf;
+}
+/* .container .btn:nth-child(2)::before, /* 2*/
+.container .btn:nth-child(2)::after {
+	background: #2db2ff;
+	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+		0 0 60px #2db2ff;
+} */
+.container .btn:nth-child(3)::before, /* 3*/
+.container .btn:nth-child(3)::after {
+	background: #1eff96;
+	box-shadow: 0 0 5px #1eff92, 0 0 15px #1eff83, 0 0 30px #1effb0,
+		0 0 60px #1effbf;
+}
+
 
   

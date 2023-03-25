@@ -11,7 +11,6 @@ import Registration from './components/Pages/Registration/Registration';
 import SingleDay from './components/Pages/SingleEvent/SingleDay';
 import Error from "./components/Pages/Error/Error";
 import Glimpses from "./components/Pages/Glimpses/Glimpses"
-import Parallax from "./components/Pages/Parallax/Parallax";
 import Map from "./components/Pages/Home/Map";
 import { Cursor } from "./Cursor";
 import { Teams } from "./components/Pages/Our Team/Team";
@@ -19,8 +18,12 @@ import Sponsors from "./components/Pages/Sponsors/Sponsors";
 import Auction from "./components/Pages/Auction/Auction";
 import Events from "./components/Pages/EventPage/Events";
 import Cultural from "./components/Pages/EventPage/Cultural";
+import { Technomanagement } from "./components/Pages/EventPage/Technomanagement";
+import { NightEvents } from "./components/Pages/EventPage/NightEvents";
+import { Sports } from "./components/Pages/EventPage/Sports";
 import { useEffect } from "react";
 import axios from "axios";
+import { Titlesponser } from "./components/Header/Titlesponser";
 
 function App() {
  
@@ -35,9 +38,12 @@ function App() {
   
 
   return (
-    <div>
+    <div style={{
+      top:"-23px"
+    }}>
       <Cursor/>
       <Header/>
+      <Titlesponser />
       <Routes>
         <Route exact path='/' element={<Home/> }/>
         <Route  path='/aboutus' element={<Aboutus/> }/>
@@ -49,6 +55,9 @@ function App() {
         <Route  path='/SingleEvent' element={<SingleEvent/> }/>
         <Route  path='/glimpses' element={<Glimpses/> }/>
         <Route  path='/cultural' element={<Cultural/> }/>
+        <Route  path='/Sports' element={<Sports/> }/>
+        <Route  path='/Technomanagement' element={<Technomanagement/> }/>
+        <Route  path='/NightEvents' element={<NightEvents/> }/>
         <Route  path='/Map' element={<Map/> }/>
         <Route  path='/team' element={<Teams/> }/>
         <Route  path='*' element={<Error/> }/>

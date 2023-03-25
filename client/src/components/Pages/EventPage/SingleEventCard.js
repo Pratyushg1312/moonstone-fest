@@ -10,7 +10,6 @@ function SingleEventCard(props) {
         <div className="event-info">
         <div className="event-name">{props.name}</div>
         <div className='event-desc'>{props.desc}</div>
-        
         </div>
       </div>
       <div className="Event-Card-lower">

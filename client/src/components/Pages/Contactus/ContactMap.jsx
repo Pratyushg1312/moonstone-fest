@@ -9,12 +9,7 @@ export default function ContactMap() {
         <div className="col-md-10 offset-md-1">
           <div className="map_inner">
             <h2>Find Us on Google Map</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-              quo beatae quasi assumenda, expedita aliquam minima tenetur
-              maiores neque incidunt repellat aut voluptas hic dolorem sequi ab
-              porro, quia error.
-            </p>
+           
             <div className="map_bind">
             
               <iframe
