@@ -7,8 +7,7 @@ export const Technomanagement = () => {
     <div className='Cultural-events'>
       <h1>Techno - Management</h1>
       <div className="event-cluster" style={{border: "2px solid yellow"}}>
-      
-        <p className="content">We will update you soon</p>
+        <p className="content-techno">We will update you soon</p>
       </div>
     </div>
   )

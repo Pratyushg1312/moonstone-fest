@@ -13,14 +13,12 @@ function Events() {
       <div className='timetable'>
           <h1>TimeLines</h1>
         <div className='placelist'>
-
           <h3>Place 1</h3>
           <h3>Place 1</h3>
           <h3>Place 1</h3>
           <h3>Place 1</h3>
         </div>
       </div>
-
     </div>
   )
 }

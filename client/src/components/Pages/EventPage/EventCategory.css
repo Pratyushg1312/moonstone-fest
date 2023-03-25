@@ -51,7 +51,7 @@
 }
 .view-event-button{
   width: 100px;
-  border: 2px solid cyan;
+  border: 1px solid cyan;
   border-radius: 10px;
   padding: 5px;
   background-color: transparent;

@@ -11,7 +11,6 @@ import Registration from './components/Pages/Registration/Registration';
 import SingleDay from './components/Pages/SingleEvent/SingleDay';
 import Error from "./components/Pages/Error/Error";
 import Glimpses from "./components/Pages/Glimpses/Glimpses"
-import Parallax from "./components/Pages/Parallax/Parallax";
 import Map from "./components/Pages/Home/Map";
 import { Cursor } from "./Cursor";
 import { Teams } from "./components/Pages/Our Team/Team";
