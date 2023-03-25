@@ -1,6 +1,6 @@
 .nav-header{
     position: relative;
-    top: -23px;
+    /* top: -23px; */
     /* width: 100%;
     display: flex; */
     /* justify-content: center; */
@@ -98,6 +98,7 @@
 .sponsor{
   left: -96%;
 }
+.nav-tog-lab{display: none;}
 @media only screen and (max-width: 900px) {
     .nav-header{
         top: 0px;
@@ -136,7 +137,7 @@
       }
     
       input:checked + .nav-tog-lab{
-        position: fixed;
+        position: relative;
       }
       .nav-tog-lab {
         /* position: absolute; */
