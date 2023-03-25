@@ -56,9 +56,9 @@
   background-color: transparent;
   color: white;
   text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
-  display: none;
+  /* display: none; */
 }
-.Event-Page:hover .content-event p,.Event-Page:hover .view-event-button{
+.Event-Page:hover .content-event p{
   display: block;
 }
 .view-event-button:hover{

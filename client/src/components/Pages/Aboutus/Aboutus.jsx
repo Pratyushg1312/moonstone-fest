@@ -12,7 +12,6 @@ export default function Aboutus() {
         <div className='aboutherosection container-fluid'>
           <Abouthero />
         </div>
-
         <div className=" d-flex align-items-center row " style={{ margin: "0px", justifyContent: "center" }} >
           <div className='col-12 col-md-6 ' >
             <img src="https://www.dialeducation.com/assets/images/gallery/gallery_1625127758.jpg" alt="university's image" style={{ height: "80%", width: "100%" }} />
@@ -37,7 +36,7 @@ export default function Aboutus() {
       </div>
 
 
-      <div id="2">
+      <div id="committee">
         <div className="text-center my-4">
           <h1 style={{ color: 'rgb(197 178 0)', fontSize: "50px", letterSpacing: "2px", fontWeight: "bold" }}  >Commities 2K23</h1>
         </div>

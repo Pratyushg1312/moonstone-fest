@@ -6,7 +6,7 @@ export default function Sponsors() {
     <div style={{ color: "white" }}>
       <div className='first'>
         <h1 className='text-center m-4' style={{ color: "#00FFD1" }}>Our Sponsors</h1>
-        <div className='d-flex row justify-content-evenly container-fluid' id="1">
+        <div className='d-flex row justify-content-evenly container-fluid' id="">
           <Sponsorsicon />
           <Sponsorsicon />
           <Sponsorsicon />

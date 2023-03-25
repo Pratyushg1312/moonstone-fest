@@ -26,7 +26,7 @@ export default function Abouthero() {
           <article id="uranus-trajectory"></article>
           <article id="neptune-trajectory"></article>
         </section>
-        <div className="moonstone-content">
+        <div className="moonstone-content" id="about-moonstone">
           <h1 class="txtanime" style={{ textAlign: "center", color: 'rgb(197 178 0)' ,fontWeight:"bold"}}>About Moonstone </h1>
           <h4 style={{ color: "#56ffc7", textAlign: "justify" }}>
             The annual college festival, Moonstone, is
@@ -42,8 +42,6 @@ export default function Abouthero() {
             spirit of creativity that the university epitomises.
           </h4>
         </div>
-
-
       </div>
     </div>
 

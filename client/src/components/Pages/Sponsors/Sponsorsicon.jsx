@@ -12,6 +12,5 @@ export default function Sponsorsicon(props) {
                </div>
             </div>
         </>
-
     )
 }
