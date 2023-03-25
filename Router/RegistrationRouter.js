@@ -121,9 +121,9 @@ router.post("/registeruser", async (req, res) => {
     try {
         const {name, auth_name,phoneno,email,auth_email,gender,enrollment_no,event, college,team,team_name,utr} =req.body;
         
-        console.log("REGISTRATION : ", req.body)
+        // console.log("REGISTRATION : ", req.body)
 
-        if(!name||!auth_name||!auth_email||!phoneno||!email||!event||!college){
+        if(!name||!auth_name||!auth_email||!phoneno||!email||!event||!college||!gender||!enrollment_no){
             res.status(400).json("Error: Invalid Input");
         }
         else{

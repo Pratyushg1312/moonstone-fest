@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
 
             var mailOptions = {
                 from: 'info.xtrimcoder@gmail.com',
-                to:  ['sharma39vishal@gmail.com',"deanengg@medicaps.ac.in","pankajmalik1979@gmail.com"],
+                to:  ['sharma39vishal@gmail.com'],
                 subject: "Moonstone Contact Us Message",
                 text:
                     `Name: ${name}
