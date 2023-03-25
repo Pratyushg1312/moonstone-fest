@@ -21,6 +21,7 @@ import Events from "./components/Pages/EventPage/Events";
 import Cultural from "./components/Pages/EventPage/Cultural";
 import { useEffect } from "react";
 import axios from "axios";
+import { Titlesponser } from "./components/Header/Titlesponser";
 
 function App() {
  
@@ -35,9 +36,12 @@ function App() {
   
 
   return (
-    <div>
+    <div style={{
+      top:"-23px"
+    }}>
       <Cursor/>
       <Header/>
+      <Titlesponser />
       <Routes>
         <Route exact path='/' element={<Home/> }/>
         <Route  path='/aboutus' element={<Aboutus/> }/>
