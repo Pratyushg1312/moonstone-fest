@@ -8,18 +8,19 @@ import NewSingleField from './NewSingleField';
 import Checkbox from './Checkbox';
 import SingleTeammember from './Teammembers.jsx/SingleTeammember';
 import Allteamdata from './Teammembers.jsx/Allteamdata';
+import Genderdrtopdown from './Genderdropdownl';
 
 
 export default function Registration() {
-  const [content, setcontent] = useState({ "auth_name": "", "auth_email": "", "name": "", "phoneno": "", "email": "", "event": "", "college": "", "enrollment_no": "","team":[],"team_name":"","utr":""});
+  const [content, setcontent] = useState({ "auth_name": "", "auth_email": "", "name": "", "phoneno": "", "email": "", "event": "", "college": "", "enrollment_no": "","team":[],"team_name":"","utr":"","gender":""});
   // const [idx,setidx]=useState(0);
   const [Login, setLogin] = useState(false);
   const [reg_id, setRegid] = useState(0);
   const [minsz, setminsz] = useState(0)
   const [maxsz, setmaxsz] = useState(0)
-  const [maxbk, setmaxbk] = useState(0)
+  const [maxbk, setmaxbk] = useState(1)
   const [qrlink, setqrlink] = useState(undefined)
-  const [mediclg, setmediclg] = useState(false);
+  const [mediclg, setmediclg] = useState("");
   
 
   useEffect(() => {
@@ -43,6 +44,7 @@ export default function Registration() {
   const [loading, setloading] = useState(false);
   const aftersubmit = (res) => {
     setRegid(res.data);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
     // console.log(res.data);
     alert(`Form Recived \nCheck Invoice on  ${content.email}` );
     // navigate("/");    
@@ -52,10 +54,10 @@ export default function Registration() {
   const proceedtopay = () => {
     // console.log(content.team.length)
     // console.log(minsz)
-    if (content.name.length === 0 || content.email.length === 0 || content.phoneno.length === 0 || content.college.length === 0 || content.event.length === 0) {
+    if (content.name.length === 0 || content.email.length === 0 || content.phoneno.length === 0 || content.college.length === 0 || content.event.length === 0||content.gender.length === 0) {
       alert("Please Fill the data");
     }
-    else if (content.college!=="Medi-Caps University"&&!content.enrollment_no.length===12) {
+    else if (content.college!=="Medi-Caps University"&&content.enrollment_no.length!==12) {
       alert("Please Input Valid Aadhar No.");
     }
     else if (!(/^(0|91)?[6-9][0-9]{9}$/.test(content.phoneno))) {
@@ -70,7 +72,7 @@ export default function Registration() {
     else if(content.college==="Medi-Caps University"&&!(content.enrollment_no.length===12||content.enrollment_no.length===13)){
       alert("Please Input Valid Enrollment No.");
     }
-    else if(minsz>1&&content.team_name.length===0){
+    else if(maxbk!==1&&content.team_name.length===0){
       alert("Please Fill Team Name");
     }
     else if(content.team.length+1<minsz){
@@ -96,15 +98,16 @@ export default function Registration() {
           <NewSingleField que={"What is Your Name?"} placeholder={"Full Name*"} content={content} setcontent={setcontent} to_find={"name"}/>
           <NewSingleField que={"What is Your Phone No.?"} placeholder={"Phone No.*"} content={content} setcontent={setcontent} to_find={"phoneno"}/>
           <NewSingleField que={"What is Your Email?"} placeholder={"Email*"} content={content} setcontent={setcontent} to_find={"email"}/>
+          <Genderdrtopdown content={content} setcontent={setcontent}/>
           <Checkbox setmediclg={setmediclg} content={content} setcontent={setcontent}/>
-          {mediclg?
+          {mediclg==="true"?
           <NewSingleField que={"Which College you are From?"} placeholder={"ENROLLMENT NO.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />
           :
           <> <NewSingleField que={"Which College you are From?"} placeholder={"College Name*"} content={content} setcontent={setcontent} to_find={"college"} />
            <NewSingleField que={"Which College you are From?"} placeholder={"Aadhar No.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />
           </>}
           {content.team.length===0?<DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} Fees={Fees} setFees={setFees} setminsz={setminsz} setmaxsz={setmaxsz} setmaxbk={setmaxbk} qrlink={qrlink} setqrlink={setqrlink} />:<></>}
-          {maxbk!==0?<NewSingleField  placeholder={"Team Name*"} content={content} setcontent={setcontent} to_find={"team_name"} />:<></>}
+          {maxbk!==1?<NewSingleField  placeholder={"Team Name*"} content={content} setcontent={setcontent} to_find={"team_name"} />:<></>}
           <Allteamdata content={content}/>
           {maxsz-1>0?<SingleTeammember content={content} setcontent={setcontent} minsz={minsz} maxsz={maxsz} setminsz={setminsz} setmaxsz={setmaxsz}/>:<></>}
           {qrlink!==undefined?
