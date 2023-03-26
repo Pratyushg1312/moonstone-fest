@@ -231,8 +231,10 @@
   flex-wrap: wrap;
 
   position: absolute;
-  bottom: 50px;
+  /* bottom: 50px; */
   left: 69px;
+  top: 50%;
+
 }
 .container1 .btn {
   position: relative;
