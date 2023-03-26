@@ -15,6 +15,7 @@ export default function DropdownRegistration(props) {
       props.setminsz(1);
       props.setmaxbk(1);
       props.setqrlink(undefined);
+      setinstruction("");
     }
     Events.filter(Events => Events.event === value).map((item) => {
       props.setFees(item.fees)

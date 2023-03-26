@@ -8,7 +8,7 @@ var arr1 = [
       {
         event_name: "SYMPHONY",
         event_desc: "Music Competition",
-
+        
       },
       {
         event_name: "ACCORD",
@@ -56,7 +56,7 @@ function EventParentCategory() {
             {
               arr1[0].day1.map(e => (
                 <SingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/cultural"}
                 />
               ))
             }
@@ -68,7 +68,7 @@ function EventParentCategory() {
             {
               arr1[1].day2.map(e => (
                 <SingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/cultural"}
                 />
               ))
             }
@@ -80,7 +80,7 @@ function EventParentCategory() {
             {
               arr1[2].day3.map(e => (
                 <SingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/cultural"}
                 />
               ))
             }
