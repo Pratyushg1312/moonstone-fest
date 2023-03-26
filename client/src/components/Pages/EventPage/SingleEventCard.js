@@ -15,7 +15,7 @@ function SingleEventCard(props) {
       <div className="Event-Card-lower">
         <NavLink to="/SingleEvent">
         <button className="card-buttons"><span>View</span></button></NavLink>
-        <NavLink to= "/Registration">
+        <NavLink to= {props.link}>
         <button className="card-buttons"><span>Register</span></button></NavLink>
       </div>
       </div>
