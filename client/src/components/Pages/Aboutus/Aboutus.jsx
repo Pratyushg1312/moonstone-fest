@@ -54,7 +54,7 @@ export default function Aboutus() {
               industries and business houses. It was time now to spread wings
               and move out for more exposure and widening of the periphery.
               Hence the foundation of Medi-Caps University has been laid down.
-              With a strong foundation of the Group since 15 years, Medi-Caps
+              With a strong foundation of the Group scince 15 years, Medi-Caps
               University wishes to maintain the same objective of imparting
               quality education and producing sound professionals for the
               benefit of the society at large.
@@ -86,7 +86,7 @@ export default function Aboutus() {
               fontWeight: "bold",
             }}
           >
-            Commities 2K23
+            Committees 2K23
           </h1>
         </div>
         <div className="deanbox">
@@ -103,19 +103,19 @@ export default function Aboutus() {
         </div>
         <div className="degi">
           <h3>Prof. Pramod Nair</h3>
-          <p>Conveyor</p>
+          <p>Convenenr of MoonStone</p>
         </div>
         </div>
         {/* <div className="container d-flex justify-content-center" style={{width: "40%"}}>
           <Coordinator image={"/images/Nair.jpeg"} name={"Prof. Pramod Nair"} designation={"Conveyor"} height={"400px"}/>
         </div> */}
         <div id="23">
-          <Commities2k23 event="Techno Management" />
+          <Commities2k23 event="Techno Management Committee" />
         </div>
         <div className="d-flex flex-wrap justify-content-around">
           <div id="21">
             <Commities2k23
-              event="Cultural"
+              event="Cultural Committee"
               img={"/images/PreetiJain.jpeg"}
               name={"Prof. Preeti Jain"}
               designation={"Cultural Events"}
@@ -123,7 +123,7 @@ export default function Aboutus() {
           </div>
           <div id="22">
             <Commities2k23
-              event="Sports"
+              event="Sports Committee"
               img={"/images/RuchirLashkari.jpeg"}
               name={"Prof. Ruchir Lashkari"}
               designation={"Sports Events"}
@@ -133,7 +133,7 @@ export default function Aboutus() {
         <div className="d-flex flex-wrap justify-content-around">
           <div id="24">
             <Commities2k23
-              event="SponsorShip"
+              event="SponsorShip Committee"
               img={"/images/MukeshPorwal.jpeg"}
               name={"Prof. Mukesh Porwal"}
               designation={"SponsorShip"}
@@ -141,7 +141,7 @@ export default function Aboutus() {
           </div>
           <div id="25">
             <Commities2k23
-              event="Auction 2.0"
+              event="Auction 2.0 Committee"
               img={"/images/GunjanBaheti.jpeg"}
               name={"Prof. Gunjan Baheti"}
               designation={"Auction"}

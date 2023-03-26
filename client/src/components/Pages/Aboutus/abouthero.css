@@ -479,7 +479,7 @@ smartphone*/
     height: 67.79px;
   }
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 900px){
     .moonstone-content{
         width: 100%;
     }
