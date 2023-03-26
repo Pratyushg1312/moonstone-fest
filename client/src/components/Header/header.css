@@ -119,11 +119,12 @@
     
   }
   .llogo{
+    /* background-color: #061f25; */
     display: flex;
     justify-content: center;
     position: absolute; 
     top: 26px;
-   
+    z-index: -1;
   }
   /* .mobview {
     display: flex;
@@ -189,7 +190,7 @@
   }
 
   .nav-tog-lab span {
-    margin-top: 3%;
+    margin-top: 2.5%;
     display: block;
     position: relative;
     height: 0.4em;
