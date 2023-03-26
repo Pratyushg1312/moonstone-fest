@@ -25,9 +25,9 @@ export default function EventSchedule() {
         <div>
             <h1 className="text-center">Event Schedule for {location} </h1>
             <div className='d-flex justify-content-evenly mb-5'  >
-                <p className='btn m-1  abc' style={{ backgroundColor: day === 1 ? "rgb(0, 255, 209) " : "gray" }} onClick={() => setDay(1)} >Day 1 </p>
-                <p className=' btn m-1 abc' style={{ backgroundColor: day === 2 ? "rgb(0, 255, 209) " : "gray" }} onClick={() => setDay(2)}>Day2</p>
-                <p className=' btn m-1 abc' style={{ backgroundColor: day === 3 ? "rgb(0, 255, 209) " : "gray" }} onClick={() => setDay(3)}>Day3</p>
+                <p className='btn m-1  abcd' style={{ backgroundColor: day === 1 ? "rgb(0, 255, 209) " : "gray" }} onClick={() => setDay(1)} >Day 1 </p>
+                <p className=' btn m-1 abcd' style={{ backgroundColor: day === 2 ? "rgb(0, 255, 209) " : "gray" }} onClick={() => setDay(2)}>Day2</p>
+                <p className=' btn m-1 abcd' style={{ backgroundColor: day === 3 ? "rgb(0, 255, 209) " : "gray" }} onClick={() => setDay(3)}>Day3</p>
             </div>
             <div className='row justify-content-center' style={{ width: "100%" }}>
                 <div className='col-12 p-0 col-md-8'>

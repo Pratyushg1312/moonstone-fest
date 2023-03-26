@@ -38,17 +38,8 @@ export default function Aboutus() {
               </h1>
             </div>
             <h4 style={{ color: "#56ffc7", textAlign: "justify" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Perspiciatis velit labore placeat reprehenderit quidem omnis
-              aliquam porro praesentium earum enim. Sapiente, quam. Doloribus
-              sit est cupiditate, doloremque ut harum quisquam perferendis.
-              Repellat, eum vero. Omnis accusamus sed odio, sequi facilis minus
-              sint reiciendis nihil deserunt dolor exercitationem, quasi numquam
-              et soluta modi vel impedit consectetur. Vitae at illo eveniet
-              nihil modi consequatur laudantium? At perspiciatis unde nulla
-              voluptate placeat corrupti non, asperiores facere ipsam distinctio
-              error obcaecati nemo voluptates ipsum fugit omnis. Tempora
-              recusandae .
+            Medi-Caps has been a brand name in the arena of technical education. Since its inception in July 2000, Medi-Caps has consistently aimed at creating an ideal ambiance for budding technocrats and managers; and helping them to grow like true professionals. With its highly qualified faculty there seems an optimal blend of academic brilliance and industry exposure, supplemented by highly specialized visiting faculty and industry experts, senior professionals from various segments of different industries and business houses. It was time now to spread wings and move out for more exposure and widening of the periphery.
+Hence the foundation of Medi-Caps University has been laid down. With a strong foundation of the Group since 15 years, Medi-Caps University wishes to maintain the same objective of imparting quality education and producing sound professionals for the benefit of the society at large.
             </h4>
           </div>
         </div>

@@ -97,7 +97,7 @@ export const Hero = () => {
           }}
           ></div>
          
-         <div className="container" >
+         <div className="container1" >
          <div class="btn"><a href="#" onClick={()=>{
               navigate("/registration")
          }} >Register</a></div>

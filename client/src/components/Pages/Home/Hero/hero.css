@@ -231,7 +231,7 @@
     .trapezoid{
         display: none;
     }
-.container{
+.container1{
     top: 60%;
     justify-content: center;
     z-index: 0;
@@ -242,7 +242,7 @@
 
 /* video btn  */
 
-.container {
+.container1 {
 
 	display: flex;
 	flex-wrap: wrap;
@@ -251,7 +251,7 @@
     bottom: 50px;
     left: 40px;
 }
-.container .btn {
+.container1 .btn {
 	position: relative;
 	top: 0;
 	left: 0;
@@ -262,7 +262,7 @@
 	justify-content: center;
 	align-items: center;
 }
-.container .btn a {
+.container1 .btn a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -286,10 +286,10 @@
 	transition: 0.5s;
 	backdrop-filter: blur(15px);
 }
-.container .btn:hover a {
+.container1 .btn:hover a {
 	letter-spacing: 3px;
 }
-.container .btn a::before {
+.container1 .btn a::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -301,10 +301,10 @@
 	transition: 0.5s;
 	filter: blur(0px);
 }
-.container .btn:hover a::before {
+.container1 .btn:hover a::before {
 	transform: skewX(45deg) translate(200px);
 }
-.container .btn::before {
+.container1 .btn::before {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -317,14 +317,14 @@
 	transition: 0.5s;
 	transition-delay: 0.5;
 }
-.container .btn:hover::before /*lightup button*/ {
+.container1 .btn:hover::before /*lightup button*/ {
 	bottom: 0;
 	height: 50%;
 	width: 80%;
 	border-radius: 30px;
 }
 
-.container .btn::after {
+.container1 .btn::after {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -337,26 +337,26 @@
 	transition: 0.5s;
 	transition-delay: 0.5;
 }
-.container .btn:hover::after /*lightup button*/ {
+.container1 .btn:hover::after /*lightup button*/ {
 	top: 0;
 	height: 50%;
 	width: 80%;
 	border-radius: 30px;
 }
-.container .btn:nth-child(1)::before, /*chnage 1*/
-.container .btn:nth-child(1)::after {
+.container1 .btn:nth-child(1)::before, /*chnage 1*/
+.container1 .btn:nth-child(1)::after {
 	background: #1eff96;
 	box-shadow: 0 0 5px #1eff92, 0 0 15px #1eff83, 0 0 30px #1effb0,
 		0 0 60px #1effbf;
 }
-/* .container .btn:nth-child(2)::before, /* 2*/
-.container .btn:nth-child(2)::after {
+/* .container1 .btn:nth-child(2)::before, /* 2*/
+.container1 .btn:nth-child(2)::after {
 	background: #2db2ff;
 	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
 		0 0 60px #2db2ff;
 } */
-.container .btn:nth-child(3)::before, /* 3*/
-.container .btn:nth-child(3)::after {
+.container1 .btn:nth-child(3)::before, /* 3*/
+.container1 .btn:nth-child(3)::after {
 	background: #1eff96;
 	box-shadow: 0 0 5px #1eff92, 0 0 15px #1eff83, 0 0 30px #1effb0,
 		0 0 60px #1effbf;
