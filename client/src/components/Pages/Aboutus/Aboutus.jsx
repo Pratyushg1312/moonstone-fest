@@ -76,7 +76,6 @@ export default function Aboutus() {
           </div>
         </div>
       </div>
-
       <div id="committee">
         <div className="text-center my-4">
           <h1

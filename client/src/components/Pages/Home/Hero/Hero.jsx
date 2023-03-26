@@ -76,9 +76,6 @@ export const Hero = () => {
               transitionDelay: "0s",
               transitionProperty: "transform",
               transform: chng,
-
-
-
             }} ></div>
           </div>
           <div className="hcircle"
@@ -96,19 +93,16 @@ export const Hero = () => {
             
           }}
           ></div>
-         
          <div className="container1" >
          <div class="btn"><a href="#" onClick={()=>{
               navigate("/registration")
          }} >Register</a></div>
          </div>
         </div>
-
         <div className="logotyp-con">
           <div className="logo1 " >
             <img src='./images/logomono.png' class="img-fluid rounded mx-auto d-block p-2" alt="" />
           </div>
-          
           <div className="typ"  style={{marginTop:"0px"}}>
             <Aboutmoon />
           </div>
