@@ -159,12 +159,14 @@
     .hero-con{
         display: flex;
         /* flex-direction: row; */
+      
     }
     .hero {
         display: flex;
         /* border: 5px solid red; */
         height: 70vh;
         width: 100%;
+        
     }
    
     .logo1 {
@@ -232,8 +234,10 @@
         display: none;
     }
 .container1{
+    
     top: 60%;
-    justify-content: center;
+
+    left: 50%;
     z-index: 0;
 }
 }
