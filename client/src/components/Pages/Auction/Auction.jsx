@@ -2,10 +2,9 @@ import React from 'react'
 import './Auction.css'
 export default function Auction() {
     return (
-        <div classname="auction1" style={{ color: "#00FFD1" }}>
+        <div classname="auction-page" style={{ color: "#00FFD1", textAlign:"center" }}>
             <h1 className='text-center'>Auction 2.0</h1>
-
-            <div className='row justify-content-center  ttt' style={{width:"100%"}}>
+            <div className='row justify-content-center' style={{width:"90%",margin:"10px"}}>
                 <div className='col-12 p-0 col-md-8'>
                     <table class=" table maptable pqr  ">
                         <thead>
