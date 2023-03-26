@@ -89,9 +89,27 @@ export default function Aboutus() {
             Commities 2K23
           </h1>
         </div>
-        <div className="container d-flex justify-content-center" style={{width: "40%"}}>
-          <Coordinator image={"/images/Nair.jpeg"} name={"Prof. Pramod Nair"} designation={"Conveyor"} height={"400px"}/>
+        <div className="deanbox">
+
+        <div class="root1">
+          <div class="wrap1">
+            <img src="/images/Nair.jpeg" />
+{/* 
+            <div class="layer layer1"></div>
+            <div class="layer layer2"></div>
+            <div class="layer layer3"></div>
+            <div class="layer layer4"></div> */}
+          </div>
         </div>
+        <div className="degi">
+
+          <h3>Prof. Pramod Nair</h3>
+          <p>Conveyor</p>
+        </div>
+        </div>
+        {/* <div className="container d-flex justify-content-center" style={{width: "40%"}}>
+          <Coordinator image={"/images/Nair.jpeg"} name={"Prof. Pramod Nair"} designation={"Conveyor"} height={"400px"}/>
+        </div> */}
         <div id="23">
           <Commities2k23 event="Techno Management" />
         </div>
