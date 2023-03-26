@@ -14,7 +14,7 @@ export default function Aboutus() {
         </div>
         <div
           className=" d-flex align-items-center row "
-          style={{ margin: "0px", justifyContent: "center" }}
+          style={{ margin: "0px", justifyContent: "center", marginBottom: "30px"}}
         >
           <div className="col-12 col-md-6 ">
             <img
@@ -52,15 +52,15 @@ export default function Aboutus() {
             </h4>
           </div>
         </div>
-        <div className="row m-4">
-          <div className="d-flex flex-wrap align-items-center justify-content-center ">
-            <div className="col-md-3 col-8 m-3 text-center">
+        <div className="row my-5">
+          <div className="d-flex flex-wrap align-items-center justify-content-around ">
+            <div className="col-md-2 m-3 text-center">
               <img src="/images/ranked1st.png" />
             </div>
-            <div className="col-md-3 col-8 m-3 text-center">
+            <div className="col-md-2 m-3 text-center">
               <img src="/images/mhrd-nirf.png" />
             </div>
-            <div className="col-md-3 col-8 m-3 text-center">
+            <div className="col-md-2 m-3 text-center">
               <img src="/images/placements.png" />
             </div>
             {/* <div className='md-col col-3 m-3 text-center'><img src="/images/25year.png" style={{height:"50%", }} /></div> */}
@@ -82,13 +82,19 @@ export default function Aboutus() {
           </h1>
         </div>
         <div id="21">
-          <Commities2k23 event="Cultural" />
+          <Commities2k23 event="Cultural" img={"/images/PreetiJain.jpeg"} name={"Prof. Preeti Jain"} designation={"Cultural Events"}/>
         </div>
         <div id="22">
-          <Commities2k23 event="Sports" />
+          <Commities2k23 event="Sports" img={"/images/RuchirLashkari.jpeg"} name={"Prof. Ruchir Lashkari"} designation={"Sports Events"}/>
         </div>
         <div id="23">
           <Commities2k23 event="Techno Management" />
+        </div>
+        <div id="24">
+          <Commities2k23 event="SponsorShip" img={"/images/MukeshPorwal.jpeg"} name={"Prof. Mukesh Porwal"} designation={"SponsorShip"}/>
+        </div>
+        <div id="25">
+          <Commities2k23 event="Auction 2.0" img={"/images/GunjanBaheti.jpeg"}name={"Prof. Gunjan Baheti"} designation={"Auction"}/>
         </div>
       </div>
     </div>

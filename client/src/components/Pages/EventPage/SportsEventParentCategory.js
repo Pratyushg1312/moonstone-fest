@@ -143,7 +143,7 @@ function SportsEventParentCategory() {
 
       <div className="cutural-container" >
 
-        <div className="head-des" id = "cricket">
+        <div className="head-des" id = "cricket" style={{"width":"90%"}}>
         
           <h1 className='D-heading'>Cricket</h1>
 
