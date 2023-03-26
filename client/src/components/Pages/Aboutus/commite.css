@@ -1,19 +1,18 @@
 .comitee {
     display: "flex";
     flex-direction: "column";
-    height: 60vh;
+    /* height: 20vh; */
     justify-content: "center";
 }
 
 @media screen and (max-width:768px) {
-    .comitee {
+    /* .comitee {
         height: 80vh;
-    }
+    } */
 }
 
 .heading1 {
     color: rgb(86, 255, 199);
-
     letter-spacing: 1px;
     padding-bottom: 10px;
     border-bottom: 4px solid#630550;

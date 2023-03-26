@@ -2,6 +2,7 @@ const router = require("express").Router();
 const Registration = require("../Model/RegistrationModel");
 const Count = require("../Model/CountModel");
 const Event = require("../Model/EventModel");
+const Utr = require("../Model/UtrModel");
 var nodemailer = require('nodemailer');
 const PDFDocument = require('pdfkit');
 const fs = require('fs');
@@ -131,22 +132,40 @@ router.post("/registeruser", async (req, res) => {
         const oldcnt= await Count.find();
         //increase Registration count
         increaseregistration({oldcnt,eventstatus,event});        
-        
+        const reg_id=oldcnt[0].registration+1;
         //check size of team
         // console.log(team.length,eventstatus.min_team_size,eventstatus.max_team_size)
-        if(team.length+1 < eventstatus.min_team_size||team.length+1 > eventstatus.max_team_size){
+        var flg=false;
+       
+        if(eventstatus.qrlink!==undefined&&utr!==undefined&&utr.length!==0){
+            // console.log("Working")
+            const oldutr=await Utr.findOne({utr});
+            const newUtr = new Utr({utr,reg_id})
+            const utrpromises =await newUtr.save();
+            // console.log("OLD UTR :",oldutr);
+            // console.log(oldutr);
+            if(oldutr!==null){
+                flg=true;
+            }        
+        }
+
+        if(flg){
+            res.status(400).send("Error : UTR was Already Used");
+        }
+        else if(team.length+1 < eventstatus.min_team_size||team.length+1 > eventstatus.max_team_size){
             res.status(400).send("Error : Filled Member is more than team size");
         }
         else if(eventstatus.status==="open"){
-            const reg_id=oldcnt[0].registration+1;
+            
             const receipt_id="ReceiptID";
             const newRegistration = new Registration({reg_id,receipt_id,name,auth_name,phoneno,email,auth_email,gender,event_category:eventstatus.event_category,team_name,enrollment_no,event,college,participant_status:"Not Participated",date_of_registration:new Date(),payment_status:"Pending",fees:eventstatus.fees,team,utr});
             const todaysdate=new Date();
             const date_of_registration=todaysdate.getUTCFullYear()+"-"+todaysdate.getMonth()+"-"+todaysdate.getDate();
             //send mail
-            
+           
+
             createandsendpass({reg_id,name,email,event,phoneno,college,date_of_event:eventstatus.date_of_event,fees:eventstatus.fees,date_of_registration});
-            console.log("Mail sended successfuly")
+            // console.log("Mail sended successfuly")
             //save registration
             newRegistration.save()
                 .then(() => res.json(reg_id))

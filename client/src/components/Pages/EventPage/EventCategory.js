@@ -9,8 +9,10 @@ function EventCategory(props) {
         <div className="content-event">
           <h2>{props.event_name}</h2>
           <p>{props.event_desc}</p>
-          <NavLink to ={props.event_link}><button className='view-event-button'>View</button></NavLink>
-          <NavLink to= "/Registration"><button className="view-event-button"><span>Register</span></button></NavLink>
+          <div className='d-flex'>
+            <NavLink to={props.event_link}><button className='view-event-button mx-2'>View</button></NavLink>
+            <NavLink to="/Registration"><button className="view-event-button mx-2"><span>Register</span></button></NavLink>
+          </div>
         </div>
       </div>
     </div>
