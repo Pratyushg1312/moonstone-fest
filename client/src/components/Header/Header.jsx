@@ -46,11 +46,11 @@ export default function Header() {
         <span class="line"></span>
         <span class="line"></span>
       </label>
-      {/* <div className="mobview">
+      <div className="mobview">
         <div className="llogo">
           <img src="./images/logomono.png" alt="" />
         </div>
-      </div> */}
+      </div>
       <div className="nav-header" style={{ backgroundColor: "#061F25" }}>
         <div className="header-bar">
           <div className="header-container">
@@ -133,10 +133,10 @@ export default function Header() {
                 <NavLink to="/Sports">
                   <li>Sports</li>
                 </NavLink>
-                <NavLink to="/Techno-Management">
+                <NavLink to="/Technomanagement">
                   <li>Techno Management</li>
                 </NavLink>
-                <NavLink to="/Night-Events">
+                <NavLink to="/NightEvents">
                   <li>Night Events</li>
                 </NavLink>
               </ul>

@@ -37,8 +37,8 @@ export default function NewContactus() {
         <form>
           <div className="form">
             <div className="form-txt">
-              <h1>Contact Us</h1>
-              <span>
+              <h1 style={{color: "#F5AD36", fontFamily:"poppins"}}>Contact Us</h1>
+              <span style={{letterSpacing:"1px"}}>
                 Medi-Caps University
                 A.B. Road, Pigdamber, Rau Indore - 453331
               </span>
@@ -52,9 +52,9 @@ export default function NewContactus() {
 
                 <div className="conbox">
 
-                  <h3>For Sponsership</h3>
+                  <h3 style={{color: "#F5AD36", fontFamily:"poppins"}}>For Sponsership</h3>
                   <p style={{
-                    paddingLeft: "5px"
+                    paddingLeft: "5px",  fontFamily:"poppins", letterSpacing:"1px"
                   }}>
                     Prof. Mukesh Porwal
                     <br />
@@ -64,9 +64,9 @@ export default function NewContactus() {
 
                 <div className="conbox">
 
-                  <h3>For Cultural Event</h3>
+                  <h3 style={{color: "#F5AD36", fontFamily:"poppins"}}>For Cultural Event</h3>
                   <p style={{
-                    paddingLeft: "5px"
+                    paddingLeft: "5px" , fontFamily:"poppins", letterSpacing:"1px"
                   }}>
                     Prof. Preeti Jain
                     <br />
@@ -75,9 +75,9 @@ export default function NewContactus() {
                 </div>
                 <div className="conbox">
 
-                  <h3>For Sports Event</h3>
+                  <h3 style={{color: "#F5AD36", fontFamily:"poppins"}}>For Sports Event</h3>
                   <p style={{
-                    paddingLeft: "5px"
+                    paddingLeft: "5px",  fontFamily:"poppins", letterSpacing:"1px"
                   }}>
                     Prof. Ruchir Lashkari
                     <br />
@@ -86,9 +86,9 @@ export default function NewContactus() {
                 </div>
                 <div className="conbox">
 
-                  <h3>For Auction</h3>
+                  <h3 style={{color: "#F5AD36", fontFamily:"poppins"}}>For Auction</h3>
                   <p style={{
-                    paddingLeft: "5px"
+                    paddingLeft: "5px", fontFamily:"poppins", letterSpacing:"1px"
                   }}>
                     Prof. Gunjan Baheti
                     <br />
@@ -97,16 +97,16 @@ export default function NewContactus() {
                 </div>
                 <div className="conbox">
 
-                  <h3>For Techno Management Event</h3>
+                  <h3 style={{color: "#F5AD36", fontFamily:"poppins"}}>For Techno Management Event</h3>
                   <p style={{
-                    paddingLeft: "5px"
+                    paddingLeft: "5px", fontFamily:"poppins", letterSpacing:"1px"
                   }}>
                     Prof. Ajay Kulkarni(Technichal Events)
                     <br />
                     9993812967
                   </p>
                   <p style={{
-                    paddingLeft: "5px"
+                    paddingLeft: "5px", fontFamily:"poppins", letterSpacing:"1px"
                   }}>
                     Prof. Ankur Saxena(Management Events)
                     <br />
@@ -129,7 +129,7 @@ export default function NewContactus() {
           defaultValue={""}
         /> */}
               <textarea name="message" placeholder="Message" required="" defaultValue={""} cols={56} rows={7} value={FormData.message} onChange={handleChange} />
-              <button onClick={() => { handleSubmit() }}>SEND MESSAGE</button>
+              <button onClick={() => { handleSubmit() }} >SEND MESSAGE</button>
             </div>
           </div>
         </form>

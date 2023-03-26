@@ -51,6 +51,15 @@ function EventParentCategory() {
     <div className='parent-Event' >
       <div className="cutural-container">
         <div className="head-desc" id = "day-1">
+          {/* <div className='d-flex justify-content-end me-2' style={{ position: "absolute", bottom: "168px", right: "5px" }}>
+            <button className="floatingButton">
+              <p style={{ borderRadius: "50%", fontSize: "25px" }}> 
+                <a href="#day-2">
+                  <i class="fa-solid fa-arrow-down"></i>
+                </a>
+              </p>
+            </button>
+          </div> */}
           <h1 className='D-heading'>Day 1</h1>
           <div className="day1">
             {
@@ -63,6 +72,14 @@ function EventParentCategory() {
           </div>
         </div>
         <div className="head-desc" id="day-2">
+          {/* <div className='d-flex justify-content-end me-2' style={{ position: "absolute", bottom: "200px", right: "5px" }}>
+            <button className="floatingButton">
+              <p style={{ borderRadius: "50%", fontSize: "25px" }}>
+                <a href="#day-3">
+                  <i class="fa-solid fa-arrow-down"></i></a>
+              </p>
+            </button>
+          </div> */}
           <h1 className='D-heading'>Day 2</h1>
           <div className="day2" >
             {
