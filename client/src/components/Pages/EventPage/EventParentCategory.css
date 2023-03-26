@@ -82,7 +82,7 @@
     
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 900px) {
 	.day1, .day2, .day3{
         flex-wrap: wrap;
     }
