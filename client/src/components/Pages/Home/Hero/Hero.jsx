@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { useNavigate } from "react-router-dom";
 import "./hero.css"
 import { Aboutmoon } from './Aboutmoon';
 import { trusted } from 'mongoose';
@@ -9,6 +10,7 @@ export const Hero = () => {
   const [chng3, chngstyl3] = useState(true);
   const [chng4, chngstyl4] = useState();
   const [chng5, chngstyl5] = useState("flex");
+  const navigate = useNavigate();
   // const handleToggleMute = () => chngstyl3(current => !current);
   return (
     //google drive
@@ -94,15 +96,19 @@ export const Hero = () => {
             
           }}
           ></div>
+         
+         <div className="container1" >
+         <div class="btn"><a href="#" onClick={()=>{
+              navigate("/registration")
+         }} >Register</a></div>
+         </div>
         </div>
 
         <div className="logotyp-con">
           <div className="logo1 " >
             <img src='./images/logomono.png' class="img-fluid rounded mx-auto d-block p-2" alt="" />
           </div>
-          <div className='text-end m-2'> 
-            <p style={{color:"white"}}>Sponsored by : <img src="/images/navigation.jpg" style={{width:"30px",height:"30px"}}/></p>
-          </div>
+          
           <div className="typ"  style={{marginTop:"0px"}}>
             <Aboutmoon />
           </div>

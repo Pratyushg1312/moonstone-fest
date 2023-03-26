@@ -63,7 +63,7 @@
   }
   
   .card-buttons span:after {
-    content: '\00bb';
+    /* connpm runtent: '\00bb'; */
     position: absolute;
     opacity: 0;
     top: 0;

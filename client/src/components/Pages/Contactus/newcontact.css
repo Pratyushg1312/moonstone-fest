@@ -21,7 +21,7 @@
 }
 
 :root {
-    /* //....... Color ........// */
+
     --primary-color: #ff3c78;
     --light-black: #00FFD0;
     --black: #00FFD0;
@@ -149,5 +149,5 @@
 .new-contact{
   margin: auto auto;
   width: 90%;
-  /* padding: 50px 0px; */
+ 
 }
