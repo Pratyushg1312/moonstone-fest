@@ -61,10 +61,11 @@
   
 .head-desc{
     /* border: 2px solid red; */
-    height: 100vh;
+    
     width: 80%;
     position: relative;
     /* font-size: 60px; */
+    margin: 20px;
 
 }
 
