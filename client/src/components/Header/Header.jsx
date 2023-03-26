@@ -46,6 +46,11 @@ export default function Header() {
         <span class="line"></span>
         <span class="line"></span>
       </label>
+      {/* <div className="mobview">
+        <div className="llogo">
+          <img src="./images/logomono.png" alt="" />
+        </div>
+      </div> */}
       <div className="nav-header" style={{ backgroundColor: "#061F25" }}>
         <div className="header-bar">
           <div className="header-container">
