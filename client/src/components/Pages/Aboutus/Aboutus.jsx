@@ -96,7 +96,7 @@ export default function Aboutus() {
         <div id="23">
           <Commities2k23 event="Techno Management" />
         </div>
-        <div className="d-flex justify-content-around">
+        <div className="d-flex flex-wrap justify-content-around">
           <div id="21">
             <Commities2k23
               event="Cultural"
@@ -114,7 +114,7 @@ export default function Aboutus() {
             />
           </div>
         </div>
-        <div className="d-flex justify-content-around">
+        <div className="d-flex flex-wrap justify-content-around">
           <div id="24">
             <Commities2k23
               event="SponsorShip"
