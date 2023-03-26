@@ -50,6 +50,14 @@ export default function Registration() {
     // navigate("/");    
   }
 
+  const errorget = (err) => {
+    // console.log(err);
+    // console.log(err.response);
+    // console.log(err.response.config);
+    // console.log(err.response.data);
+    alert(err.response.data);
+    window.location.reload();
+  }
 
   const proceedtopay = () => {
     // console.log(content.team.length)
@@ -66,7 +74,7 @@ export default function Registration() {
     else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(content.email))) {
       alert("Please Input Valid Email id");
     }
-    else if(qrlink!==undefined&&content.utr.length===0){
+    else if(qrlink!==undefined&&(content.utr.length<16||content.utr.length>22)){
       alert("Please Input Valid Transaction/UTR No.");
     }
     else if(content.college==="Medi-Caps University"&&!(content.enrollment_no.length===12||content.enrollment_no.length===13)){
@@ -83,7 +91,7 @@ export default function Registration() {
       setloading(true);
       axios.post("/api/registeruser", content)
         .then((res) => { aftersubmit(res) })
-        .catch((err)=>{alert(err)})
+        .catch((err)=>{errorget(err)})
     }
   }
  
