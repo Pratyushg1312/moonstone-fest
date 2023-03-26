@@ -116,12 +116,14 @@
   .mobview{
     display: flex;
     justify-content: center;
+    
   }
   .llogo{
     display: flex;
     justify-content: center;
     position: absolute; 
     top: 26px;
+   
   }
   /* .mobview {
     display: flex;
