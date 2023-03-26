@@ -7,7 +7,7 @@ export default function Coordinator(props) {
         <img src={props.image} alt="image2" className="profile-icon" />
         <div className="profile-name text-danger">{props.name} </div>
         <div className="profile-position mb-1">{props.designation}</div>
-        <div className="  contact1">
+        {/* <div className="  contact1">
           <div className="mx-2">
             <a href="https://wa.me/+919617450917" target="_blank">
               <img
@@ -32,7 +32,7 @@ export default function Coordinator(props) {
               />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

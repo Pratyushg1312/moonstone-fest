@@ -1,6 +1,13 @@
 .first{
     height: 100vh;
 }
+.aaaa{
+    color: #56FFC7 ;
+}
+.aaaa:hover{
+background-color: #56FFC7;
+color: #012016 ;
+}
 @media screen and (max-width:768px) {
     .first{
         height:auto;
