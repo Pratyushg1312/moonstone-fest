@@ -111,11 +111,11 @@
 }
 /* .typ {
     border: 5px solid blue;
-    /* position: absolute;
+    position: absolute;
     left: 65%;
     top: 60%;
-    /* border: 5px solid red; *
-    display: contents; *
+     border: 5px solid red; 
+    display: contents; 
 } */
 .logframe{
     display: flex;
@@ -349,12 +349,12 @@
 	box-shadow: 0 0 5px #1eff92, 0 0 15px #1eff83, 0 0 30px #1effb0,
 		0 0 60px #1effbf;
 }
-/* .container1 .btn:nth-child(2)::before, /* 2*/
+/* .container1 .btn:nth-child(2)::before, */
 .container1 .btn:nth-child(2)::after {
 	background: #2db2ff;
 	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
 		0 0 60px #2db2ff;
-} */
+} 
 .container1 .btn:nth-child(3)::before, /* 3*/
 .container1 .btn:nth-child(3)::after {
 	background: #1eff96;
