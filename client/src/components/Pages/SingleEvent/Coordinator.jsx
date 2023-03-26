@@ -3,8 +3,8 @@ import "./Coordinator.css"
 export default function Coordinator(props) {
   return (
     <div>
-      <div className=" profile-card my-2 " style={{ borderRadius: "5%" }}>
-        <img src={props.image} alt="image2" class="profile-icon" />
+      <div className=" profile-card my-2 " style={{ borderRadius: "5%"}}>
+        <img src={props.image} alt="image2" className="profile-icon" />
         <div className="profile-name text-danger">{props.name} </div>
         <div className="profile-position mb-1">{props.designation}</div>
         <div className="  contact1">

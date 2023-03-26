@@ -4,6 +4,7 @@ import Abouthero from "./Abouthero.jsx";
 import "./Aboutus.css";
 import Persons from "./Persons.jsx";
 import Commities2k23 from "./Commities2k23.jsx";
+import Coordinator from "../SingleEvent/Coordinator.jsx";
 export default function Aboutus() {
   return (
     <div className="abc " style={{ width: "95%", marginLeft: "2.5%" }}>
@@ -88,6 +89,9 @@ export default function Aboutus() {
           >
             Commities 2K23
           </h1>
+        </div>
+        <div className="container d-flex justify-content-center" style={{width: "40%"}}>
+          <Coordinator image={"/images/Nair.jpeg"} name={"Prof. Pramod Nair"} designation={"Conveyor"} height={"400px"}/>
         </div>
         <div id="23">
           <Commities2k23 event="Techno Management" />
