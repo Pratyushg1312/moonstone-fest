@@ -104,7 +104,7 @@ export default function Aboutus() {
         <div className="degi">
 
           <h3>Prof. Pramod Nair</h3>
-          <p>Convenenr of MoonStone</p>
+          <p>Convener of MoonStone</p>
         </div>
         </div>
         {/* <div className="container d-flex justify-content-center" style={{width: "40%"}}>
@@ -119,7 +119,7 @@ export default function Aboutus() {
               event="Cultural Committee"
               img={"/images/PreetiJain.jpeg"}
               name={"Prof. Preeti Jain"}
-              designation={"Cultural Events"}
+              designation={"Co-ordinator"}
             />
           </div>
           <div id="22">
@@ -127,7 +127,7 @@ export default function Aboutus() {
               event="Sports Committee"
               img={"/images/RuchirLashkari.jpeg"}
               name={"Prof. Ruchir Lashkari"}
-              designation={"Sports Events"}
+              designation={"Co-ordinator"}
             />
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function Aboutus() {
               event="SponsorShip Committee"
               img={"/images/MukeshPorwal.jpeg"}
               name={"Prof. Mukesh Porwal"}
-              designation={"SponsorShip"}
+              designation={"Co-ordinator"}
             />
           </div>
           <div id="25">
@@ -145,7 +145,7 @@ export default function Aboutus() {
               event="Auction 2.0 Committee"
               img={"/images/GunjanBaheti.jpeg"}
               name={"Prof. Gunjan Baheti"}
-              designation={"Auction"}
+              designation={"Co-ordinator"}
             />
           </div>
         </div>

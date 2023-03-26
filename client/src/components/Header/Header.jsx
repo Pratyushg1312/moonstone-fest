@@ -94,7 +94,7 @@ export default function Header() {
                   </Link>
                   <Link to="aboutus/#committee">
                     <li className="drop-down-nested-parent">
-                      Commitee 2k23
+                      Committee 2k23
                       <ul className="drop-down-nested">
                         <Link to="aboutus/#21"><li>Cultural Commitee</li></Link>
                         <Link to="aboutus/#22"><li>Sports Commitee</li></Link>
