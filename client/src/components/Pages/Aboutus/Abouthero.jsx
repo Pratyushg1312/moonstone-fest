@@ -36,7 +36,7 @@ export default function Abouthero() {
             creating an unforgettable experience for everyone involved. A
             variety of events have been planned for the students, including
             cultural performances, literary competitions, sports events, art
-            exhibits, and more. All students are cordially invited to partake
+            exhibits, and more. All students are cordially invited to take part
             in this exhilarating weekend filled with entertainment, learning,
             and discovery. Let us celebrate the power of community and the
             spirit of creativity that the university epitomises.
