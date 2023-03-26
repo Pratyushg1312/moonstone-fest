@@ -102,7 +102,6 @@ export default function Aboutus() {
           </div>
         </div>
         <div className="degi">
-
           <h3>Prof. Pramod Nair</h3>
           <p>Conveyor</p>
         </div>
