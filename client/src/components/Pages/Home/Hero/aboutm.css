@@ -19,13 +19,13 @@
   margin-top: 7em;
     
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .aboutmoon p{
     /* width: max-content; */
     /* position: relative; */
     color: #56ffc7;
     font-family: raleway;
-    font-size: 17px;
+    font-size: 20px;
     text-align: left;
     margin-top: 0;
    

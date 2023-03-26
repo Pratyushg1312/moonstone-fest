@@ -79,9 +79,9 @@ export default function Header() {
               >
                 About Us
                 {arrow1 ? (
-                  <i className="fa-solid fa-chevron-up arrows"></i>
+                  <i className="fa-solid fa-chevron-up atr arrows"></i>
                 ) : (
-                  <i class="fa-sharp fa-solid fa-chevron-down arrows"></i>
+                  <i class="fa-sharp fa-solid fa-chevron-down atr arrows"></i>
                 )}
                 <ul className="drop-down">
                   <Link to="aboutus/#about-moonstone">
@@ -116,9 +116,9 @@ export default function Header() {
               >
                 Events{" "}
                 {arrow2 ? (
-                  <i className="fa-solid fa-chevron-up"></i>
+                  <i className="fa-solid fa-chevron-up atr"></i>
                 ) : (
-                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                  <i class="fa-sharp fa-solid fa-chevron-down atr"></i>
                 )}
               </NavLink>
               <ul className="drop-down">
@@ -201,9 +201,9 @@ export default function Header() {
               >
                 Sponsors{" "}
                 {arrow3 ? (
-                  <i class="fa-solid fa-chevron-up"></i>
+                  <i class="fa-solid fa-chevron-up atr"></i>
                 ) : (
-                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                  <i class="fa-sharp fa-solid fa-chevron-down atr"></i>
                 )}
               </NavLink>
               <ul className="drop-down sponsor">

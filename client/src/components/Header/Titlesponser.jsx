@@ -4,7 +4,7 @@ export const Titlesponser = () => {
   return (
     <div className="tilespo">
         <div className="bio">
-        <p class="text-moving">Title Sponser is Pratyush Gupta who given 10 billion dollars to Medi-Caps University</p>
+        <p class="text-moving">Please give us money around 2 lakh</p>
         </div>
     </div>
   )

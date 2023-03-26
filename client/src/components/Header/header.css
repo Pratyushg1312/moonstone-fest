@@ -115,9 +115,12 @@
     padding: 2em;
     height: 99%;
     overflow-x: hidden;
+   
     
     }
-    
+    .nav-header::-webkit-scrollbar{
+      display: none;
+    }
     input:checked~.nav-header {
         display: none;
         transition: width 1s ease-in;
