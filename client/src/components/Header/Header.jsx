@@ -133,10 +133,10 @@ export default function Header() {
                 <NavLink to="/Sports">
                   <li>Sports</li>
                 </NavLink>
-                <NavLink to="/Techno-Management">
+                <NavLink to="/Technomanagement">
                   <li>Techno Management</li>
                 </NavLink>
-                <NavLink to="/Night-Events">
+                <NavLink to="/NightEvents">
                   <li>Night Events</li>
                 </NavLink>
               </ul>

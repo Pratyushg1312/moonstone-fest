@@ -1,0 +1,143 @@
+
+.hero-bodys {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.contents{
+    width: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* top:5%; */
+    color: #07D685;
+}
+
+@keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(117, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(146, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(111, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+
+  .contents h1 {
+    text-align: center;
+    margin:auto;
+    font-size: 5.5rem;
+    font-weight: 300;
+    letter-spacing: 7px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    animation: lights 4s 750ms linear infinite;
+  }
+
+    .titles {
+        /* border: 2px solid white; */
+      /* font-family: 'Montserrat', sans-serif; */
+      font-weight: 300 ;
+      font-size: 45px ;
+      letter-spacing: 20px;
+      color: #ffffff ;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+   
+      .countdowns {
+        color: #F5AD36;
+        /* font-family: 'Roboto Mono', sans-serif; */
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-top: 15px;
+        letter-spacing: 2px;
+        font-size: 2.5rem;
+      }
+    
+  
+  
+  
+  
+  
+  /* -------------------- */
+  /* -- Animations CSS -- */
+  /* -------------------- */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      opacity: 1\9;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fades {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    /* display: flex;
+    justify-content: center; */
+    margin-left: 25px;
+    /* font-size: 0.8rem; */
+  }
+  
+  .fades.fadeOnes {
+    animation-delay: 0.7s;
+    /* font-size: 0.8rem; */
+  }
+  
+  .fades.fadeTwos {
+    animation-delay: 1.2s;
+  }
+  
+  .fades.fadeThrees {
+    animation-delay: 2.2s; }
+   
+  
