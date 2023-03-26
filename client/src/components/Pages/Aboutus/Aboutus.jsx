@@ -21,6 +21,19 @@ export default function Aboutus() {
             marginBottom: "30px",
           }}
         >
+          <div className="text-center my-4">
+            <h1
+              style={{
+                color: "rgb(197 178 0)",
+                fontSize: "50px",
+                letterSpacing: "2px",
+                fontWeight: "bold",
+              }}
+            >
+              {" "}
+              Medi-Caps University
+            </h1>
+          </div>
           <div className="col-12 col-md-6 ">
             <img
               src="https://www.dialeducation.com/assets/images/gallery/gallery_1625127758.jpg"
@@ -29,20 +42,7 @@ export default function Aboutus() {
             />
           </div>
           <div className="col-12 col-md-6 ">
-            <div className="text-center my-4">
-              <h1
-                style={{
-                  color: "rgb(197 178 0)",
-                  fontSize: "50px",
-                  letterSpacing: "2px",
-                  fontWeight: "bold",
-                }}
-              >
-                {" "}
-                Medi-Caps University
-              </h1>
-            </div>
-            <h4 style={{ color: "#56ffc7", textAlign: "justify" }}>
+            <h5 style={{ color: "#56ffc7", textAlign: "justify", lineHeight: "1.4" }}>
               Medi-Caps has been a brand name in the arena of technical
               education. Since its inception in July 2000, Medi-Caps has
               consistently aimed at creating an ideal ambiance for budding
@@ -58,7 +58,7 @@ export default function Aboutus() {
               University wishes to maintain the same objective of imparting
               quality education and producing sound professionals for the
               benefit of the society at large.
-            </h4>
+            </h5>
           </div>
         </div>
         <div className="row my-5">
@@ -90,11 +90,10 @@ export default function Aboutus() {
           </h1>
         </div>
         <div className="deanbox">
-
-        <div class="root1">
-          <div class="wrap1">
-            <img src="/images/Nair.jpeg" />
-{/* 
+          <div class="root1">
+            <div class="wrap1">
+              <img src="/images/Nair.jpeg" />
+              {/* 
             <div class="layer layer1"></div>
             <div class="layer layer2"></div>
             <div class="layer layer3"></div>

@@ -134,7 +134,7 @@ flex-direction: column;
     display: flex;
     justify-content: center;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     transition-delay: 1s;
     transition-property: transform;
     transition: transform 1s ease;

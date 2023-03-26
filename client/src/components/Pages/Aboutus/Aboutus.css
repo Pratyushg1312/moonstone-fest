@@ -2,7 +2,6 @@
     /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3c/Main_block1.jpg'); */
     background-position: center;
     left:0px;
-    
     position:relative;
     /* background-size: 100%; */
     background-size: cover;
@@ -79,7 +78,7 @@
     width: 30%;
     height: 70%;
     margin: auto auto;
-    margin-top: 5%;
+    margin-top: 2%;
     border: 20px rgba(0, 0, 0, 0.3) solid;
   }
   
