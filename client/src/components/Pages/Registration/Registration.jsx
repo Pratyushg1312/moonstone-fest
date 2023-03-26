@@ -121,7 +121,7 @@ export default function Registration() {
           {qrlink!==undefined?
           <div style={{margin:"5px"}}>
             <h3 style={{textAlign:"center"}}>QR Code</h3>
-              <img src="./Qrcode/Basketball.jpg" alt="QR Code" width={"300px"} />
+              <img src={qrlink} alt="QR Code" width={"300px"} />
               <NewSingleField placeholder={"Transaction/UTR No.*"} content={content} setcontent={setcontent} to_find={"utr"} />
             </div>
           :<></>}
