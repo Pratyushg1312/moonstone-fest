@@ -1,15 +1,12 @@
 .comitee {
-    display: "flex";
-    flex-direction: "column";
-    /* height: 20vh; */
-    justify-content: "center";
+    margin: 20px 0;
 }
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     /* .comitee {
         height: 80vh;
-    } */
-}
+    } *
+} */
 
 .heading1 {
     color: rgb(86, 255, 199);

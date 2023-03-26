@@ -90,7 +90,6 @@ export const Hero = () => {
             chngstyl4("scale(0.5)")
             chngstyl3(current => !current)
             chngstyl5("none")
-            
           }}
           ></div>
          <div className="container1" >
