@@ -4,6 +4,7 @@ import Abouthero from "./Abouthero.jsx";
 import "./Aboutus.css";
 import Persons from "./Persons.jsx";
 import Commities2k23 from "./Commities2k23.jsx";
+import Coordinator from "../SingleEvent/Coordinator.jsx";
 export default function Aboutus() {
   return (
     <div className="abc " style={{ width: "95%", marginLeft: "2.5%" }}>
@@ -14,7 +15,11 @@ export default function Aboutus() {
         </div>
         <div
           className=" d-flex align-items-center row "
-          style={{ margin: "0px", justifyContent: "center" }}
+          style={{
+            margin: "0px",
+            justifyContent: "center",
+            marginBottom: "30px",
+          }}
         >
           <div className="col-12 col-md-6 ">
             <img
@@ -38,36 +43,39 @@ export default function Aboutus() {
               </h1>
             </div>
             <h4 style={{ color: "#56ffc7", textAlign: "justify" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Perspiciatis velit labore placeat reprehenderit quidem omnis
-              aliquam porro praesentium earum enim. Sapiente, quam. Doloribus
-              sit est cupiditate, doloremque ut harum quisquam perferendis.
-              Repellat, eum vero. Omnis accusamus sed odio, sequi facilis minus
-              sint reiciendis nihil deserunt dolor exercitationem, quasi numquam
-              et soluta modi vel impedit consectetur. Vitae at illo eveniet
-              nihil modi consequatur laudantium? At perspiciatis unde nulla
-              voluptate placeat corrupti non, asperiores facere ipsam distinctio
-              error obcaecati nemo voluptates ipsum fugit omnis. Tempora
-              recusandae .
+              Medi-Caps has been a brand name in the arena of technical
+              education. Since its inception in July 2000, Medi-Caps has
+              consistently aimed at creating an ideal ambiance for budding
+              technocrats and managers; and helping them to grow like true
+              professionals. With its highly qualified faculty there seems an
+              optimal blend of academic brilliance and industry exposure,
+              supplemented by highly specialized visiting faculty and industry
+              experts, senior professionals from various segments of different
+              industries and business houses. It was time now to spread wings
+              and move out for more exposure and widening of the periphery.
+              Hence the foundation of Medi-Caps University has been laid down.
+              With a strong foundation of the Group since 15 years, Medi-Caps
+              University wishes to maintain the same objective of imparting
+              quality education and producing sound professionals for the
+              benefit of the society at large.
             </h4>
           </div>
         </div>
-        <div className="row m-4">
-          <div className="d-flex flex-wrap align-items-center justify-content-center ">
-            <div className="col-md-3 col-8 m-3 text-center">
+        <div className="row my-5">
+          <div className="d-flex flex-wrap align-items-center justify-content-around ">
+            <div className="col-md-2 m-3 text-center">
               <img src="/images/ranked1st.png" />
             </div>
-            <div className="col-md-3 col-8 m-3 text-center">
+            <div className="col-md-2 m-3 text-center">
               <img src="/images/mhrd-nirf.png" />
             </div>
-            <div className="col-md-3 col-8 m-3 text-center">
+            <div className="col-md-2 m-3 text-center">
               <img src="/images/placements.png" />
             </div>
             {/* <div className='md-col col-3 m-3 text-center'><img src="/images/25year.png" style={{height:"50%", }} /></div> */}
           </div>
         </div>
       </div>
-
       <div id="committee">
         <div className="text-center my-4">
           <h1
@@ -81,14 +89,65 @@ export default function Aboutus() {
             Commities 2K23
           </h1>
         </div>
-        <div id="21">
-          <Commities2k23 event="Cultural" />
+        <div className="deanbox">
+
+        <div class="root1">
+          <div class="wrap1">
+            <img src="/images/Nair.jpeg" />
+{/* 
+            <div class="layer layer1"></div>
+            <div class="layer layer2"></div>
+            <div class="layer layer3"></div>
+            <div class="layer layer4"></div> */}
+          </div>
         </div>
-        <div id="22">
-          <Commities2k23 event="Sports" />
+        <div className="degi">
+
+          <h3>Prof. Pramod Nair</h3>
+          <p>Conveyor</p>
         </div>
+        </div>
+        {/* <div className="container d-flex justify-content-center" style={{width: "40%"}}>
+          <Coordinator image={"/images/Nair.jpeg"} name={"Prof. Pramod Nair"} designation={"Conveyor"} height={"400px"}/>
+        </div> */}
         <div id="23">
           <Commities2k23 event="Techno Management" />
+        </div>
+        <div className="d-flex flex-wrap justify-content-around">
+          <div id="21">
+            <Commities2k23
+              event="Cultural"
+              img={"/images/PreetiJain.jpeg"}
+              name={"Prof. Preeti Jain"}
+              designation={"Cultural Events"}
+            />
+          </div>
+          <div id="22">
+            <Commities2k23
+              event="Sports"
+              img={"/images/RuchirLashkari.jpeg"}
+              name={"Prof. Ruchir Lashkari"}
+              designation={"Sports Events"}
+            />
+          </div>
+        </div>
+        <div className="d-flex flex-wrap justify-content-around">
+          <div id="24">
+            <Commities2k23
+              event="SponsorShip"
+              img={"/images/MukeshPorwal.jpeg"}
+              name={"Prof. Mukesh Porwal"}
+              designation={"SponsorShip"}
+            />
+          </div>
+          <div id="25">
+            <Commities2k23
+              event="Auction 2.0"
+              img={"/images/GunjanBaheti.jpeg"}
+              name={"Prof. Gunjan Baheti"}
+              designation={"Auction"}
+            />
+          </div>
         </div>
       </div>
     </div>

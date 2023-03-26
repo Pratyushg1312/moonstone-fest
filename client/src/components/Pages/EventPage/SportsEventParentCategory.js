@@ -143,7 +143,7 @@ function SportsEventParentCategory() {
 
       <div className="cutural-container" >
 
-        <div className="head-des" id = "cricket">
+        <div className="head-des" id = "cricket" style={{"width":"90%"}}>
         
           <h1 className='D-heading'>Cricket</h1>
 
@@ -152,7 +152,7 @@ function SportsEventParentCategory() {
             {
               arr1[0].cricket.map(e => (
                 <SportsSingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/sports"}
                 />
               ))
             }
@@ -166,7 +166,7 @@ function SportsEventParentCategory() {
             {
               arr1[1].volleyball.map(e => (
                 <SportsSingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/sports"}
                 />
               ))
             }
@@ -178,7 +178,7 @@ function SportsEventParentCategory() {
             {
               arr1[2].basketball.map(e => (
                 <SportsSingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/sports"}
                 />
               ))
             }
@@ -193,7 +193,7 @@ function SportsEventParentCategory() {
             {
               arr1[3].minisoccer.map(e => (
                 <SportsSingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/sports"}
                 />
               ))
             }
@@ -209,7 +209,7 @@ function SportsEventParentCategory() {
             {
               arr1[4].chess.map(e => (
                 <SportsSingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/sports"}
                 />
               ))
             }
@@ -225,7 +225,7 @@ function SportsEventParentCategory() {
             {
               arr1[5].carrom.map(e => (
                 <SportsSingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/sports"}
                 />
               ))
             }
@@ -241,7 +241,7 @@ function SportsEventParentCategory() {
             {
               arr1[6].badminton.map(e => (
                 <SportsSingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/sports"}
                 />
               ))
             }
@@ -257,7 +257,7 @@ function SportsEventParentCategory() {
             {
               arr1[7].tabletennis.map(e => (
                 <SportsSingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/sports"}
                 />
               ))
             }
@@ -273,7 +273,7 @@ function SportsEventParentCategory() {
             {
               arr1[8].atheletics.map(e => (
                 <SportsSingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/sports"}
                 />
               ))
             }
@@ -289,7 +289,7 @@ function SportsEventParentCategory() {
             {
               arr1[9].gym.map(e => (
                 <SportsSingleEventCard name={e.event_name}
-                  desc={e.event_desc}
+                  desc={e.event_desc} link={"/registration/sports"}
                 />
               ))
             }

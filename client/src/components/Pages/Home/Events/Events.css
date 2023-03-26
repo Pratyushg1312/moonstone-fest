@@ -123,7 +123,7 @@
     }
 }
 /* .style-text h1::after{
-    /* border: 2px solid red; *
+     border: 2px solid red; 
     content: "";
     position: absolute;
     top: 0;

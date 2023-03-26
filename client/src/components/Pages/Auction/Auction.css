@@ -2,11 +2,11 @@
     font-size: 30px;  
 }
 
-.auction1 {
+.auction-page {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
     .pqr th {
         font-size: 16px;
     }
@@ -18,5 +18,10 @@
 
     .auction1 {
         margin-top: 40px;
+    }
+    .ttt{
+        display: flex;
+        justify-content: center;
+    align-items: center;
     }
 }
