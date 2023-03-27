@@ -266,7 +266,7 @@ function SportsEventParentCategory() {
 
         <div className="head-des" id = "atheletics">
           
-          <h1 className='D-heading'>ATHELETICS</h1>
+          <h1 className='D-heading'>ATHLETICS</h1>
 
           <div className="day1">
 
