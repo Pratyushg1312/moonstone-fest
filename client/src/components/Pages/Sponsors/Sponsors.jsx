@@ -2,6 +2,7 @@ import React from 'react'
 import Sponsorsicon from './Sponsorsicon'
 import './Sponsors.css'
 import EventSchedule from '../Locationinfo/EventSchedule'
+import Modal from './Modal'
 export default function Sponsors() {
   return (
     <div style={{ color: "white" }}>
@@ -77,6 +78,7 @@ export default function Sponsors() {
           }}><p>Event Co Sponsor</p></div>
 
         </div>
+        {/* <Modal/> */}
       </div>
       {/* <EventSchedule/> */}
     </div>
