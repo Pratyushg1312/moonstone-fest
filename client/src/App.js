@@ -24,6 +24,7 @@ import { Sports } from "./components/Pages/EventPage/Sports";
 import { useEffect } from "react";
 import axios from "axios";
 import { Titlesponser } from "./components/Header/Titlesponser";
+import { Developer } from "./components/Pages/Developer";
 
 function App() {
  
@@ -62,7 +63,7 @@ function App() {
         <Route  path='/team' element={<Teams/> }/>
         <Route  path='*' element={<Error/> }/>
         <Route  path='/Sponsors' element={<Sponsors/> }/>
-        <Route  path='/Auction' element={<Auction/> }/>
+        <Route  path='/Auction' element={<Developer/> }/>
       </Routes>
       <Footer/>
     </div>

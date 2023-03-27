@@ -65,7 +65,7 @@ export default function Header() {
                   textShadow: isActive ? "0px 0px 20px #00FFD1" : "none",
                 })}
               >
-                Auction 2.0
+                Developers
               </NavLink>
             </li>
             <li

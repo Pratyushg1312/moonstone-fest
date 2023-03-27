@@ -9,13 +9,13 @@ import ContactMap from './ContactMap'
 export default function Contactus() {
   return (
     <div>
-      <NewContactus/>
-      <ContactMap/>
-<div className="our-team">
-    <h2 className="team-name">Our Developers</h2>
-    <Teams/>
-  </div> 
-</div>
+      <NewContactus />
+      <ContactMap />
+      {/* <div className="our-team">
+        <h2 className="team-name">Our Developers</h2>
+        <Teams />
+      </div> */}
+    </div>
   )
 }
 
