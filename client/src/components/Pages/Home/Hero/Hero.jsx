@@ -94,9 +94,9 @@ export const Hero = () => {
           }}
           ></div>
          <div className="container1" >
-         <div class="btn"><a href="http://moonstone2k23.medicaps.ac.in:5000/registration"
+         <div class="btn"><a href="/registration"
         //  onClick={()=>{
-        //       navigate("http://moonstone2k23.medicaps.ac.in:5000/registration")
+        //       navigate("/registration")
         //  }}
           >Register</a></div>
          </div>
