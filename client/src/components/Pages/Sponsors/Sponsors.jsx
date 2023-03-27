@@ -2,6 +2,7 @@ import React from 'react'
 import Sponsorsicon from './Sponsorsicon'
 import './Sponsors.css'
 import EventSchedule from '../Locationinfo/EventSchedule'
+import Modal from './Modal'
 export default function Sponsors() {
   return (
     <div style={{ color: "white" }}>
@@ -11,7 +12,8 @@ export default function Sponsors() {
           <h3 style={{
             color: "#07D685",
             margin: "auto auto",
-            textAlign: "center"
+            textAlign: "center",
+            alignItems:"center"
           }}> Comming Soon</h3>
           {/* <Sponsorsicon />
           <Sponsorsicon />
@@ -39,42 +41,14 @@ export default function Sponsors() {
         </ul>
 
         <h2 className='text-center' style={{ color: "#07D685" }}>Sponsorship Categories</h2>
-        <div className='d-flex row justify-content-evenly container-fluid' style={{ fontWeight: "bolder", fontFamily: "monospace" }}>
-          <div className=' col-md-4 col-8 p-5 m-2 text-center aaaa' style={{
-            border: "3px solid #56FFC7",
-            borderRadius: "5px",
-
-          }}><p>Co Sponsor</p></div>
-          <div className=' col-md-4 col-8 p-5 m-2 text-center aaaa' style={{
-            border: "3px solid #56FFC7",
-            borderRadius: "5px",
-
-          }}><p>GOLD Sponsor</p></div>
-          <div className=' col-md-4 col-8 p-5 m-2 text-center aaaa' style={{
-            border: "3px solid #56FFC7",
-            borderRadius: "5px",
-
-          }}><p>TITLE Sponsor</p></div>
-          <div className=' col-md-4 col-8 p-5 m-2 text-center aaaa' style={{
-            border: "3px solid #56FFC7",
-            borderRadius: "5px",
-
-          }}><p>Silver Sponsor</p></div>
-          <div className=' col-md-4 col-8 p-5 m-2 text-center aaaa' style={{
-            border: "3px solid #56FFC7",
-            borderRadius: "5px",
-
-          }}><p>Bronze Sponsor</p></div>
-          <div className=' col-md-4 col-8 p-5 m-2 text-center aaaa' style={{
-            border: "3px solid #56FFC7",
-            borderRadius: "5px",
-
-          }}><p>Event Sponsor</p></div>
-          <div className=' col-md-4 col-8 p-5 m-2 text-center aaaa' style={{
-            border: "3px solid #56FFC7",
-            borderRadius: "5px",
-
-          }}><p>Event Co Sponsor</p></div>
+        <div className='d-flex row justify-content-evenly container-fluid' style={{ fontWeight: "bolder", fontFamily: "monospace" ,color:"black"}}>
+          <Modal sponsor="Title" />
+          <Modal sponsor="Co" />
+          <Modal sponsor="Gold" />
+          <Modal sponsor="Silver" />
+          <Modal sponsor="Bronze" />
+          <Modal sponsor="Event" />
+          <Modal sponsor="Event_Co" />
 
         </div>
       </div>

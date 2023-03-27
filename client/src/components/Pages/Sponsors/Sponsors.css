@@ -1,5 +1,9 @@
 .first{
-    height: 100vh;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .aaaa{
     color: #56FFC7 ;
@@ -10,8 +14,9 @@ color: #012016 ;
 }
 @media screen and (max-width:768px) {
     .first{
-        height:auto;
+        
         margin: 2rem;
+
     }
     
 }
