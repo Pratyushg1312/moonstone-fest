@@ -6,7 +6,7 @@ var arr=[
   {
     id:1,
     name:"Dr. Pankaj Malik",
-path:"./images/Pankajj.jpeg",
+path:"./images/pankajsir.jpg",
 icon1:"fa-brands fa-linkedin fa-2x d",
 icon2:"",
 icon3:"fa-solid fa-envelope fa-2x d",
