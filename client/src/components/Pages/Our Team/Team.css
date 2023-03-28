@@ -64,7 +64,7 @@
 	margin-top:8px;
     padding: 0;
     width: fit-content;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 @media only screen and (max-width: 1062px) {
