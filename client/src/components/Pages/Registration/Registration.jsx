@@ -74,7 +74,7 @@ export default function Registration() {
     else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(content.email))) {
       alert("Please Input Valid Email id");
     }
-    else if(qrlink!==undefined&&(content.utr.length<16||content.utr.length>22)){
+    else if(qrlink!==undefined&&(content.utr.length<5)){
       alert("Please Input Valid Transaction/UTR No.");
     }
     else if(content.college==="Medi-Caps University"&&!(content.enrollment_no.length===12||content.enrollment_no.length===13)){
