@@ -25,6 +25,7 @@
 	.profile-cards {
 	  width: 100%;
 	}
+   
   }
 
 .profile-image >img {
@@ -63,8 +64,19 @@
 	margin-top:8px;
     padding: 0;
     width: fit-content;
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
+
+@media only screen and (max-width: 1062px) {
+	.icons{
+		display: flex;
+		/* flex-wrap: wrap; */
+		/* position: relative; */
+		font-size: 12px;
+		padding: 2px;
+	}
+   
+  }
 
 .icons li{ 
 	
