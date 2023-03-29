@@ -1,0 +1,58 @@
+.popmoredetail{
+    position: fixed;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    /* height: 100vh; */
+    
+  z-index: 3;
+    height: 83vh;
+    /* left: 0; */
+    /* overflow: scroll; */
+    position: fixed;
+    top: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cont{
+    display: flex;
+    color: black;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.dtl{
+    background-color:rgb(1, 29, 25) ;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: baseline;
+
+}
+
+.innnerrr{
+    position: relative;
+    display: flex;
+   flex-direction: column;
+    padding: 32px;
+    width: 100%;
+    overflow: scroll;
+    max-width: 640px;
+    background-color: rgb(1, 29, 25);
+    height: inherit;
+    border-radius: 5px;
+    box-shadow: 3px 4px 20px 20px #00000029;
+}
+
+.popmoredetail .closebtn{
+            display: block;
+            width: max-content;
+            float: right;
+}
+
