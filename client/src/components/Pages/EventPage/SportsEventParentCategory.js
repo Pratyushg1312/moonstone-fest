@@ -124,11 +124,11 @@ var arr1 = [
             event_desc: "200/-",
         },
         {
-            event_name: "BENCHPRESS/SQUATS",
+            event_name: "SQUATS",
             event_desc: "200/-",
         },
         {
-            event_name: "POWERLIFITING",
+            event_name: "BENCHPRESS",
             event_desc: "200/-",
         },
     ]
