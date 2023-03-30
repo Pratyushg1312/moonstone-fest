@@ -6,7 +6,7 @@ import './EventSchedule.css'
 export default function EventSchedule() {
     const [day, setDay] = useState(1);
     console.log(day);
-    let location = "Ground";
+    let location = "Block C";
     let props = Schedule.find(item => item.place.hasOwnProperty(location));
     // console.log(props.place[location].day1.e1.name);
     let Day;
@@ -36,8 +36,8 @@ export default function EventSchedule() {
                             <tr style={{ color: "#ffbd00", fontSize: "2rem", textAlign: "center" }}>
 
                                 <th scope="col-3">Event Name</th>
-                                <th scope="col-3">From</th>
-                                <th scope="col-3">To</th>
+                                <th scope="col-3">Start</th>
+                                <th scope="col-3">End</th>
 
                             </tr>
                         </thead>
