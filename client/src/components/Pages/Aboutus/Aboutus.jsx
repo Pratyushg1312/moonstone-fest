@@ -98,12 +98,13 @@ export default function Aboutus() {
             <div class="layer layer2"></div>
             <div class="layer layer3"></div>
             <div class="layer layer4"></div> */}
-            </div>
           </div>
-          <div className="degi">
-            <h3>Prof. Pramod Nair</h3>
-            <p>Convenenr of MoonStone</p>
-          </div>
+        </div>
+        <div className="degi">
+
+          <h3>Prof. Pramod Nair</h3>
+          <p>Convener of MoonStone</p>
+        </div>
         </div>
         {/* <div className="container d-flex justify-content-center" style={{width: "40%"}}>
           <Coordinator image={"/images/Nair.jpeg"} name={"Prof. Pramod Nair"} designation={"Conveyor"} height={"400px"}/>
@@ -117,7 +118,7 @@ export default function Aboutus() {
               event="Cultural Committee"
               img={"/images/PreetiJain.jpeg"}
               name={"Prof. Preeti Jain"}
-              designation={"Cultural Events"}
+              designation={"Co-ordinator"}
             />
           </div>
           <div id="22">
@@ -125,7 +126,7 @@ export default function Aboutus() {
               event="Sports Committee"
               img={"/images/RuchirLashkari.jpeg"}
               name={"Prof. Ruchir Lashkari"}
-              designation={"Sports Events"}
+              designation={"Co-ordinator"}
             />
           </div>
         </div>
@@ -135,7 +136,7 @@ export default function Aboutus() {
               event="SponsorShip Committee"
               img={"/images/MukeshPorwal.jpeg"}
               name={"Prof. Mukesh Porwal"}
-              designation={"Sponsorship"}
+              designation={"Co-ordinator"}
             />
           </div>
           <div id="25">
@@ -143,7 +144,7 @@ export default function Aboutus() {
               event="Auction 2.0 Committee"
               img={"/images/GunjanBaheti.jpeg"}
               name={"Prof. Gunjan Baheti"}
-              designation={"Auction"}
+              designation={"Co-ordinator"}
             />
           </div>
         </div>

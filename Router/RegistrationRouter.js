@@ -76,6 +76,8 @@ Your Registration is under process
 Your invoice for registration is attached.
 Please Make Payment at the Registration Desk to confirm it.
 
+NOTE: Ignore if already paid for any sports event.
+
 Thanks & Regards
 Software cell
     `,

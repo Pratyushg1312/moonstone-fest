@@ -25,6 +25,7 @@
 	.profile-cards {
 	  width: 100%;
 	}
+   
   }
 
 .profile-image >img {
@@ -66,6 +67,17 @@
     /* border: 2px solid red; */
 }
 
+@media only screen and (max-width: 1062px) {
+	.icons{
+		display: flex;
+		/* flex-wrap: wrap; */
+		/* position: relative; */
+		font-size: 12px;
+		padding: 2px;
+	}
+   
+  }
+
 .icons li{ 
 	
     display:inline-block;
@@ -83,7 +95,10 @@
 	/* border: 2px solid white; */
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	width: 100%;
+	margin-bottom: 0px;
  }
 
  .team-body{
@@ -93,6 +108,7 @@
 	align-content: center;
 	flex-wrap: wrap;
 	width: 80%;
+	margin-bottom: 20px;
 
  } 
 

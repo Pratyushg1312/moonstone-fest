@@ -289,4 +289,24 @@
   left: -30px;
 }
 
+.tnc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 
+}
+.chktnc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+ 
+}
+.chktnc p{
+  margin-bottom: 0;
+}
+#checkit{
+  margin: 5px;
+}

@@ -11,6 +11,7 @@ export const Hero = () => {
   const [chng4, chngstyl4] = useState();
   const [chng5, chngstyl5] = useState("flex");
   const navigate = useNavigate();
+  // console.log(process.env)
   // const handleToggleMute = () => chngstyl3(current => !current);
   return (
     //google drive
@@ -21,7 +22,7 @@ export const Hero = () => {
       <video autoPlay muted={chng3} loop id="hero" >
         <source src="Videos/moonvid.mp4"  type="video/mp4" />
       </video>
-     {console.log(chng5)}
+     {/* {console.log(chng5)} */}
       <div className="logframe"style={{
         display:chng5
       }}>
@@ -93,9 +94,11 @@ export const Hero = () => {
           }}
           ></div>
          <div className="container1" >
-         <div class="btn"><a href="#" onClick={()=>{
-              navigate("/registration")
-         }} >Register</a></div>
+         <div class="btn"><a href="/registration"
+        //  onClick={()=>{
+        //       navigate("/registration")
+        //  }}
+          >Register</a></div>
          </div>
         </div>
         <div className="logotyp-con">

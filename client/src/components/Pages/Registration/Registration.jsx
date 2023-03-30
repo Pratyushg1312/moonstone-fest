@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState ,useRef} from 'react'
 import DropdownRegistration from './DropdownRegistration';
 import Loginbtn from './Loginbtn';
 import './registration.css'
@@ -9,9 +9,13 @@ import Checkbox from './Checkbox';
 import SingleTeammember from './Teammembers.jsx/SingleTeammember';
 import Allteamdata from './Teammembers.jsx/Allteamdata';
 import Genderdrtopdown from './Genderdropdownl';
-
+import Popmoredetail from './Popmoredetail';
 
 export default function Registration() {
+  const[pop,setPop]=useState(false);  
+  const[ret,setRet]=useState()
+  const chkbox = useRef();
+  const [checked, setChecked] = useState();
   const [content, setcontent] = useState({ "auth_name": "", "auth_email": "", "name": "", "phoneno": "", "email": "", "event": "", "college": "", "enrollment_no": "","team":[],"team_name":"","utr":"","gender":""});
   // const [idx,setidx]=useState(0);
   const [Login, setLogin] = useState(false);
@@ -22,8 +26,8 @@ export default function Registration() {
   const [qrlink, setqrlink] = useState(undefined)
   const [mediclg, setmediclg] = useState("");
   
-
   useEffect(() => {
+    
     content.team=[];
   }, [minsz])
   
@@ -74,7 +78,7 @@ export default function Registration() {
     else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(content.email))) {
       alert("Please Input Valid Email id");
     }
-    else if(qrlink!==undefined&&(content.utr.length<16||content.utr.length>22)){
+    else if(qrlink!==undefined&&(content.utr.length<5)){
       alert("Please Input Valid Transaction/UTR No.");
     }
     else if(content.college==="Medi-Caps University"&&!(content.enrollment_no.length===12||content.enrollment_no.length===13)){
@@ -98,7 +102,7 @@ export default function Registration() {
   return (
     <div className='registration-form'>
        <img src="https://assets.codepen.io/1538474/astronaut.svg" className="astronaut" style={{marginTop:"80px"}} />
-       {Login?
+       {/* {Login? */}
        <>
           <h1 style={{fontSize:"50px",textAlign:"center",color:"#999", paddingBottom:"20px"}}>Registration Form</h1>
           <>
@@ -133,18 +137,28 @@ export default function Registration() {
               <span class="bottom-key-2"></span>
           </button> 
           :
+          <div className="tnc">
+                  <div className="chktnc">
+                    <input type="checkbox" name="checkit" id="checkit"  ref={chkbox} onClick={()=>{  setPop(true);}}  />
+                    <p>Agree to terms and conditions</p>
+                    
+                  </div>
+                  <Popmoredetail  detail trigger={pop} retrn={ret} setTrigger={setPop}></Popmoredetail>
+
+                  
           <button onClick={()=>{proceedtopay()}} class="fancy" >
           <span class="top-key"></span>
           <span class="text">Submit</span>
           <span class="bottom-key-1"></span>
           <span class="bottom-key-2"></span>
           </button >
+          </div>
            }
           </>: <></>}
           {reg_id!==0?<Success content={content} reg_id={reg_id}/> :<></>}
           </>
         </>
-      :<Loginbtn/>}
+      {/* :<Loginbtn/>} */}
 
     </div>
   )

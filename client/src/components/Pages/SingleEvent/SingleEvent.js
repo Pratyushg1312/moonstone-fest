@@ -49,7 +49,7 @@ export default function SingleEvent() {
             <h1 className='text-center  mt-4 abttt' >Entry Allowed</h1>
             <Entryallowed single={true} duo={true} team={true}/>
             <h1 className='text-center abttt '>Event Registration</h1>
-            <div style={{display:"flex",alignItems:"center",justifyContent:"center"}} > <NavLink to="/Registration"  ><button class="fancy" style={{margin:"20px"}} >
+            <div style={{display:"flex",alignItems:"center",justifyContent:"center"}} > <NavLink to="/registration"  ><button class="fancy" style={{margin:"20px"}} >
           <span class="top-key"></span>
           <span class="text">Register</span>
           <span class="bottom-key-1"></span>
