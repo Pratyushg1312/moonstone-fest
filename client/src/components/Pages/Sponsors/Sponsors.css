@@ -15,8 +15,9 @@ color: #012016 ;
 }
 @media screen and (max-width:768px) {
     .first{
-        height:auto;
+        
         margin: 2rem;
+
     }
     
 }
