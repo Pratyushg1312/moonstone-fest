@@ -47,8 +47,9 @@
   color: #00ffd1;
   text-decoration: dashed;
   /* font-family: "poppins"; */
+  font-family: Montserrat;
   font-size: 20px;
-  font-weight: 600;
+  font-weight:bold ;
 }
 .logo-img {
   width: 100px;

@@ -18,7 +18,7 @@
 }
 
 .Events-section{
-    color: #07D685;
+    color: #D3BD3B;
     font-size: 50px;
     font-weight: bold;
     
@@ -32,7 +32,7 @@
     content: "";
     width: 125% ;
     height: 2px;
-    background-color: #07D685;
+    background-color: #DC3545;
     position: absolute;
     bottom: -10px;
     

@@ -12,13 +12,14 @@
     color: rgb(86, 255, 199);
     letter-spacing: 1px;
     padding-bottom: 10px;
-    border-bottom: 4px solid#630550;
+    border-bottom: 4px solid#DC3545;
     line-height: 48px;
     margin-bottom: 10px;
+    font-family: Montserrat;
     font-size: x-large;
 }
 
 .heading1:hover {
-    border-bottom: 4px solid #e613bb;
+    border-bottom: 4px solid #DC3545;
     transition: ease-in-out 1s;
 }

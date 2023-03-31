@@ -6,7 +6,7 @@ export const Developer = () => {
     
     <div className="deve">
 <div className="our-team">
-        <h2 className="team-name">Our Developers</h2>
+        <h2 className="team-name" >Our Developers</h2>
        <Teams/>
       </div>
     </div>

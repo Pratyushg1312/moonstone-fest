@@ -1,8 +1,13 @@
 .first{
-    height: 100vh;
+    height: 75vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .aaaa{
     color: #56FFC7 ;
+    transition: 0.4s;
 }
 .aaaa:hover{
 background-color: #56FFC7;

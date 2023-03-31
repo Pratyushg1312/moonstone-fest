@@ -28,6 +28,7 @@ export default function Aboutus() {
                 fontSize: "50px",
                 letterSpacing: "2px",
                 fontWeight: "bold",
+                fontFamily:"Montserrat"
               }}
             >
               {" "}
@@ -42,7 +43,7 @@ export default function Aboutus() {
             />
           </div>
           <div className="col-12 col-md-6 ">
-            <h5 style={{ color: "#56ffc7", textAlign: "justify", lineHeight: "1.4" }}>
+            <h5 style={{ color: "#00FFD1", textAlign: "justify", lineHeight: "1.4" , fontFamily:"Poppins"}}>
               Medi-Caps has been a brand name in the arena of technical
               education. Since its inception in July 2000, Medi-Caps has
               consistently aimed at creating an ideal ambiance for budding
@@ -84,6 +85,7 @@ export default function Aboutus() {
               fontSize: "50px",
               letterSpacing: "2px",
               fontWeight: "bold",
+              fontFamily:"Montserrat"
             }}
           >
             Committees 2K23

@@ -27,8 +27,8 @@ export default function Abouthero() {
           <article id="neptune-trajectory"></article>
         </section>
         <div className="moonstone-content" id="about-moonstone">
-          <h1 class="txtanime" style={{ textAlign: "center", color: 'rgb(197 178 0)' ,fontWeight:"bold"}}>About Moonstone </h1>
-          <h4 style={{ color: "#56ffc7", textAlign: "justify" }}>
+          <h1 class="txtanime" style={{ textAlign: "center", color: 'rgb(197 178 0)', fontFamily:"Montserrat" ,fontWeight:"bold"}}>About Moonstone </h1>
+          <h5 style={{ color: "#00FFD1", textAlign: "justify" , fontFamily:"Poppins"}}>
             The annual college festival, Moonstone, is
             eagerly awaited by the students. The festival celebrates the
             talent, creativity, and enthusiasm of the students. The students
@@ -40,7 +40,7 @@ export default function Abouthero() {
             in this exhilarating weekend filled with entertainment, learning,
             and discovery. Let us celebrate the power of community and the
             spirit of creativity that the university epitomises.
-          </h4>
+          </h5>
         </div>
       </div>
     </div>
