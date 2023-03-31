@@ -12,6 +12,7 @@ export const Team = (props) => {
         <div className="profile-info">
           <h3 className="profile-name">{props.name}</h3>
           <p className="profile-desc">{props.desc}</p>
+          <p className="profile-desc">{props.desc1}</p>
         </div>
       </div>
 

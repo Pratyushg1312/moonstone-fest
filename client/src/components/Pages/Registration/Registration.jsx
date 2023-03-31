@@ -10,6 +10,7 @@ import SingleTeammember from './Teammembers.jsx/SingleTeammember';
 import Allteamdata from './Teammembers.jsx/Allteamdata';
 import Genderdrtopdown from './Genderdropdownl';
 import Popmoredetail from './Popmoredetail';
+import EventCategory from './EventCategory';
 
 export default function Registration() {
   const[pop,setPop]=useState(false);  
@@ -25,6 +26,7 @@ export default function Registration() {
   const [maxbk, setmaxbk] = useState(1)
   const [qrlink, setqrlink] = useState(undefined)
   const [mediclg, setmediclg] = useState("");
+  const [category, setcategory] = useState("");
   
   useEffect(() => {
     
@@ -102,7 +104,7 @@ export default function Registration() {
   return (
     <div className='registration-form'>
        <img src="https://assets.codepen.io/1538474/astronaut.svg" className="astronaut" style={{marginTop:"80px"}} />
-       {/* {Login? */}
+       {Login?
        <>
           <h1 style={{fontSize:"50px",textAlign:"center",color:"#999", paddingBottom:"20px"}}>Registration Form</h1>
           <>
@@ -118,7 +120,10 @@ export default function Registration() {
           <> <NewSingleField que={"Which College you are From?"} placeholder={"College Name*"} content={content} setcontent={setcontent} to_find={"college"} />
            <NewSingleField que={"Which College you are From?"} placeholder={"Aadhar No.*"} content={content} setcontent={setcontent} to_find={"enrollment_no"} />
           </>}
-          {content.team.length===0?<DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} Fees={Fees} setFees={setFees} setminsz={setminsz} setmaxsz={setmaxsz} setmaxbk={setmaxbk} qrlink={qrlink} setqrlink={setqrlink} />:<></>}
+          {content.team.length===0?
+          <>
+          <EventCategory category={category} setcategory={setcategory}/>
+         {category===""?<></>:<><DropdownRegistration content={content} setcontent={setcontent} to_find={"event"} Fees={Fees} setFees={setFees} setminsz={setminsz} setmaxsz={setmaxsz} setmaxbk={setmaxbk} qrlink={qrlink} setqrlink={setqrlink} category={category} /></>} </>:<></>}
           {maxbk!==1?<NewSingleField  placeholder={"Team Name*"} content={content} setcontent={setcontent} to_find={"team_name"} />:<></>}
           <Allteamdata content={content}/>
           {maxsz-1>0?<SingleTeammember content={content} setcontent={setcontent} minsz={minsz} maxsz={maxsz} setminsz={setminsz} setmaxsz={setmaxsz}/>:<></>}
@@ -138,13 +143,11 @@ export default function Registration() {
           </button> 
           :
           <div className="tnc">
-                  <div className="chktnc">
-                    <input type="checkbox" name="checkit" id="checkit"  ref={chkbox} onClick={()=>{  setPop(true);}}  />
-                    <p>Agree to terms and conditions</p>
-                    
-                  </div>
-                  <Popmoredetail  detail trigger={pop} retrn={ret} setTrigger={setPop}></Popmoredetail>
-
+          <div className="chktnc">
+            <input type="checkbox" name="checkit" id="checkit"  ref={chkbox} onClick={()=>{  setPop(true);}}  />
+            <p>Agree to terms and conditions</p>
+          </div>
+          <Popmoredetail  detail trigger={pop} retrn={ret} setTrigger={setPop}></Popmoredetail>
                   
           <button onClick={()=>{proceedtopay()}} class="fancy" >
           <span class="top-key"></span>
@@ -158,7 +161,7 @@ export default function Registration() {
           {reg_id!==0?<Success content={content} reg_id={reg_id}/> :<></>}
           </>
         </>
-      {/* :<Loginbtn/>} */}
+       :<Loginbtn/>} 
 
     </div>
   )

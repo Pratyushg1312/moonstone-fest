@@ -45,7 +45,7 @@ export default function DropdownRegistration(props) {
     <div class="form__group field" style={{ display: "flex", justifyContent: "center" }}>
       <select class="form__field" placeholder={props.placeholder} name={s} value={props.content[s]} onChange={handleChange} required>
         <option class="form__label" value="">Event*</option>
-        {Events.filter(item => item.status === "open"&&(item.event_category===id||id===undefined)).map((item) => {
+        {Events.filter(item => item.status === "open"&&item.event_category===props.category &&(item.event_category===id||id===undefined)).map((item) => {
           return <option class="form__label" value={item.event}>{item.event}</option>
         })}
         

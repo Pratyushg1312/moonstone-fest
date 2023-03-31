@@ -21,12 +21,11 @@
 .profile-image{
 	text-align: center;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 900px) {
 	.profile-cards {
 	  width: 100%;
 	}
-   
-  }
+}
 
 .profile-image >img {
 	position: relative;
