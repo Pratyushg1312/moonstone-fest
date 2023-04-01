@@ -46,13 +46,13 @@
 }
 
 .profile-info > .profile-name {
-	color: #F5AD36;
+	color: #D3BD3B;
     font-family: poppins;
     letter-spacing: 1.5px;
 }
 
 .profile-info > .profile-desc {
-	color: black;
+	color: #00FFD1;
 	font-size: 1rem;
     font-weight: 500;
     font-family: poppins;
