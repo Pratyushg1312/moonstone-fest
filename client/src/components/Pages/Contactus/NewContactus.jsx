@@ -37,7 +37,7 @@ export default function NewContactus() {
         <form>
           <div className="form">
             <div className="form-txt">
-              <h1 style={{color: "#F5AD36", fontFamily:"poppins"}}>Contact Us</h1>
+              <h1 style={{color: "#D3BD3B", fontFamily:"poppins"}}>Contact Us</h1>
               <span style={{letterSpacing:"1px"}}>
                 Medi-Caps University
                 A.B. Road, Pigdamber, Rau Indore - 453331
@@ -52,7 +52,7 @@ export default function NewContactus() {
 
                 <div className="conbox">
 
-                  <h3 style={{color: "#F5AD36", fontFamily:"poppins"}}>For Sponsership</h3>
+                  <h3 style={{color: "#D3BD3B", fontFamily:"poppins"}}>For Sponsership</h3>
                   <p style={{
                     paddingLeft: "5px",  fontFamily:"poppins", letterSpacing:"1px"
                   }}>
@@ -64,7 +64,7 @@ export default function NewContactus() {
 
                 <div className="conbox">
 
-                  <h3 style={{color: "#F5AD36", fontFamily:"poppins"}}>For Cultural Event</h3>
+                  <h3 style={{color: "#D3BD3B", fontFamily:"poppins"}}>For Cultural Event</h3>
                   <p style={{
                     paddingLeft: "5px" , fontFamily:"poppins", letterSpacing:"1px"
                   }}>
@@ -75,7 +75,7 @@ export default function NewContactus() {
                 </div>
                 <div className="conbox">
 
-                  <h3 style={{color: "#F5AD36", fontFamily:"poppins"}}>For Sports Event</h3>
+                  <h3 style={{color: "#D3BD3B", fontFamily:"poppins"}}>For Sports Event</h3>
                   <p style={{
                     paddingLeft: "5px",  fontFamily:"poppins", letterSpacing:"1px"
                   }}>
@@ -86,7 +86,7 @@ export default function NewContactus() {
                 </div>
                 <div className="conbox">
 
-                  <h3 style={{color: "#F5AD36", fontFamily:"poppins"}}>For Auction</h3>
+                  <h3 style={{color: "#D3BD3B", fontFamily:"poppins"}}>For Auction</h3>
                   <p style={{
                     paddingLeft: "5px", fontFamily:"poppins", letterSpacing:"1px"
                   }}>
@@ -97,7 +97,7 @@ export default function NewContactus() {
                 </div>
                 <div className="conbox">
 
-                  <h3 style={{color: "#F5AD36", fontFamily:"poppins"}}>For Techno Management Event</h3>
+                  <h3 style={{color: "#D3BD3B", fontFamily:"poppins"}}>For Techno Management Event</h3>
                   <p style={{
                     paddingLeft: "5px", fontFamily:"poppins", letterSpacing:"1px"
                   }}>
