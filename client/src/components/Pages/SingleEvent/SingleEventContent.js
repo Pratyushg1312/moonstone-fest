@@ -65,7 +65,7 @@ const SingleEventContent = [
     Prices:"Exciting Prizes"   
 },
 {
-    Event:"1 min Golgappa challenge",
+    Event:"1 min GOLGAPPA Challenge",
     Description:"Students will be given 1 min to eat as much Pani puri as possible.",
     Duration:"2 hrs",
     Venue:"Q Block",
