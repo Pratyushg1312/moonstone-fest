@@ -20,7 +20,7 @@ export const Hero = () => {
     //  https://res.cloudinary.com/djpgrx4y8/video/upload/v1679254148/moonstone/moonstonevid_ndcpyn.mp4
     <div className="hero-con">
       <video autoPlay muted={chng3} loop id="hero" >
-        <source src="Videos/moonvid.mp4"  type="video/mp4" />
+        <source src="Videos/darshanvid.mp4"  type="video/mp4" />
       </video>
      {/* {console.log(chng5)} */}
       <div className="logframe"style={{
