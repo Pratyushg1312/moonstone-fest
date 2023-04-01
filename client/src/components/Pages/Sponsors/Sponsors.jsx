@@ -148,7 +148,7 @@ export default function Sponsors() {
 
           {/* <Modal/> */}
         </div>
-        <EventSchedule/>
+        {/* <EventSchedule/> */}
       </div>
     </div>
   )
