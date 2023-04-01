@@ -1,6 +1,6 @@
 import React from 'react'
 import TechnoSingleEventCard from './TechnoSingleEventCard'
-// import { NavLink } from 'react-router-dom'
+// import { NavSLink } from 'react-router-dom'
 import "./SportsEventParentCategory.css"
 
 var arr1 = [
@@ -9,7 +9,8 @@ var arr1 = [
         {
           event_name: "HUNARBAZZ",
           event_desc: "Q Block Room no. 001",
-          event_price: "50"
+          event_price: "50",
+          event_SLink:"/SingleEvent/HUNARBAAZ"
   
         },
         {
@@ -211,6 +212,7 @@ export const TechnoEventParentCategory = () => {
                     <TechnoSingleEventCard name={e.event_name}
                       desc={e.event_desc}
                       price={e.event_price}
+                      SLink={e.event_SLink}
                     />
                   ))
                 }
@@ -226,6 +228,7 @@ export const TechnoEventParentCategory = () => {
                     <TechnoSingleEventCard name={e.event_name}
                       desc={e.event_desc}
                       price={e.event_price}
+                      SLink={e.event_SLink}
                     />
                   ))
                 }
@@ -239,6 +242,7 @@ export const TechnoEventParentCategory = () => {
                     <TechnoSingleEventCard name={e.event_name}
                       desc={e.event_desc}
                       price={e.event_price}
+                      SLink={e.event_SLink}
                     />
                   ))
                 }
@@ -255,6 +259,7 @@ export const TechnoEventParentCategory = () => {
                     <TechnoSingleEventCard name={e.event_name}
                       desc={e.event_desc}
                       price={e.event_price}
+                      SLink={e.event_SLink}
                     />
                   ))
                 }
@@ -272,6 +277,7 @@ export const TechnoEventParentCategory = () => {
                     <TechnoSingleEventCard name={e.event_name}
                       desc={e.event_desc}
                       price={e.event_price}
+                      SLink={e.event_SLink}
                     />
                   ))
                 }
@@ -289,6 +295,7 @@ export const TechnoEventParentCategory = () => {
                     <TechnoSingleEventCard name={e.event_name}
                       desc={e.event_desc}
                       price={e.event_price}
+                      SLink={e.event_SLink}
                     />
                   ))
                 }
@@ -306,6 +313,7 @@ export const TechnoEventParentCategory = () => {
                     <TechnoSingleEventCard name={e.event_name}
                       desc={e.event_desc}
                       price={e.event_price}
+                      SLink={e.event_SLink}
                     />
                   ))
                 }
@@ -323,6 +331,7 @@ export const TechnoEventParentCategory = () => {
                     <TechnoSingleEventCard name={e.event_name}
                       desc={e.event_desc}
                       price={e.event_price}
+                      SLink={e.event_SLink}
                     />
                   ))
                 }
@@ -340,6 +349,7 @@ export const TechnoEventParentCategory = () => {
                     <TechnoSingleEventCard name={e.event_name}
                       desc={e.event_desc}
                       price={e.event_price}
+                      SLink={e.event_SLink}
                     />
                   ))
                 }
