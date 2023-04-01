@@ -6,7 +6,7 @@ import './EventSchedule.css'
 export default function EventSchedule() {
     const [day, setDay] = useState(1);
     console.log(day);
-    let location = "Block C";
+    let location = "Bus Parking Lawn";
     let props = Schedule.find(item => item.place.hasOwnProperty(location));
     // console.log(props.place[location].day1.e1.name);
     let Day;

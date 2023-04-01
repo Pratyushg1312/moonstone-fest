@@ -47,17 +47,16 @@ export default function Sponsors() {
 
         <h2 className='text-center' style={{ color: "#D3BD3B",margin:"40px" }}>Sponsorship Categories</h2>
         <div className='d-flex row justify-content-evenly container-fluid' style={{ fontWeight: "bolder", fontFamily: "monospace" }}>
-          <div className=' col-md-4 col-8 p-5 m-2 text-center aaaa' style={{
+      
+        <div className=' col-md-4 col-8 p-5 m-2 text-center aaaa' data-bs-toggle="modal" data-bs-target="#exampleModal" style={{
             border: "3px solid #56FFC7",
             borderRadius: "5px",
-            
 
 
           }} onClick={() => setsponser("Title")}>
 
             <Modal sponsor="Title" />
             </div>
-            
             <div className=' col-md-4 col-8 p-5 m-2 text-center aaaa' data-bs-toggle="modal" data-bs-target="#exampleModal" style={{
             border: "3px solid #56FFC7",
             borderRadius: "5px",
