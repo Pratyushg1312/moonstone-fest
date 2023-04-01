@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Events.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
 function Events() {
   useEffect(() => {
     Aos.init();
@@ -60,6 +61,7 @@ function Events() {
           </NavLink>
         </div>
       </div>
+      
     </>
   );
 }

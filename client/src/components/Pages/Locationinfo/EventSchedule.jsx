@@ -51,7 +51,7 @@ export default function EventSchedule() {
     return (
         <div>
             <div>
-                <h1 className='text-center mt-4'>Discover Exciting Events Near You</h1>
+                <h1 className='text-center mt-4' style={{color:"rgb(211, 189, 59)"}}>Discover Exciting Events Near You</h1>
                 <div className='text-center mt-5'>
                     <input className='text-center' type="text" value={venue} onChange={onChange} style={{ height: "40px", width: "auto ", fontSize: "16px" }} />
                     <button className='btn btn-sm btn-dark searchBtn'  onClick={() => print(venue)}> Search </button>
@@ -71,7 +71,7 @@ export default function EventSchedule() {
                 </div>
             </div>
 
-            <h1 className="text-center">Event Schedule for {location} </h1>
+            <h1 className="text-center" style={{color:"rgb(211, 189, 59)"}}>Event Schedule for {location} </h1>
             <div className='d-flex justify-content-evenly mb-5'  >
                 <p className='btn m-1  abcd' style={{ backgroundColor: day === 1 ? "rgb(0, 255, 209) " : "gray" }} onClick={() => setDay(1)} >Day 1 </p>
                 <p className=' btn m-1 abcd' style={{ backgroundColor: day === 2 ? "rgb(0, 255, 209) " : "gray" }} onClick={() => setDay(2)}>Day2</p>
