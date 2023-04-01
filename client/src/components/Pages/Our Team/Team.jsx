@@ -10,7 +10,8 @@ path:"./images/pankajsir.jpg",
 icon1:"fa-brands fa-linkedin fa-2x d",
 icon2:"",
 icon3:"fa-solid fa-envelope fa-2x d",
-disc:"Software Cell Head \n Assistant Prof. CSE, MU",
+disc:"Software Cell Head ",
+disc1:"Assistant Prof. CSE, MU",
 link1:"https://www.linkedin.com/in/dr-pankaj-malik-583718184",
 link2:"",
 link3:"mailto:pankajmalik1979@gmail.com",
@@ -23,7 +24,8 @@ path:"./images/Sanket.jpg",
 icon1:"fa-brands fa-linkedin fa-2x d",
 icon2:"",
 icon3:"fa-solid fa-envelope fa-2x d",
-disc:"Deployment Expert & Guide \n Assistant Prof. CSE, MU",
+disc:"Deployment Expert & Guide ",
+disc1:"Assistant Prof. CSE, MU",
 link1:"https://www.linkedin.com/in/sanket-gupta-04a11895",
 link2:"",
 link3:"mailto:sanket.gupta@medicaps.ac.in",
@@ -35,7 +37,7 @@ path:"./images/vishal.jpg",
 icon1:"fa-brands fa-linkedin fa-2x d",
 icon2:"fa-brands fa-github fa-2x d",
 icon3:"fa-solid fa-envelope fa-2x d",
-disc:"Software Cell Manager",
+disc:"Manager & FullStack Developer MERN",
 link1:"https://www.linkedin.com/in/sharma39vishal/",
 link2:"https://github.com/sharma39vishal",
 link3:"mailto:sharma39vishal@gmail.com",
@@ -101,7 +103,7 @@ export const Teams = () => {
             a=>(
                  
               a.id<=2?
-        <Team image={a.path} desc={a.disc} name={a.name}  icon1={a.icon1} icon2={a.icon2} icon3={a.icon3} link1={a.link1} link2={a.link2} link3={a.link3} />:""
+        <Team image={a.path} desc={a.disc} desc1={a.disc1}  name={a.name}  icon1={a.icon1} icon2={a.icon2} icon3={a.icon3} link1={a.link1} link2={a.link2} link3={a.link3} />:""
            
           )
           )}
@@ -114,7 +116,7 @@ export const Teams = () => {
             a=>(
                  
               a.id>2?
-        <Team image={a.path} desc={a.disc} name={a.name}  icon1={a.icon1} icon2={a.icon2} icon3={a.icon3} link1={a.link1} link2={a.link2} link3={a.link3} />:""
+        <Team image={a.path} desc={a.disc} desc1={a.disc1}  name={a.name}  icon1={a.icon1} icon2={a.icon2} icon3={a.icon3} link1={a.link1} link2={a.link2} link3={a.link3} />:""
            
           )
           )}

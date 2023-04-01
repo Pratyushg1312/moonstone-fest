@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Entryallowed(props) {
+export default function   Entryallowed(props) {
   return (
     <div>
         <div className='d-flex justify-content-center'>

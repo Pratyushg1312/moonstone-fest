@@ -21,12 +21,11 @@
 .profile-image{
 	text-align: center;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 900px) {
 	.profile-cards {
 	  width: 100%;
 	}
-   
-  }
+}
 
 .profile-image >img {
 	position: relative;
@@ -47,13 +46,13 @@
 }
 
 .profile-info > .profile-name {
-	color: #F5AD36;
+	color: #D3BD3B;
     font-family: poppins;
     letter-spacing: 1.5px;
 }
 
 .profile-info > .profile-desc {
-	color: black;
+	color: #00FFD1;
 	font-size: 1rem;
     font-weight: 500;
     font-family: poppins;
@@ -67,7 +66,7 @@
     /* border: 2px solid red; */
 }
 
-@media only screen and (max-width: 1062px) {
+@media only screen and (max-width: 768px) {
 	.icons{
 		display: flex;
 		/* flex-wrap: wrap; */
