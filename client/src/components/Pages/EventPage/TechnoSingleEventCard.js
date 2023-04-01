@@ -18,8 +18,9 @@ function TechnoSingleEventCard(props) {
         </div>
       </div>
       <div className="Event-Card-lower">
-        <NavLink to="">
-        <button className="card-buttons"><span>View</span></button></NavLink>
+        {/* <NavLink to={props.SLink}> */}
+        <a href={props.SLink}>
+        <button className="card-buttons"><span>View</span></button></a>
         <NavLink to="/registration">
         <button className="card-buttons"><span>Register</span></button></NavLink>
       </div>
