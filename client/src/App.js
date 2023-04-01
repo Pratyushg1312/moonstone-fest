@@ -63,7 +63,7 @@ function App() {
         <Route  path='/team' element={<Teams/> }/>
         <Route  path='*' element={<Error/> }/>
         <Route  path='/Sponsors' element={<Sponsors/> }/>
-        <Route  path='/Auction' element={<Developer/> }/>
+        <Route  path='/Developers' element={<Developer/> }/>
       </Routes>
       <Footer/>
     </div>
