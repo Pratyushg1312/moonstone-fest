@@ -3,46 +3,22 @@ const Schedule = [
         place: {
             "Big Auditorium": {
                 day1: {
-                    eq: "09:00-10:00",
-                    ez: "09:00-10:00",
-                    ew: "09:00-10:00",
-
-
+                    "Smphony": "12:00-17:00",
                 },
                 day2: {
-                    eq: "09:00-10:01",
-                    ev: "09:00-10:00",
-                    ep: "09:00-10:00",
-
+                    "SPANDAN": "11:00-13:00",
+                    "Groove": "13:30-17:00",
                 },
                 day3: {
-                    eq: "09:00-10:00",
-                    e2: "09:00-10:00",
-                    ev: "09:00-10:00",
+                    "no event": "-----------",
 
-                }
-            }
-        }
-
-    },
-    {
-        place: {
-            "Amphitheatre": {
-                day1: {
-                    "Mgt Fest Events": "11:00-17:00",
-                },
-                day2: {
-                    "Gym EVENT/Closing Ceremoney)": "09:00-18:30",
-                },
-                day3: {
-                    "Prop Knight[Tech Event]": "13:00-16:00",
                 }
             }
         }
     },
     {
         place: {
-            "Amphitheatre": {
+            "Canteen": {
                 day1: {
                     "Mgt Fest Events": "11:00-17:00",
                 },
@@ -59,7 +35,7 @@ const Schedule = [
         place: {
             "R Block Garden": {
                 day1: {
-                    "Squid": "11:00-15:00",
+                    "Squid Game": "11:00-15:00",
                 },
                 day2: {
                     "no event": "-----------",
@@ -103,23 +79,25 @@ const Schedule = [
     },
     {
         place: {
-            "Block V": {
+            "Medi-Square": {
                 day1: {
-                    "Quizziteria (Seminar Hall 221)": "10:00-12:00",
+                    "Short Film Mob": "10:00-12:00",
                 },
                 day2: {
-                    "Google it (Room no 004)": "10:30-13:30",
+                    "no event": "-----------",
+
                 },
                 day3: {
-                    "Smash Carts (Lab number 002)": "13:30-16:00",
-                    "Fifa Tournament Online (Lab number 016)": "10:00-14:00",
+                    "no event": "-----------",
+
                 }
             }
         }
     },
+
     {
         place: {
-            "Block B": {
+            "Block V": {
                 day1: {
                     "Robotic Events": "10:00-13:30",
                 },
@@ -140,10 +118,12 @@ const Schedule = [
                     "Chess": "10:30-12:00",
                 },
                 day2: {
-                    "Gym EVENT/Closing Ceremoney)": "09:00-18:30",
+                    "no event": "-----------",
+
                 },
                 day3: {
-                    "Prop Knight[Tech Event]": "13:00-16:00",
+                    "no event": "-----------",
+
                 }
             }
         }
@@ -208,23 +188,22 @@ const Schedule = [
         place: {
             "Multi Purpose Hall": {
                 day1: {
-                    "Table Tennis/Carrom [3 April]": "09:00-17:00",
-                    "Chess [3 April]": "09:00-17:00",
+                    "Table Tennis/Carrom/Chess [3 April]": "09:00-17:00",
 
-                    "Table Tennis/Carrom [4 April]": "09:00-17:00",
-                    "Chess [4 April]": "09:00-17:00",
 
-                    "Table Tennis/Carrom [5 April]": "09:00-17:00",
-                    "Chess [5 April]": "09:00-17:00",
+                    "Table Tennis/Carrom/Chess [4 April]": "09:00-17:00",
 
-                    "Table Tennis/Carrom [6 April]": "09:00-17:00",
-                    "Chess [6 April]": "09:00-17:00",
+
+                    "Table Tennis/Carrom/Chess [5 April]": "09:00-17:00",
+
+                    "Table Tennis/Carrom/Chess [6 April]": "09:00-17:00",
+
 
 
                 },
                 day2: {
-                    "Table Tennis/Carrom [7 April]": "09:00-17:00",
-                    "Chess [7 April]": "09:00-17:00",
+                    "Table Tennis/Carrom/Chess [7 April]": "09:00-17:00",
+
 
 
                 },
@@ -253,9 +232,10 @@ const Schedule = [
                 }
             }
         }
-    }, {
+    },
+    {
         place: {
-            "Amphitheatre": {
+            "Mechanical Quadrangle": {
                 day1: {
                     "Badminton [3 April]": "09:00-17:00",
                     "Badminton [4 April]": "09:00-17:00",
@@ -273,64 +253,130 @@ const Schedule = [
                 }
             }
         }
-    }, {
+    },
+    {
         place: {
             "Bus Parking Lawn": {
                 day1: {
-                    "Mini Soccer[2 April]": "09:00-17:00",
-                    "Mini Soccer[2 April]": "09:00-17:00",
-                    "Mini Soccer[2 April]": "09:00-17:00",
-                    "Mini Soccer[2 April]": "09:00-17:00",
-                    "Mini Soccer[2 April]": "09:00-17:00",
+                    "Mini Soccer [2 April]": "09:00-17:00",
+                    "Mini Soccer [3 April]": "09:00-17:00",
+                    "Mini Soccer [4 April]": "09:00-17:00",
+                    "Mini Soccer [5 April]": "09:00-17:00",
+                    "Mini Soccer [6 April]": "09:00-17:00",
 
                 },
                 day2: {
-                    "Gym EVENT/Closing Ceremoney)": "09:00-18:30",
+                    "Mini Soccer [7 April]": "09:00-17:00",
+
                 },
                 day3: {
-                    "Prop Knight[Tech Event]": "13:00-16:00",
+                    "no event": "-----------",
                 }
             }
         }
-    }, {
+    },
+    {
         place: {
-            "Amphitheatre": {
+            "Cricket Ground": {
                 day1: {
-                    "Mgt Fest Events": "11:00-17:00",
+                    "Cricket [1 April]": "08:00-18:00",
+                    "Cricket [2 April]": "08:00-18:00",
+                    "Cricket [3 April]": "07:00-18:00",
+                    "Cricket [4 April]": "07:00-18:00",
+                    "Cricket [5 April]": "07:00-18:00",
+                    "Cricket [6 April]": "07:00-18:00",
+
                 },
                 day2: {
-                    "Gym EVENT/Closing Ceremoney)": "09:00-18:30",
+                    "Cricket [7 April]": "07:00-18:00",
+
                 },
                 day3: {
-                    "Prop Knight[Tech Event]": "13:00-16:00",
+                    "Cricket [8 April]": "08:00-18:00",
+
                 }
             }
         }
-    }, {
+    },
+    {
         place: {
-            "Amphitheatre": {
+            "BasketBall Court": {
                 day1: {
-                    "Mgt Fest Events": "11:00-17:00",
+                    "BasketBall [3 April]": "09:00-18:00",
+                    "BasketBall [4 April]": "09:00-18:00",
+                    "BasketBall [5 April]": "09:00-18:00",
+                    "BasketBall [6 April]": "09:00-18:00",
+
                 },
                 day2: {
-                    "Gym EVENT/Closing Ceremoney)": "09:00-18:30",
+                    "BasketBall [7 April]": "09:00-18:00",
+
                 },
                 day3: {
-                    "Prop Knight[Tech Event]": "13:00-16:00",
+                    "BasketBall [8 April]": "09:00-18:00",
+
                 }
             }
         }
-    }, {
+    },
+    {
         place: {
-            "Amphitheatre": {
+            "Volleyball Court": {
                 day1: {
-                    "Mgt Fest Events": "11:00-17:00",
+                    "VolleyBall [4 April]": "09:00-18:00",
+                    "VolleyBall [5 April]": "09:00-18:00",
+                    "VolleyBall [6 April]": "09:00-18:00",
+
+
                 },
                 day2: {
-                    "Gym EVENT/Closing Ceremoney)": "09:00-18:30",
+                    "VolleyBall [7 April]": "09:00-18:00",
+
                 },
                 day3: {
-                    "Prop Knight[Tech Event]": "13:00-16:00",
+                    "VolleyBall [8 April]": "09:00-18:00",
+
+                }
+            }
+        }
+    },
+    {
+        place: {
+            "Medi-Caps University Campus": {
+                day1: {
+                    "no event": "-----------",
+
+
+                },
+                day2: {
+                    "Treasure Hunt ": "09:00-18:00",
+
+                },
+                day3: {
+                    "no event": "-----------",
+
+                }
+            }
+        }
+    },
+    {
+        place: {
+            "Ampitheatre": {
+                day1: {
+                    "Live Band": "10:00-16:00",
+                    "Dance Performance": "10:00-16:00",
+                    "Photo Booth": "10:00-16:00",
+
+
+
+                },
+                day2: {
+                    "no event": "-----------",
+
+                },
+                day3: {
+                    "no event": "-----------",
+
                 }
             }
         }

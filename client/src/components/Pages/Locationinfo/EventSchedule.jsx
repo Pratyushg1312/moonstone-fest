@@ -3,11 +3,19 @@ import { useParams } from 'react-router-dom';
 import '../Auction/Auction.css'
 import Schedule from './Schedule.js'
 import './EventSchedule.css'
+
+
 export default function EventSchedule() {
     const [day, setDay] = useState(1);
+
+    const places = ["Big Auditorium", "Canteen", "R Block Garden", "Small Auditorium", "Main Stage", "Medi-Square", "Block V", "Block V", "Block C", "Block Q", "Block M", "Multi Purpose Hall", "Kho-Kho Ground", "Mechanical Quadrangle", "Bus Parking Lawn", "Cricket Ground", "BasketBall Court", "Volleyball Court", "Medi-Caps University Campus", "Ampitheatre"];
+
+    const [venue, setVenue] = useState(places[0]);
+    const [location, setlocation] = useState(places[0]);
     console.log(day);
-    let location = "Block C";
+
     let props = Schedule.find(item => item.place.hasOwnProperty(location));
+
     // console.log(props.place[location].day1.e1.name);
     let Day;
     if (day === 1)
@@ -21,9 +29,49 @@ export default function EventSchedule() {
     //     console.log(e + " " + Day[e]);
 
     // })
+    const onChange = (e) => {
+        setVenue(e.target.value);
+    }
+    const onSearch = (searchItem) => {
+        setVenue(searchItem);
+        if (places.includes(searchItem))
+        setlocation(searchItem);
+        //    console.log("search"+searchItem);
+    }
+    const f1 = (e) => {
+        onSearch(e);
+    }
+
+    const print = (e) => {
+        if (places.includes(e))
+            setlocation(e);
+    }
+
+
     return (
         <div>
-            <h1 className="text-center">Event Schedule for {location} </h1>
+            <div>
+                <h1 className='text-center mt-4' style={{color:"rgb(211, 189, 59)"}}>Discover Exciting Events Near You</h1>
+                <div className='text-center mt-5'>
+                    <input className='text-center' type="text" value={venue} onChange={onChange} style={{ height: "40px", width: "auto ", fontSize: "16px" }} />
+                    <button className='btn btn-sm btn-dark searchBtn'  onClick={() => print(venue)}> Search </button>
+                    <div className='d-flex justify-content-center location'>
+                        <ul>
+                            {places.filter((item) => {
+                                let searchterm = venue.toLowerCase();
+                                let term = item.toLowerCase();
+                                return ( term.includes(searchterm) && (searchterm != term));
+
+                            })
+                                .map((place) => {
+                                    return <li onClick={() => f1(place)} >{place}</li>
+                                })}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h1 className="text-center" style={{color:"rgb(211, 189, 59)"}}>Event Schedule for {location} </h1>
             <div className='d-flex justify-content-evenly mb-5'  >
                 <p className='btn m-1  abcd' style={{ backgroundColor: day === 1 ? "rgb(0, 255, 209) " : "gray" }} onClick={() => setDay(1)} >Day 1 </p>
                 <p className=' btn m-1 abcd' style={{ backgroundColor: day === 2 ? "rgb(0, 255, 209) " : "gray" }} onClick={() => setDay(2)}>Day2</p>

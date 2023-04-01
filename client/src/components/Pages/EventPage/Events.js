@@ -1,6 +1,7 @@
 import React from 'react'
 import EventCategory from './EventCategory'
 import './Events.css'
+import EventSchedule from '../Locationinfo/EventSchedule'
 function Events() {
   return (
     <div className='Major-Events'>
@@ -19,6 +20,7 @@ function Events() {
           <h3>Place 1</h3>
         </div>
       </div> */}
+      <EventSchedule/>
     </div>
   )
 }
