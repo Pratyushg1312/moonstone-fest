@@ -19,7 +19,7 @@ export default function Map() {
                         </thead>
                         <tbody style={{ color: "white", fontSize: "1.5rem" }}>
 
-                            <tr><td>  Main Playground</td><td><a href="https://goo.gl/maps/gCSz6jSp5fqUFdfm9" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
+                            <tr><td> Main Playground</td><td><a href="https://goo.gl/maps/gCSz6jSp5fqUFdfm9" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
                             <tr><td>Basket Ball Court</td><td><a href="https://goo.gl/maps/o1yzAotxkttCYb5JA" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
                             <tr><td>Chachi ki Dukan [Ckd]</td><td><a href="https://goo.gl/maps/Pc2Gk6YaYKRqyAuS8" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
                             <tr><td>Central Library</td><td><a href="https://goo.gl/maps/5uAmXWRt6hnPoqJY7" target={'_blank'}><img src="/images/navigation.jpg" style={{ width: "40px", height: "40px", margin: "10px" }} /></a></td> </tr>
