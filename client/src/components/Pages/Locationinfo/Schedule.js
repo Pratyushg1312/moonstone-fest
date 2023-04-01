@@ -112,7 +112,7 @@ const Schedule = [
     },
     {
         place: {
-            "Block B": {
+            "Block V": {
                 day1: {
                     "Robotic Events": "10:00-13:30",
                 },
