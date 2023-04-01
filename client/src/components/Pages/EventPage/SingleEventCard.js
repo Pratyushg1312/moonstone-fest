@@ -13,8 +13,8 @@ function SingleEventCard(props) {
         </div>
       </div>
       <div className="Event-Card-lower">
-        <NavLink to="/SingleEvent">
-        <button className="card-buttons"><span>View</span></button></NavLink>
+        {/* <NavLink to="/SingleEvent"> */}
+        {/* <button className="card-buttons"><span>View</span></button></NavLink> */}
         <NavLink to="/registration">
         <button className="card-buttons"><span>Register</span></button></NavLink>
       </div>

@@ -5,7 +5,7 @@ function EventCategory(props) {
   return (
     <div className='Event-Page'>
       <div className="majorEventImg">
-        <img src="images/1.jpg" alt="" />
+        <img src={props.image} alt="" />
         <div className="content-event">
           <h2>{props.event_name}</h2>
           <p>{props.event_desc}</p>

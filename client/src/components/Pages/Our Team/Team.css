@@ -66,7 +66,7 @@
     /* border: 2px solid red; */
 }
 
-@media only screen and (max-width: 1062px) {
+@media only screen and (max-width: 768px) {
 	.icons{
 		display: flex;
 		/* flex-wrap: wrap; */
