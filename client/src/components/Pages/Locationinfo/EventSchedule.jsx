@@ -60,7 +60,7 @@ export default function EventSchedule() {
                             {places.filter((item) => {
                                 let searchterm = venue.toLowerCase();
                                 let term = item.toLowerCase();
-                                return (searchterm && term.includes(searchterm) && (searchterm != term));
+                                return ( term.includes(searchterm) && (searchterm != term));
 
                             })
                                 .map((place) => {

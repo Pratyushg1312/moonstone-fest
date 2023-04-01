@@ -94,22 +94,7 @@ const Schedule = [
             }
         }
     },
-    {
-        place: {
-            "Block V": {
-                day1: {
-                    "Quizziteria (Seminar Hall 221)": "10:00-12:00",
-                },
-                day2: {
-                    "Google it (Room no 004)": "10:30-13:30",
-                },
-                day3: {
-                    "Smash Carts (Lab number 002)": "13:30-16:00",
-                    "Fifa Tournament Online (Lab number 016)": "10:00-14:00",
-                }
-            }
-        }
-    },
+
     {
         place: {
             "Block V": {
@@ -290,7 +275,7 @@ const Schedule = [
             }
         }
     },
-     {
+    {
         place: {
             "Cricket Ground": {
                 day1: {
@@ -313,7 +298,7 @@ const Schedule = [
             }
         }
     },
-     {
+    {
         place: {
             "BasketBall Court": {
                 day1: {
@@ -355,7 +340,7 @@ const Schedule = [
             }
         }
     },
-     {
+    {
         place: {
             "Medi-Caps University Campus": {
                 day1: {

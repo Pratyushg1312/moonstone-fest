@@ -106,8 +106,8 @@ width:100%;
   /* Schedule Card */
   .slot {
     background-color: hsl(0, 0%, 5%);
-    width: 300px;
-    height: 120px;
+    width: 150px;
+    height: 100px;
   align-items: center;
     transition: 1s ease-in-out;
     border:1px solid rgb(53, 51, 51);
@@ -175,6 +175,8 @@ width:100%;
     border: 1px solid #748dff;
 }
 
+
+
 @media screen and (max-width: 1000px) {
     .profile-name {
         font-size: 18px;
@@ -189,6 +191,7 @@ width:100%;
     .profile-name {
         font-size: 16px;
     }
+    
 }
 
 /* Coordinators Card CSS  */

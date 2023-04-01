@@ -53,7 +53,7 @@ function App() {
         <Route  path='/Registration/:id' element={<Registration/> }/>
         <Route  path='/Registration' element={<Registration/> }/>
         <Route  path='/SingleDay' element={<SingleDay/> }/>
-        <Route  path='/SingleEvent' element={<SingleEvent/> }/>
+        <Route  path='/SingleEvent/:id' element={<SingleEvent/> }/>
         <Route  path='/glimpses' element={<Glimpses/> }/>
         <Route  path='/cultural' element={<Cultural/> }/>
         <Route  path='/Sports' element={<Sports/> }/>
