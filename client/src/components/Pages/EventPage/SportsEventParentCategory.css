@@ -2,3 +2,10 @@
     width: 90%;
     margin: 60px 0 20px 0;
 }
+
+.head-des > h1{
+    /* border: 1px solid red; */
+    color: #D3BD3B;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}

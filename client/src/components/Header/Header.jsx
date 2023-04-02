@@ -60,7 +60,7 @@ export default function Header() {
               }}
             >
               <NavLink
-                to="/Auction"
+                to="/Developers"
                 style={({ isActive }) => ({
                   textShadow: isActive ? "0px 0px 20px #00FFD1" : "none",
                 })}
