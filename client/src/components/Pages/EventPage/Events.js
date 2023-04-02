@@ -20,7 +20,9 @@ function Events() {
           <h3>Place 1</h3>
         </div>
       </div> */}
-      <EventSchedule/>
+      <div id="Events-Near-you">     
+      <EventSchedule />
+      </div>
     </div>
   )
 }

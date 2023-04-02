@@ -31,7 +31,7 @@ export default function Sponsors() {
       <div className='container' id="Sponsorship-Opportunities">
         <h1 className='text-center' style={{ color: "#D3BD3B" }}>Sponsorship Opportunities 2K23</h1>
         <p style={{
-          color: "#00FFD1",margin:"40px",fontFamily:"Poppins"
+          color: "#00FFD1",margin:"",fontFamily:"Poppins",textAlign:"justify",
         }} >Sponsorship opportunities allow you to increase your brand awareness, attract new clients and enhance your business relationships with current customers. As an IEDC sponsor, you will earn the recognition of your peers for your commitment to and leadership in the economic development community. Whether you are looking to market your services as an exhibitor or gain unparalleled exposure as an event sponsor, IEDC has the perfect opportunity for you. IEDC offers a range of sponsorship packages and exhibit opportunities to fit any budget. Your sponsorship allows us to provide world-class speakers, a dynamic conference program, and a valuable networking forum for economic development professionals. Exhibitors have direct access to the leading public and private sector decision makers, and local, state and federal government officials.</p>
         <h2 className='ms-4' style={{ color: "#D3BD3B" }}>Brand Benefits</h2>
         <ul style={{
@@ -137,6 +137,7 @@ export default function Sponsors() {
                   </ul>
                 </div>
                 <div className="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                   <NavLink to="/contactus">
                     <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">contact for Sponsorship</button>
                   </NavLink>

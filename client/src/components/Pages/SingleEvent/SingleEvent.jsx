@@ -54,6 +54,8 @@ export default function SingleEvent() {
             </div>
             <h1 className='text-center  mt-4 abttt' >Entry Allowed</h1>
             <Entryallowed single={arr.Single} duo={arr.Duo} team={arr.Team} />
+            
+
             <div className='d-flex justify-content-evenly flex-wrap'>
                 <div>
                     <h1 className='text-center abttt '>Prices</h1>

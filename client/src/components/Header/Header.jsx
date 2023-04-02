@@ -139,6 +139,11 @@ export default function Header() {
                 <NavLink to="/NightEvents">
                   <li>Night Events</li>
                 </NavLink>
+                <Link to="events/#Events-Near-you">
+                  <li>Events near you </li>
+                  </Link>
+
+
               </ul>
             </li>
             <li
@@ -151,15 +156,15 @@ export default function Header() {
                 className={({ isActive }) => {
                   chngeState(
                     isActive ? "./images/logomono.png" : "./images/loogodim.png"
-                    );
-                  }}
+                  );
+                }}
               >
-              <img
-              className="logo-img"
+                <img
+                  className="logo-img"
                   src={appstate}
                   alt=""
                   width={"100px"}
-                  />
+                />
               </NavLink>
             </li>
             <li
@@ -167,17 +172,17 @@ export default function Header() {
                 setChecked(!checked);
               }}
             >
-            <NavLink
-            to="/glimpses"
-            style={({ isActive }) => ({
+              <NavLink
+                to="/glimpses"
+                style={({ isActive }) => ({
                   textShadow: isActive ? "0px 0px 20px #00FFD1" : "none",
                 })}
-                >
+              >
                 Glimpses
-                </NavLink>
+              </NavLink>
             </li>
             <li
-            onClick={(e) => {
+              onClick={(e) => {
                 setChecked(!checked);
               }}
             >
@@ -187,7 +192,7 @@ export default function Header() {
                   textShadow: isActive ? "0px 0px 20px #00FFD1" : "none",
                 })}
               >
-              Contact
+                Contact
               </NavLink>
             </li>
             <li
