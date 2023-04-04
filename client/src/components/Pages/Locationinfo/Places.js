@@ -1,0 +1,2 @@
+const Places = ["Big Auditorium", "Canteen", "R Block Garden", "Small Auditorium", "Main Stage", "Medi-Square", "Block V", "Block C", "Block Q", "Block M", "Multi Purpose Hall", "Kho-Kho Ground", "Mechanical Quadrangle", "Bus Parking Lawn", "Cricket Ground", "BasketBall Court", "Volleyball Court", "Medi-Caps University Campus", "Ampitheatre"];
+export default Places;

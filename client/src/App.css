@@ -42,3 +42,11 @@ body{
     
   }
 }
+
+.directionicon{
+  width: 40px;
+    height: 40px;
+    margin: 10px;
+    border: 3px solid #722a2a;
+    border-radius: 50%;
+}
